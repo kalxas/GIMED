@@ -6,7 +6,7 @@
    Modified:     03/11/10
    Description:  Calculation of bounding box for any gdal-supported geospatial data file (EPSG:2100 to EPSG:4326)
 
-   Copyright (C) January 2001 Angelos Tzotsos <tzotsos@gmail.com>
+   Copyright (C) November 2010 Angelos Tzotsos <tzotsos@gmail.com>
 
    This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
