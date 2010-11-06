@@ -1,6 +1,6 @@
 /*
    Name:         GIMED
-   Version:      1.2
+   Version:      1.2.1
    Author:       Angelos Tzotsos <tzotsos@gmail.com>
    Date:         03/11/10
    Modified:     03/11/10
@@ -91,6 +91,8 @@ public class Checker
 
     public bool CheckGDAL()
     {
+        
+
         try
         {
             string appPath = "gdalinfo";
@@ -109,7 +111,6 @@ public class Checker
             prc.WaitForExit();
             str0.Close();
 
-        
             string[] SubStrings = output.Split(' ');
             return (SubStrings[0] == "GDAL") ? true : false;
 
