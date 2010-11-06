@@ -434,33 +434,40 @@ public partial class Form1 : Form
 
     public void LoadGeoExtend()
     {
-        string appPath = Path.GetDirectoryName(Application.ExecutablePath);
-        appPath += Path.DirectorySeparatorChar + this.geo_extend_file;
-        
-        StreamReader str0 = StreamReader.Null;
-        string output = "";
-        Process prc = new Process();
-        prc.StartInfo.FileName = appPath;
-        prc.StartInfo.Arguments = "\"" + DataFile + "\"";
-        prc.StartInfo.UseShellExecute = false;
-        prc.StartInfo.CreateNoWindow = true;
-        prc.StartInfo.RedirectStandardOutput = true;
-        prc.Start();
-        str0 = prc.StandardOutput;
-        output = str0.ReadToEnd();
-        prc.WaitForExit();
-        str0.Close();
+        try
+        {
+            string appPath = Path.GetDirectoryName(Application.ExecutablePath);
+            appPath += Path.DirectorySeparatorChar + this.geo_extend_file;
 
-        string[] SubStrings = output.Split(' ');
-        if (SubStrings[0] == "BoundingBox:")
-        {
-            this.mdControl1.GEO_ExtendListBox.Items.Clear();
-            string tmp = Convert.ToDouble((string)SubStrings[1]).ToString() + ";" + Convert.ToDouble((string)SubStrings[2]).ToString() + ";" + Convert.ToDouble((string)SubStrings[3]).ToString() + ";" + Convert.ToDouble((string)SubStrings[4]).ToString();
-            this.mdControl1.GEO_ExtendListBox.Items.Add(tmp);
+            StreamReader str0 = StreamReader.Null;
+            string output = "";
+            Process prc = new Process();
+            prc.StartInfo.FileName = appPath;
+            prc.StartInfo.Arguments = "\"" + DataFile + "\"";
+            prc.StartInfo.UseShellExecute = false;
+            prc.StartInfo.CreateNoWindow = true;
+            prc.StartInfo.RedirectStandardOutput = true;
+            prc.Start();
+            str0 = prc.StandardOutput;
+            output = str0.ReadToEnd();
+            prc.WaitForExit();
+            str0.Close();
+
+            string[] SubStrings = output.Split(' ');
+            if (SubStrings[0] == "BoundingBox:")
+            {
+                this.mdControl1.GEO_ExtendListBox.Items.Clear();
+                string tmp = Convert.ToDouble((string)SubStrings[1]).ToString() + ";" + Convert.ToDouble((string)SubStrings[2]).ToString() + ";" + Convert.ToDouble((string)SubStrings[3]).ToString() + ";" + Convert.ToDouble((string)SubStrings[4]).ToString();
+                this.mdControl1.GEO_ExtendListBox.Items.Add(tmp);
+            }
+            else
+            {
+                MessageBox.Show("No valid Geographic Extend found");
+            }
         }
-        else
+        catch
         {
-            MessageBox.Show("No valid Geographic Extend found");
+            MessageBox.Show("Error in GeoExtend module. Check if geo_extend binary file has execute permisions.");
         }
 
     }
