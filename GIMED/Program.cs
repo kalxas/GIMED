@@ -91,24 +91,25 @@ public class Checker
 
     public bool CheckGDAL()
     {
-        string appPath = "gdalinfo";
-
-        StreamReader str0 = StreamReader.Null;
-        string output = "";
-        Process prc = new Process();
-        prc.StartInfo.FileName = appPath;
-        prc.StartInfo.Arguments = "--version";
-        prc.StartInfo.UseShellExecute = false;
-        prc.StartInfo.CreateNoWindow = true;
-        prc.StartInfo.RedirectStandardOutput = true;
-        prc.Start();
-        str0 = prc.StandardOutput;
-        output = str0.ReadToEnd();
-        prc.WaitForExit();
-        str0.Close();
-
         try
         {
+            string appPath = "gdalinfo";
+
+            StreamReader str0 = StreamReader.Null;
+            string output = "";
+            Process prc = new Process();
+            prc.StartInfo.FileName = appPath;
+            prc.StartInfo.Arguments = "--version";
+            prc.StartInfo.UseShellExecute = false;
+            prc.StartInfo.CreateNoWindow = true;
+            prc.StartInfo.RedirectStandardOutput = true;
+            prc.Start();
+            str0 = prc.StandardOutput;
+            output = str0.ReadToEnd();
+            prc.WaitForExit();
+            str0.Close();
+
+        
             string[] SubStrings = output.Split(' ');
             return (SubStrings[0] == "GDAL") ? true : false;
 
