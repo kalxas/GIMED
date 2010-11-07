@@ -1,10 +1,10 @@
 /*
-   Name:         geo_extends
+   Name:         geo_extents
    Version:      1.0
    Author:       Angelos Tzotsos <tzotsos@gmail.com>
    Date:         06/12/09
    Modified:     03/11/10
-   Description:  Calculation of bounding box for any gdal-supported geospatial data file (EPSG:2100 to EPSG:4326)
+   Description:  Calculation of bounding box for any gdal-supported geospatial data file (INSPIRE requires output to be EPSG:4326)
 
    Copyright (C) November 2010 Angelos Tzotsos <tzotsos@gmail.com>
 
@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
 
     if(argc != 2)
     {
-        printf("Usage: geo_extends <input file>\n");
+        printf("Usage: geo_extents <input file>\n");
         return 1;
     }
 
