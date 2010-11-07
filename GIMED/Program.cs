@@ -77,13 +77,13 @@ public class Checker
         return Type.GetType("Mono.Runtime") != null;
     }
 
-    public static bool IsUnix()
+    public bool IsUnix()
     {
         System.OperatingSystem osInfo = System.Environment.OSVersion;
         return (osInfo.ToString().IndexOf(@"Unix") != -1) ? true : false;
     }
 
-    public static bool IsWindows()
+    public bool IsWindows()
     {
         System.OperatingSystem osInfo = System.Environment.OSVersion;
         return (osInfo.ToString().IndexOf(@"Windows") != -1) ? true : false;

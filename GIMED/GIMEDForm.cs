@@ -436,8 +436,16 @@ public partial class Form1 : Form
     {
         try
         {
+            Checker chk = new Checker();
             string appPath = Path.GetDirectoryName(Application.ExecutablePath);
-            appPath += Path.DirectorySeparatorChar + this.geo_extend_file;
+            if (chk.IsWindows()) 
+            {
+                appPath += Path.DirectorySeparatorChar + this.geo_extend_file + ".exe";
+            }
+            else
+            {
+                appPath += Path.DirectorySeparatorChar + this.geo_extend_file;
+            }
 
             StreamReader str0 = StreamReader.Null;
             string output = "";
