@@ -1,6 +1,6 @@
 /*
    Name:         GIMED
-   Version:      1.2.1
+   Version:      1.2.5
    Author:       Angelos Tzotsos <tzotsos@gmail.com>
    Date:         03/11/10
    Modified:     03/11/10

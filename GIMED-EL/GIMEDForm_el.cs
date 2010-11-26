@@ -1,6 +1,6 @@
 /*
    Name:         GIMED
-   Version:      1.2.4
+   Version:      1.2.5
    Author:       Angelos Tzotsos <tzotsos@gmail.com>
    Date:         19/11/10
    Modified:     19/11/10
@@ -106,14 +106,9 @@ public partial class GIMEDForm_el : Form
             MessageBox.Show("Δεν βρέθηκε γεωγραφικό περίγραμμα συντεταγμένων");
             return false;
         }
-        if (md.TMP_TemporalExtendListBox.Items.Count == 0)
+        if (md.TMP_TemporalExtendListBox.Items.Count == 0 && md.TMP_PublicDateListBox.Items.Count == 0 && md.TMP_RevisionDateListBox.Items.Count == 0 && md.TMP_CreationDateListBox.Items.Count == 0)
         {
-            MessageBox.Show("Δεν βρέθηκε χρονική έκταση");
-            return false;
-        }
-        if (md.TMP_PublicDateListBox.Items.Count == 0 && md.TMP_RevisionDateListBox.Items.Count == 0 && md.TMP_CreationDateListBox.Items.Count == 0)
-        {
-            MessageBox.Show("Δεν βρέθηκε ημερομηνία δημοσίευσης ή αναθεώρησης ή δημιουργίας");
+            MessageBox.Show("Πρέπει να συμπληρωθεί τουλάχιστο μία χρονική αναφορά");
             return false;
         }
         if (md.LIN_FreeTextBox.Text == "")
@@ -394,7 +389,11 @@ public partial class GIMEDForm_el : Form
     {
         if(this.DataFile != "")
         {
-            this.saveFileDialog1.FileName = this.DataFile.Substring(0, this.DataFile.Length - 4) + ".xml"; ;
+            this.saveFileDialog1.FileName = this.DataFile.Substring(0, this.DataFile.Length - 4) + ".xml";
+        }
+        else
+        {
+            this.saveFileDialog1.FileName = this.mdControl1.mdguid + ".xml";
         }
         this.saveFileDialog1.Filter = "XML Files (*.xml)|*.xml|All files (*.*)|*.*";
         this.saveFileDialog1.FilterIndex = 1;

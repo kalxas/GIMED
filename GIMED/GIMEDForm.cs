@@ -1,6 +1,6 @@
 /*
    Name:         GIMED
-   Version:      1.2.1
+   Version:      1.2.5
    Author:       Angelos Tzotsos <tzotsos@gmail.com>
    Date:         03/11/10
    Modified:     03/11/10
@@ -106,14 +106,9 @@ public partial class Form1 : Form
             MessageBox.Show("Geographic Extend not found");
             return false;
         }
-        if (md.TMP_TemporalExtendListBox.Items.Count == 0)
+        if (md.TMP_TemporalExtendListBox.Items.Count == 0 && md.TMP_PublicDateListBox.Items.Count == 0 && md.TMP_RevisionDateListBox.Items.Count == 0 && md.TMP_CreationDateListBox.Items.Count == 0)
         {
-            MessageBox.Show("Temporal Extend not found");
-            return false;
-        }
-        if (md.TMP_PublicDateListBox.Items.Count == 0 && md.TMP_RevisionDateListBox.Items.Count == 0 && md.TMP_CreationDateListBox.Items.Count == 0)
-        {
-            MessageBox.Show("Publication or Revision or Creation Date not found");
+            MessageBox.Show("At least one Temporal Reference must be completed");
             return false;
         }
         if (md.LIN_FreeTextBox.Text == "")
@@ -393,9 +388,13 @@ public partial class Form1 : Form
 
     private void SaveXMLButton_Click(object sender, EventArgs e)
     {
-        if(this.DataFile != "")
+        if (this.DataFile != "")
         {
-            this.saveFileDialog1.FileName = this.DataFile.Substring(0, this.DataFile.Length - 4) + ".xml"; ;
+            this.saveFileDialog1.FileName = this.DataFile.Substring(0, this.DataFile.Length - 4) + ".xml";
+        }
+        else
+        {
+            this.saveFileDialog1.FileName = this.mdControl1.mdguid + ".xml";
         }
         this.saveFileDialog1.Filter = "XML Files (*.xml)|*.xml|All files (*.*)|*.*";
         this.saveFileDialog1.FilterIndex = 1;

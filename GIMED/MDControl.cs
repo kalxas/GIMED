@@ -1,6 +1,6 @@
 /*
    Name:         GIMED
-   Version:      1.2.1
+   Version:      1.2.5
    Author:       Angelos Tzotsos <tzotsos@gmail.com>
    Date:         03/11/10
    Modified:     03/11/10
@@ -1365,7 +1365,7 @@ namespace Inspire.Metadata
             this.groupBox11.Size = new System.Drawing.Size(460, 131);
             this.groupBox11.TabIndex = 57;
             this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "Temporal Extend";
+            this.groupBox11.Text = "Temporal Extent";
             // 
             // label14
             // 
