@@ -388,6 +388,12 @@ public partial class Form1 : Form
 
     private void SaveXMLButton_Click(object sender, EventArgs e)
     {
+        if (this.mdControl1.newGUIDpressed)
+        {
+            this.DataFile = "";
+            this.mdControl1.newGUIDpressed = false;
+        }
+        
         if (this.DataFile != "")
         {
             this.saveFileDialog1.FileName = this.DataFile.Substring(0, this.DataFile.Length - 4) + ".xml";

@@ -40,6 +40,7 @@ namespace Inspire.Metadata
 	public class MDControl : System.Windows.Forms.UserControl
 	{
         public string mdguid;
+        public bool newGUIDpressed;
         public System.Windows.Forms.TabControl MD_tabControl;
 		public System.Windows.Forms.TabPage MetadataTab;
         private System.Windows.Forms.Label label4;
@@ -222,6 +223,7 @@ namespace Inspire.Metadata
 			// This call is required by the Windows.Forms Form Designer.
 			InitializeComponent();
             this.CreateGUID();
+            this.newGUIDpressed = false;
 			// TODO: Add any initialization after the InitializeComponent call
 
 		}
@@ -2408,6 +2410,7 @@ namespace Inspire.Metadata
         private void GUIDButton_Click(object sender, EventArgs e)
         {
             this.CreateGUID();
+            this.newGUIDpressed = true;
         }
 
         private void ID_ResourceLanguageAddButton_Click(object sender, EventArgs e)
