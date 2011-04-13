@@ -1,4 +1,4 @@
-Welcome to GIMED v1.2
+Welcome to GIMED v1.3
 
 This is a Free (as in freedom) Metadata Editor for geospatial data, following ISO19139 and INSPIRE directive.
 

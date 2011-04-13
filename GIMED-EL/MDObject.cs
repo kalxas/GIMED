@@ -803,7 +803,7 @@ namespace Inspire.Metadata
                         tmp = nav2.Value.ToString();
                     }
 
-                    expr = nav.Compile("/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicBoundingBox[" + i.ToString() + "]/gmd:eastBoundLongitude/gco:Decimal");
+                    expr = nav.Compile("/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicBoundingBox[" + i.ToString() + "]/gmd:southBoundLatitude/gco:Decimal");
                     expr.SetContext(manager);
                     iterator = nav.Select(expr);
                     while (iterator.MoveNext())
@@ -812,7 +812,7 @@ namespace Inspire.Metadata
                         tmp += ";" + nav2.Value.ToString();
                     }
 
-                    expr = nav.Compile("/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicBoundingBox[" + i.ToString() + "]/gmd:southBoundLatitude/gco:Decimal");
+                    expr = nav.Compile("/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicBoundingBox[" + i.ToString() + "]/gmd:eastBoundLongitude/gco:Decimal");
                     expr.SetContext(manager);
                     iterator = nav.Select(expr);
                     while (iterator.MoveNext())
