@@ -32,6 +32,10 @@ using System.IO;
 using System.Windows.Forms;
 using System.Diagnostics;
 using Inspire.Metadata;
+using DotSpatial.Data;
+using DotSpatial.Projections;
+
+
 
 public partial class GIMEDForm_el : Form
 {
@@ -373,7 +377,58 @@ public partial class GIMEDForm_el : Form
         }
 
     }
-    
+
+    private Dictionary<int, string> ReadEpsgFile()
+    {
+        string filePath = @"epsg";
+        string line;
+        Dictionary<int, string> dictEpsg = new Dictionary<int, string>();
+        if (File.Exists(filePath))
+        {
+            StreamReader file = null;
+            bool isCodeline=false;
+            string tmpKey = string.Empty;
+            string tmpVal = string.Empty;
+            try
+            {
+                file = new StreamReader(filePath);
+                int c=0;
+                while ((line = file.ReadLine()) != null)
+                {
+                    if (c == 2) c = 0;
+                    if (line.StartsWith("#"))
+                    {
+                        isCodeline = true;
+                        tmpVal = line.Split('#')[1].Trim();
+                        c++;
+                    }
+                    else if (line.StartsWith("<"))
+                    {
+                        isCodeline = false;
+                        tmpKey = line.Split('<')[1].Split('>')[0].Trim();
+                        c++;
+                    }
+                    if (c == 2)
+                    {
+                        try
+                        {
+                            dictEpsg.Add(Convert.ToInt32(tmpKey), tmpVal);
+                        }
+                        catch (Exception)
+                        {}
+                        
+                    }
+                }
+            }
+            finally
+            {
+                if (file != null)
+                    file.Close();
+            }
+        }
+        return dictEpsg;
+    }
+
     private void ValidateButton_Click(object sender, EventArgs e)
     {
         if (this.ValidateMDControl(mdControl1))
@@ -415,18 +470,101 @@ public partial class GIMEDForm_el : Form
 
     private void DataFileButton_Click(object sender, EventArgs e)
     {
-        this.openFileDialog1.Filter = "TIFF Files (*.tif)|*.tif|JPEG2000 Files (*.jp2)|*.jp2|Imagine Files (*.img)|*.img|ER-Mapper Files (*.ers)|*.ers|JPEG Files (*.jpg)|*.jpg|Shape files (*.shp)|*.shp|DTM files (*.dtm)|*.dtm|All files (*.*)|*.*";
+        this.openFileDialog1.Filter = "Shape files (*.shp)|*.shp|Mapinfo TAB files (*.tab)|*.tab|TIFF Files (*.tif)|*.tif|JPEG2000 Files (*.jp2)|*.jp2|Imagine Files (*.img)|*.img|ER-Mapper Files (*.ers)|*.ers|JPEG Files (*.jpg)|*.jpg|DTM files (*.dtm)|*.dtm|All files (*.*)|*.*";
         this.openFileDialog1.FilterIndex = 1;
+        openFileDialog1.DefaultExt = "shp";
+        openFileDialog1.FileName = string.Empty;
+
+        int inSRID = -1;
+
         DialogResult rslt = this.openFileDialog1.ShowDialog();
         if (rslt == DialogResult.OK)
         {
+            Extent ext = new Extent();
             this.DataFile = this.openFileDialog1.FileName;
             this.textBox1.Text = this.DataFile;
-            this.LoadGeoExtend();
-            this.SaveXMLButton.Enabled = false;
-            this.LoadXMLButton.Enabled = false;
+            if (DataFile.EndsWith(".shp") || DataFile.EndsWith(".tab"))
+            {
+                //Declare a new feature set
+                FeatureSet fs = (FeatureSet)FeatureSet.Open(DataFile);
+                ext = fs.Extent;
+                if (fs.Projection == null)
+                {
+                    inSRID = -1;
+                }
+            }
+            else
+            {
+                //Assume its raster
+                InRamImageData img = (InRamImageData)InRamImageData.Open(DataFile);
+                ext = img.Extent;
+                inSRID = -1;
+            }
+
+            PopulateExtent(ext, inSRID);
         }
         return;
+    }
+
+    private void PopulateExtent(Extent ext, int inEpsgCode)
+    {
+        
+        if (inEpsgCode == -1)
+        {
+            Dictionary<int, string> d = ReadEpsgFile();
+            GIMED_EL.frmEPSG dlgEpsg = new GIMED_EL.frmEPSG();
+            dlgEpsg.PopulateListBox(d);
+            var result = dlgEpsg.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                inEpsgCode = dlgEpsg.selectedSRID;
+            }
+        }
+
+        if (inEpsgCode == -1) return;
+
+        Extent latlonExtent = reprojectRectangle(ext, inEpsgCode);
+        this.mdControl1.GEO_ExtendListBox.Items.Clear();
+        string tmp = latlonExtent.MinX.ToString() + ";" + latlonExtent.MinY.ToString() + ";" + latlonExtent.MaxX.ToString() + ";" + latlonExtent.MaxY.ToString();
+        this.mdControl1.GEO_ExtendListBox.Items.Add(tmp);
+
+        //Also fill in the GEO * textboxes
+        mdControl1.GEO_XminTextBox.Text = latlonExtent.MinX.ToString();
+        mdControl1.GEO_XmaxTextBox.Text = latlonExtent.MaxX.ToString();
+        mdControl1.GEO_YminTextBox.Text = latlonExtent.MinY.ToString();
+        mdControl1.GEO_YmaxTextBox.Text = latlonExtent.MaxY.ToString();
+        this.SaveXMLButton.Enabled = false;
+        this.LoadXMLButton.Enabled = false;
+
+
+       
+    }
+
+    private Extent reprojectRectangle( Extent inExt, int fromSrid)
+    {
+        Extent outExt = new Extent();
+        List<double> xy = new List<double>();
+        List<double> z = new List<double>();
+
+        xy.Add(inExt.MinX);
+        xy.Add(inExt.MinY);
+        xy.Add(inExt.MaxX);
+        xy.Add(inExt.MaxY);
+        z.Add(0.0);
+        z.Add(0.0);
+        double[] xyA = xy.ToArray();
+        double[] zA = z.ToArray();
+
+        ProjectionInfo piFrom = ProjectionInfo.FromEpsgCode(fromSrid);
+
+        //Always reproject to WGS84 (EPSG:4326)
+        ProjectionInfo piTo = ProjectionInfo.FromEpsgCode(4326);
+        Reproject.ReprojectPoints(xyA, zA, piFrom, piTo, 0, 2);
+        outExt.MinX=xyA[0];
+        outExt.MinY = xyA[1];
+        outExt.MaxX = xyA[2];
+        outExt.MaxY = xyA[3];
+        return outExt;
     }
 
     private void textBox1_TextChanged(object sender, EventArgs e)
@@ -453,8 +591,9 @@ public partial class GIMEDForm_el : Form
             string output = "";
             Process prc = new Process();
             prc.StartInfo.FileName = appPath;
-            prc.StartInfo.Arguments = "\"" + DataFile + "\"";
+            //prc.StartInfo.Arguments = "\"" + DataFile + "\"";
             prc.StartInfo.UseShellExecute = false;
+            prc.StartInfo.Arguments = "\"" + DataFile + "\"";
             prc.StartInfo.CreateNoWindow = true;
             prc.StartInfo.RedirectStandardOutput = true;
             prc.Start();

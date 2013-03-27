@@ -54,15 +54,17 @@ public class Checker
         string tmp = "";
         bool tmp2 = true;
         string appPath = Path.GetDirectoryName(Application.ExecutablePath);
-        if (!CheckGDAL())
-        {
-            tmp += "Η βιβλιοθήκη GDAL δεν είναι εγκατεστημένη.\n";
-        }
+        //PV: Don't use GDAL libs
+        //if (!CheckGDAL())
+        //{
+        //    tmp += "Η βιβλιοθήκη GDAL δεν είναι εγκατεστημένη.\n";
+        //}
 
-        if (!File.Exists(String.Format(appPath + "{0}geo_extends.exe", Path.DirectorySeparatorChar)) && !File.Exists(String.Format(appPath + "{0}geo_extends", Path.DirectorySeparatorChar)))
-        {
-            tmp += "Το πρόσθετο Γεωγραφικής Θέσης δεν είναι εγκατεστημένο.";
-        }
+        //PV: Don't use geo_extends
+        //if (!File.Exists(String.Format(appPath + "{0}geo_extends.exe", Path.DirectorySeparatorChar)) && !File.Exists(String.Format(appPath + "{0}geo_extends", Path.DirectorySeparatorChar)))
+        //{
+        //    tmp += "Το πρόσθετο Γεωγραφικής Θέσης δεν είναι εγκατεστημένο.";
+        //}
 
         if (tmp != "")
         {

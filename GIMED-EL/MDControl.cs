@@ -482,9 +482,9 @@ namespace Inspire.Metadata
             // 
             this.MetadataTab.Controls.Add(this.groupBox3);
             this.MetadataTab.Controls.Add(this.MD_GroupBox);
-            this.MetadataTab.Location = new System.Drawing.Point(4, 40);
+            this.MetadataTab.Location = new System.Drawing.Point(4, 46);
             this.MetadataTab.Name = "MetadataTab";
-            this.MetadataTab.Size = new System.Drawing.Size(581, 481);
+            this.MetadataTab.Size = new System.Drawing.Size(581, 475);
             this.MetadataTab.TabIndex = 0;
             this.MetadataTab.Text = "Μεταδεδομένα";
             this.MetadataTab.UseVisualStyleBackColor = true;
@@ -505,9 +505,10 @@ namespace Inspire.Metadata
             // MD_ContactListBox
             // 
             this.MD_ContactListBox.FormattingEnabled = true;
+            this.MD_ContactListBox.ItemHeight = 16;
             this.MD_ContactListBox.Location = new System.Drawing.Point(19, 210);
             this.MD_ContactListBox.Name = "MD_ContactListBox";
-            this.MD_ContactListBox.Size = new System.Drawing.Size(458, 56);
+            this.MD_ContactListBox.Size = new System.Drawing.Size(458, 52);
             this.MD_ContactListBox.TabIndex = 24;
             // 
             // MD_ContactListRemoveButton
@@ -547,7 +548,7 @@ namespace Inspire.Metadata
             // 
             this.MD_emailTextBox.Location = new System.Drawing.Point(49, 39);
             this.MD_emailTextBox.Name = "MD_emailTextBox";
-            this.MD_emailTextBox.Size = new System.Drawing.Size(326, 20);
+            this.MD_emailTextBox.Size = new System.Drawing.Size(326, 22);
             this.MD_emailTextBox.TabIndex = 17;
             // 
             // MD_RemoveEmailButton
@@ -570,9 +571,10 @@ namespace Inspire.Metadata
             // 
             // MD_EmailListBox
             // 
+            this.MD_EmailListBox.ItemHeight = 16;
             this.MD_EmailListBox.Location = new System.Drawing.Point(49, 71);
             this.MD_EmailListBox.Name = "MD_EmailListBox";
-            this.MD_EmailListBox.Size = new System.Drawing.Size(326, 56);
+            this.MD_EmailListBox.Size = new System.Drawing.Size(326, 52);
             this.MD_EmailListBox.TabIndex = 19;
             // 
             // label2
@@ -587,7 +589,7 @@ namespace Inspire.Metadata
             // 
             this.MD_OrganizationNameTextBox.Location = new System.Drawing.Point(49, 151);
             this.MD_OrganizationNameTextBox.Name = "MD_OrganizationNameTextBox";
-            this.MD_OrganizationNameTextBox.Size = new System.Drawing.Size(326, 20);
+            this.MD_OrganizationNameTextBox.Size = new System.Drawing.Size(326, 22);
             this.MD_OrganizationNameTextBox.TabIndex = 23;
             // 
             // label3
@@ -621,7 +623,7 @@ namespace Inspire.Metadata
             "Ιταλικά"});
             this.MD_LanguageComboBox.Location = new System.Drawing.Point(56, 72);
             this.MD_LanguageComboBox.Name = "MD_LanguageComboBox";
-            this.MD_LanguageComboBox.Size = new System.Drawing.Size(273, 21);
+            this.MD_LanguageComboBox.Size = new System.Drawing.Size(273, 24);
             this.MD_LanguageComboBox.TabIndex = 20;
             this.MD_LanguageComboBox.Text = "Παρακαλώ επιλέξτε";
             // 
@@ -640,7 +642,7 @@ namespace Inspire.Metadata
             this.MD_DateTimePicker.Location = new System.Drawing.Point(56, 32);
             this.MD_DateTimePicker.Name = "MD_DateTimePicker";
             this.MD_DateTimePicker.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.MD_DateTimePicker.Size = new System.Drawing.Size(273, 20);
+            this.MD_DateTimePicker.Size = new System.Drawing.Size(273, 22);
             this.MD_DateTimePicker.TabIndex = 18;
             // 
             // label4
@@ -657,9 +659,9 @@ namespace Inspire.Metadata
             this.IdentificationTab.Controls.Add(this.groupBox9);
             this.IdentificationTab.Controls.Add(this.groupBox8);
             this.IdentificationTab.Controls.Add(this.groupBox7);
-            this.IdentificationTab.Location = new System.Drawing.Point(4, 40);
+            this.IdentificationTab.Location = new System.Drawing.Point(4, 46);
             this.IdentificationTab.Name = "IdentificationTab";
-            this.IdentificationTab.Size = new System.Drawing.Size(581, 481);
+            this.IdentificationTab.Size = new System.Drawing.Size(581, 475);
             this.IdentificationTab.TabIndex = 2;
             this.IdentificationTab.Text = "Ταυτοποίηση";
             this.IdentificationTab.UseVisualStyleBackColor = true;
@@ -694,7 +696,7 @@ namespace Inspire.Metadata
             "Υπηρεσίες χωρικών δεδομένων"});
             this.ID_ResourceTypeComboBox.Location = new System.Drawing.Point(51, 139);
             this.ID_ResourceTypeComboBox.Name = "ID_ResourceTypeComboBox";
-            this.ID_ResourceTypeComboBox.Size = new System.Drawing.Size(326, 21);
+            this.ID_ResourceTypeComboBox.Size = new System.Drawing.Size(326, 24);
             this.ID_ResourceTypeComboBox.TabIndex = 22;
             this.ID_ResourceTypeComboBox.Text = "Παρακαλώ επιλέξτε";
             // 
@@ -718,7 +720,7 @@ namespace Inspire.Metadata
             // 
             this.ID_ResourseTitleTextBox.Location = new System.Drawing.Point(51, 33);
             this.ID_ResourseTitleTextBox.Name = "ID_ResourseTitleTextBox";
-            this.ID_ResourseTitleTextBox.Size = new System.Drawing.Size(326, 20);
+            this.ID_ResourseTitleTextBox.Size = new System.Drawing.Size(326, 22);
             this.ID_ResourseTitleTextBox.TabIndex = 18;
             // 
             // label7
@@ -744,9 +746,10 @@ namespace Inspire.Metadata
             // 
             // ID_ResourceLanguageListBox
             // 
+            this.ID_ResourceLanguageListBox.ItemHeight = 16;
             this.ID_ResourceLanguageListBox.Location = new System.Drawing.Point(53, 49);
             this.ID_ResourceLanguageListBox.Name = "ID_ResourceLanguageListBox";
-            this.ID_ResourceLanguageListBox.Size = new System.Drawing.Size(326, 43);
+            this.ID_ResourceLanguageListBox.Size = new System.Drawing.Size(326, 36);
             this.ID_ResourceLanguageListBox.TabIndex = 38;
             // 
             // ID_ResourceLanguageComboBox
@@ -759,7 +762,7 @@ namespace Inspire.Metadata
             "Ιταλικά"});
             this.ID_ResourceLanguageComboBox.Location = new System.Drawing.Point(53, 22);
             this.ID_ResourceLanguageComboBox.Name = "ID_ResourceLanguageComboBox";
-            this.ID_ResourceLanguageComboBox.Size = new System.Drawing.Size(326, 21);
+            this.ID_ResourceLanguageComboBox.Size = new System.Drawing.Size(326, 24);
             this.ID_ResourceLanguageComboBox.TabIndex = 24;
             this.ID_ResourceLanguageComboBox.Text = "Παρακαλώ επιλέξτε";
             // 
@@ -811,14 +814,15 @@ namespace Inspire.Metadata
             // 
             this.ID_CodeTextBox.Location = new System.Drawing.Point(112, 19);
             this.ID_CodeTextBox.Name = "ID_CodeTextBox";
-            this.ID_CodeTextBox.Size = new System.Drawing.Size(248, 20);
+            this.ID_CodeTextBox.Size = new System.Drawing.Size(248, 22);
             this.ID_CodeTextBox.TabIndex = 30;
             // 
             // ID_UIDListBox
             // 
+            this.ID_UIDListBox.ItemHeight = 16;
             this.ID_UIDListBox.Location = new System.Drawing.Point(53, 67);
             this.ID_UIDListBox.Name = "ID_UIDListBox";
-            this.ID_UIDListBox.Size = new System.Drawing.Size(307, 43);
+            this.ID_UIDListBox.Size = new System.Drawing.Size(307, 36);
             this.ID_UIDListBox.TabIndex = 32;
             // 
             // ID_UIDAddButton
@@ -843,7 +847,7 @@ namespace Inspire.Metadata
             // 
             this.ID_NamespaceTextBox.Location = new System.Drawing.Point(112, 45);
             this.ID_NamespaceTextBox.Name = "ID_NamespaceTextBox";
-            this.ID_NamespaceTextBox.Size = new System.Drawing.Size(248, 20);
+            this.ID_NamespaceTextBox.Size = new System.Drawing.Size(248, 22);
             this.ID_NamespaceTextBox.TabIndex = 35;
             // 
             // label66
@@ -879,14 +883,15 @@ namespace Inspire.Metadata
             // 
             this.ID_ResourceLocatorTextBox.Location = new System.Drawing.Point(53, 19);
             this.ID_ResourceLocatorTextBox.Name = "ID_ResourceLocatorTextBox";
-            this.ID_ResourceLocatorTextBox.Size = new System.Drawing.Size(326, 20);
+            this.ID_ResourceLocatorTextBox.Size = new System.Drawing.Size(326, 22);
             this.ID_ResourceLocatorTextBox.TabIndex = 25;
             // 
             // ID_ResourceLocatorListBox
             // 
+            this.ID_ResourceLocatorListBox.ItemHeight = 16;
             this.ID_ResourceLocatorListBox.Location = new System.Drawing.Point(53, 45);
             this.ID_ResourceLocatorListBox.Name = "ID_ResourceLocatorListBox";
-            this.ID_ResourceLocatorListBox.Size = new System.Drawing.Size(326, 43);
+            this.ID_ResourceLocatorListBox.Size = new System.Drawing.Size(326, 36);
             this.ID_ResourceLocatorListBox.TabIndex = 27;
             // 
             // ID_ResourceLocatorAddButton
@@ -910,9 +915,9 @@ namespace Inspire.Metadata
             // ClassificationTab
             // 
             this.ClassificationTab.Controls.Add(this.CL_GroupBox);
-            this.ClassificationTab.Location = new System.Drawing.Point(4, 40);
+            this.ClassificationTab.Location = new System.Drawing.Point(4, 46);
             this.ClassificationTab.Name = "ClassificationTab";
-            this.ClassificationTab.Size = new System.Drawing.Size(581, 481);
+            this.ClassificationTab.Size = new System.Drawing.Size(581, 475);
             this.ClassificationTab.TabIndex = 3;
             this.ClassificationTab.Text = "Κατηγοριοποίηση";
             this.ClassificationTab.UseVisualStyleBackColor = true;
@@ -941,9 +946,10 @@ namespace Inspire.Metadata
             // 
             // CL_TopicCategoryListBox
             // 
+            this.CL_TopicCategoryListBox.ItemHeight = 16;
             this.CL_TopicCategoryListBox.Location = new System.Drawing.Point(53, 46);
             this.CL_TopicCategoryListBox.Name = "CL_TopicCategoryListBox";
-            this.CL_TopicCategoryListBox.Size = new System.Drawing.Size(326, 56);
+            this.CL_TopicCategoryListBox.Size = new System.Drawing.Size(326, 52);
             this.CL_TopicCategoryListBox.TabIndex = 28;
             // 
             // CL_AddTopicCategoryButton
@@ -979,16 +985,16 @@ namespace Inspire.Metadata
             "Επιχειρήσεις κοινής ωφελείας/Επικοινωνία"});
             this.CL_TopicCategoryComboBox.Location = new System.Drawing.Point(53, 19);
             this.CL_TopicCategoryComboBox.Name = "CL_TopicCategoryComboBox";
-            this.CL_TopicCategoryComboBox.Size = new System.Drawing.Size(326, 21);
+            this.CL_TopicCategoryComboBox.Size = new System.Drawing.Size(326, 24);
             this.CL_TopicCategoryComboBox.TabIndex = 26;
             this.CL_TopicCategoryComboBox.Text = "Παρακαλώ επιλέξτε";
             // 
             // KeywordTab
             // 
             this.KeywordTab.Controls.Add(this.KeywordGroupBox);
-            this.KeywordTab.Location = new System.Drawing.Point(4, 40);
+            this.KeywordTab.Location = new System.Drawing.Point(4, 46);
             this.KeywordTab.Name = "KeywordTab";
-            this.KeywordTab.Size = new System.Drawing.Size(581, 481);
+            this.KeywordTab.Size = new System.Drawing.Size(581, 475);
             this.KeywordTab.TabIndex = 1;
             this.KeywordTab.Text = "Λέξη κλειδί";
             this.KeywordTab.UseVisualStyleBackColor = true;
@@ -1039,7 +1045,7 @@ namespace Inspire.Metadata
             this.KW_DateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.KW_DateTimePicker.Location = new System.Drawing.Point(213, 105);
             this.KW_DateTimePicker.Name = "KW_DateTimePicker";
-            this.KW_DateTimePicker.Size = new System.Drawing.Size(162, 20);
+            this.KW_DateTimePicker.Size = new System.Drawing.Size(162, 22);
             this.KW_DateTimePicker.TabIndex = 45;
             // 
             // KW_DateTypeComboBox
@@ -1050,7 +1056,7 @@ namespace Inspire.Metadata
             "αναθεώρηση"});
             this.KW_DateTypeComboBox.Location = new System.Drawing.Point(49, 105);
             this.KW_DateTypeComboBox.Name = "KW_DateTypeComboBox";
-            this.KW_DateTypeComboBox.Size = new System.Drawing.Size(158, 21);
+            this.KW_DateTypeComboBox.Size = new System.Drawing.Size(158, 24);
             this.KW_DateTypeComboBox.TabIndex = 44;
             this.KW_DateTypeComboBox.Text = "Παρακαλώ επιλέξτε";
             // 
@@ -1066,7 +1072,7 @@ namespace Inspire.Metadata
             // 
             this.KW_VocabularyTextBox.Location = new System.Drawing.Point(49, 69);
             this.KW_VocabularyTextBox.Name = "KW_VocabularyTextBox";
-            this.KW_VocabularyTextBox.Size = new System.Drawing.Size(326, 20);
+            this.KW_VocabularyTextBox.Size = new System.Drawing.Size(326, 22);
             this.KW_VocabularyTextBox.TabIndex = 42;
             // 
             // label16
@@ -1081,7 +1087,7 @@ namespace Inspire.Metadata
             // 
             this.KW_KeywordTextBox.Location = new System.Drawing.Point(49, 28);
             this.KW_KeywordTextBox.Name = "KW_KeywordTextBox";
-            this.KW_KeywordTextBox.Size = new System.Drawing.Size(326, 20);
+            this.KW_KeywordTextBox.Size = new System.Drawing.Size(326, 22);
             this.KW_KeywordTextBox.TabIndex = 30;
             // 
             // label11
@@ -1157,7 +1163,7 @@ namespace Inspire.Metadata
             "Ωκεανογραφικά γεωγραφικά χαρακτηριστικά"});
             this.KW_InspireComboBox.Location = new System.Drawing.Point(56, 35);
             this.KW_InspireComboBox.Name = "KW_InspireComboBox";
-            this.KW_InspireComboBox.Size = new System.Drawing.Size(326, 21);
+            this.KW_InspireComboBox.Size = new System.Drawing.Size(326, 24);
             this.KW_InspireComboBox.TabIndex = 31;
             this.KW_InspireComboBox.Text = "Παρακαλώ επιλέξτε";
             // 
@@ -1172,17 +1178,18 @@ namespace Inspire.Metadata
             // 
             // KW_KeywordListBox
             // 
+            this.KW_KeywordListBox.ItemHeight = 16;
             this.KW_KeywordListBox.Location = new System.Drawing.Point(6, 221);
             this.KW_KeywordListBox.Name = "KW_KeywordListBox";
-            this.KW_KeywordListBox.Size = new System.Drawing.Size(376, 56);
+            this.KW_KeywordListBox.Size = new System.Drawing.Size(376, 52);
             this.KW_KeywordListBox.TabIndex = 28;
             // 
             // GeographicTab
             // 
             this.GeographicTab.Controls.Add(this.SPT_GroupBox);
-            this.GeographicTab.Location = new System.Drawing.Point(4, 40);
+            this.GeographicTab.Location = new System.Drawing.Point(4, 46);
             this.GeographicTab.Name = "GeographicTab";
-            this.GeographicTab.Size = new System.Drawing.Size(581, 481);
+            this.GeographicTab.Size = new System.Drawing.Size(581, 475);
             this.GeographicTab.TabIndex = 4;
             this.GeographicTab.Text = "Γεωγραφική θέση";
             this.GeographicTab.UseVisualStyleBackColor = true;
@@ -1218,9 +1225,10 @@ namespace Inspire.Metadata
             // 
             // GEO_ExtendListBox
             // 
+            this.GEO_ExtendListBox.ItemHeight = 16;
             this.GEO_ExtendListBox.Location = new System.Drawing.Point(50, 167);
             this.GEO_ExtendListBox.Name = "GEO_ExtendListBox";
-            this.GEO_ExtendListBox.Size = new System.Drawing.Size(326, 56);
+            this.GEO_ExtendListBox.Size = new System.Drawing.Size(326, 52);
             this.GEO_ExtendListBox.TabIndex = 45;
             // 
             // GEO_AddExtendButton
@@ -1243,9 +1251,9 @@ namespace Inspire.Metadata
             // 
             // GEO_XmaxTextBox
             // 
-            this.GEO_XmaxTextBox.Location = new System.Drawing.Point(252, 80);
+            this.GEO_XmaxTextBox.Location = new System.Drawing.Point(252, 81);
             this.GEO_XmaxTextBox.Name = "GEO_XmaxTextBox";
-            this.GEO_XmaxTextBox.Size = new System.Drawing.Size(76, 20);
+            this.GEO_XmaxTextBox.Size = new System.Drawing.Size(76, 22);
             this.GEO_XmaxTextBox.TabIndex = 42;
             // 
             // label60
@@ -1259,9 +1267,9 @@ namespace Inspire.Metadata
             // 
             // GEO_XminTextBox
             // 
-            this.GEO_XminTextBox.Location = new System.Drawing.Point(84, 80);
+            this.GEO_XminTextBox.Location = new System.Drawing.Point(84, 81);
             this.GEO_XminTextBox.Name = "GEO_XminTextBox";
-            this.GEO_XminTextBox.Size = new System.Drawing.Size(76, 20);
+            this.GEO_XminTextBox.Size = new System.Drawing.Size(76, 22);
             this.GEO_XminTextBox.TabIndex = 40;
             // 
             // label59
@@ -1277,7 +1285,7 @@ namespace Inspire.Metadata
             // 
             this.GEO_YminTextBox.Location = new System.Drawing.Point(164, 128);
             this.GEO_YminTextBox.Name = "GEO_YminTextBox";
-            this.GEO_YminTextBox.Size = new System.Drawing.Size(76, 20);
+            this.GEO_YminTextBox.Size = new System.Drawing.Size(76, 22);
             this.GEO_YminTextBox.TabIndex = 38;
             // 
             // label58
@@ -1291,17 +1299,17 @@ namespace Inspire.Metadata
             // 
             // GEO_YmaxTextBox
             // 
-            this.GEO_YmaxTextBox.Location = new System.Drawing.Point(164, 32);
+            this.GEO_YmaxTextBox.Location = new System.Drawing.Point(164, 33);
             this.GEO_YmaxTextBox.Name = "GEO_YmaxTextBox";
-            this.GEO_YmaxTextBox.Size = new System.Drawing.Size(76, 20);
+            this.GEO_YmaxTextBox.Size = new System.Drawing.Size(76, 22);
             this.GEO_YmaxTextBox.TabIndex = 34;
             // 
             // TemporalTab
             // 
             this.TemporalTab.Controls.Add(this.TMP_GroupBox);
-            this.TemporalTab.Location = new System.Drawing.Point(4, 40);
+            this.TemporalTab.Location = new System.Drawing.Point(4, 46);
             this.TemporalTab.Name = "TemporalTab";
-            this.TemporalTab.Size = new System.Drawing.Size(581, 481);
+            this.TemporalTab.Size = new System.Drawing.Size(581, 475);
             this.TemporalTab.TabIndex = 5;
             this.TemporalTab.Text = "Χρονική Αναφορά";
             this.TemporalTab.UseVisualStyleBackColor = true;
@@ -1349,7 +1357,7 @@ namespace Inspire.Metadata
             this.TMP_ToDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.TMP_ToDateTimePicker.Location = new System.Drawing.Point(119, 48);
             this.TMP_ToDateTimePicker.Name = "TMP_ToDateTimePicker";
-            this.TMP_ToDateTimePicker.Size = new System.Drawing.Size(256, 20);
+            this.TMP_ToDateTimePicker.Size = new System.Drawing.Size(256, 22);
             this.TMP_ToDateTimePicker.TabIndex = 32;
             // 
             // label13
@@ -1366,7 +1374,7 @@ namespace Inspire.Metadata
             this.TMP_FromDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.TMP_FromDateTimePicker.Location = new System.Drawing.Point(120, 24);
             this.TMP_FromDateTimePicker.Name = "TMP_FromDateTimePicker";
-            this.TMP_FromDateTimePicker.Size = new System.Drawing.Size(255, 20);
+            this.TMP_FromDateTimePicker.Size = new System.Drawing.Size(255, 22);
             this.TMP_FromDateTimePicker.TabIndex = 30;
             // 
             // TMP_RemoveExtendButton
@@ -1380,9 +1388,10 @@ namespace Inspire.Metadata
             // 
             // TMP_TemporalExtendListBox
             // 
+            this.TMP_TemporalExtendListBox.ItemHeight = 16;
             this.TMP_TemporalExtendListBox.Location = new System.Drawing.Point(49, 72);
             this.TMP_TemporalExtendListBox.Name = "TMP_TemporalExtendListBox";
-            this.TMP_TemporalExtendListBox.Size = new System.Drawing.Size(326, 56);
+            this.TMP_TemporalExtendListBox.Size = new System.Drawing.Size(326, 52);
             this.TMP_TemporalExtendListBox.TabIndex = 28;
             // 
             // TMP_AddExtendButton
@@ -1427,9 +1436,10 @@ namespace Inspire.Metadata
             // 
             // TMP_CreationDateListBox
             // 
+            this.TMP_CreationDateListBox.ItemHeight = 16;
             this.TMP_CreationDateListBox.Location = new System.Drawing.Point(49, 40);
             this.TMP_CreationDateListBox.Name = "TMP_CreationDateListBox";
-            this.TMP_CreationDateListBox.Size = new System.Drawing.Size(326, 30);
+            this.TMP_CreationDateListBox.Size = new System.Drawing.Size(326, 20);
             this.TMP_CreationDateListBox.TabIndex = 49;
             // 
             // TMP_CreationDateTimePicker
@@ -1438,7 +1448,7 @@ namespace Inspire.Metadata
             this.TMP_CreationDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.TMP_CreationDateTimePicker.Location = new System.Drawing.Point(145, 14);
             this.TMP_CreationDateTimePicker.Name = "TMP_CreationDateTimePicker";
-            this.TMP_CreationDateTimePicker.Size = new System.Drawing.Size(230, 20);
+            this.TMP_CreationDateTimePicker.Size = new System.Drawing.Size(230, 22);
             this.TMP_CreationDateTimePicker.TabIndex = 47;
             // 
             // label31
@@ -1468,7 +1478,7 @@ namespace Inspire.Metadata
             this.TMP_RevisionDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.TMP_RevisionDateTimePicker.Location = new System.Drawing.Point(145, 19);
             this.TMP_RevisionDateTimePicker.Name = "TMP_RevisionDateTimePicker";
-            this.TMP_RevisionDateTimePicker.Size = new System.Drawing.Size(231, 20);
+            this.TMP_RevisionDateTimePicker.Size = new System.Drawing.Size(231, 22);
             this.TMP_RevisionDateTimePicker.TabIndex = 45;
             // 
             // label30
@@ -1481,9 +1491,10 @@ namespace Inspire.Metadata
             // 
             // TMP_RevisionDateListBox
             // 
+            this.TMP_RevisionDateListBox.ItemHeight = 16;
             this.TMP_RevisionDateListBox.Location = new System.Drawing.Point(49, 45);
             this.TMP_RevisionDateListBox.Name = "TMP_RevisionDateListBox";
-            this.TMP_RevisionDateListBox.Size = new System.Drawing.Size(326, 30);
+            this.TMP_RevisionDateListBox.Size = new System.Drawing.Size(326, 20);
             this.TMP_RevisionDateListBox.TabIndex = 48;
             // 
             // TMP_AddRevisionDateButton
@@ -1523,7 +1534,7 @@ namespace Inspire.Metadata
             this.TMP_PublicTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.TMP_PublicTimePicker.Location = new System.Drawing.Point(145, 19);
             this.TMP_PublicTimePicker.Name = "TMP_PublicTimePicker";
-            this.TMP_PublicTimePicker.Size = new System.Drawing.Size(231, 20);
+            this.TMP_PublicTimePicker.Size = new System.Drawing.Size(231, 22);
             this.TMP_PublicTimePicker.TabIndex = 35;
             // 
             // label15
@@ -1545,9 +1556,10 @@ namespace Inspire.Metadata
             // 
             // TMP_PublicDateListBox
             // 
+            this.TMP_PublicDateListBox.ItemHeight = 16;
             this.TMP_PublicDateListBox.Location = new System.Drawing.Point(50, 45);
             this.TMP_PublicDateListBox.Name = "TMP_PublicDateListBox";
-            this.TMP_PublicDateListBox.Size = new System.Drawing.Size(326, 56);
+            this.TMP_PublicDateListBox.Size = new System.Drawing.Size(326, 52);
             this.TMP_PublicDateListBox.TabIndex = 42;
             // 
             // TMP_RemoveDateButton
@@ -1563,9 +1575,9 @@ namespace Inspire.Metadata
             // 
             this.QualityValidityTab.Controls.Add(this.LineageGroupBox);
             this.QualityValidityTab.Controls.Add(this.QLT_GroupBox);
-            this.QualityValidityTab.Location = new System.Drawing.Point(4, 40);
+            this.QualityValidityTab.Location = new System.Drawing.Point(4, 46);
             this.QualityValidityTab.Name = "QualityValidityTab";
-            this.QualityValidityTab.Size = new System.Drawing.Size(581, 481);
+            this.QualityValidityTab.Size = new System.Drawing.Size(581, 475);
             this.QualityValidityTab.TabIndex = 6;
             this.QualityValidityTab.Text = "Ποιότητα και Εγκυρότητα";
             this.QualityValidityTab.UseVisualStyleBackColor = true;
@@ -1631,7 +1643,7 @@ namespace Inspire.Metadata
             "Mile"});
             this.QLT_UnitsComboBox.Location = new System.Drawing.Point(48, 115);
             this.QLT_UnitsComboBox.Name = "QLT_UnitsComboBox";
-            this.QLT_UnitsComboBox.Size = new System.Drawing.Size(326, 21);
+            this.QLT_UnitsComboBox.Size = new System.Drawing.Size(326, 24);
             this.QLT_UnitsComboBox.TabIndex = 40;
             this.QLT_UnitsComboBox.Text = "Παρακαλώ επιλέξτε";
             // 
@@ -1664,7 +1676,7 @@ namespace Inspire.Metadata
             // 
             this.QLT_DistanceTextBox.Location = new System.Drawing.Point(48, 72);
             this.QLT_DistanceTextBox.Name = "QLT_DistanceTextBox";
-            this.QLT_DistanceTextBox.Size = new System.Drawing.Size(326, 20);
+            this.QLT_DistanceTextBox.Size = new System.Drawing.Size(326, 22);
             this.QLT_DistanceTextBox.TabIndex = 35;
             // 
             // label19
@@ -1679,7 +1691,7 @@ namespace Inspire.Metadata
             // 
             this.QLT_ScaleTextBox.Location = new System.Drawing.Point(48, 32);
             this.QLT_ScaleTextBox.Name = "QLT_ScaleTextBox";
-            this.QLT_ScaleTextBox.Size = new System.Drawing.Size(326, 20);
+            this.QLT_ScaleTextBox.Size = new System.Drawing.Size(326, 22);
             this.QLT_ScaleTextBox.TabIndex = 33;
             // 
             // label18
@@ -1710,17 +1722,18 @@ namespace Inspire.Metadata
             // 
             // QLT_ListBox
             // 
+            this.QLT_ListBox.ItemHeight = 16;
             this.QLT_ListBox.Location = new System.Drawing.Point(48, 152);
             this.QLT_ListBox.Name = "QLT_ListBox";
-            this.QLT_ListBox.Size = new System.Drawing.Size(326, 56);
+            this.QLT_ListBox.Size = new System.Drawing.Size(326, 52);
             this.QLT_ListBox.TabIndex = 29;
             // 
             // ConformityTab
             // 
             this.ConformityTab.Controls.Add(this.CFRM_GroupBox);
-            this.ConformityTab.Location = new System.Drawing.Point(4, 40);
+            this.ConformityTab.Location = new System.Drawing.Point(4, 46);
             this.ConformityTab.Name = "ConformityTab";
-            this.ConformityTab.Size = new System.Drawing.Size(581, 481);
+            this.ConformityTab.Size = new System.Drawing.Size(581, 475);
             this.ConformityTab.TabIndex = 7;
             this.ConformityTab.Text = "Συμμόρφωση";
             this.ConformityTab.UseVisualStyleBackColor = true;
@@ -1752,7 +1765,7 @@ namespace Inspire.Metadata
             "Δεν αξιολογήθηκε"});
             this.CFRM_DegreeComboBox.Location = new System.Drawing.Point(48, 112);
             this.CFRM_DegreeComboBox.Name = "CFRM_DegreeComboBox";
-            this.CFRM_DegreeComboBox.Size = new System.Drawing.Size(174, 21);
+            this.CFRM_DegreeComboBox.Size = new System.Drawing.Size(174, 24);
             this.CFRM_DegreeComboBox.TabIndex = 41;
             this.CFRM_DegreeComboBox.Text = "Παρακαλώ επιλέξτε";
             // 
@@ -1762,7 +1775,7 @@ namespace Inspire.Metadata
             this.CFRM_DateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.CFRM_DateTimePicker.Location = new System.Drawing.Point(228, 73);
             this.CFRM_DateTimePicker.Name = "CFRM_DateTimePicker";
-            this.CFRM_DateTimePicker.Size = new System.Drawing.Size(160, 20);
+            this.CFRM_DateTimePicker.Size = new System.Drawing.Size(160, 22);
             this.CFRM_DateTimePicker.TabIndex = 40;
             // 
             // CFRM_DateTypeComboBox
@@ -1773,7 +1786,7 @@ namespace Inspire.Metadata
             "αναθεώρηση"});
             this.CFRM_DateTypeComboBox.Location = new System.Drawing.Point(48, 72);
             this.CFRM_DateTypeComboBox.Name = "CFRM_DateTypeComboBox";
-            this.CFRM_DateTypeComboBox.Size = new System.Drawing.Size(174, 21);
+            this.CFRM_DateTypeComboBox.Size = new System.Drawing.Size(174, 24);
             this.CFRM_DateTypeComboBox.TabIndex = 39;
             this.CFRM_DateTypeComboBox.Text = "Παρακαλώ επιλέξτε";
             // 
@@ -1806,7 +1819,7 @@ namespace Inspire.Metadata
             // 
             this.CFRM_TitleTextBox.Location = new System.Drawing.Point(48, 34);
             this.CFRM_TitleTextBox.Name = "CFRM_TitleTextBox";
-            this.CFRM_TitleTextBox.Size = new System.Drawing.Size(340, 20);
+            this.CFRM_TitleTextBox.Size = new System.Drawing.Size(340, 22);
             this.CFRM_TitleTextBox.TabIndex = 33;
             // 
             // label23
@@ -1828,17 +1841,18 @@ namespace Inspire.Metadata
             // 
             // CFRM_ListBox
             // 
+            this.CFRM_ListBox.ItemHeight = 16;
             this.CFRM_ListBox.Location = new System.Drawing.Point(48, 144);
             this.CFRM_ListBox.Name = "CFRM_ListBox";
-            this.CFRM_ListBox.Size = new System.Drawing.Size(340, 56);
+            this.CFRM_ListBox.Size = new System.Drawing.Size(340, 52);
             this.CFRM_ListBox.TabIndex = 29;
             // 
             // ConstraintsTab
             // 
             this.ConstraintsTab.Controls.Add(this.CSTR_GroupBox);
-            this.ConstraintsTab.Location = new System.Drawing.Point(4, 40);
+            this.ConstraintsTab.Location = new System.Drawing.Point(4, 46);
             this.ConstraintsTab.Name = "ConstraintsTab";
-            this.ConstraintsTab.Size = new System.Drawing.Size(581, 481);
+            this.ConstraintsTab.Size = new System.Drawing.Size(581, 475);
             this.ConstraintsTab.TabIndex = 8;
             this.ConstraintsTab.Text = "Περιορισμοί";
             this.ConstraintsTab.UseVisualStyleBackColor = true;
@@ -1887,9 +1901,10 @@ namespace Inspire.Metadata
             // 
             // CSTR_ConditionsUseGeneralListBox
             // 
+            this.CSTR_ConditionsUseGeneralListBox.ItemHeight = 16;
             this.CSTR_ConditionsUseGeneralListBox.Location = new System.Drawing.Point(46, 342);
             this.CSTR_ConditionsUseGeneralListBox.Name = "CSTR_ConditionsUseGeneralListBox";
-            this.CSTR_ConditionsUseGeneralListBox.Size = new System.Drawing.Size(340, 56);
+            this.CSTR_ConditionsUseGeneralListBox.Size = new System.Drawing.Size(340, 52);
             this.CSTR_ConditionsUseGeneralListBox.TabIndex = 51;
             // 
             // CSTR_AddConditionsUseGeneralButton2
@@ -1930,9 +1945,10 @@ namespace Inspire.Metadata
             // 
             // CSTR_LimitationsPublicListBox
             // 
+            this.CSTR_LimitationsPublicListBox.ItemHeight = 16;
             this.CSTR_LimitationsPublicListBox.Location = new System.Drawing.Point(48, 134);
             this.CSTR_LimitationsPublicListBox.Name = "CSTR_LimitationsPublicListBox";
-            this.CSTR_LimitationsPublicListBox.Size = new System.Drawing.Size(340, 56);
+            this.CSTR_LimitationsPublicListBox.Size = new System.Drawing.Size(340, 52);
             this.CSTR_LimitationsPublicListBox.TabIndex = 46;
             // 
             // CSTR_AddLimitationsPublicButton2
@@ -1977,7 +1993,7 @@ namespace Inspire.Metadata
             "άγνωστοι όροι"});
             this.CSTR_ConditionsUseGeneralComboBox.Location = new System.Drawing.Point(46, 239);
             this.CSTR_ConditionsUseGeneralComboBox.Name = "CSTR_ConditionsUseGeneralComboBox";
-            this.CSTR_ConditionsUseGeneralComboBox.Size = new System.Drawing.Size(340, 21);
+            this.CSTR_ConditionsUseGeneralComboBox.Size = new System.Drawing.Size(340, 24);
             this.CSTR_ConditionsUseGeneralComboBox.TabIndex = 41;
             this.CSTR_ConditionsUseGeneralComboBox.Text = "Παρακαλώ επιλέξτε";
             // 
@@ -1999,7 +2015,7 @@ namespace Inspire.Metadata
                 "the location of rare species"});
             this.CSTR_LimitationsPublicComboBox.Location = new System.Drawing.Point(48, 32);
             this.CSTR_LimitationsPublicComboBox.Name = "CSTR_LimitationsPublicComboBox";
-            this.CSTR_LimitationsPublicComboBox.Size = new System.Drawing.Size(340, 21);
+            this.CSTR_LimitationsPublicComboBox.Size = new System.Drawing.Size(340, 24);
             this.CSTR_LimitationsPublicComboBox.TabIndex = 40;
             this.CSTR_LimitationsPublicComboBox.Text = "Παρακαλώ επιλέξτε";
             // 
@@ -2022,9 +2038,9 @@ namespace Inspire.Metadata
             // OrganizationTab
             // 
             this.OrganizationTab.Controls.Add(this.ORG_GroupBox);
-            this.OrganizationTab.Location = new System.Drawing.Point(4, 40);
+            this.OrganizationTab.Location = new System.Drawing.Point(4, 46);
             this.OrganizationTab.Name = "OrganizationTab";
-            this.OrganizationTab.Size = new System.Drawing.Size(581, 481);
+            this.OrganizationTab.Size = new System.Drawing.Size(581, 475);
             this.OrganizationTab.TabIndex = 9;
             this.OrganizationTab.Text = "Οργανισμοί";
             this.OrganizationTab.UseVisualStyleBackColor = true;
@@ -2071,9 +2087,10 @@ namespace Inspire.Metadata
             // 
             // ORG_EmailListBox
             // 
+            this.ORG_EmailListBox.ItemHeight = 16;
             this.ORG_EmailListBox.Location = new System.Drawing.Point(108, 43);
             this.ORG_EmailListBox.Name = "ORG_EmailListBox";
-            this.ORG_EmailListBox.Size = new System.Drawing.Size(252, 56);
+            this.ORG_EmailListBox.Size = new System.Drawing.Size(252, 52);
             this.ORG_EmailListBox.TabIndex = 40;
             // 
             // ORG_AddEmailButton
@@ -2089,7 +2106,7 @@ namespace Inspire.Metadata
             // 
             this.ORG_EmailTextBox.Location = new System.Drawing.Point(108, 16);
             this.ORG_EmailTextBox.Name = "ORG_EmailTextBox";
-            this.ORG_EmailTextBox.Size = new System.Drawing.Size(252, 20);
+            this.ORG_EmailTextBox.Size = new System.Drawing.Size(252, 22);
             this.ORG_EmailTextBox.TabIndex = 37;
             // 
             // label27
@@ -2104,7 +2121,7 @@ namespace Inspire.Metadata
             // 
             this.ORG_NameTextBox.Location = new System.Drawing.Point(106, 145);
             this.ORG_NameTextBox.Name = "ORG_NameTextBox";
-            this.ORG_NameTextBox.Size = new System.Drawing.Size(327, 20);
+            this.ORG_NameTextBox.Size = new System.Drawing.Size(327, 22);
             this.ORG_NameTextBox.TabIndex = 31;
             // 
             // label28
@@ -2139,15 +2156,16 @@ namespace Inspire.Metadata
             "Συντάκτης"});
             this.ORG_RoleComboBox.Location = new System.Drawing.Point(108, 105);
             this.ORG_RoleComboBox.Name = "ORG_RoleComboBox";
-            this.ORG_RoleComboBox.Size = new System.Drawing.Size(200, 21);
+            this.ORG_RoleComboBox.Size = new System.Drawing.Size(200, 24);
             this.ORG_RoleComboBox.TabIndex = 24;
             this.ORG_RoleComboBox.Text = "Παρακαλώ επιλέξτε";
             // 
             // ORG_IndividualListBox
             // 
+            this.ORG_IndividualListBox.ItemHeight = 16;
             this.ORG_IndividualListBox.Location = new System.Drawing.Point(5, 193);
             this.ORG_IndividualListBox.Name = "ORG_IndividualListBox";
-            this.ORG_IndividualListBox.Size = new System.Drawing.Size(438, 56);
+            this.ORG_IndividualListBox.Size = new System.Drawing.Size(438, 52);
             this.ORG_IndividualListBox.TabIndex = 34;
             // 
             // ORG_RemoveButton
@@ -2605,6 +2623,14 @@ namespace Inspire.Metadata
                 MessageBox.Show("Συμπληρώστε βόρειο γεωγραφικό πλάτος");
                 return;
             }
+
+            // Make sure the numbers use . for the decimal separator
+            // If there are any . for thousands separator ignore them
+            GEO_XminTextBox.Text = GEO_XminTextBox.Text.Replace(".",string.Empty).Replace(",",".");
+            GEO_YminTextBox.Text = GEO_YminTextBox.Text.Replace(".", string.Empty).Replace(",", ".");
+            GEO_XmaxTextBox.Text = GEO_XmaxTextBox.Text.Replace(".", string.Empty).Replace(",", ".");
+            GEO_YmaxTextBox.Text = GEO_YmaxTextBox.Text.Replace(".", string.Empty).Replace(",", ".");
+
             double xmin, xmax, ymin, ymax;
             if (!Double.TryParse(this.GEO_XminTextBox.Text, out xmin))
             {
