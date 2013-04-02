@@ -61,6 +61,8 @@ partial class GIMEDForm
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.AboutButton = new System.Windows.Forms.Button();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
+            this.cboLanguages = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.mdControl1 = new Inspire.Metadata.MDControl();
             this.SuspendLayout();
             // 
@@ -97,17 +99,12 @@ partial class GIMEDForm
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            resources.ApplyResources(this.openFileDialog1, "openFileDialog1");
             // 
             // ValidateButton
             // 
             resources.ApplyResources(this.ValidateButton, "ValidateButton");
             this.ValidateButton.Name = "ValidateButton";
             this.ValidateButton.Click += new System.EventHandler(this.ValidateButton_Click);
-            // 
-            // saveFileDialog1
-            // 
-            resources.ApplyResources(this.saveFileDialog1, "saveFileDialog1");
             // 
             // AboutButton
             // 
@@ -119,7 +116,21 @@ partial class GIMEDForm
             // openFileDialog2
             // 
             this.openFileDialog2.FileName = "openFileDialog2";
-            resources.ApplyResources(this.openFileDialog2, "openFileDialog2");
+            // 
+            // cboLanguages
+            // 
+            this.cboLanguages.FormattingEnabled = true;
+            this.cboLanguages.Items.AddRange(new object[] {
+            resources.GetString("cboLanguages.Items"),
+            resources.GetString("cboLanguages.Items1")});
+            resources.ApplyResources(this.cboLanguages, "cboLanguages");
+            this.cboLanguages.Name = "cboLanguages";
+            this.cboLanguages.SelectedIndexChanged += new System.EventHandler(this.cboLanguages_SelectedIndexChanged);
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
             // 
             // mdControl1
             // 
@@ -130,6 +141,8 @@ partial class GIMEDForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.cboLanguages);
             this.Controls.Add(this.AboutButton);
             this.Controls.Add(this.mdControl1);
             this.Controls.Add(this.ValidateButton);
@@ -157,6 +170,8 @@ partial class GIMEDForm
     private Inspire.Metadata.MDControl mdControl1;
     private System.Windows.Forms.Button AboutButton;
     private System.Windows.Forms.OpenFileDialog openFileDialog2;
+    private System.Windows.Forms.ComboBox cboLanguages;
+    private System.Windows.Forms.Label label2;
 }
 
 

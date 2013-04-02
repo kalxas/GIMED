@@ -115,6 +115,9 @@
     <EmbeddedResource Include="MDControl.el-GR.resx">
       <DependentUpon>MDControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MDControl.en.resx">
+      <DependentUpon>MDControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MDControl.resx">
       <DependentUpon>MDControl.cs</DependentUpon>
       <SubType>Designer</SubType>

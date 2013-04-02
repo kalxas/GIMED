@@ -36,7 +36,7 @@ using DotSpatial.Data;
 using DotSpatial.Projections;
 using System.Threading;
 using System.Globalization;
-
+using GIMED_EL.Properties;
 
 
 public partial class GIMEDForm : Form
@@ -56,7 +56,11 @@ public partial class GIMEDForm : Form
         //MessageBox.Show(Thread.CurrentThread.CurrentUICulture.DisplayName);
         //Thread.CurrentThread.CurrentUICulture = new CultureInfo("el-GR");
         //MessageBox.Show(Thread.CurrentThread.CurrentUICulture.DisplayName);
+        //MessageBox.Show(Thread.CurrentThread.CurrentUICulture.DisplayName);
+        //SelectLang();
+        //MessageBox.Show(Thread.CurrentThread.CurrentUICulture.DisplayName);
         InitializeComponent();
+        
         myMDObject = null;
         GeoModule = geo;
         ToolTip toolTip1 = new ToolTip();
@@ -659,5 +663,50 @@ public partial class GIMEDForm : Form
         }
         return;
     }
-    
+
+    private void SelectLang()
+    {
+        if (Settings.Default["Language"] != null)
+        {
+            Thread.CurrentThread.CurrentUICulture= new CultureInfo(Settings.Default["Language"].ToString());
+           
+        }
+    }
+
+
+    private void cboLanguages_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        if (cboLanguages.SelectedIndex != -1)
+        {
+            if (cboLanguages.SelectedItem.ToString() == "Ελληνικά")
+            {
+                //SaveLanguage("el-GR");
+                System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("el-GR");
+            }
+            else
+            {
+                //SaveLanguage("en-US");
+                System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en-US");
+            }
+            //MessageBox.Show("Yo need to restart the application for the changes to take effect");
+        }
+       
+        ComponentResourceManager resources = new ComponentResourceManager(typeof(GIMEDForm));
+        resources.ApplyResources(this, "$this");
+        applyResources(resources, this.Controls);
+
+        ComponentResourceManager resources1 = new ComponentResourceManager(typeof(MDControl));
+        applyResources(resources1, mdControl1.Controls);
+
+    }
+
+    private void applyResources(ComponentResourceManager resources, Control.ControlCollection ctls)
+    {
+        foreach (Control ctl in ctls)
+        {
+            resources.ApplyResources(ctl, ctl.Name);
+            applyResources(resources, ctl.Controls);
+        }
+    }
+
 }
