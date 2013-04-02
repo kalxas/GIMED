@@ -90,11 +90,11 @@
     <Compile Include="frmEPSG.Designer.cs">
       <DependentUpon>frmEPSG.cs</DependentUpon>
     </Compile>
-    <Compile Include="GIMEDForm_el.cs">
+    <Compile Include="GIMEDForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GIMEDForm_el.Designer.cs">
-      <DependentUpon>GIMEDForm_el.cs</DependentUpon>
+    <Compile Include="GIMEDForm.Designer.cs">
+      <DependentUpon>GIMEDForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MDControl.cs">
       <SubType>UserControl</SubType>
@@ -105,9 +105,15 @@
     <EmbeddedResource Include="frmEPSG.resx">
       <DependentUpon>frmEPSG.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GIMEDForm_el.resx">
-      <DependentUpon>GIMEDForm_el.cs</DependentUpon>
+    <EmbeddedResource Include="GIMEDForm.el-GR.resx">
+      <DependentUpon>GIMEDForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GIMEDForm.resx">
+      <DependentUpon>GIMEDForm.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDControl.el-GR.resx">
+      <DependentUpon>MDControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDControl.resx">
       <DependentUpon>MDControl.cs</DependentUpon>

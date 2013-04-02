@@ -40,7 +40,7 @@ static class Program
         Application.SetCompatibleTextRenderingDefault(false);
         Checker chk = new Checker();
         bool tmp = chk.CheckModules();
-        Application.Run(new GIMEDForm_el(tmp));
+        Application.Run(new GIMEDForm(tmp));
     }
 
     

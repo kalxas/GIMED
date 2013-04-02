@@ -1,0 +1,2865 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MDControl</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CFRM_AddButton.Name" xml:space="preserve">
+    <value>CFRM_AddButton</value>
+  </data>
+  <data name="&gt;&gt;CFRM_AddButton.Parent" xml:space="preserve">
+    <value>CFRM_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;CFRM_AddButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CFRM_AddButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;CFRM_DateTimePicker.Name" xml:space="preserve">
+    <value>CFRM_DateTimePicker</value>
+  </data>
+  <data name="&gt;&gt;CFRM_DateTimePicker.Parent" xml:space="preserve">
+    <value>CFRM_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;CFRM_DateTimePicker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CFRM_DateTimePicker.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;CFRM_DateTypeComboBox.Name" xml:space="preserve">
+    <value>CFRM_DateTypeComboBox</value>
+  </data>
+  <data name="&gt;&gt;CFRM_DateTypeComboBox.Parent" xml:space="preserve">
+    <value>CFRM_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;CFRM_DateTypeComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CFRM_DateTypeComboBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;CFRM_DegreeComboBox.Name" xml:space="preserve">
+    <value>CFRM_DegreeComboBox</value>
+  </data>
+  <data name="&gt;&gt;CFRM_DegreeComboBox.Parent" xml:space="preserve">
+    <value>CFRM_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;CFRM_DegreeComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CFRM_DegreeComboBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;CFRM_GroupBox.Name" xml:space="preserve">
+    <value>CFRM_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;CFRM_GroupBox.Parent" xml:space="preserve">
+    <value>ConformityTab</value>
+  </data>
+  <data name="&gt;&gt;CFRM_GroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CFRM_GroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;CFRM_ListBox.Name" xml:space="preserve">
+    <value>CFRM_ListBox</value>
+  </data>
+  <data name="&gt;&gt;CFRM_ListBox.Parent" xml:space="preserve">
+    <value>CFRM_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;CFRM_ListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CFRM_ListBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;CFRM_RemoveButton.Name" xml:space="preserve">
+    <value>CFRM_RemoveButton</value>
+  </data>
+  <data name="&gt;&gt;CFRM_RemoveButton.Parent" xml:space="preserve">
+    <value>CFRM_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;CFRM_RemoveButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CFRM_RemoveButton.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;CFRM_TitleTextBox.Name" xml:space="preserve">
+    <value>CFRM_TitleTextBox</value>
+  </data>
+  <data name="&gt;&gt;CFRM_TitleTextBox.Parent" xml:space="preserve">
+    <value>CFRM_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;CFRM_TitleTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CFRM_TitleTextBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;ClassificationTab.Name" xml:space="preserve">
+    <value>ClassificationTab</value>
+  </data>
+  <data name="&gt;&gt;ClassificationTab.Parent" xml:space="preserve">
+    <value>MD_tabControl</value>
+  </data>
+  <data name="&gt;&gt;ClassificationTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ClassificationTab.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;CL_AddTopicCategoryButton.Name" xml:space="preserve">
+    <value>CL_AddTopicCategoryButton</value>
+  </data>
+  <data name="&gt;&gt;CL_AddTopicCategoryButton.Parent" xml:space="preserve">
+    <value>CL_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;CL_AddTopicCategoryButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CL_AddTopicCategoryButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;CL_GroupBox.Name" xml:space="preserve">
+    <value>CL_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;CL_GroupBox.Parent" xml:space="preserve">
+    <value>ClassificationTab</value>
+  </data>
+  <data name="&gt;&gt;CL_GroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CL_GroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;CL_RemoveTopicCategoryButton.Name" xml:space="preserve">
+    <value>CL_RemoveTopicCategoryButton</value>
+  </data>
+  <data name="&gt;&gt;CL_RemoveTopicCategoryButton.Parent" xml:space="preserve">
+    <value>CL_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;CL_RemoveTopicCategoryButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CL_RemoveTopicCategoryButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;CL_TopicCategoryComboBox.Name" xml:space="preserve">
+    <value>CL_TopicCategoryComboBox</value>
+  </data>
+  <data name="&gt;&gt;CL_TopicCategoryComboBox.Parent" xml:space="preserve">
+    <value>CL_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;CL_TopicCategoryComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CL_TopicCategoryComboBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;CL_TopicCategoryListBox.Name" xml:space="preserve">
+    <value>CL_TopicCategoryListBox</value>
+  </data>
+  <data name="&gt;&gt;CL_TopicCategoryListBox.Parent" xml:space="preserve">
+    <value>CL_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;CL_TopicCategoryListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CL_TopicCategoryListBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ConformityTab.Name" xml:space="preserve">
+    <value>ConformityTab</value>
+  </data>
+  <data name="&gt;&gt;ConformityTab.Parent" xml:space="preserve">
+    <value>MD_tabControl</value>
+  </data>
+  <data name="&gt;&gt;ConformityTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ConformityTab.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;ConstraintsTab.Name" xml:space="preserve">
+    <value>ConstraintsTab</value>
+  </data>
+  <data name="&gt;&gt;ConstraintsTab.Parent" xml:space="preserve">
+    <value>MD_tabControl</value>
+  </data>
+  <data name="&gt;&gt;ConstraintsTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ConstraintsTab.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;CSTR_AddConditionsUseGeneralButton1.Name" xml:space="preserve">
+    <value>CSTR_AddConditionsUseGeneralButton1</value>
+  </data>
+  <data name="&gt;&gt;CSTR_AddConditionsUseGeneralButton1.Parent" xml:space="preserve">
+    <value>CSTR_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;CSTR_AddConditionsUseGeneralButton1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CSTR_AddConditionsUseGeneralButton1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;CSTR_AddConditionsUseGeneralButton2.Name" xml:space="preserve">
+    <value>CSTR_AddConditionsUseGeneralButton2</value>
+  </data>
+  <data name="&gt;&gt;CSTR_AddConditionsUseGeneralButton2.Parent" xml:space="preserve">
+    <value>CSTR_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;CSTR_AddConditionsUseGeneralButton2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CSTR_AddConditionsUseGeneralButton2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;CSTR_AddLimitationsPublicButton1.Name" xml:space="preserve">
+    <value>CSTR_AddLimitationsPublicButton1</value>
+  </data>
+  <data name="&gt;&gt;CSTR_AddLimitationsPublicButton1.Parent" xml:space="preserve">
+    <value>CSTR_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;CSTR_AddLimitationsPublicButton1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CSTR_AddLimitationsPublicButton1.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;CSTR_AddLimitationsPublicButton2.Name" xml:space="preserve">
+    <value>CSTR_AddLimitationsPublicButton2</value>
+  </data>
+  <data name="&gt;&gt;CSTR_AddLimitationsPublicButton2.Parent" xml:space="preserve">
+    <value>CSTR_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;CSTR_AddLimitationsPublicButton2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CSTR_AddLimitationsPublicButton2.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;CSTR_ConditionsUseGeneralComboBox.Name" xml:space="preserve">
+    <value>CSTR_ConditionsUseGeneralComboBox</value>
+  </data>
+  <data name="&gt;&gt;CSTR_ConditionsUseGeneralComboBox.Parent" xml:space="preserve">
+    <value>CSTR_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;CSTR_ConditionsUseGeneralComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CSTR_ConditionsUseGeneralComboBox.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;CSTR_ConditionsUseGeneralListBox.Name" xml:space="preserve">
+    <value>CSTR_ConditionsUseGeneralListBox</value>
+  </data>
+  <data name="&gt;&gt;CSTR_ConditionsUseGeneralListBox.Parent" xml:space="preserve">
+    <value>CSTR_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;CSTR_ConditionsUseGeneralListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CSTR_ConditionsUseGeneralListBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;CSTR_ConditionsUseGeneralTextBox.Name" xml:space="preserve">
+    <value>CSTR_ConditionsUseGeneralTextBox</value>
+  </data>
+  <data name="&gt;&gt;CSTR_ConditionsUseGeneralTextBox.Parent" xml:space="preserve">
+    <value>CSTR_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;CSTR_ConditionsUseGeneralTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CSTR_ConditionsUseGeneralTextBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;CSTR_GroupBox.Name" xml:space="preserve">
+    <value>CSTR_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;CSTR_GroupBox.Parent" xml:space="preserve">
+    <value>ConstraintsTab</value>
+  </data>
+  <data name="&gt;&gt;CSTR_GroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CSTR_GroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;CSTR_LimitationsPublicComboBox.Name" xml:space="preserve">
+    <value>CSTR_LimitationsPublicComboBox</value>
+  </data>
+  <data name="&gt;&gt;CSTR_LimitationsPublicComboBox.Parent" xml:space="preserve">
+    <value>CSTR_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;CSTR_LimitationsPublicComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CSTR_LimitationsPublicComboBox.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;CSTR_LimitationsPublicListBox.Name" xml:space="preserve">
+    <value>CSTR_LimitationsPublicListBox</value>
+  </data>
+  <data name="&gt;&gt;CSTR_LimitationsPublicListBox.Parent" xml:space="preserve">
+    <value>CSTR_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;CSTR_LimitationsPublicListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CSTR_LimitationsPublicListBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;CSTR_LimitationsPublicTextBox.Name" xml:space="preserve">
+    <value>CSTR_LimitationsPublicTextBox</value>
+  </data>
+  <data name="&gt;&gt;CSTR_LimitationsPublicTextBox.Parent" xml:space="preserve">
+    <value>CSTR_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;CSTR_LimitationsPublicTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CSTR_LimitationsPublicTextBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;CSTR_RemoveConditionsUseGeneralButton.Name" xml:space="preserve">
+    <value>CSTR_RemoveConditionsUseGeneralButton</value>
+  </data>
+  <data name="&gt;&gt;CSTR_RemoveConditionsUseGeneralButton.Parent" xml:space="preserve">
+    <value>CSTR_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;CSTR_RemoveConditionsUseGeneralButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CSTR_RemoveConditionsUseGeneralButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;CSTR_RemoveLimitationsPublicButton.Name" xml:space="preserve">
+    <value>CSTR_RemoveLimitationsPublicButton</value>
+  </data>
+  <data name="&gt;&gt;CSTR_RemoveLimitationsPublicButton.Parent" xml:space="preserve">
+    <value>CSTR_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;CSTR_RemoveLimitationsPublicButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CSTR_RemoveLimitationsPublicButton.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;GeographicTab.Name" xml:space="preserve">
+    <value>GeographicTab</value>
+  </data>
+  <data name="&gt;&gt;GeographicTab.Parent" xml:space="preserve">
+    <value>MD_tabControl</value>
+  </data>
+  <data name="&gt;&gt;GeographicTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GeographicTab.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;GEO_AddExtendButton.Name" xml:space="preserve">
+    <value>GEO_AddExtendButton</value>
+  </data>
+  <data name="&gt;&gt;GEO_AddExtendButton.Parent" xml:space="preserve">
+    <value>SPT_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;GEO_AddExtendButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GEO_AddExtendButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;GEO_ExtendListBox.Name" xml:space="preserve">
+    <value>GEO_ExtendListBox</value>
+  </data>
+  <data name="&gt;&gt;GEO_ExtendListBox.Parent" xml:space="preserve">
+    <value>SPT_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;GEO_ExtendListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GEO_ExtendListBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;GEO_RemoveExtendButton.Name" xml:space="preserve">
+    <value>GEO_RemoveExtendButton</value>
+  </data>
+  <data name="&gt;&gt;GEO_RemoveExtendButton.Parent" xml:space="preserve">
+    <value>SPT_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;GEO_RemoveExtendButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GEO_RemoveExtendButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;GEO_XmaxTextBox.Name" xml:space="preserve">
+    <value>GEO_XmaxTextBox</value>
+  </data>
+  <data name="&gt;&gt;GEO_XmaxTextBox.Parent" xml:space="preserve">
+    <value>SPT_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;GEO_XmaxTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GEO_XmaxTextBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;GEO_XminTextBox.Name" xml:space="preserve">
+    <value>GEO_XminTextBox</value>
+  </data>
+  <data name="&gt;&gt;GEO_XminTextBox.Parent" xml:space="preserve">
+    <value>SPT_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;GEO_XminTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GEO_XminTextBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;GEO_YmaxTextBox.Name" xml:space="preserve">
+    <value>GEO_YmaxTextBox</value>
+  </data>
+  <data name="&gt;&gt;GEO_YmaxTextBox.Parent" xml:space="preserve">
+    <value>SPT_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;GEO_YmaxTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GEO_YmaxTextBox.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;GEO_YminTextBox.Name" xml:space="preserve">
+    <value>GEO_YminTextBox</value>
+  </data>
+  <data name="&gt;&gt;GEO_YminTextBox.Parent" xml:space="preserve">
+    <value>SPT_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;GEO_YminTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GEO_YminTextBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>IdentificationTab</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupBox10.Name" xml:space="preserve">
+    <value>groupBox10</value>
+  </data>
+  <data name="&gt;&gt;groupBox10.Parent" xml:space="preserve">
+    <value>TMP_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;groupBox10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox10.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;groupBox11.Name" xml:space="preserve">
+    <value>groupBox11</value>
+  </data>
+  <data name="&gt;&gt;groupBox11.Parent" xml:space="preserve">
+    <value>TMP_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;groupBox11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox11.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupBox12.Name" xml:space="preserve">
+    <value>groupBox12</value>
+  </data>
+  <data name="&gt;&gt;groupBox12.Parent" xml:space="preserve">
+    <value>ORG_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;groupBox12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox12.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>KeywordGroupBox</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
+    <value>MetadataTab</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
+    <value>TMP_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.Name" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.Parent" xml:space="preserve">
+    <value>TMP_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;groupBox6.Name" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;groupBox6.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;groupBox6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox6.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;groupBox7.Name" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;groupBox7.Parent" xml:space="preserve">
+    <value>IdentificationTab</value>
+  </data>
+  <data name="&gt;&gt;groupBox7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox7.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;groupBox8.Name" xml:space="preserve">
+    <value>groupBox8</value>
+  </data>
+  <data name="&gt;&gt;groupBox8.Parent" xml:space="preserve">
+    <value>IdentificationTab</value>
+  </data>
+  <data name="&gt;&gt;groupBox8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox8.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;groupBox9.Name" xml:space="preserve">
+    <value>groupBox9</value>
+  </data>
+  <data name="&gt;&gt;groupBox9.Parent" xml:space="preserve">
+    <value>IdentificationTab</value>
+  </data>
+  <data name="&gt;&gt;groupBox9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox9.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;GUIDButton.Name" xml:space="preserve">
+    <value>GUIDButton</value>
+  </data>
+  <data name="&gt;&gt;GUIDButton.Parent" xml:space="preserve">
+    <value>groupBox8</value>
+  </data>
+  <data name="&gt;&gt;GUIDButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GUIDButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;IdentificationTab.Name" xml:space="preserve">
+    <value>IdentificationTab</value>
+  </data>
+  <data name="&gt;&gt;IdentificationTab.Parent" xml:space="preserve">
+    <value>MD_tabControl</value>
+  </data>
+  <data name="&gt;&gt;IdentificationTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;IdentificationTab.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ID_CodeTextBox.Name" xml:space="preserve">
+    <value>ID_CodeTextBox</value>
+  </data>
+  <data name="&gt;&gt;ID_CodeTextBox.Parent" xml:space="preserve">
+    <value>groupBox8</value>
+  </data>
+  <data name="&gt;&gt;ID_CodeTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ID_CodeTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ID_NamespaceTextBox.Name" xml:space="preserve">
+    <value>ID_NamespaceTextBox</value>
+  </data>
+  <data name="&gt;&gt;ID_NamespaceTextBox.Parent" xml:space="preserve">
+    <value>groupBox8</value>
+  </data>
+  <data name="&gt;&gt;ID_NamespaceTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ID_NamespaceTextBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceAbstractTextBox.Name" xml:space="preserve">
+    <value>ID_ResourceAbstractTextBox</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceAbstractTextBox.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceAbstractTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceAbstractTextBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceLanguageAddButton.Name" xml:space="preserve">
+    <value>ID_ResourceLanguageAddButton</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceLanguageAddButton.Parent" xml:space="preserve">
+    <value>groupBox9</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceLanguageAddButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceLanguageAddButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceLanguageComboBox.Name" xml:space="preserve">
+    <value>ID_ResourceLanguageComboBox</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceLanguageComboBox.Parent" xml:space="preserve">
+    <value>groupBox9</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceLanguageComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceLanguageComboBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceLanguageListBox.Name" xml:space="preserve">
+    <value>ID_ResourceLanguageListBox</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceLanguageListBox.Parent" xml:space="preserve">
+    <value>groupBox9</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceLanguageListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceLanguageListBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceLanguageRemoveButton.Name" xml:space="preserve">
+    <value>ID_ResourceLanguageRemoveButton</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceLanguageRemoveButton.Parent" xml:space="preserve">
+    <value>groupBox9</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceLanguageRemoveButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceLanguageRemoveButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceLocatorAddButton.Name" xml:space="preserve">
+    <value>ID_ResourceLocatorAddButton</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceLocatorAddButton.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceLocatorAddButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceLocatorAddButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceLocatorListBox.Name" xml:space="preserve">
+    <value>ID_ResourceLocatorListBox</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceLocatorListBox.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceLocatorListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceLocatorListBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceLocatorRemoveButton.Name" xml:space="preserve">
+    <value>ID_ResourceLocatorRemoveButton</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceLocatorRemoveButton.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceLocatorRemoveButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceLocatorRemoveButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceLocatorTextBox.Name" xml:space="preserve">
+    <value>ID_ResourceLocatorTextBox</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceLocatorTextBox.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceLocatorTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceLocatorTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceTypeComboBox.Name" xml:space="preserve">
+    <value>ID_ResourceTypeComboBox</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceTypeComboBox.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceTypeComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceTypeComboBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourseTitleTextBox.Name" xml:space="preserve">
+    <value>ID_ResourseTitleTextBox</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourseTitleTextBox.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourseTitleTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourseTitleTextBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;ID_UIDAddButton.Name" xml:space="preserve">
+    <value>ID_UIDAddButton</value>
+  </data>
+  <data name="&gt;&gt;ID_UIDAddButton.Parent" xml:space="preserve">
+    <value>groupBox8</value>
+  </data>
+  <data name="&gt;&gt;ID_UIDAddButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ID_UIDAddButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;ID_UIDListBox.Name" xml:space="preserve">
+    <value>ID_UIDListBox</value>
+  </data>
+  <data name="&gt;&gt;ID_UIDListBox.Parent" xml:space="preserve">
+    <value>groupBox8</value>
+  </data>
+  <data name="&gt;&gt;ID_UIDListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ID_UIDListBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ID_UIDRemoveButton.Name" xml:space="preserve">
+    <value>ID_UIDRemoveButton</value>
+  </data>
+  <data name="&gt;&gt;ID_UIDRemoveButton.Parent" xml:space="preserve">
+    <value>groupBox8</value>
+  </data>
+  <data name="&gt;&gt;ID_UIDRemoveButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ID_UIDRemoveButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;KeywordGroupBox.Name" xml:space="preserve">
+    <value>KeywordGroupBox</value>
+  </data>
+  <data name="&gt;&gt;KeywordGroupBox.Parent" xml:space="preserve">
+    <value>KeywordTab</value>
+  </data>
+  <data name="&gt;&gt;KeywordGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;KeywordGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;KeywordTab.Name" xml:space="preserve">
+    <value>KeywordTab</value>
+  </data>
+  <data name="&gt;&gt;KeywordTab.Parent" xml:space="preserve">
+    <value>MD_tabControl</value>
+  </data>
+  <data name="&gt;&gt;KeywordTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;KeywordTab.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;KW_AddInspireButton.Name" xml:space="preserve">
+    <value>KW_AddInspireButton</value>
+  </data>
+  <data name="&gt;&gt;KW_AddInspireButton.Parent" xml:space="preserve">
+    <value>KeywordGroupBox</value>
+  </data>
+  <data name="&gt;&gt;KW_AddInspireButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;KW_AddInspireButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;KW_DateTimePicker.Name" xml:space="preserve">
+    <value>KW_DateTimePicker</value>
+  </data>
+  <data name="&gt;&gt;KW_DateTimePicker.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;KW_DateTimePicker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;KW_DateTimePicker.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;KW_DateTypeComboBox.Name" xml:space="preserve">
+    <value>KW_DateTypeComboBox</value>
+  </data>
+  <data name="&gt;&gt;KW_DateTypeComboBox.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;KW_DateTypeComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;KW_DateTypeComboBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;KW_InspireComboBox.Name" xml:space="preserve">
+    <value>KW_InspireComboBox</value>
+  </data>
+  <data name="&gt;&gt;KW_InspireComboBox.Parent" xml:space="preserve">
+    <value>KeywordGroupBox</value>
+  </data>
+  <data name="&gt;&gt;KW_InspireComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;KW_InspireComboBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;KW_KeywordAddButton.Name" xml:space="preserve">
+    <value>KW_KeywordAddButton</value>
+  </data>
+  <data name="&gt;&gt;KW_KeywordAddButton.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;KW_KeywordAddButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;KW_KeywordAddButton.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;KW_KeywordListBox.Name" xml:space="preserve">
+    <value>KW_KeywordListBox</value>
+  </data>
+  <data name="&gt;&gt;KW_KeywordListBox.Parent" xml:space="preserve">
+    <value>KeywordGroupBox</value>
+  </data>
+  <data name="&gt;&gt;KW_KeywordListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;KW_KeywordListBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;KW_KeywordRemoveButton.Name" xml:space="preserve">
+    <value>KW_KeywordRemoveButton</value>
+  </data>
+  <data name="&gt;&gt;KW_KeywordRemoveButton.Parent" xml:space="preserve">
+    <value>KeywordGroupBox</value>
+  </data>
+  <data name="&gt;&gt;KW_KeywordRemoveButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;KW_KeywordRemoveButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;KW_KeywordTextBox.Name" xml:space="preserve">
+    <value>KW_KeywordTextBox</value>
+  </data>
+  <data name="&gt;&gt;KW_KeywordTextBox.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;KW_KeywordTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;KW_KeywordTextBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;KW_VocabularyTextBox.Name" xml:space="preserve">
+    <value>KW_VocabularyTextBox</value>
+  </data>
+  <data name="&gt;&gt;KW_VocabularyTextBox.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;KW_VocabularyTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;KW_VocabularyTextBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label12.Name" xml:space="preserve">
+    <value>label12</value>
+  </data>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>CSTR_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>groupBox11</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label14.Name" xml:space="preserve">
+    <value>label14</value>
+  </data>
+  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
+    <value>groupBox11</value>
+  </data>
+  <data name="&gt;&gt;label14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label15.Name" xml:space="preserve">
+    <value>label15</value>
+  </data>
+  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;label15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label16.Name" xml:space="preserve">
+    <value>label16</value>
+  </data>
+  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label17.Name" xml:space="preserve">
+    <value>label17</value>
+  </data>
+  <data name="&gt;&gt;label17.Parent" xml:space="preserve">
+    <value>KeywordGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label18.Name" xml:space="preserve">
+    <value>label18</value>
+  </data>
+  <data name="&gt;&gt;label18.Parent" xml:space="preserve">
+    <value>Spatial_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;label18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;label19.Name" xml:space="preserve">
+    <value>label19</value>
+  </data>
+  <data name="&gt;&gt;label19.Parent" xml:space="preserve">
+    <value>Spatial_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;label19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label20.Name" xml:space="preserve">
+    <value>label20</value>
+  </data>
+  <data name="&gt;&gt;label20.Parent" xml:space="preserve">
+    <value>Spatial_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;label20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label20.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label21.Name" xml:space="preserve">
+    <value>label21</value>
+  </data>
+  <data name="&gt;&gt;label21.Parent" xml:space="preserve">
+    <value>CFRM_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;label21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label22.Name" xml:space="preserve">
+    <value>label22</value>
+  </data>
+  <data name="&gt;&gt;label22.Parent" xml:space="preserve">
+    <value>CFRM_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;label22.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label23.Name" xml:space="preserve">
+    <value>label23</value>
+  </data>
+  <data name="&gt;&gt;label23.Parent" xml:space="preserve">
+    <value>CFRM_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;label23.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;label24.Name" xml:space="preserve">
+    <value>label24</value>
+  </data>
+  <data name="&gt;&gt;label24.Parent" xml:space="preserve">
+    <value>CSTR_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;label24.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;label25.Name" xml:space="preserve">
+    <value>label25</value>
+  </data>
+  <data name="&gt;&gt;label25.Parent" xml:space="preserve">
+    <value>CSTR_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;label25.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;label26.Name" xml:space="preserve">
+    <value>label26</value>
+  </data>
+  <data name="&gt;&gt;label26.Parent" xml:space="preserve">
+    <value>CSTR_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;label26.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label26.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label27.Name" xml:space="preserve">
+    <value>label27</value>
+  </data>
+  <data name="&gt;&gt;label27.Parent" xml:space="preserve">
+    <value>groupBox12</value>
+  </data>
+  <data name="&gt;&gt;label27.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label27.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label28.Name" xml:space="preserve">
+    <value>label28</value>
+  </data>
+  <data name="&gt;&gt;label28.Parent" xml:space="preserve">
+    <value>groupBox12</value>
+  </data>
+  <data name="&gt;&gt;label28.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label28.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label29.Name" xml:space="preserve">
+    <value>label29</value>
+  </data>
+  <data name="&gt;&gt;label29.Parent" xml:space="preserve">
+    <value>Spatial_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;label29.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label29.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label30.Name" xml:space="preserve">
+    <value>label30</value>
+  </data>
+  <data name="&gt;&gt;label30.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;label30.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label30.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label31.Name" xml:space="preserve">
+    <value>label31</value>
+  </data>
+  <data name="&gt;&gt;label31.Parent" xml:space="preserve">
+    <value>groupBox10</value>
+  </data>
+  <data name="&gt;&gt;label31.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label31.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>MD_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>MD_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label58.Name" xml:space="preserve">
+    <value>label58</value>
+  </data>
+  <data name="&gt;&gt;label58.Parent" xml:space="preserve">
+    <value>SPT_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;label58.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label58.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;label59.Name" xml:space="preserve">
+    <value>label59</value>
+  </data>
+  <data name="&gt;&gt;label59.Parent" xml:space="preserve">
+    <value>SPT_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;label59.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label59.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>groupBox12</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;label60.Name" xml:space="preserve">
+    <value>label60</value>
+  </data>
+  <data name="&gt;&gt;label60.Parent" xml:space="preserve">
+    <value>SPT_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;label60.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label60.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label61.Name" xml:space="preserve">
+    <value>label61</value>
+  </data>
+  <data name="&gt;&gt;label61.Parent" xml:space="preserve">
+    <value>SPT_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;label61.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label61.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label65.Name" xml:space="preserve">
+    <value>label65</value>
+  </data>
+  <data name="&gt;&gt;label65.Parent" xml:space="preserve">
+    <value>groupBox8</value>
+  </data>
+  <data name="&gt;&gt;label65.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label65.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;label66.Name" xml:space="preserve">
+    <value>label66</value>
+  </data>
+  <data name="&gt;&gt;label66.Parent" xml:space="preserve">
+    <value>groupBox8</value>
+  </data>
+  <data name="&gt;&gt;label66.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label66.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>KeywordGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;LineageGroupBox.Name" xml:space="preserve">
+    <value>LineageGroupBox</value>
+  </data>
+  <data name="&gt;&gt;LineageGroupBox.Parent" xml:space="preserve">
+    <value>QualityValidityTab</value>
+  </data>
+  <data name="&gt;&gt;LineageGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LineageGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;LIN_FreeTextBox.Name" xml:space="preserve">
+    <value>LIN_FreeTextBox</value>
+  </data>
+  <data name="&gt;&gt;LIN_FreeTextBox.Parent" xml:space="preserve">
+    <value>LineageGroupBox</value>
+  </data>
+  <data name="&gt;&gt;LIN_FreeTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LIN_FreeTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;MD_AddEmailButton.Name" xml:space="preserve">
+    <value>MD_AddEmailButton</value>
+  </data>
+  <data name="&gt;&gt;MD_AddEmailButton.Parent" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;MD_AddEmailButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MD_AddEmailButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;MD_ContactListAddButton.Name" xml:space="preserve">
+    <value>MD_ContactListAddButton</value>
+  </data>
+  <data name="&gt;&gt;MD_ContactListAddButton.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;MD_ContactListAddButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MD_ContactListAddButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;MD_ContactListBox.Name" xml:space="preserve">
+    <value>MD_ContactListBox</value>
+  </data>
+  <data name="&gt;&gt;MD_ContactListBox.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;MD_ContactListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MD_ContactListBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;MD_ContactListRemoveButton.Name" xml:space="preserve">
+    <value>MD_ContactListRemoveButton</value>
+  </data>
+  <data name="&gt;&gt;MD_ContactListRemoveButton.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;MD_ContactListRemoveButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MD_ContactListRemoveButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;MD_DateTimePicker.Name" xml:space="preserve">
+    <value>MD_DateTimePicker</value>
+  </data>
+  <data name="&gt;&gt;MD_DateTimePicker.Parent" xml:space="preserve">
+    <value>MD_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;MD_DateTimePicker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MD_DateTimePicker.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;MD_EmailListBox.Name" xml:space="preserve">
+    <value>MD_EmailListBox</value>
+  </data>
+  <data name="&gt;&gt;MD_EmailListBox.Parent" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;MD_EmailListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MD_EmailListBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;MD_emailTextBox.Name" xml:space="preserve">
+    <value>MD_emailTextBox</value>
+  </data>
+  <data name="&gt;&gt;MD_emailTextBox.Parent" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;MD_emailTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MD_emailTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;MD_GroupBox.Name" xml:space="preserve">
+    <value>MD_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;MD_GroupBox.Parent" xml:space="preserve">
+    <value>MetadataTab</value>
+  </data>
+  <data name="&gt;&gt;MD_GroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MD_GroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;MD_LanguageComboBox.Name" xml:space="preserve">
+    <value>MD_LanguageComboBox</value>
+  </data>
+  <data name="&gt;&gt;MD_LanguageComboBox.Parent" xml:space="preserve">
+    <value>MD_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;MD_LanguageComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MD_LanguageComboBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;MD_OrganizationNameTextBox.Name" xml:space="preserve">
+    <value>MD_OrganizationNameTextBox</value>
+  </data>
+  <data name="&gt;&gt;MD_OrganizationNameTextBox.Parent" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;MD_OrganizationNameTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MD_OrganizationNameTextBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;MD_RemoveEmailButton.Name" xml:space="preserve">
+    <value>MD_RemoveEmailButton</value>
+  </data>
+  <data name="&gt;&gt;MD_RemoveEmailButton.Parent" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;MD_RemoveEmailButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MD_RemoveEmailButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;MD_tabControl.Name" xml:space="preserve">
+    <value>MD_tabControl</value>
+  </data>
+  <data name="&gt;&gt;MD_tabControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MD_tabControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MD_tabControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;MetadataTab.Name" xml:space="preserve">
+    <value>MetadataTab</value>
+  </data>
+  <data name="&gt;&gt;MetadataTab.Parent" xml:space="preserve">
+    <value>MD_tabControl</value>
+  </data>
+  <data name="&gt;&gt;MetadataTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MetadataTab.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;OrganizationTab.Name" xml:space="preserve">
+    <value>OrganizationTab</value>
+  </data>
+  <data name="&gt;&gt;OrganizationTab.Parent" xml:space="preserve">
+    <value>MD_tabControl</value>
+  </data>
+  <data name="&gt;&gt;OrganizationTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OrganizationTab.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;ORG_AddButton.Name" xml:space="preserve">
+    <value>ORG_AddButton</value>
+  </data>
+  <data name="&gt;&gt;ORG_AddButton.Parent" xml:space="preserve">
+    <value>ORG_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;ORG_AddButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ORG_AddButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;ORG_AddEmailButton.Name" xml:space="preserve">
+    <value>ORG_AddEmailButton</value>
+  </data>
+  <data name="&gt;&gt;ORG_AddEmailButton.Parent" xml:space="preserve">
+    <value>groupBox12</value>
+  </data>
+  <data name="&gt;&gt;ORG_AddEmailButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ORG_AddEmailButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ORG_EmailListBox.Name" xml:space="preserve">
+    <value>ORG_EmailListBox</value>
+  </data>
+  <data name="&gt;&gt;ORG_EmailListBox.Parent" xml:space="preserve">
+    <value>groupBox12</value>
+  </data>
+  <data name="&gt;&gt;ORG_EmailListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ORG_EmailListBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ORG_EmailTextBox.Name" xml:space="preserve">
+    <value>ORG_EmailTextBox</value>
+  </data>
+  <data name="&gt;&gt;ORG_EmailTextBox.Parent" xml:space="preserve">
+    <value>groupBox12</value>
+  </data>
+  <data name="&gt;&gt;ORG_EmailTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ORG_EmailTextBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;ORG_GroupBox.Name" xml:space="preserve">
+    <value>ORG_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;ORG_GroupBox.Parent" xml:space="preserve">
+    <value>OrganizationTab</value>
+  </data>
+  <data name="&gt;&gt;ORG_GroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ORG_GroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ORG_IndividualListBox.Name" xml:space="preserve">
+    <value>ORG_IndividualListBox</value>
+  </data>
+  <data name="&gt;&gt;ORG_IndividualListBox.Parent" xml:space="preserve">
+    <value>ORG_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;ORG_IndividualListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ORG_IndividualListBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ORG_NameTextBox.Name" xml:space="preserve">
+    <value>ORG_NameTextBox</value>
+  </data>
+  <data name="&gt;&gt;ORG_NameTextBox.Parent" xml:space="preserve">
+    <value>groupBox12</value>
+  </data>
+  <data name="&gt;&gt;ORG_NameTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ORG_NameTextBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;ORG_RemoveButton.Name" xml:space="preserve">
+    <value>ORG_RemoveButton</value>
+  </data>
+  <data name="&gt;&gt;ORG_RemoveButton.Parent" xml:space="preserve">
+    <value>ORG_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;ORG_RemoveButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ORG_RemoveButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ORG_RemoveEmailButton.Name" xml:space="preserve">
+    <value>ORG_RemoveEmailButton</value>
+  </data>
+  <data name="&gt;&gt;ORG_RemoveEmailButton.Parent" xml:space="preserve">
+    <value>groupBox12</value>
+  </data>
+  <data name="&gt;&gt;ORG_RemoveEmailButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ORG_RemoveEmailButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ORG_RoleComboBox.Name" xml:space="preserve">
+    <value>ORG_RoleComboBox</value>
+  </data>
+  <data name="&gt;&gt;ORG_RoleComboBox.Parent" xml:space="preserve">
+    <value>groupBox12</value>
+  </data>
+  <data name="&gt;&gt;ORG_RoleComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ORG_RoleComboBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;QLT_AddDistanceButton.Name" xml:space="preserve">
+    <value>QLT_AddDistanceButton</value>
+  </data>
+  <data name="&gt;&gt;QLT_AddDistanceButton.Parent" xml:space="preserve">
+    <value>Spatial_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;QLT_AddDistanceButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;QLT_AddDistanceButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;QLT_AddScaleButton.Name" xml:space="preserve">
+    <value>QLT_AddScaleButton</value>
+  </data>
+  <data name="&gt;&gt;QLT_AddScaleButton.Parent" xml:space="preserve">
+    <value>Spatial_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;QLT_AddScaleButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;QLT_AddScaleButton.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;QLT_DistanceTextBox.Name" xml:space="preserve">
+    <value>QLT_DistanceTextBox</value>
+  </data>
+  <data name="&gt;&gt;QLT_DistanceTextBox.Parent" xml:space="preserve">
+    <value>Spatial_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;QLT_DistanceTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;QLT_DistanceTextBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;QLT_GroupBox.Name" xml:space="preserve">
+    <value>QLT_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;QLT_GroupBox.Parent" xml:space="preserve">
+    <value>QualityValidityTab</value>
+  </data>
+  <data name="&gt;&gt;QLT_GroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;QLT_GroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;QLT_ListBox.Name" xml:space="preserve">
+    <value>QLT_ListBox</value>
+  </data>
+  <data name="&gt;&gt;QLT_ListBox.Parent" xml:space="preserve">
+    <value>Spatial_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;QLT_ListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;QLT_ListBox.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;QLT_RemoveButton.Name" xml:space="preserve">
+    <value>QLT_RemoveButton</value>
+  </data>
+  <data name="&gt;&gt;QLT_RemoveButton.Parent" xml:space="preserve">
+    <value>Spatial_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;QLT_RemoveButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;QLT_RemoveButton.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;QLT_ScaleTextBox.Name" xml:space="preserve">
+    <value>QLT_ScaleTextBox</value>
+  </data>
+  <data name="&gt;&gt;QLT_ScaleTextBox.Parent" xml:space="preserve">
+    <value>Spatial_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;QLT_ScaleTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;QLT_ScaleTextBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;QLT_UnitsComboBox.Name" xml:space="preserve">
+    <value>QLT_UnitsComboBox</value>
+  </data>
+  <data name="&gt;&gt;QLT_UnitsComboBox.Parent" xml:space="preserve">
+    <value>Spatial_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;QLT_UnitsComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;QLT_UnitsComboBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;QualityValidityTab.Name" xml:space="preserve">
+    <value>QualityValidityTab</value>
+  </data>
+  <data name="&gt;&gt;QualityValidityTab.Parent" xml:space="preserve">
+    <value>MD_tabControl</value>
+  </data>
+  <data name="&gt;&gt;QualityValidityTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;QualityValidityTab.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;Spatial_GroupBox.Name" xml:space="preserve">
+    <value>Spatial_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;Spatial_GroupBox.Parent" xml:space="preserve">
+    <value>QLT_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;Spatial_GroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Spatial_GroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;SPT_GroupBox.Name" xml:space="preserve">
+    <value>SPT_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;SPT_GroupBox.Parent" xml:space="preserve">
+    <value>GeographicTab</value>
+  </data>
+  <data name="&gt;&gt;SPT_GroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SPT_GroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TemporalTab.Name" xml:space="preserve">
+    <value>TemporalTab</value>
+  </data>
+  <data name="&gt;&gt;TemporalTab.Parent" xml:space="preserve">
+    <value>MD_tabControl</value>
+  </data>
+  <data name="&gt;&gt;TemporalTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TemporalTab.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;TMP_AddCreationDateButton.Name" xml:space="preserve">
+    <value>TMP_AddCreationDateButton</value>
+  </data>
+  <data name="&gt;&gt;TMP_AddCreationDateButton.Parent" xml:space="preserve">
+    <value>groupBox10</value>
+  </data>
+  <data name="&gt;&gt;TMP_AddCreationDateButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TMP_AddCreationDateButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;TMP_AddDateButton.Name" xml:space="preserve">
+    <value>TMP_AddDateButton</value>
+  </data>
+  <data name="&gt;&gt;TMP_AddDateButton.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;TMP_AddDateButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TMP_AddDateButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;TMP_AddExtendButton.Name" xml:space="preserve">
+    <value>TMP_AddExtendButton</value>
+  </data>
+  <data name="&gt;&gt;TMP_AddExtendButton.Parent" xml:space="preserve">
+    <value>groupBox11</value>
+  </data>
+  <data name="&gt;&gt;TMP_AddExtendButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TMP_AddExtendButton.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;TMP_AddRevisionDateButton.Name" xml:space="preserve">
+    <value>TMP_AddRevisionDateButton</value>
+  </data>
+  <data name="&gt;&gt;TMP_AddRevisionDateButton.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;TMP_AddRevisionDateButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TMP_AddRevisionDateButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;TMP_CreationDateListBox.Name" xml:space="preserve">
+    <value>TMP_CreationDateListBox</value>
+  </data>
+  <data name="&gt;&gt;TMP_CreationDateListBox.Parent" xml:space="preserve">
+    <value>groupBox10</value>
+  </data>
+  <data name="&gt;&gt;TMP_CreationDateListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TMP_CreationDateListBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;TMP_CreationDateTimePicker.Name" xml:space="preserve">
+    <value>TMP_CreationDateTimePicker</value>
+  </data>
+  <data name="&gt;&gt;TMP_CreationDateTimePicker.Parent" xml:space="preserve">
+    <value>groupBox10</value>
+  </data>
+  <data name="&gt;&gt;TMP_CreationDateTimePicker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TMP_CreationDateTimePicker.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;TMP_FromDateTimePicker.Name" xml:space="preserve">
+    <value>TMP_FromDateTimePicker</value>
+  </data>
+  <data name="&gt;&gt;TMP_FromDateTimePicker.Parent" xml:space="preserve">
+    <value>groupBox11</value>
+  </data>
+  <data name="&gt;&gt;TMP_FromDateTimePicker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TMP_FromDateTimePicker.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;TMP_GroupBox.Name" xml:space="preserve">
+    <value>TMP_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;TMP_GroupBox.Parent" xml:space="preserve">
+    <value>TemporalTab</value>
+  </data>
+  <data name="&gt;&gt;TMP_GroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TMP_GroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TMP_PublicDateListBox.Name" xml:space="preserve">
+    <value>TMP_PublicDateListBox</value>
+  </data>
+  <data name="&gt;&gt;TMP_PublicDateListBox.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;TMP_PublicDateListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TMP_PublicDateListBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;TMP_PublicTimePicker.Name" xml:space="preserve">
+    <value>TMP_PublicTimePicker</value>
+  </data>
+  <data name="&gt;&gt;TMP_PublicTimePicker.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;TMP_PublicTimePicker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TMP_PublicTimePicker.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TMP_RemoveCreationDateButton.Name" xml:space="preserve">
+    <value>TMP_RemoveCreationDateButton</value>
+  </data>
+  <data name="&gt;&gt;TMP_RemoveCreationDateButton.Parent" xml:space="preserve">
+    <value>groupBox10</value>
+  </data>
+  <data name="&gt;&gt;TMP_RemoveCreationDateButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TMP_RemoveCreationDateButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TMP_RemoveDateButton.Name" xml:space="preserve">
+    <value>TMP_RemoveDateButton</value>
+  </data>
+  <data name="&gt;&gt;TMP_RemoveDateButton.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;TMP_RemoveDateButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TMP_RemoveDateButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;TMP_RemoveExtendButton.Name" xml:space="preserve">
+    <value>TMP_RemoveExtendButton</value>
+  </data>
+  <data name="&gt;&gt;TMP_RemoveExtendButton.Parent" xml:space="preserve">
+    <value>groupBox11</value>
+  </data>
+  <data name="&gt;&gt;TMP_RemoveExtendButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TMP_RemoveExtendButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;TMP_RemoveRevisionDateButton.Name" xml:space="preserve">
+    <value>TMP_RemoveRevisionDateButton</value>
+  </data>
+  <data name="&gt;&gt;TMP_RemoveRevisionDateButton.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;TMP_RemoveRevisionDateButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TMP_RemoveRevisionDateButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;TMP_RevisionDateListBox.Name" xml:space="preserve">
+    <value>TMP_RevisionDateListBox</value>
+  </data>
+  <data name="&gt;&gt;TMP_RevisionDateListBox.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;TMP_RevisionDateListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TMP_RevisionDateListBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;TMP_RevisionDateTimePicker.Name" xml:space="preserve">
+    <value>TMP_RevisionDateTimePicker</value>
+  </data>
+  <data name="&gt;&gt;TMP_RevisionDateTimePicker.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;TMP_RevisionDateTimePicker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TMP_RevisionDateTimePicker.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TMP_TemporalExtendListBox.Name" xml:space="preserve">
+    <value>TMP_TemporalExtendListBox</value>
+  </data>
+  <data name="&gt;&gt;TMP_TemporalExtendListBox.Parent" xml:space="preserve">
+    <value>groupBox11</value>
+  </data>
+  <data name="&gt;&gt;TMP_TemporalExtendListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TMP_TemporalExtendListBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;TMP_ToDateTimePicker.Name" xml:space="preserve">
+    <value>TMP_ToDateTimePicker</value>
+  </data>
+  <data name="&gt;&gt;TMP_ToDateTimePicker.Parent" xml:space="preserve">
+    <value>groupBox11</value>
+  </data>
+  <data name="&gt;&gt;TMP_ToDateTimePicker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TMP_ToDateTimePicker.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="CFRM_AddButton.Text" xml:space="preserve">
+    <value>Προσθήκη</value>
+  </data>
+  <data name="CFRM_DateTimePicker.CustomFormat" xml:space="preserve">
+    <value>yyyy-MM-dd</value>
+  </data>
+  <data name="CFRM_DateTypeComboBox.Items" xml:space="preserve">
+    <value>δημιουργία</value>
+  </data>
+  <data name="CFRM_DateTypeComboBox.Items1" xml:space="preserve">
+    <value>δημοσίευση</value>
+  </data>
+  <data name="CFRM_DateTypeComboBox.Items2" xml:space="preserve">
+    <value>αναθεώρηση</value>
+  </data>
+  <data name="CFRM_DateTypeComboBox.Text" xml:space="preserve">
+    <value>Παρακαλώ επιλέξτε</value>
+  </data>
+  <data name="CFRM_DegreeComboBox.Items" xml:space="preserve">
+    <value>Σύμμορφος</value>
+  </data>
+  <data name="CFRM_DegreeComboBox.Items1" xml:space="preserve">
+    <value>Δεν είναι σύμμορφος</value>
+  </data>
+  <data name="CFRM_DegreeComboBox.Items2" xml:space="preserve">
+    <value>Δεν αξιολογήθηκε</value>
+  </data>
+  <data name="CFRM_DegreeComboBox.Text" xml:space="preserve">
+    <value>Παρακαλώ επιλέξτε</value>
+  </data>
+  <data name="CFRM_GroupBox.Text" xml:space="preserve">
+    <value>Συμμόρφωση</value>
+  </data>
+  <data name="CFRM_RemoveButton.Text" xml:space="preserve">
+    <value>Διαγραφή</value>
+  </data>
+  <data name="ClassificationTab.Text" xml:space="preserve">
+    <value>Κατηγοριοποίηση</value>
+  </data>
+  <data name="CL_AddTopicCategoryButton.Text" xml:space="preserve">
+    <value>Προσθήκη</value>
+  </data>
+  <data name="CL_GroupBox.Text" xml:space="preserve">
+    <value>Θεματική κατηγορία</value>
+  </data>
+  <data name="CL_RemoveTopicCategoryButton.Text" xml:space="preserve">
+    <value>Διαγραφή</value>
+  </data>
+  <data name="CL_TopicCategoryComboBox.Items" xml:space="preserve">
+    <value>Γεωργία</value>
+  </data>
+  <data name="CL_TopicCategoryComboBox.Items1" xml:space="preserve">
+    <value>Βιόκοσμος</value>
+  </data>
+  <data name="CL_TopicCategoryComboBox.Items10" xml:space="preserve">
+    <value>Στρατιωτικές πληροφορίες</value>
+  </data>
+  <data name="CL_TopicCategoryComboBox.Items11" xml:space="preserve">
+    <value>Εσωτερικά ύδατα</value>
+  </data>
+  <data name="CL_TopicCategoryComboBox.Items12" xml:space="preserve">
+    <value>Γεωγραφική θέση</value>
+  </data>
+  <data name="CL_TopicCategoryComboBox.Items13" xml:space="preserve">
+    <value>Θάλασσες</value>
+  </data>
+  <data name="CL_TopicCategoryComboBox.Items14" xml:space="preserve">
+    <value>Χωροταξία/κτηματολόγιο</value>
+  </data>
+  <data name="CL_TopicCategoryComboBox.Items15" xml:space="preserve">
+    <value>Κοινωνία</value>
+  </data>
+  <data name="CL_TopicCategoryComboBox.Items16" xml:space="preserve">
+    <value>Κατασκευές</value>
+  </data>
+  <data name="CL_TopicCategoryComboBox.Items17" xml:space="preserve">
+    <value>Μεταφορές</value>
+  </data>
+  <data name="CL_TopicCategoryComboBox.Items18" xml:space="preserve">
+    <value>Επιχειρήσεις κοινής ωφελείας/Επικοινωνία</value>
+  </data>
+  <data name="CL_TopicCategoryComboBox.Items2" xml:space="preserve">
+    <value>Όρια</value>
+  </data>
+  <data name="CL_TopicCategoryComboBox.Items3" xml:space="preserve">
+    <value>Κλιματολογία/Μετεωρολογία/Ατμόσφαιρα</value>
+  </data>
+  <data name="CL_TopicCategoryComboBox.Items4" xml:space="preserve">
+    <value>Οικονομία</value>
+  </data>
+  <data name="CL_TopicCategoryComboBox.Items5" xml:space="preserve">
+    <value>Υψομετρία</value>
+  </data>
+  <data name="CL_TopicCategoryComboBox.Items6" xml:space="preserve">
+    <value>Περιβάλλον</value>
+  </data>
+  <data name="CL_TopicCategoryComboBox.Items7" xml:space="preserve">
+    <value>Γεωεπιστημονικές πληροφορίες</value>
+  </data>
+  <data name="CL_TopicCategoryComboBox.Items8" xml:space="preserve">
+    <value>Υγεία</value>
+  </data>
+  <data name="CL_TopicCategoryComboBox.Items9" xml:space="preserve">
+    <value>Ορθοεικόνες/Βασικοίχάρτες/Κάλυψη γης</value>
+  </data>
+  <data name="CL_TopicCategoryComboBox.Text" xml:space="preserve">
+    <value>Παρακαλώ επιλέξτε</value>
+  </data>
+  <data name="ConformityTab.Text" xml:space="preserve">
+    <value>Συμμόρφωση</value>
+  </data>
+  <data name="ConstraintsTab.Text" xml:space="preserve">
+    <value>Περιορισμοί</value>
+  </data>
+  <data name="CSTR_AddConditionsUseGeneralButton1.Text" xml:space="preserve">
+    <value>Προσθήκη</value>
+  </data>
+  <data name="CSTR_AddConditionsUseGeneralButton2.Text" xml:space="preserve">
+    <value>Προσθήκη</value>
+  </data>
+  <data name="CSTR_AddLimitationsPublicButton1.Text" xml:space="preserve">
+    <value>Προσθήκη</value>
+  </data>
+  <data name="CSTR_AddLimitationsPublicButton2.Text" xml:space="preserve">
+    <value>Προσθήκη</value>
+  </data>
+  <data name="CSTR_ConditionsUseGeneralComboBox.Items" xml:space="preserve">
+    <value>δεν ισχύουν όροι</value>
+  </data>
+  <data name="CSTR_ConditionsUseGeneralComboBox.Items1" xml:space="preserve">
+    <value>άγνωστοι όροι</value>
+  </data>
+  <data name="CSTR_ConditionsUseGeneralComboBox.Text" xml:space="preserve">
+    <value>Παρακαλώ επιλέξτε</value>
+  </data>
+  <data name="CSTR_GroupBox.Text" xml:space="preserve">
+    <value>Περιορισμοί σχετικά με την πρόσβαση και την χρήση</value>
+  </data>
+  <data name="CSTR_LimitationsPublicComboBox.Items" xml:space="preserve">
+    <value>no limitations</value>
+  </data>
+  <data name="CSTR_LimitationsPublicComboBox.Items1" xml:space="preserve">
+    <value>(a) the confidentiality of the proceedings of public authorities,where such confidentiality is provided for by law</value>
+  </data>
+  <data name="CSTR_LimitationsPublicComboBox.Items2" xml:space="preserve">
+    <value>(b) international relations, public security or national defence</value>
+  </data>
+  <data name="CSTR_LimitationsPublicComboBox.Items3" xml:space="preserve">
+    <value>(c) the course of justice, the ability of any person to receive a fair trial or the ability of a public authority to conduct an enquiry of a criminal or disciplinary nature</value>
+  </data>
+  <data name="CSTR_LimitationsPublicComboBox.Items4" xml:space="preserve">
+    <value>(d) the confidentiality of commercial or industrial information, where such confidentiality is provided for by national or Community law to protect a legitimate economic interest, including the public interest in maintaining statistical confidentiality and tax secrecy</value>
+  </data>
+  <data name="CSTR_LimitationsPublicComboBox.Items5" xml:space="preserve">
+    <value>(e) intellectual property rights</value>
+  </data>
+  <data name="CSTR_LimitationsPublicComboBox.Items6" xml:space="preserve">
+    <value>(f) the confidentiality of personal data and/or files relating to a natural person where that person has not consented to the disclosure of the information to the public, where such confidentiality is provided for by national or Community law</value>
+  </data>
+  <data name="CSTR_LimitationsPublicComboBox.Items7" xml:space="preserve">
+    <value>(g) the interests or protection of any person who supplied the information requested on a voluntary basis without being under, or capable of being put under, a legal obligation to do so, unless that person has consented to the release of the information concerned</value>
+  </data>
+  <data name="CSTR_LimitationsPublicComboBox.Items8" xml:space="preserve">
+    <value>(h) the protection of the environment to which such information relates, such as the location of rare species</value>
+  </data>
+  <data name="CSTR_LimitationsPublicComboBox.Text" xml:space="preserve">
+    <value>Παρακαλώ επιλέξτε</value>
+  </data>
+  <data name="CSTR_RemoveConditionsUseGeneralButton.Text" xml:space="preserve">
+    <value>Διαγραφή</value>
+  </data>
+  <data name="CSTR_RemoveLimitationsPublicButton.Text" xml:space="preserve">
+    <value>Διαγραφή</value>
+  </data>
+  <data name="GeographicTab.Text" xml:space="preserve">
+    <value>Γεωγραφική θέση</value>
+  </data>
+  <data name="GEO_AddExtendButton.Text" xml:space="preserve">
+    <value>Προσθήκη</value>
+  </data>
+  <data name="GEO_RemoveExtendButton.Text" xml:space="preserve">
+    <value>Διαγραφή</value>
+  </data>
+  <data name="groupBox11.Text" xml:space="preserve">
+    <value>Χρονική έκταση</value>
+  </data>
+  <data name="groupBox12.Text" xml:space="preserve">
+    <value>Αρμόδιο μέρος</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>Αρμόδιος για επικοινωνία</value>
+  </data>
+  <data name="groupBox7.Text" xml:space="preserve">
+    <value>Εντοπιστής πόρου</value>
+  </data>
+  <data name="groupBox8.Text" xml:space="preserve">
+    <value>Μοναδικό αναγνωριστικό πόρου</value>
+  </data>
+  <data name="groupBox9.Text" xml:space="preserve">
+    <value>Γλώσσα πόρου</value>
+  </data>
+  <data name="GUIDButton.Text" xml:space="preserve">
+    <value>Νέο αναγνωριστικό</value>
+  </data>
+  <data name="IdentificationTab.Text" xml:space="preserve">
+    <value>Ταυτοποίηση</value>
+  </data>
+  <data name="ID_ResourceLanguageAddButton.Text" xml:space="preserve">
+    <value>Προσθήκη</value>
+  </data>
+  <data name="ID_ResourceLanguageComboBox.Items" xml:space="preserve">
+    <value>Αγγλικά</value>
+  </data>
+  <data name="ID_ResourceLanguageComboBox.Items1" xml:space="preserve">
+    <value>Γαλικά</value>
+  </data>
+  <data name="ID_ResourceLanguageComboBox.Items2" xml:space="preserve">
+    <value>Γερμανικά</value>
+  </data>
+  <data name="ID_ResourceLanguageComboBox.Items3" xml:space="preserve">
+    <value>Ελληνικά</value>
+  </data>
+  <data name="ID_ResourceLanguageComboBox.Items4" xml:space="preserve">
+    <value>Ιταλικά</value>
+  </data>
+  <data name="ID_ResourceLanguageComboBox.Text" xml:space="preserve">
+    <value>Παρακαλώ επιλέξτε</value>
+  </data>
+  <data name="ID_ResourceLanguageRemoveButton.Text" xml:space="preserve">
+    <value>Διαγραφή</value>
+  </data>
+  <data name="ID_ResourceLocatorAddButton.Text" xml:space="preserve">
+    <value>Προσθήκη</value>
+  </data>
+  <data name="ID_ResourceLocatorRemoveButton.Text" xml:space="preserve">
+    <value>Διαγραφή</value>
+  </data>
+  <data name="ID_ResourceTypeComboBox.Items" xml:space="preserve">
+    <value>Σύνολο χωρικών δεδομένων</value>
+  </data>
+  <data name="ID_ResourceTypeComboBox.Items1" xml:space="preserve">
+    <value>Σειρά συνόλων χωρικών δεδομένων</value>
+  </data>
+  <data name="ID_ResourceTypeComboBox.Items2" xml:space="preserve">
+    <value>Υπηρεσίες χωρικών δεδομένων</value>
+  </data>
+  <data name="ID_ResourceTypeComboBox.Text" xml:space="preserve">
+    <value>Παρακαλώ επιλέξτε</value>
+  </data>
+  <data name="ID_UIDAddButton.Text" xml:space="preserve">
+    <value>Προσθήκη</value>
+  </data>
+  <data name="ID_UIDRemoveButton.Text" xml:space="preserve">
+    <value>Διαγραφή</value>
+  </data>
+  <data name="KeywordGroupBox.Text" xml:space="preserve">
+    <value>Λέξη κλειδί</value>
+  </data>
+  <data name="KeywordTab.Text" xml:space="preserve">
+    <value>Λέξη κλειδί</value>
+  </data>
+  <data name="KW_AddInspireButton.Text" xml:space="preserve">
+    <value>Προσθήκη</value>
+  </data>
+  <data name="KW_DateTimePicker.CustomFormat" xml:space="preserve">
+    <value>yyyy-MM-dd</value>
+  </data>
+  <data name="KW_DateTypeComboBox.Items" xml:space="preserve">
+    <value>δημιουργία</value>
+  </data>
+  <data name="KW_DateTypeComboBox.Items1" xml:space="preserve">
+    <value>δημοσίευση</value>
+  </data>
+  <data name="KW_DateTypeComboBox.Items2" xml:space="preserve">
+    <value>αναθεώρηση</value>
+  </data>
+  <data name="KW_DateTypeComboBox.Text" xml:space="preserve">
+    <value>Παρακαλώ επιλέξτε</value>
+  </data>
+  <data name="KW_InspireComboBox.Items" xml:space="preserve">
+    <value>Ανθρώπινη υγεία και ασφάλεια</value>
+  </data>
+  <data name="KW_InspireComboBox.Items1" xml:space="preserve">
+    <value>Ατμοσφαιρικές συνθήκες</value>
+  </data>
+  <data name="KW_InspireComboBox.Items10" xml:space="preserve">
+    <value>Εγκαταστάσεις παρακολούθησης του περιβάλλοντος</value>
+  </data>
+  <data name="KW_InspireComboBox.Items11" xml:space="preserve">
+    <value>Έδαφος</value>
+  </data>
+  <data name="KW_InspireComboBox.Items12" xml:space="preserve">
+    <value>Ενδιαιτήματα και βιότοποι</value>
+  </data>
+  <data name="KW_InspireComboBox.Items13" xml:space="preserve">
+    <value>Ενεργειακοί πόροι</value>
+  </data>
+  <data name="KW_InspireComboBox.Items14" xml:space="preserve">
+    <value>Επιχειρήσεις κοινής ωφελείας και κρατικές υπηρεσίες</value>
+  </data>
+  <data name="KW_InspireComboBox.Items15" xml:space="preserve">
+    <value>Ζώνες διαχείρισης/περιορισμού/ρύθμισης εκτάσεων και μονάδες αναφοράς</value>
+  </data>
+  <data name="KW_InspireComboBox.Items16" xml:space="preserve">
+    <value>Ζώνες φυσικών κινδύνων</value>
+  </data>
+  <data name="KW_InspireComboBox.Items17" xml:space="preserve">
+    <value>Θαλάσσιες περιοχές</value>
+  </data>
+  <data name="KW_InspireComboBox.Items18" xml:space="preserve">
+    <value>Κάλυψη γης</value>
+  </data>
+  <data name="KW_InspireComboBox.Items19" xml:space="preserve">
+    <value>Κατανομή ειδών</value>
+  </data>
+  <data name="KW_InspireComboBox.Items2" xml:space="preserve">
+    <value>Βιογεωγραφικές περιοχές</value>
+  </data>
+  <data name="KW_InspireComboBox.Items20" xml:space="preserve">
+    <value>Κατανομή πληθυσμού — δημογραφία</value>
+  </data>
+  <data name="KW_InspireComboBox.Items21" xml:space="preserve">
+    <value>Κτίρια</value>
+  </data>
+  <data name="KW_InspireComboBox.Items22" xml:space="preserve">
+    <value>Μετεωρολογικά γεωγραφικά χαρακτηριστικά</value>
+  </data>
+  <data name="KW_InspireComboBox.Items23" xml:space="preserve">
+    <value>Ορθοφωτογραφία</value>
+  </data>
+  <data name="KW_InspireComboBox.Items24" xml:space="preserve">
+    <value>Ορυκτοί πόροι</value>
+  </data>
+  <data name="KW_InspireComboBox.Items25" xml:space="preserve">
+    <value>Προστατευόμενες τοποθεσίες</value>
+  </data>
+  <data name="KW_InspireComboBox.Items26" xml:space="preserve">
+    <value>Στατιστικές μονάδες</value>
+  </data>
+  <data name="KW_InspireComboBox.Items27" xml:space="preserve">
+    <value>Συστήματα γεωγραφικού καννάβου</value>
+  </data>
+  <data name="KW_InspireComboBox.Items28" xml:space="preserve">
+    <value>Συστήματα συντεταγμένων</value>
+  </data>
+  <data name="KW_InspireComboBox.Items29" xml:space="preserve">
+    <value>Τοπωνύμια</value>
+  </data>
+  <data name="KW_InspireComboBox.Items3" xml:space="preserve">
+    <value>Γεωλογία</value>
+  </data>
+  <data name="KW_InspireComboBox.Items30" xml:space="preserve">
+    <value>Υδρογραφία</value>
+  </data>
+  <data name="KW_InspireComboBox.Items31" xml:space="preserve">
+    <value>Υψομετρία</value>
+  </data>
+  <data name="KW_InspireComboBox.Items32" xml:space="preserve">
+    <value>Χρήσεις γης</value>
+  </data>
+  <data name="KW_InspireComboBox.Items33" xml:space="preserve">
+    <value>Ωκεανογραφικά γεωγραφικά χαρακτηριστικά</value>
+  </data>
+  <data name="KW_InspireComboBox.Items4" xml:space="preserve">
+    <value>Γεωργικές εγκαταστάσεις και εγκαταστάσεις υδατοκαλλιέργειας</value>
+  </data>
+  <data name="KW_InspireComboBox.Items5" xml:space="preserve">
+    <value>Γεωτεμάχια κτηματολογίου</value>
+  </data>
+  <data name="KW_InspireComboBox.Items6" xml:space="preserve">
+    <value>Διευθύνσεις</value>
+  </data>
+  <data name="KW_InspireComboBox.Items7" xml:space="preserve">
+    <value>Δίκτυα μεταφορών</value>
+  </data>
+  <data name="KW_InspireComboBox.Items8" xml:space="preserve">
+    <value>Διοικητικές ενότητες</value>
+  </data>
+  <data name="KW_InspireComboBox.Items9" xml:space="preserve">
+    <value>Εγκαταστάσεις παραγωγής και βιομηχανικές εγκαταστάσεις</value>
+  </data>
+  <data name="KW_InspireComboBox.Text" xml:space="preserve">
+    <value>Παρακαλώ επιλέξτε</value>
+  </data>
+  <data name="KW_KeywordAddButton.Text" xml:space="preserve">
+    <value>Προσθήκη</value>
+  </data>
+  <data name="KW_KeywordRemoveButton.Text" xml:space="preserve">
+    <value>Διαγραφή</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Τίτλος πόρου</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Ημερομηνία αναφοράς</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>Τιμή της λέξης κλειδί</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>ή εισάγετε ελέυθερο κείμενο</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>Από</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>Έως</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>Ημερομηνία δημοσίευσης</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>Ελεγχόμενο λεξιλόγιο προέλευσης</value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>Λίστα λέξεων κλειδιών</value>
+  </data>
+  <data name="label18.Text" xml:space="preserve">
+    <value>Ισοδύναμη κλίμακα</value>
+  </data>
+  <data name="label19.Text" xml:space="preserve">
+    <value>Απόσταση</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Ηλεκτρονική διεύθυνση</value>
+  </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>Μονάδα μέτρησης</value>
+  </data>
+  <data name="label21.Text" xml:space="preserve">
+    <value>Βαθμός συμμόρφωσης</value>
+  </data>
+  <data name="label22.Text" xml:space="preserve">
+    <value>Ημερομηνία αναφοράς</value>
+  </data>
+  <data name="label23.Text" xml:space="preserve">
+    <value>Τίτλος αναφοράς</value>
+  </data>
+  <data name="label24.Text" xml:space="preserve">
+    <value>Περιορισμοί σχετικά με την πρόσβαση του κοινού</value>
+  </data>
+  <data name="label25.Text" xml:space="preserve">
+    <value>Όροι για την πρόσβαση και τη χρήση</value>
+  </data>
+  <data name="label26.Text" xml:space="preserve">
+    <value>ή εισάγετε ελέυθερο κείμενο</value>
+  </data>
+  <data name="label27.Text" xml:space="preserve">
+    <value>Ηλεκτρονική διεύθυνση</value>
+  </data>
+  <data name="label28.Text" xml:space="preserve">
+    <value>Όνομα οργανισμού</value>
+  </data>
+  <data name="label29.Text" xml:space="preserve">
+    <value>1/</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Ονομασία Οργανισμού</value>
+  </data>
+  <data name="label30.Text" xml:space="preserve">
+    <value>Ημερομηνία τελευταίας αναθεώρησης</value>
+  </data>
+  <data name="label31.Text" xml:space="preserve">
+    <value>Ημερομηνία δημιουργίας</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Ημερομηνία μεταδεδομένων</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Γλώσσα μεταδεδομένων</value>
+  </data>
+  <data name="label58.Text" xml:space="preserve">
+    <value>Βόρειο γεωγραφικό πλάτος</value>
+  </data>
+  <data name="label59.Text" xml:space="preserve">
+    <value>Νότιο γεωγραφικό πλάτος</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Ρόλος αρμόδιου μέρους</value>
+  </data>
+  <data name="label60.Text" xml:space="preserve">
+    <value>Δυτικό γεωγραφικό μήκος</value>
+  </data>
+  <data name="label61.Text" xml:space="preserve">
+    <value>Ανατολικό γεωγραφικό μήκος</value>
+  </data>
+  <data name="label65.Text" xml:space="preserve">
+    <value>Αναγνωριστικό</value>
+  </data>
+  <data name="label66.Text" xml:space="preserve">
+    <value>Χώρος ονομάτων</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Σύνοψη πόρου</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Τύπος πόρου</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Θέμα δεδομένων Inspire</value>
+  </data>
+  <data name="LineageGroupBox.Text" xml:space="preserve">
+    <value>Καταγωγή</value>
+  </data>
+  <data name="MD_AddEmailButton.Text" xml:space="preserve">
+    <value>Προσθήκη</value>
+  </data>
+  <data name="MD_ContactListAddButton.Text" xml:space="preserve">
+    <value>Προσθήκη</value>
+  </data>
+  <data name="MD_ContactListRemoveButton.Text" xml:space="preserve">
+    <value>Διαγραφή</value>
+  </data>
+  <data name="MD_DateTimePicker.CustomFormat" xml:space="preserve">
+    <value>yyyy-MM-dd</value>
+  </data>
+  <data name="MD_GroupBox.Text" xml:space="preserve">
+    <value>Μεταδεδομένα για τα μεταδεδομένα</value>
+  </data>
+  <data name="MD_LanguageComboBox.Items" xml:space="preserve">
+    <value>Αγγλικά</value>
+  </data>
+  <data name="MD_LanguageComboBox.Items1" xml:space="preserve">
+    <value>Γαλλικά</value>
+  </data>
+  <data name="MD_LanguageComboBox.Items2" xml:space="preserve">
+    <value>Γερμανικά</value>
+  </data>
+  <data name="MD_LanguageComboBox.Items3" xml:space="preserve">
+    <value>Ελληνικά</value>
+  </data>
+  <data name="MD_LanguageComboBox.Items4" xml:space="preserve">
+    <value>Ιταλικά</value>
+  </data>
+  <data name="MD_LanguageComboBox.Text" xml:space="preserve">
+    <value>Παρακαλώ επιλέξτε</value>
+  </data>
+  <data name="MD_RemoveEmailButton.Text" xml:space="preserve">
+    <value>Διαγραφή</value>
+  </data>
+  <data name="MetadataTab.Text" xml:space="preserve">
+    <value>Μεταδεδομένα</value>
+  </data>
+  <data name="OrganizationTab.Text" xml:space="preserve">
+    <value>Οργανισμοί</value>
+  </data>
+  <data name="ORG_AddButton.Text" xml:space="preserve">
+    <value>Προσθήκη</value>
+  </data>
+  <data name="ORG_AddEmailButton.Text" xml:space="preserve">
+    <value>Προσθήκη</value>
+  </data>
+  <data name="ORG_GroupBox.Text" xml:space="preserve">
+    <value>Αρμόδιοι οργανισμοι για τη δημιουργία, τη συντήρηση και τη διανομή</value>
+  </data>
+  <data name="ORG_RemoveButton.Text" xml:space="preserve">
+    <value>Διαγραφή</value>
+  </data>
+  <data name="ORG_RemoveEmailButton.Text" xml:space="preserve">
+    <value>Διαγραφή</value>
+  </data>
+  <data name="ORG_RoleComboBox.Items" xml:space="preserve">
+    <value>Πάροχος πόρου</value>
+  </data>
+  <data name="ORG_RoleComboBox.Items1" xml:space="preserve">
+    <value>Υπόλογος</value>
+  </data>
+  <data name="ORG_RoleComboBox.Items10" xml:space="preserve">
+    <value>Συντάκτης</value>
+  </data>
+  <data name="ORG_RoleComboBox.Items2" xml:space="preserve">
+    <value>Κάτοχος</value>
+  </data>
+  <data name="ORG_RoleComboBox.Items3" xml:space="preserve">
+    <value>Χρήστης</value>
+  </data>
+  <data name="ORG_RoleComboBox.Items4" xml:space="preserve">
+    <value>Διανομέας</value>
+  </data>
+  <data name="ORG_RoleComboBox.Items5" xml:space="preserve">
+    <value>Δημιουργός</value>
+  </data>
+  <data name="ORG_RoleComboBox.Items6" xml:space="preserve">
+    <value>Αρμόδιος για επικοινωνία</value>
+  </data>
+  <data name="ORG_RoleComboBox.Items7" xml:space="preserve">
+    <value>Πρωτεύων διερευνητής</value>
+  </data>
+  <data name="ORG_RoleComboBox.Items8" xml:space="preserve">
+    <value>Επεξεργαστής</value>
+  </data>
+  <data name="ORG_RoleComboBox.Items9" xml:space="preserve">
+    <value>Εκδότης</value>
+  </data>
+  <data name="ORG_RoleComboBox.Text" xml:space="preserve">
+    <value>Παρακαλώ επιλέξτε</value>
+  </data>
+  <data name="QLT_AddDistanceButton.Text" xml:space="preserve">
+    <value>Προσθήκη</value>
+  </data>
+  <data name="QLT_AddScaleButton.Text" xml:space="preserve">
+    <value>Προσθήκη</value>
+  </data>
+  <data name="QLT_GroupBox.Text" xml:space="preserve">
+    <value>Ποιότητα</value>
+  </data>
+  <data name="QLT_RemoveButton.Text" xml:space="preserve">
+    <value>Διαγραφή</value>
+  </data>
+  <data name="QLT_UnitsComboBox.Items" xml:space="preserve">
+    <value>Meter</value>
+  </data>
+  <data name="QLT_UnitsComboBox.Items1" xml:space="preserve">
+    <value>Centimeter</value>
+  </data>
+  <data name="QLT_UnitsComboBox.Items2" xml:space="preserve">
+    <value>Millimeter</value>
+  </data>
+  <data name="QLT_UnitsComboBox.Items3" xml:space="preserve">
+    <value>Kilometer</value>
+  </data>
+  <data name="QLT_UnitsComboBox.Items4" xml:space="preserve">
+    <value>Yard</value>
+  </data>
+  <data name="QLT_UnitsComboBox.Items5" xml:space="preserve">
+    <value>Foot</value>
+  </data>
+  <data name="QLT_UnitsComboBox.Items6" xml:space="preserve">
+    <value>Mile</value>
+  </data>
+  <data name="QLT_UnitsComboBox.Text" xml:space="preserve">
+    <value>Παρακαλώ επιλέξτε</value>
+  </data>
+  <data name="QualityValidityTab.Text" xml:space="preserve">
+    <value>Ποιότητα και Εγκυρότητα</value>
+  </data>
+  <data name="Spatial_GroupBox.Text" xml:space="preserve">
+    <value>Χωρική ανάλυση</value>
+  </data>
+  <data name="SPT_GroupBox.Text" xml:space="preserve">
+    <value>Περίγραμμα γεωγραφικών συντεταγμένων</value>
+  </data>
+  <data name="TemporalTab.Text" xml:space="preserve">
+    <value>Χρονική Αναφορά</value>
+  </data>
+  <data name="TMP_AddCreationDateButton.Text" xml:space="preserve">
+    <value>Προσθήκη</value>
+  </data>
+  <data name="TMP_AddDateButton.Text" xml:space="preserve">
+    <value>Προσθήκη</value>
+  </data>
+  <data name="TMP_AddExtendButton.Text" xml:space="preserve">
+    <value>Προσθήκη</value>
+  </data>
+  <data name="TMP_AddRevisionDateButton.Text" xml:space="preserve">
+    <value>Προσθήκη</value>
+  </data>
+  <data name="TMP_CreationDateTimePicker.CustomFormat" xml:space="preserve">
+    <value>yyyy-MM-dd</value>
+  </data>
+  <data name="TMP_FromDateTimePicker.CustomFormat" xml:space="preserve">
+    <value>yyyy-MM-dd</value>
+  </data>
+  <data name="TMP_GroupBox.Text" xml:space="preserve">
+    <value>Χρονική αναφορά</value>
+  </data>
+  <data name="TMP_PublicTimePicker.CustomFormat" xml:space="preserve">
+    <value>yyyy-MM-dd</value>
+  </data>
+  <data name="TMP_RemoveCreationDateButton.Text" xml:space="preserve">
+    <value>Διαγραφή</value>
+  </data>
+  <data name="TMP_RemoveDateButton.Text" xml:space="preserve">
+    <value>Διαγραφή</value>
+  </data>
+  <data name="TMP_RemoveExtendButton.Text" xml:space="preserve">
+    <value>Διαγραφή</value>
+  </data>
+  <data name="TMP_RemoveRevisionDateButton.Text" xml:space="preserve">
+    <value>Διαγραφή</value>
+  </data>
+  <data name="TMP_RevisionDateTimePicker.CustomFormat" xml:space="preserve">
+    <value>yyyy-MM-dd</value>
+  </data>
+  <data name="TMP_ToDateTimePicker.CustomFormat" xml:space="preserve">
+    <value>yyyy-MM-dd</value>
+  </data>
+</root>

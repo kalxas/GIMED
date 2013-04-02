@@ -31,6 +31,9 @@ using System.Data;
 using System.IO;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
+using System.Globalization;
+using System.Threading;
+
 
 namespace Inspire.Metadata
 {
@@ -213,6 +216,8 @@ namespace Inspire.Metadata
         public Button CSTR_AddConditionsUseGeneralButton1;
         public ComboBox QLT_UnitsComboBox;
 
+        
+
 		/// <summary> 
 		/// Required designer variable.
 		/// </summary>
@@ -220,6 +225,9 @@ namespace Inspire.Metadata
 
 		public MDControl()
 		{
+            //MessageBox.Show(Thread.CurrentThread.CurrentUICulture.DisplayName);
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("el-GR");
+            //MessageBox.Show(Thread.CurrentThread.CurrentUICulture.DisplayName);
 			// This call is required by the Windows.Forms Form Designer.
 			InitializeComponent();
             this.CreateGUID();
@@ -460,6 +468,7 @@ namespace Inspire.Metadata
             // 
             // MD_tabControl
             // 
+            resources.ApplyResources(this.MD_tabControl, "MD_tabControl");
             this.MD_tabControl.Controls.Add(this.MetadataTab);
             this.MD_tabControl.Controls.Add(this.IdentificationTab);
             this.MD_tabControl.Controls.Add(this.ClassificationTab);
@@ -470,67 +479,49 @@ namespace Inspire.Metadata
             this.MD_tabControl.Controls.Add(this.ConformityTab);
             this.MD_tabControl.Controls.Add(this.ConstraintsTab);
             this.MD_tabControl.Controls.Add(this.OrganizationTab);
-            this.MD_tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MD_tabControl.Location = new System.Drawing.Point(0, 0);
             this.MD_tabControl.Multiline = true;
             this.MD_tabControl.Name = "MD_tabControl";
             this.MD_tabControl.SelectedIndex = 0;
-            this.MD_tabControl.Size = new System.Drawing.Size(589, 525);
-            this.MD_tabControl.TabIndex = 0;
             // 
             // MetadataTab
             // 
+            resources.ApplyResources(this.MetadataTab, "MetadataTab");
             this.MetadataTab.Controls.Add(this.groupBox3);
             this.MetadataTab.Controls.Add(this.MD_GroupBox);
-            this.MetadataTab.Location = new System.Drawing.Point(4, 46);
             this.MetadataTab.Name = "MetadataTab";
-            this.MetadataTab.Size = new System.Drawing.Size(581, 475);
-            this.MetadataTab.TabIndex = 0;
-            this.MetadataTab.Text = "Μεταδεδομένα";
             this.MetadataTab.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
+            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Controls.Add(this.MD_ContactListBox);
             this.groupBox3.Controls.Add(this.MD_ContactListRemoveButton);
             this.groupBox3.Controls.Add(this.MD_ContactListAddButton);
             this.groupBox3.Controls.Add(this.groupBox6);
-            this.groupBox3.Location = new System.Drawing.Point(19, 3);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(554, 292);
-            this.groupBox3.TabIndex = 24;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Αρμόδιος για επικοινωνία";
             // 
             // MD_ContactListBox
             // 
+            resources.ApplyResources(this.MD_ContactListBox, "MD_ContactListBox");
             this.MD_ContactListBox.FormattingEnabled = true;
-            this.MD_ContactListBox.ItemHeight = 16;
-            this.MD_ContactListBox.Location = new System.Drawing.Point(19, 210);
             this.MD_ContactListBox.Name = "MD_ContactListBox";
-            this.MD_ContactListBox.Size = new System.Drawing.Size(458, 52);
-            this.MD_ContactListBox.TabIndex = 24;
             // 
             // MD_ContactListRemoveButton
             // 
-            this.MD_ContactListRemoveButton.Location = new System.Drawing.Point(483, 224);
+            resources.ApplyResources(this.MD_ContactListRemoveButton, "MD_ContactListRemoveButton");
             this.MD_ContactListRemoveButton.Name = "MD_ContactListRemoveButton";
-            this.MD_ContactListRemoveButton.Size = new System.Drawing.Size(67, 24);
-            this.MD_ContactListRemoveButton.TabIndex = 23;
-            this.MD_ContactListRemoveButton.Text = "Διαγραφή";
             this.MD_ContactListRemoveButton.Click += new System.EventHandler(this.MD_ContactListRemoveButton_Click);
             // 
             // MD_ContactListAddButton
             // 
-            this.MD_ContactListAddButton.Location = new System.Drawing.Point(483, 84);
+            resources.ApplyResources(this.MD_ContactListAddButton, "MD_ContactListAddButton");
             this.MD_ContactListAddButton.Name = "MD_ContactListAddButton";
-            this.MD_ContactListAddButton.Size = new System.Drawing.Size(67, 24);
-            this.MD_ContactListAddButton.TabIndex = 22;
-            this.MD_ContactListAddButton.Text = "Προσθήκη";
             this.MD_ContactListAddButton.Click += new System.EventHandler(this.MD_ContactListAddButton_Click);
             // 
             // groupBox6
             // 
+            resources.ApplyResources(this.groupBox6, "groupBox6");
             this.groupBox6.Controls.Add(this.MD_emailTextBox);
             this.groupBox6.Controls.Add(this.MD_RemoveEmailButton);
             this.groupBox6.Controls.Add(this.MD_AddEmailButton);
@@ -538,254 +529,180 @@ namespace Inspire.Metadata
             this.groupBox6.Controls.Add(this.label2);
             this.groupBox6.Controls.Add(this.MD_OrganizationNameTextBox);
             this.groupBox6.Controls.Add(this.label3);
-            this.groupBox6.Location = new System.Drawing.Point(19, 12);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(458, 186);
-            this.groupBox6.TabIndex = 17;
             this.groupBox6.TabStop = false;
             // 
             // MD_emailTextBox
             // 
-            this.MD_emailTextBox.Location = new System.Drawing.Point(49, 39);
+            resources.ApplyResources(this.MD_emailTextBox, "MD_emailTextBox");
             this.MD_emailTextBox.Name = "MD_emailTextBox";
-            this.MD_emailTextBox.Size = new System.Drawing.Size(326, 22);
-            this.MD_emailTextBox.TabIndex = 17;
             // 
             // MD_RemoveEmailButton
             // 
-            this.MD_RemoveEmailButton.Location = new System.Drawing.Point(381, 85);
+            resources.ApplyResources(this.MD_RemoveEmailButton, "MD_RemoveEmailButton");
             this.MD_RemoveEmailButton.Name = "MD_RemoveEmailButton";
-            this.MD_RemoveEmailButton.Size = new System.Drawing.Size(67, 24);
-            this.MD_RemoveEmailButton.TabIndex = 21;
-            this.MD_RemoveEmailButton.Text = "Διαγραφή";
             this.MD_RemoveEmailButton.Click += new System.EventHandler(this.MD_RemoveEmailButton_Click);
             // 
             // MD_AddEmailButton
             // 
-            this.MD_AddEmailButton.Location = new System.Drawing.Point(381, 36);
+            resources.ApplyResources(this.MD_AddEmailButton, "MD_AddEmailButton");
             this.MD_AddEmailButton.Name = "MD_AddEmailButton";
-            this.MD_AddEmailButton.Size = new System.Drawing.Size(67, 24);
-            this.MD_AddEmailButton.TabIndex = 20;
-            this.MD_AddEmailButton.Text = "Προσθήκη";
             this.MD_AddEmailButton.Click += new System.EventHandler(this.MD_AddEmailButton_Click);
             // 
             // MD_EmailListBox
             // 
-            this.MD_EmailListBox.ItemHeight = 16;
-            this.MD_EmailListBox.Location = new System.Drawing.Point(49, 71);
+            resources.ApplyResources(this.MD_EmailListBox, "MD_EmailListBox");
             this.MD_EmailListBox.Name = "MD_EmailListBox";
-            this.MD_EmailListBox.Size = new System.Drawing.Size(326, 52);
-            this.MD_EmailListBox.TabIndex = 19;
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(9, 20);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(126, 16);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Ηλεκτρονική διεύθυνση";
             // 
             // MD_OrganizationNameTextBox
             // 
-            this.MD_OrganizationNameTextBox.Location = new System.Drawing.Point(49, 151);
+            resources.ApplyResources(this.MD_OrganizationNameTextBox, "MD_OrganizationNameTextBox");
             this.MD_OrganizationNameTextBox.Name = "MD_OrganizationNameTextBox";
-            this.MD_OrganizationNameTextBox.Size = new System.Drawing.Size(326, 22);
-            this.MD_OrganizationNameTextBox.TabIndex = 23;
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(9, 135);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(126, 16);
-            this.label3.TabIndex = 22;
-            this.label3.Text = "Ονομασία Οργανισμού";
             // 
             // MD_GroupBox
             // 
+            resources.ApplyResources(this.MD_GroupBox, "MD_GroupBox");
             this.MD_GroupBox.Controls.Add(this.MD_LanguageComboBox);
             this.MD_GroupBox.Controls.Add(this.label5);
             this.MD_GroupBox.Controls.Add(this.MD_DateTimePicker);
             this.MD_GroupBox.Controls.Add(this.label4);
-            this.MD_GroupBox.Location = new System.Drawing.Point(19, 301);
             this.MD_GroupBox.Name = "MD_GroupBox";
-            this.MD_GroupBox.Size = new System.Drawing.Size(554, 104);
-            this.MD_GroupBox.TabIndex = 10;
             this.MD_GroupBox.TabStop = false;
-            this.MD_GroupBox.Text = "Μεταδεδομένα για τα μεταδεδομένα";
             // 
             // MD_LanguageComboBox
             // 
+            resources.ApplyResources(this.MD_LanguageComboBox, "MD_LanguageComboBox");
             this.MD_LanguageComboBox.Items.AddRange(new object[] {
-            "Αγγλικά",
-            "Γαλλικά",
-            "Γερμανικά",
-            "Ελληνικά",
-            "Ιταλικά"});
-            this.MD_LanguageComboBox.Location = new System.Drawing.Point(56, 72);
+            resources.GetString("MD_LanguageComboBox.Items"),
+            resources.GetString("MD_LanguageComboBox.Items1"),
+            resources.GetString("MD_LanguageComboBox.Items2"),
+            resources.GetString("MD_LanguageComboBox.Items3"),
+            resources.GetString("MD_LanguageComboBox.Items4")});
             this.MD_LanguageComboBox.Name = "MD_LanguageComboBox";
-            this.MD_LanguageComboBox.Size = new System.Drawing.Size(273, 24);
-            this.MD_LanguageComboBox.TabIndex = 20;
-            this.MD_LanguageComboBox.Text = "Παρακαλώ επιλέξτε";
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(16, 56);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(138, 16);
-            this.label5.TabIndex = 19;
-            this.label5.Text = "Γλώσσα μεταδεδομένων";
             // 
             // MD_DateTimePicker
             // 
-            this.MD_DateTimePicker.CustomFormat = "yyyy-MM-dd";
+            resources.ApplyResources(this.MD_DateTimePicker, "MD_DateTimePicker");
             this.MD_DateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.MD_DateTimePicker.Location = new System.Drawing.Point(56, 32);
             this.MD_DateTimePicker.Name = "MD_DateTimePicker";
-            this.MD_DateTimePicker.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.MD_DateTimePicker.Size = new System.Drawing.Size(273, 22);
-            this.MD_DateTimePicker.TabIndex = 18;
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(16, 16);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(154, 16);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "Ημερομηνία μεταδεδομένων";
             // 
             // IdentificationTab
             // 
+            resources.ApplyResources(this.IdentificationTab, "IdentificationTab");
             this.IdentificationTab.Controls.Add(this.groupBox1);
             this.IdentificationTab.Controls.Add(this.groupBox9);
             this.IdentificationTab.Controls.Add(this.groupBox8);
             this.IdentificationTab.Controls.Add(this.groupBox7);
-            this.IdentificationTab.Location = new System.Drawing.Point(4, 46);
             this.IdentificationTab.Name = "IdentificationTab";
-            this.IdentificationTab.Size = new System.Drawing.Size(581, 475);
-            this.IdentificationTab.TabIndex = 2;
-            this.IdentificationTab.Text = "Ταυτοποίηση";
             this.IdentificationTab.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.ID_ResourceTypeComboBox);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.ID_ResourceAbstractTextBox);
             this.groupBox1.Controls.Add(this.ID_ResourseTitleTextBox);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Location = new System.Drawing.Point(65, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(465, 164);
-            this.groupBox1.TabIndex = 44;
             this.groupBox1.TabStop = false;
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(6, 13);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 16);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "Τίτλος πόρου";
             // 
             // ID_ResourceTypeComboBox
             // 
+            resources.ApplyResources(this.ID_ResourceTypeComboBox, "ID_ResourceTypeComboBox");
             this.ID_ResourceTypeComboBox.Items.AddRange(new object[] {
-            "Σύνολο χωρικών δεδομένων",
-            "Σειρά συνόλων χωρικών δεδομένων",
-            "Υπηρεσίες χωρικών δεδομένων"});
-            this.ID_ResourceTypeComboBox.Location = new System.Drawing.Point(51, 139);
+            resources.GetString("ID_ResourceTypeComboBox.Items"),
+            resources.GetString("ID_ResourceTypeComboBox.Items1"),
+            resources.GetString("ID_ResourceTypeComboBox.Items2")});
             this.ID_ResourceTypeComboBox.Name = "ID_ResourceTypeComboBox";
-            this.ID_ResourceTypeComboBox.Size = new System.Drawing.Size(326, 24);
-            this.ID_ResourceTypeComboBox.TabIndex = 22;
-            this.ID_ResourceTypeComboBox.Text = "Παρακαλώ επιλέξτε";
             // 
             // label8
             // 
-            this.label8.Location = new System.Drawing.Point(6, 123);
+            resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(104, 16);
-            this.label8.TabIndex = 21;
-            this.label8.Text = "Τύπος πόρου";
             // 
             // ID_ResourceAbstractTextBox
             // 
-            this.ID_ResourceAbstractTextBox.Location = new System.Drawing.Point(51, 72);
-            this.ID_ResourceAbstractTextBox.Multiline = true;
+            resources.ApplyResources(this.ID_ResourceAbstractTextBox, "ID_ResourceAbstractTextBox");
             this.ID_ResourceAbstractTextBox.Name = "ID_ResourceAbstractTextBox";
-            this.ID_ResourceAbstractTextBox.Size = new System.Drawing.Size(326, 48);
-            this.ID_ResourceAbstractTextBox.TabIndex = 20;
             // 
             // ID_ResourseTitleTextBox
             // 
-            this.ID_ResourseTitleTextBox.Location = new System.Drawing.Point(51, 33);
+            resources.ApplyResources(this.ID_ResourseTitleTextBox, "ID_ResourseTitleTextBox");
             this.ID_ResourseTitleTextBox.Name = "ID_ResourseTitleTextBox";
-            this.ID_ResourseTitleTextBox.Size = new System.Drawing.Size(326, 22);
-            this.ID_ResourseTitleTextBox.TabIndex = 18;
             // 
             // label7
             // 
-            this.label7.Location = new System.Drawing.Point(6, 56);
+            resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(104, 16);
-            this.label7.TabIndex = 19;
-            this.label7.Text = "Σύνοψη πόρου";
             // 
             // groupBox9
             // 
+            resources.ApplyResources(this.groupBox9, "groupBox9");
             this.groupBox9.Controls.Add(this.ID_ResourceLanguageListBox);
             this.groupBox9.Controls.Add(this.ID_ResourceLanguageComboBox);
             this.groupBox9.Controls.Add(this.ID_ResourceLanguageAddButton);
             this.groupBox9.Controls.Add(this.ID_ResourceLanguageRemoveButton);
-            this.groupBox9.Location = new System.Drawing.Point(63, 376);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(467, 97);
-            this.groupBox9.TabIndex = 43;
             this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Γλώσσα πόρου";
             // 
             // ID_ResourceLanguageListBox
             // 
-            this.ID_ResourceLanguageListBox.ItemHeight = 16;
-            this.ID_ResourceLanguageListBox.Location = new System.Drawing.Point(53, 49);
+            resources.ApplyResources(this.ID_ResourceLanguageListBox, "ID_ResourceLanguageListBox");
             this.ID_ResourceLanguageListBox.Name = "ID_ResourceLanguageListBox";
-            this.ID_ResourceLanguageListBox.Size = new System.Drawing.Size(326, 36);
-            this.ID_ResourceLanguageListBox.TabIndex = 38;
             // 
             // ID_ResourceLanguageComboBox
             // 
+            resources.ApplyResources(this.ID_ResourceLanguageComboBox, "ID_ResourceLanguageComboBox");
             this.ID_ResourceLanguageComboBox.Items.AddRange(new object[] {
-            "Αγγλικά",
-            "Γαλικά",
-            "Γερμανικά",
-            "Ελληνικά",
-            "Ιταλικά"});
-            this.ID_ResourceLanguageComboBox.Location = new System.Drawing.Point(53, 22);
+            resources.GetString("ID_ResourceLanguageComboBox.Items"),
+            resources.GetString("ID_ResourceLanguageComboBox.Items1"),
+            resources.GetString("ID_ResourceLanguageComboBox.Items2"),
+            resources.GetString("ID_ResourceLanguageComboBox.Items3"),
+            resources.GetString("ID_ResourceLanguageComboBox.Items4")});
             this.ID_ResourceLanguageComboBox.Name = "ID_ResourceLanguageComboBox";
-            this.ID_ResourceLanguageComboBox.Size = new System.Drawing.Size(326, 24);
-            this.ID_ResourceLanguageComboBox.TabIndex = 24;
-            this.ID_ResourceLanguageComboBox.Text = "Παρακαλώ επιλέξτε";
             // 
             // ID_ResourceLanguageAddButton
             // 
-            this.ID_ResourceLanguageAddButton.Location = new System.Drawing.Point(385, 19);
+            resources.ApplyResources(this.ID_ResourceLanguageAddButton, "ID_ResourceLanguageAddButton");
             this.ID_ResourceLanguageAddButton.Name = "ID_ResourceLanguageAddButton";
-            this.ID_ResourceLanguageAddButton.Size = new System.Drawing.Size(67, 24);
-            this.ID_ResourceLanguageAddButton.TabIndex = 39;
-            this.ID_ResourceLanguageAddButton.Text = "Προσθήκη";
             this.ID_ResourceLanguageAddButton.Click += new System.EventHandler(this.ID_ResourceLanguageAddButton_Click);
             // 
             // ID_ResourceLanguageRemoveButton
             // 
-            this.ID_ResourceLanguageRemoveButton.Location = new System.Drawing.Point(385, 59);
+            resources.ApplyResources(this.ID_ResourceLanguageRemoveButton, "ID_ResourceLanguageRemoveButton");
             this.ID_ResourceLanguageRemoveButton.Name = "ID_ResourceLanguageRemoveButton";
-            this.ID_ResourceLanguageRemoveButton.Size = new System.Drawing.Size(67, 24);
-            this.ID_ResourceLanguageRemoveButton.TabIndex = 40;
-            this.ID_ResourceLanguageRemoveButton.Text = "Διαγραφή";
             this.ID_ResourceLanguageRemoveButton.Click += new System.EventHandler(this.ID_ResourceLanguageRemoveButton_Click);
             // 
             // groupBox8
             // 
+            resources.ApplyResources(this.groupBox8, "groupBox8");
             this.groupBox8.Controls.Add(this.GUIDButton);
             this.groupBox8.Controls.Add(this.ID_CodeTextBox);
             this.groupBox8.Controls.Add(this.ID_UIDListBox);
@@ -794,213 +711,153 @@ namespace Inspire.Metadata
             this.groupBox8.Controls.Add(this.ID_NamespaceTextBox);
             this.groupBox8.Controls.Add(this.label66);
             this.groupBox8.Controls.Add(this.label65);
-            this.groupBox8.Location = new System.Drawing.Point(63, 260);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(467, 114);
-            this.groupBox8.TabIndex = 42;
             this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Μοναδικό αναγνωριστικό πόρου";
             // 
             // GUIDButton
             // 
-            this.GUIDButton.Location = new System.Drawing.Point(366, 45);
+            resources.ApplyResources(this.GUIDButton, "GUIDButton");
             this.GUIDButton.Name = "GUIDButton";
-            this.GUIDButton.Size = new System.Drawing.Size(95, 36);
-            this.GUIDButton.TabIndex = 38;
-            this.GUIDButton.Text = "Νέο αναγνωριστικό";
             this.GUIDButton.Click += new System.EventHandler(this.GUIDButton_Click);
             // 
             // ID_CodeTextBox
             // 
-            this.ID_CodeTextBox.Location = new System.Drawing.Point(112, 19);
+            resources.ApplyResources(this.ID_CodeTextBox, "ID_CodeTextBox");
             this.ID_CodeTextBox.Name = "ID_CodeTextBox";
-            this.ID_CodeTextBox.Size = new System.Drawing.Size(248, 22);
-            this.ID_CodeTextBox.TabIndex = 30;
             // 
             // ID_UIDListBox
             // 
-            this.ID_UIDListBox.ItemHeight = 16;
-            this.ID_UIDListBox.Location = new System.Drawing.Point(53, 67);
+            resources.ApplyResources(this.ID_UIDListBox, "ID_UIDListBox");
             this.ID_UIDListBox.Name = "ID_UIDListBox";
-            this.ID_UIDListBox.Size = new System.Drawing.Size(307, 36);
-            this.ID_UIDListBox.TabIndex = 32;
             // 
             // ID_UIDAddButton
             // 
-            this.ID_UIDAddButton.Location = new System.Drawing.Point(366, 16);
+            resources.ApplyResources(this.ID_UIDAddButton, "ID_UIDAddButton");
             this.ID_UIDAddButton.Name = "ID_UIDAddButton";
-            this.ID_UIDAddButton.Size = new System.Drawing.Size(95, 24);
-            this.ID_UIDAddButton.TabIndex = 33;
-            this.ID_UIDAddButton.Text = "Προσθήκη";
             this.ID_UIDAddButton.Click += new System.EventHandler(this.ID_UIDAddButton_Click);
             // 
             // ID_UIDRemoveButton
             // 
-            this.ID_UIDRemoveButton.Location = new System.Drawing.Point(366, 84);
+            resources.ApplyResources(this.ID_UIDRemoveButton, "ID_UIDRemoveButton");
             this.ID_UIDRemoveButton.Name = "ID_UIDRemoveButton";
-            this.ID_UIDRemoveButton.Size = new System.Drawing.Size(95, 24);
-            this.ID_UIDRemoveButton.TabIndex = 34;
-            this.ID_UIDRemoveButton.Text = "Διαγραφή";
             this.ID_UIDRemoveButton.Click += new System.EventHandler(this.ID_UIDRemoveButton_Click);
             // 
             // ID_NamespaceTextBox
             // 
-            this.ID_NamespaceTextBox.Location = new System.Drawing.Point(112, 45);
+            resources.ApplyResources(this.ID_NamespaceTextBox, "ID_NamespaceTextBox");
             this.ID_NamespaceTextBox.Name = "ID_NamespaceTextBox";
-            this.ID_NamespaceTextBox.Size = new System.Drawing.Size(248, 22);
-            this.ID_NamespaceTextBox.TabIndex = 35;
             // 
             // label66
             // 
-            this.label66.Location = new System.Drawing.Point(8, 48);
+            resources.ApplyResources(this.label66, "label66");
             this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(98, 16);
-            this.label66.TabIndex = 37;
-            this.label66.Text = "Χώρος ονομάτων";
             // 
             // label65
             // 
-            this.label65.Location = new System.Drawing.Point(8, 22);
+            resources.ApplyResources(this.label65, "label65");
             this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(98, 16);
-            this.label65.TabIndex = 36;
-            this.label65.Text = "Αναγνωριστικό";
             // 
             // groupBox7
             // 
+            resources.ApplyResources(this.groupBox7, "groupBox7");
             this.groupBox7.Controls.Add(this.ID_ResourceLocatorTextBox);
             this.groupBox7.Controls.Add(this.ID_ResourceLocatorListBox);
             this.groupBox7.Controls.Add(this.ID_ResourceLocatorAddButton);
             this.groupBox7.Controls.Add(this.ID_ResourceLocatorRemoveButton);
-            this.groupBox7.Location = new System.Drawing.Point(63, 166);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(467, 92);
-            this.groupBox7.TabIndex = 41;
             this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Εντοπιστής πόρου";
             // 
             // ID_ResourceLocatorTextBox
             // 
-            this.ID_ResourceLocatorTextBox.Location = new System.Drawing.Point(53, 19);
+            resources.ApplyResources(this.ID_ResourceLocatorTextBox, "ID_ResourceLocatorTextBox");
             this.ID_ResourceLocatorTextBox.Name = "ID_ResourceLocatorTextBox";
-            this.ID_ResourceLocatorTextBox.Size = new System.Drawing.Size(326, 22);
-            this.ID_ResourceLocatorTextBox.TabIndex = 25;
             // 
             // ID_ResourceLocatorListBox
             // 
-            this.ID_ResourceLocatorListBox.ItemHeight = 16;
-            this.ID_ResourceLocatorListBox.Location = new System.Drawing.Point(53, 45);
+            resources.ApplyResources(this.ID_ResourceLocatorListBox, "ID_ResourceLocatorListBox");
             this.ID_ResourceLocatorListBox.Name = "ID_ResourceLocatorListBox";
-            this.ID_ResourceLocatorListBox.Size = new System.Drawing.Size(326, 36);
-            this.ID_ResourceLocatorListBox.TabIndex = 27;
             // 
             // ID_ResourceLocatorAddButton
             // 
-            this.ID_ResourceLocatorAddButton.Location = new System.Drawing.Point(385, 16);
+            resources.ApplyResources(this.ID_ResourceLocatorAddButton, "ID_ResourceLocatorAddButton");
             this.ID_ResourceLocatorAddButton.Name = "ID_ResourceLocatorAddButton";
-            this.ID_ResourceLocatorAddButton.Size = new System.Drawing.Size(67, 24);
-            this.ID_ResourceLocatorAddButton.TabIndex = 28;
-            this.ID_ResourceLocatorAddButton.Text = "Προσθήκη";
             this.ID_ResourceLocatorAddButton.Click += new System.EventHandler(this.ID_ResourceLocatorAddButton_Click);
             // 
             // ID_ResourceLocatorRemoveButton
             // 
-            this.ID_ResourceLocatorRemoveButton.Location = new System.Drawing.Point(385, 55);
+            resources.ApplyResources(this.ID_ResourceLocatorRemoveButton, "ID_ResourceLocatorRemoveButton");
             this.ID_ResourceLocatorRemoveButton.Name = "ID_ResourceLocatorRemoveButton";
-            this.ID_ResourceLocatorRemoveButton.Size = new System.Drawing.Size(67, 24);
-            this.ID_ResourceLocatorRemoveButton.TabIndex = 29;
-            this.ID_ResourceLocatorRemoveButton.Text = "Διαγραφή";
             this.ID_ResourceLocatorRemoveButton.Click += new System.EventHandler(this.ID_ResourceLocatorRemoveButton_Click);
             // 
             // ClassificationTab
             // 
+            resources.ApplyResources(this.ClassificationTab, "ClassificationTab");
             this.ClassificationTab.Controls.Add(this.CL_GroupBox);
-            this.ClassificationTab.Location = new System.Drawing.Point(4, 46);
             this.ClassificationTab.Name = "ClassificationTab";
-            this.ClassificationTab.Size = new System.Drawing.Size(581, 475);
-            this.ClassificationTab.TabIndex = 3;
-            this.ClassificationTab.Text = "Κατηγοριοποίηση";
             this.ClassificationTab.UseVisualStyleBackColor = true;
             // 
             // CL_GroupBox
             // 
+            resources.ApplyResources(this.CL_GroupBox, "CL_GroupBox");
             this.CL_GroupBox.Controls.Add(this.CL_RemoveTopicCategoryButton);
             this.CL_GroupBox.Controls.Add(this.CL_TopicCategoryListBox);
             this.CL_GroupBox.Controls.Add(this.CL_AddTopicCategoryButton);
             this.CL_GroupBox.Controls.Add(this.CL_TopicCategoryComboBox);
-            this.CL_GroupBox.Location = new System.Drawing.Point(63, 13);
             this.CL_GroupBox.Name = "CL_GroupBox";
-            this.CL_GroupBox.Size = new System.Drawing.Size(467, 127);
-            this.CL_GroupBox.TabIndex = 16;
             this.CL_GroupBox.TabStop = false;
-            this.CL_GroupBox.Text = "Θεματική κατηγορία";
             // 
             // CL_RemoveTopicCategoryButton
             // 
-            this.CL_RemoveTopicCategoryButton.Location = new System.Drawing.Point(385, 62);
+            resources.ApplyResources(this.CL_RemoveTopicCategoryButton, "CL_RemoveTopicCategoryButton");
             this.CL_RemoveTopicCategoryButton.Name = "CL_RemoveTopicCategoryButton";
-            this.CL_RemoveTopicCategoryButton.Size = new System.Drawing.Size(67, 24);
-            this.CL_RemoveTopicCategoryButton.TabIndex = 29;
-            this.CL_RemoveTopicCategoryButton.Text = "Διαγραφή";
             this.CL_RemoveTopicCategoryButton.Click += new System.EventHandler(this.CL_RemoveTopicCategoryButton_Click);
             // 
             // CL_TopicCategoryListBox
             // 
-            this.CL_TopicCategoryListBox.ItemHeight = 16;
-            this.CL_TopicCategoryListBox.Location = new System.Drawing.Point(53, 46);
+            resources.ApplyResources(this.CL_TopicCategoryListBox, "CL_TopicCategoryListBox");
             this.CL_TopicCategoryListBox.Name = "CL_TopicCategoryListBox";
-            this.CL_TopicCategoryListBox.Size = new System.Drawing.Size(326, 52);
-            this.CL_TopicCategoryListBox.TabIndex = 28;
             // 
             // CL_AddTopicCategoryButton
             // 
-            this.CL_AddTopicCategoryButton.Location = new System.Drawing.Point(385, 16);
+            resources.ApplyResources(this.CL_AddTopicCategoryButton, "CL_AddTopicCategoryButton");
             this.CL_AddTopicCategoryButton.Name = "CL_AddTopicCategoryButton";
-            this.CL_AddTopicCategoryButton.Size = new System.Drawing.Size(67, 24);
-            this.CL_AddTopicCategoryButton.TabIndex = 27;
-            this.CL_AddTopicCategoryButton.Text = "Προσθήκη";
             this.CL_AddTopicCategoryButton.Click += new System.EventHandler(this.CL_AddTopicCategoryButton_Click);
             // 
             // CL_TopicCategoryComboBox
             // 
+            resources.ApplyResources(this.CL_TopicCategoryComboBox, "CL_TopicCategoryComboBox");
             this.CL_TopicCategoryComboBox.Items.AddRange(new object[] {
-            "Γεωργία",
-            "Βιόκοσμος",
-            "Όρια",
-            "Κλιματολογία/Μετεωρολογία/Ατμόσφαιρα",
-            "Οικονομία",
-            "Υψομετρία",
-            "Περιβάλλον",
-            "Γεωεπιστημονικές πληροφορίες",
-            "Υγεία",
-            "Ορθοεικόνες/Βασικοίχάρτες/Κάλυψη γης",
-            "Στρατιωτικές πληροφορίες",
-            "Εσωτερικά ύδατα",
-            "Γεωγραφική θέση",
-            "Θάλασσες",
-            "Χωροταξία/κτηματολόγιο",
-            "Κοινωνία",
-            "Κατασκευές",
-            "Μεταφορές",
-            "Επιχειρήσεις κοινής ωφελείας/Επικοινωνία"});
-            this.CL_TopicCategoryComboBox.Location = new System.Drawing.Point(53, 19);
+            resources.GetString("CL_TopicCategoryComboBox.Items"),
+            resources.GetString("CL_TopicCategoryComboBox.Items1"),
+            resources.GetString("CL_TopicCategoryComboBox.Items2"),
+            resources.GetString("CL_TopicCategoryComboBox.Items3"),
+            resources.GetString("CL_TopicCategoryComboBox.Items4"),
+            resources.GetString("CL_TopicCategoryComboBox.Items5"),
+            resources.GetString("CL_TopicCategoryComboBox.Items6"),
+            resources.GetString("CL_TopicCategoryComboBox.Items7"),
+            resources.GetString("CL_TopicCategoryComboBox.Items8"),
+            resources.GetString("CL_TopicCategoryComboBox.Items9"),
+            resources.GetString("CL_TopicCategoryComboBox.Items10"),
+            resources.GetString("CL_TopicCategoryComboBox.Items11"),
+            resources.GetString("CL_TopicCategoryComboBox.Items12"),
+            resources.GetString("CL_TopicCategoryComboBox.Items13"),
+            resources.GetString("CL_TopicCategoryComboBox.Items14"),
+            resources.GetString("CL_TopicCategoryComboBox.Items15"),
+            resources.GetString("CL_TopicCategoryComboBox.Items16"),
+            resources.GetString("CL_TopicCategoryComboBox.Items17"),
+            resources.GetString("CL_TopicCategoryComboBox.Items18")});
             this.CL_TopicCategoryComboBox.Name = "CL_TopicCategoryComboBox";
-            this.CL_TopicCategoryComboBox.Size = new System.Drawing.Size(326, 24);
-            this.CL_TopicCategoryComboBox.TabIndex = 26;
-            this.CL_TopicCategoryComboBox.Text = "Παρακαλώ επιλέξτε";
             // 
             // KeywordTab
             // 
+            resources.ApplyResources(this.KeywordTab, "KeywordTab");
             this.KeywordTab.Controls.Add(this.KeywordGroupBox);
-            this.KeywordTab.Location = new System.Drawing.Point(4, 46);
             this.KeywordTab.Name = "KeywordTab";
-            this.KeywordTab.Size = new System.Drawing.Size(581, 475);
-            this.KeywordTab.TabIndex = 1;
-            this.KeywordTab.Text = "Λέξη κλειδί";
             this.KeywordTab.UseVisualStyleBackColor = true;
             // 
             // KeywordGroupBox
             // 
+            resources.ApplyResources(this.KeywordGroupBox, "KeywordGroupBox");
             this.KeywordGroupBox.Controls.Add(this.label17);
             this.KeywordGroupBox.Controls.Add(this.groupBox2);
             this.KeywordGroupBox.Controls.Add(this.KW_AddInspireButton);
@@ -1008,23 +865,17 @@ namespace Inspire.Metadata
             this.KeywordGroupBox.Controls.Add(this.KW_InspireComboBox);
             this.KeywordGroupBox.Controls.Add(this.KW_KeywordRemoveButton);
             this.KeywordGroupBox.Controls.Add(this.KW_KeywordListBox);
-            this.KeywordGroupBox.Location = new System.Drawing.Point(63, 13);
             this.KeywordGroupBox.Name = "KeywordGroupBox";
-            this.KeywordGroupBox.Size = new System.Drawing.Size(467, 293);
-            this.KeywordGroupBox.TabIndex = 31;
             this.KeywordGroupBox.TabStop = false;
-            this.KeywordGroupBox.Text = "Λέξη κλειδί";
             // 
             // label17
             // 
-            this.label17.Location = new System.Drawing.Point(6, 202);
+            resources.ApplyResources(this.label17, "label17");
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(137, 16);
-            this.label17.TabIndex = 35;
-            this.label17.Text = "Λίστα λέξεων κλειδιών";
             // 
             // groupBox2
             // 
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Controls.Add(this.KW_DateTimePicker);
             this.groupBox2.Controls.Add(this.KW_DateTypeComboBox);
             this.groupBox2.Controls.Add(this.label10);
@@ -1033,169 +884,127 @@ namespace Inspire.Metadata
             this.groupBox2.Controls.Add(this.KW_KeywordTextBox);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.KW_KeywordAddButton);
-            this.groupBox2.Location = new System.Drawing.Point(7, 65);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(454, 134);
-            this.groupBox2.TabIndex = 34;
             this.groupBox2.TabStop = false;
             // 
             // KW_DateTimePicker
             // 
-            this.KW_DateTimePicker.CustomFormat = "yyyy-MM-dd";
+            resources.ApplyResources(this.KW_DateTimePicker, "KW_DateTimePicker");
             this.KW_DateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.KW_DateTimePicker.Location = new System.Drawing.Point(213, 105);
             this.KW_DateTimePicker.Name = "KW_DateTimePicker";
-            this.KW_DateTimePicker.Size = new System.Drawing.Size(162, 22);
-            this.KW_DateTimePicker.TabIndex = 45;
             // 
             // KW_DateTypeComboBox
             // 
+            resources.ApplyResources(this.KW_DateTypeComboBox, "KW_DateTypeComboBox");
             this.KW_DateTypeComboBox.Items.AddRange(new object[] {
-            "δημιουργία",
-            "δημοσίευση",
-            "αναθεώρηση"});
-            this.KW_DateTypeComboBox.Location = new System.Drawing.Point(49, 105);
+            resources.GetString("KW_DateTypeComboBox.Items"),
+            resources.GetString("KW_DateTypeComboBox.Items1"),
+            resources.GetString("KW_DateTypeComboBox.Items2")});
             this.KW_DateTypeComboBox.Name = "KW_DateTypeComboBox";
-            this.KW_DateTypeComboBox.Size = new System.Drawing.Size(158, 24);
-            this.KW_DateTypeComboBox.TabIndex = 44;
-            this.KW_DateTypeComboBox.Text = "Παρακαλώ επιλέξτε";
             // 
             // label10
             // 
-            this.label10.Location = new System.Drawing.Point(6, 91);
+            resources.ApplyResources(this.label10, "label10");
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(130, 16);
-            this.label10.TabIndex = 43;
-            this.label10.Text = "Ημερομηνία αναφοράς";
             // 
             // KW_VocabularyTextBox
             // 
-            this.KW_VocabularyTextBox.Location = new System.Drawing.Point(49, 69);
+            resources.ApplyResources(this.KW_VocabularyTextBox, "KW_VocabularyTextBox");
             this.KW_VocabularyTextBox.Name = "KW_VocabularyTextBox";
-            this.KW_VocabularyTextBox.Size = new System.Drawing.Size(326, 22);
-            this.KW_VocabularyTextBox.TabIndex = 42;
             // 
             // label16
             // 
-            this.label16.Location = new System.Drawing.Point(6, 51);
+            resources.ApplyResources(this.label16, "label16");
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(184, 16);
-            this.label16.TabIndex = 41;
-            this.label16.Text = "Ελεγχόμενο λεξιλόγιο προέλευσης";
             // 
             // KW_KeywordTextBox
             // 
-            this.KW_KeywordTextBox.Location = new System.Drawing.Point(49, 28);
+            resources.ApplyResources(this.KW_KeywordTextBox, "KW_KeywordTextBox");
             this.KW_KeywordTextBox.Name = "KW_KeywordTextBox";
-            this.KW_KeywordTextBox.Size = new System.Drawing.Size(326, 22);
-            this.KW_KeywordTextBox.TabIndex = 30;
             // 
             // label11
             // 
-            this.label11.Location = new System.Drawing.Point(2, 9);
+            resources.ApplyResources(this.label11, "label11");
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(119, 16);
-            this.label11.TabIndex = 25;
-            this.label11.Text = "Τιμή της λέξης κλειδί";
             // 
             // KW_KeywordAddButton
             // 
-            this.KW_KeywordAddButton.Location = new System.Drawing.Point(381, 66);
+            resources.ApplyResources(this.KW_KeywordAddButton, "KW_KeywordAddButton");
             this.KW_KeywordAddButton.Name = "KW_KeywordAddButton";
-            this.KW_KeywordAddButton.Size = new System.Drawing.Size(67, 24);
-            this.KW_KeywordAddButton.TabIndex = 27;
-            this.KW_KeywordAddButton.Text = "Προσθήκη";
             this.KW_KeywordAddButton.Click += new System.EventHandler(this.KW_KeywordAddButton_Click);
             // 
             // KW_AddInspireButton
             // 
-            this.KW_AddInspireButton.Location = new System.Drawing.Point(388, 32);
+            resources.ApplyResources(this.KW_AddInspireButton, "KW_AddInspireButton");
             this.KW_AddInspireButton.Name = "KW_AddInspireButton";
-            this.KW_AddInspireButton.Size = new System.Drawing.Size(67, 24);
-            this.KW_AddInspireButton.TabIndex = 33;
-            this.KW_AddInspireButton.Text = "Προσθήκη";
             this.KW_AddInspireButton.Click += new System.EventHandler(this.KW_AddInspireButton_Click);
             // 
             // label9
             // 
-            this.label9.Location = new System.Drawing.Point(6, 16);
+            resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(137, 16);
-            this.label9.TabIndex = 32;
-            this.label9.Text = "Θέμα δεδομένων Inspire";
             // 
             // KW_InspireComboBox
             // 
+            resources.ApplyResources(this.KW_InspireComboBox, "KW_InspireComboBox");
             this.KW_InspireComboBox.Items.AddRange(new object[] {
-            "Ανθρώπινη υγεία και ασφάλεια",
-            "Ατμοσφαιρικές συνθήκες",
-            "Βιογεωγραφικές περιοχές",
-            "Γεωλογία",
-            "Γεωργικές εγκαταστάσεις και εγκαταστάσεις υδατοκαλλιέργειας",
-            "Γεωτεμάχια κτηματολογίου",
-            "Διευθύνσεις",
-            "Δίκτυα μεταφορών",
-            "Διοικητικές ενότητες",
-            "Εγκαταστάσεις παραγωγής και βιομηχανικές εγκαταστάσεις",
-            "Εγκαταστάσεις παρακολούθησης του περιβάλλοντος",
-            "Έδαφος",
-            "Ενδιαιτήματα και βιότοποι",
-            "Ενεργειακοί πόροι",
-            "Επιχειρήσεις κοινής ωφελείας και κρατικές υπηρεσίες",
-            "Ζώνες διαχείρισης/περιορισμού/ρύθμισης εκτάσεων και μονάδες αναφοράς",
-            "Ζώνες φυσικών κινδύνων",
-            "Θαλάσσιες περιοχές",
-            "Κάλυψη γης",
-            "Κατανομή ειδών",
-            "Κατανομή πληθυσμού  δημογραφία",
-            "Κτίρια",
-            "Μετεωρολογικά γεωγραφικά χαρακτηριστικά",
-            "Ορθοφωτογραφία",
-            "Ορυκτοί πόροι",
-            "Προστατευόμενες τοποθεσίες",
-            "Στατιστικές μονάδες",
-            "Συστήματα γεωγραφικού καννάβου",
-            "Συστήματα συντεταγμένων",
-            "Τοπωνύμια",
-            "Υδρογραφία",
-            "Υψομετρία",
-            "Χρήσεις γης",
-            "Ωκεανογραφικά γεωγραφικά χαρακτηριστικά"});
-            this.KW_InspireComboBox.Location = new System.Drawing.Point(56, 35);
+            resources.GetString("KW_InspireComboBox.Items"),
+            resources.GetString("KW_InspireComboBox.Items1"),
+            resources.GetString("KW_InspireComboBox.Items2"),
+            resources.GetString("KW_InspireComboBox.Items3"),
+            resources.GetString("KW_InspireComboBox.Items4"),
+            resources.GetString("KW_InspireComboBox.Items5"),
+            resources.GetString("KW_InspireComboBox.Items6"),
+            resources.GetString("KW_InspireComboBox.Items7"),
+            resources.GetString("KW_InspireComboBox.Items8"),
+            resources.GetString("KW_InspireComboBox.Items9"),
+            resources.GetString("KW_InspireComboBox.Items10"),
+            resources.GetString("KW_InspireComboBox.Items11"),
+            resources.GetString("KW_InspireComboBox.Items12"),
+            resources.GetString("KW_InspireComboBox.Items13"),
+            resources.GetString("KW_InspireComboBox.Items14"),
+            resources.GetString("KW_InspireComboBox.Items15"),
+            resources.GetString("KW_InspireComboBox.Items16"),
+            resources.GetString("KW_InspireComboBox.Items17"),
+            resources.GetString("KW_InspireComboBox.Items18"),
+            resources.GetString("KW_InspireComboBox.Items19"),
+            resources.GetString("KW_InspireComboBox.Items20"),
+            resources.GetString("KW_InspireComboBox.Items21"),
+            resources.GetString("KW_InspireComboBox.Items22"),
+            resources.GetString("KW_InspireComboBox.Items23"),
+            resources.GetString("KW_InspireComboBox.Items24"),
+            resources.GetString("KW_InspireComboBox.Items25"),
+            resources.GetString("KW_InspireComboBox.Items26"),
+            resources.GetString("KW_InspireComboBox.Items27"),
+            resources.GetString("KW_InspireComboBox.Items28"),
+            resources.GetString("KW_InspireComboBox.Items29"),
+            resources.GetString("KW_InspireComboBox.Items30"),
+            resources.GetString("KW_InspireComboBox.Items31"),
+            resources.GetString("KW_InspireComboBox.Items32"),
+            resources.GetString("KW_InspireComboBox.Items33")});
             this.KW_InspireComboBox.Name = "KW_InspireComboBox";
-            this.KW_InspireComboBox.Size = new System.Drawing.Size(326, 24);
-            this.KW_InspireComboBox.TabIndex = 31;
-            this.KW_InspireComboBox.Text = "Παρακαλώ επιλέξτε";
             // 
             // KW_KeywordRemoveButton
             // 
-            this.KW_KeywordRemoveButton.Location = new System.Drawing.Point(388, 235);
+            resources.ApplyResources(this.KW_KeywordRemoveButton, "KW_KeywordRemoveButton");
             this.KW_KeywordRemoveButton.Name = "KW_KeywordRemoveButton";
-            this.KW_KeywordRemoveButton.Size = new System.Drawing.Size(67, 24);
-            this.KW_KeywordRemoveButton.TabIndex = 29;
-            this.KW_KeywordRemoveButton.Text = "Διαγραφή";
             this.KW_KeywordRemoveButton.Click += new System.EventHandler(this.KW_KeywordRemoveButton_Click);
             // 
             // KW_KeywordListBox
             // 
-            this.KW_KeywordListBox.ItemHeight = 16;
-            this.KW_KeywordListBox.Location = new System.Drawing.Point(6, 221);
+            resources.ApplyResources(this.KW_KeywordListBox, "KW_KeywordListBox");
             this.KW_KeywordListBox.Name = "KW_KeywordListBox";
-            this.KW_KeywordListBox.Size = new System.Drawing.Size(376, 52);
-            this.KW_KeywordListBox.TabIndex = 28;
             // 
             // GeographicTab
             // 
+            resources.ApplyResources(this.GeographicTab, "GeographicTab");
             this.GeographicTab.Controls.Add(this.SPT_GroupBox);
-            this.GeographicTab.Location = new System.Drawing.Point(4, 46);
             this.GeographicTab.Name = "GeographicTab";
-            this.GeographicTab.Size = new System.Drawing.Size(581, 475);
-            this.GeographicTab.TabIndex = 4;
-            this.GeographicTab.Text = "Γεωγραφική θέση";
             this.GeographicTab.UseVisualStyleBackColor = true;
             // 
             // SPT_GroupBox
             // 
+            resources.ApplyResources(this.SPT_GroupBox, "SPT_GroupBox");
             this.SPT_GroupBox.Controls.Add(this.GEO_RemoveExtendButton);
             this.SPT_GroupBox.Controls.Add(this.GEO_ExtendListBox);
             this.SPT_GroupBox.Controls.Add(this.GEO_AddExtendButton);
@@ -1207,128 +1016,86 @@ namespace Inspire.Metadata
             this.SPT_GroupBox.Controls.Add(this.GEO_YminTextBox);
             this.SPT_GroupBox.Controls.Add(this.label58);
             this.SPT_GroupBox.Controls.Add(this.GEO_YmaxTextBox);
-            this.SPT_GroupBox.Location = new System.Drawing.Point(63, 13);
             this.SPT_GroupBox.Name = "SPT_GroupBox";
-            this.SPT_GroupBox.Size = new System.Drawing.Size(467, 229);
-            this.SPT_GroupBox.TabIndex = 29;
             this.SPT_GroupBox.TabStop = false;
-            this.SPT_GroupBox.Text = "Περίγραμμα γεωγραφικών συντεταγμένων";
             // 
             // GEO_RemoveExtendButton
             // 
-            this.GEO_RemoveExtendButton.Location = new System.Drawing.Point(382, 183);
+            resources.ApplyResources(this.GEO_RemoveExtendButton, "GEO_RemoveExtendButton");
             this.GEO_RemoveExtendButton.Name = "GEO_RemoveExtendButton";
-            this.GEO_RemoveExtendButton.Size = new System.Drawing.Size(67, 24);
-            this.GEO_RemoveExtendButton.TabIndex = 46;
-            this.GEO_RemoveExtendButton.Text = "Διαγραφή";
             this.GEO_RemoveExtendButton.Click += new System.EventHandler(this.GEO_RemoveExtendButton_Click);
             // 
             // GEO_ExtendListBox
             // 
-            this.GEO_ExtendListBox.ItemHeight = 16;
-            this.GEO_ExtendListBox.Location = new System.Drawing.Point(50, 167);
+            resources.ApplyResources(this.GEO_ExtendListBox, "GEO_ExtendListBox");
             this.GEO_ExtendListBox.Name = "GEO_ExtendListBox";
-            this.GEO_ExtendListBox.Size = new System.Drawing.Size(326, 52);
-            this.GEO_ExtendListBox.TabIndex = 45;
             // 
             // GEO_AddExtendButton
             // 
-            this.GEO_AddExtendButton.Location = new System.Drawing.Point(382, 77);
+            resources.ApplyResources(this.GEO_AddExtendButton, "GEO_AddExtendButton");
             this.GEO_AddExtendButton.Name = "GEO_AddExtendButton";
-            this.GEO_AddExtendButton.Size = new System.Drawing.Size(67, 24);
-            this.GEO_AddExtendButton.TabIndex = 44;
-            this.GEO_AddExtendButton.Text = "Προσθήκη";
             this.GEO_AddExtendButton.Click += new System.EventHandler(this.GEO_AddExtendButton_Click);
             // 
             // label61
             // 
-            this.label61.Location = new System.Drawing.Point(218, 64);
+            resources.ApplyResources(this.label61, "label61");
             this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(158, 16);
-            this.label61.TabIndex = 43;
-            this.label61.Text = "Ανατολικό γεωγραφικό μήκος";
-            this.label61.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // GEO_XmaxTextBox
             // 
-            this.GEO_XmaxTextBox.Location = new System.Drawing.Point(252, 81);
+            resources.ApplyResources(this.GEO_XmaxTextBox, "GEO_XmaxTextBox");
             this.GEO_XmaxTextBox.Name = "GEO_XmaxTextBox";
-            this.GEO_XmaxTextBox.Size = new System.Drawing.Size(76, 22);
-            this.GEO_XmaxTextBox.TabIndex = 42;
             // 
             // label60
             // 
-            this.label60.Location = new System.Drawing.Point(47, 64);
+            resources.ApplyResources(this.label60, "label60");
             this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(140, 16);
-            this.label60.TabIndex = 41;
-            this.label60.Text = "Δυτικό γεωγραφικό μήκος";
-            this.label60.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // GEO_XminTextBox
             // 
-            this.GEO_XminTextBox.Location = new System.Drawing.Point(84, 81);
+            resources.ApplyResources(this.GEO_XminTextBox, "GEO_XminTextBox");
             this.GEO_XminTextBox.Name = "GEO_XminTextBox";
-            this.GEO_XminTextBox.Size = new System.Drawing.Size(76, 22);
-            this.GEO_XminTextBox.TabIndex = 40;
             // 
             // label59
             // 
-            this.label59.Location = new System.Drawing.Point(131, 109);
+            resources.ApplyResources(this.label59, "label59");
             this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(145, 16);
-            this.label59.TabIndex = 39;
-            this.label59.Text = "Νότιο γεωγραφικό πλάτος";
-            this.label59.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // GEO_YminTextBox
             // 
-            this.GEO_YminTextBox.Location = new System.Drawing.Point(164, 128);
+            resources.ApplyResources(this.GEO_YminTextBox, "GEO_YminTextBox");
             this.GEO_YminTextBox.Name = "GEO_YminTextBox";
-            this.GEO_YminTextBox.Size = new System.Drawing.Size(76, 22);
-            this.GEO_YminTextBox.TabIndex = 38;
             // 
             // label58
             // 
-            this.label58.Location = new System.Drawing.Point(131, 16);
+            resources.ApplyResources(this.label58, "label58");
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(147, 16);
-            this.label58.TabIndex = 37;
-            this.label58.Text = "Βόρειο γεωγραφικό πλάτος";
-            this.label58.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // GEO_YmaxTextBox
             // 
-            this.GEO_YmaxTextBox.Location = new System.Drawing.Point(164, 33);
+            resources.ApplyResources(this.GEO_YmaxTextBox, "GEO_YmaxTextBox");
             this.GEO_YmaxTextBox.Name = "GEO_YmaxTextBox";
-            this.GEO_YmaxTextBox.Size = new System.Drawing.Size(76, 22);
-            this.GEO_YmaxTextBox.TabIndex = 34;
             // 
             // TemporalTab
             // 
+            resources.ApplyResources(this.TemporalTab, "TemporalTab");
             this.TemporalTab.Controls.Add(this.TMP_GroupBox);
-            this.TemporalTab.Location = new System.Drawing.Point(4, 46);
             this.TemporalTab.Name = "TemporalTab";
-            this.TemporalTab.Size = new System.Drawing.Size(581, 475);
-            this.TemporalTab.TabIndex = 5;
-            this.TemporalTab.Text = "Χρονική Αναφορά";
             this.TemporalTab.UseVisualStyleBackColor = true;
             // 
             // TMP_GroupBox
             // 
+            resources.ApplyResources(this.TMP_GroupBox, "TMP_GroupBox");
             this.TMP_GroupBox.Controls.Add(this.groupBox11);
             this.TMP_GroupBox.Controls.Add(this.groupBox10);
             this.TMP_GroupBox.Controls.Add(this.groupBox5);
             this.TMP_GroupBox.Controls.Add(this.groupBox4);
-            this.TMP_GroupBox.Location = new System.Drawing.Point(63, 13);
             this.TMP_GroupBox.Name = "TMP_GroupBox";
-            this.TMP_GroupBox.Size = new System.Drawing.Size(471, 447);
-            this.TMP_GroupBox.TabIndex = 32;
             this.TMP_GroupBox.TabStop = false;
-            this.TMP_GroupBox.Text = "Χρονική αναφορά";
             // 
             // groupBox11
             // 
+            resources.ApplyResources(this.groupBox11, "groupBox11");
             this.groupBox11.Controls.Add(this.label14);
             this.groupBox11.Controls.Add(this.TMP_ToDateTimePicker);
             this.groupBox11.Controls.Add(this.label13);
@@ -1336,283 +1103,196 @@ namespace Inspire.Metadata
             this.groupBox11.Controls.Add(this.TMP_RemoveExtendButton);
             this.groupBox11.Controls.Add(this.TMP_TemporalExtendListBox);
             this.groupBox11.Controls.Add(this.TMP_AddExtendButton);
-            this.groupBox11.Location = new System.Drawing.Point(6, 16);
             this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(460, 131);
-            this.groupBox11.TabIndex = 57;
             this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "Χρονική έκταση";
             // 
             // label14
             // 
-            this.label14.Location = new System.Drawing.Point(47, 52);
+            resources.ApplyResources(this.label14, "label14");
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(32, 16);
-            this.label14.TabIndex = 33;
-            this.label14.Text = "Έως";
             // 
             // TMP_ToDateTimePicker
             // 
-            this.TMP_ToDateTimePicker.CustomFormat = "yyyy-MM-dd";
+            resources.ApplyResources(this.TMP_ToDateTimePicker, "TMP_ToDateTimePicker");
             this.TMP_ToDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.TMP_ToDateTimePicker.Location = new System.Drawing.Point(119, 48);
             this.TMP_ToDateTimePicker.Name = "TMP_ToDateTimePicker";
-            this.TMP_ToDateTimePicker.Size = new System.Drawing.Size(256, 22);
-            this.TMP_ToDateTimePicker.TabIndex = 32;
             // 
             // label13
             // 
-            this.label13.Location = new System.Drawing.Point(47, 28);
+            resources.ApplyResources(this.label13, "label13");
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(32, 16);
-            this.label13.TabIndex = 31;
-            this.label13.Text = "Από";
             // 
             // TMP_FromDateTimePicker
             // 
-            this.TMP_FromDateTimePicker.CustomFormat = "yyyy-MM-dd";
+            resources.ApplyResources(this.TMP_FromDateTimePicker, "TMP_FromDateTimePicker");
             this.TMP_FromDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.TMP_FromDateTimePicker.Location = new System.Drawing.Point(120, 24);
             this.TMP_FromDateTimePicker.Name = "TMP_FromDateTimePicker";
-            this.TMP_FromDateTimePicker.Size = new System.Drawing.Size(255, 22);
-            this.TMP_FromDateTimePicker.TabIndex = 30;
             // 
             // TMP_RemoveExtendButton
             // 
-            this.TMP_RemoveExtendButton.Location = new System.Drawing.Point(387, 84);
+            resources.ApplyResources(this.TMP_RemoveExtendButton, "TMP_RemoveExtendButton");
             this.TMP_RemoveExtendButton.Name = "TMP_RemoveExtendButton";
-            this.TMP_RemoveExtendButton.Size = new System.Drawing.Size(67, 24);
-            this.TMP_RemoveExtendButton.TabIndex = 29;
-            this.TMP_RemoveExtendButton.Text = "Διαγραφή";
             this.TMP_RemoveExtendButton.Click += new System.EventHandler(this.TMP_RemoveExtendButton_Click);
             // 
             // TMP_TemporalExtendListBox
             // 
-            this.TMP_TemporalExtendListBox.ItemHeight = 16;
-            this.TMP_TemporalExtendListBox.Location = new System.Drawing.Point(49, 72);
+            resources.ApplyResources(this.TMP_TemporalExtendListBox, "TMP_TemporalExtendListBox");
             this.TMP_TemporalExtendListBox.Name = "TMP_TemporalExtendListBox";
-            this.TMP_TemporalExtendListBox.Size = new System.Drawing.Size(326, 52);
-            this.TMP_TemporalExtendListBox.TabIndex = 28;
             // 
             // TMP_AddExtendButton
             // 
-            this.TMP_AddExtendButton.Location = new System.Drawing.Point(387, 40);
+            resources.ApplyResources(this.TMP_AddExtendButton, "TMP_AddExtendButton");
             this.TMP_AddExtendButton.Name = "TMP_AddExtendButton";
-            this.TMP_AddExtendButton.Size = new System.Drawing.Size(67, 24);
-            this.TMP_AddExtendButton.TabIndex = 27;
-            this.TMP_AddExtendButton.Text = "Προσθήκη";
             this.TMP_AddExtendButton.Click += new System.EventHandler(this.TMP_AddExtendButton_Click);
             // 
             // groupBox10
             // 
+            resources.ApplyResources(this.groupBox10, "groupBox10");
             this.groupBox10.Controls.Add(this.TMP_RemoveCreationDateButton);
             this.groupBox10.Controls.Add(this.TMP_AddCreationDateButton);
             this.groupBox10.Controls.Add(this.TMP_CreationDateListBox);
             this.groupBox10.Controls.Add(this.TMP_CreationDateTimePicker);
             this.groupBox10.Controls.Add(this.label31);
-            this.groupBox10.Location = new System.Drawing.Point(6, 349);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(460, 75);
-            this.groupBox10.TabIndex = 56;
             this.groupBox10.TabStop = false;
             // 
             // TMP_RemoveCreationDateButton
             // 
-            this.TMP_RemoveCreationDateButton.Location = new System.Drawing.Point(387, 42);
+            resources.ApplyResources(this.TMP_RemoveCreationDateButton, "TMP_RemoveCreationDateButton");
             this.TMP_RemoveCreationDateButton.Name = "TMP_RemoveCreationDateButton";
-            this.TMP_RemoveCreationDateButton.Size = new System.Drawing.Size(67, 24);
-            this.TMP_RemoveCreationDateButton.TabIndex = 53;
-            this.TMP_RemoveCreationDateButton.Text = "Διαγραφή";
             this.TMP_RemoveCreationDateButton.Click += new System.EventHandler(this.TMP_RemoveCreationDateButton_Click);
             // 
             // TMP_AddCreationDateButton
             // 
-            this.TMP_AddCreationDateButton.Location = new System.Drawing.Point(387, 12);
+            resources.ApplyResources(this.TMP_AddCreationDateButton, "TMP_AddCreationDateButton");
             this.TMP_AddCreationDateButton.Name = "TMP_AddCreationDateButton";
-            this.TMP_AddCreationDateButton.Size = new System.Drawing.Size(67, 24);
-            this.TMP_AddCreationDateButton.TabIndex = 52;
-            this.TMP_AddCreationDateButton.Text = "Προσθήκη";
             this.TMP_AddCreationDateButton.Click += new System.EventHandler(this.TMP_AddCreationDateButton_Click);
             // 
             // TMP_CreationDateListBox
             // 
-            this.TMP_CreationDateListBox.ItemHeight = 16;
-            this.TMP_CreationDateListBox.Location = new System.Drawing.Point(49, 40);
+            resources.ApplyResources(this.TMP_CreationDateListBox, "TMP_CreationDateListBox");
             this.TMP_CreationDateListBox.Name = "TMP_CreationDateListBox";
-            this.TMP_CreationDateListBox.Size = new System.Drawing.Size(326, 20);
-            this.TMP_CreationDateListBox.TabIndex = 49;
             // 
             // TMP_CreationDateTimePicker
             // 
-            this.TMP_CreationDateTimePicker.CustomFormat = "yyyy-MM-dd";
+            resources.ApplyResources(this.TMP_CreationDateTimePicker, "TMP_CreationDateTimePicker");
             this.TMP_CreationDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.TMP_CreationDateTimePicker.Location = new System.Drawing.Point(145, 14);
             this.TMP_CreationDateTimePicker.Name = "TMP_CreationDateTimePicker";
-            this.TMP_CreationDateTimePicker.Size = new System.Drawing.Size(230, 22);
-            this.TMP_CreationDateTimePicker.TabIndex = 47;
             // 
             // label31
             // 
-            this.label31.Location = new System.Drawing.Point(6, 18);
+            resources.ApplyResources(this.label31, "label31");
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(130, 22);
-            this.label31.TabIndex = 46;
-            this.label31.Text = "Ημερομηνία δημιουργίας";
             // 
             // groupBox5
             // 
+            resources.ApplyResources(this.groupBox5, "groupBox5");
             this.groupBox5.Controls.Add(this.TMP_RevisionDateTimePicker);
             this.groupBox5.Controls.Add(this.label30);
             this.groupBox5.Controls.Add(this.TMP_RevisionDateListBox);
             this.groupBox5.Controls.Add(this.TMP_AddRevisionDateButton);
             this.groupBox5.Controls.Add(this.TMP_RemoveRevisionDateButton);
-            this.groupBox5.Location = new System.Drawing.Point(6, 262);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(460, 81);
-            this.groupBox5.TabIndex = 55;
             this.groupBox5.TabStop = false;
             // 
             // TMP_RevisionDateTimePicker
             // 
-            this.TMP_RevisionDateTimePicker.CustomFormat = "yyyy-MM-dd";
+            resources.ApplyResources(this.TMP_RevisionDateTimePicker, "TMP_RevisionDateTimePicker");
             this.TMP_RevisionDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.TMP_RevisionDateTimePicker.Location = new System.Drawing.Point(145, 19);
             this.TMP_RevisionDateTimePicker.Name = "TMP_RevisionDateTimePicker";
-            this.TMP_RevisionDateTimePicker.Size = new System.Drawing.Size(231, 22);
-            this.TMP_RevisionDateTimePicker.TabIndex = 45;
             // 
             // label30
             // 
-            this.label30.Location = new System.Drawing.Point(10, 16);
+            resources.ApplyResources(this.label30, "label30");
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(129, 30);
-            this.label30.TabIndex = 44;
-            this.label30.Text = "Ημερομηνία τελευταίας αναθεώρησης";
             // 
             // TMP_RevisionDateListBox
             // 
-            this.TMP_RevisionDateListBox.ItemHeight = 16;
-            this.TMP_RevisionDateListBox.Location = new System.Drawing.Point(49, 45);
+            resources.ApplyResources(this.TMP_RevisionDateListBox, "TMP_RevisionDateListBox");
             this.TMP_RevisionDateListBox.Name = "TMP_RevisionDateListBox";
-            this.TMP_RevisionDateListBox.Size = new System.Drawing.Size(326, 20);
-            this.TMP_RevisionDateListBox.TabIndex = 48;
             // 
             // TMP_AddRevisionDateButton
             // 
-            this.TMP_AddRevisionDateButton.Location = new System.Drawing.Point(388, 17);
+            resources.ApplyResources(this.TMP_AddRevisionDateButton, "TMP_AddRevisionDateButton");
             this.TMP_AddRevisionDateButton.Name = "TMP_AddRevisionDateButton";
-            this.TMP_AddRevisionDateButton.Size = new System.Drawing.Size(67, 24);
-            this.TMP_AddRevisionDateButton.TabIndex = 50;
-            this.TMP_AddRevisionDateButton.Text = "Προσθήκη";
             this.TMP_AddRevisionDateButton.Click += new System.EventHandler(this.TMP_AddRevisionDateButton_Click);
             // 
             // TMP_RemoveRevisionDateButton
             // 
-            this.TMP_RemoveRevisionDateButton.Location = new System.Drawing.Point(387, 47);
+            resources.ApplyResources(this.TMP_RemoveRevisionDateButton, "TMP_RemoveRevisionDateButton");
             this.TMP_RemoveRevisionDateButton.Name = "TMP_RemoveRevisionDateButton";
-            this.TMP_RemoveRevisionDateButton.Size = new System.Drawing.Size(67, 24);
-            this.TMP_RemoveRevisionDateButton.TabIndex = 51;
-            this.TMP_RemoveRevisionDateButton.Text = "Διαγραφή";
             this.TMP_RemoveRevisionDateButton.Click += new System.EventHandler(this.TMP_RemoveRevisionDateButton_Click);
             // 
             // groupBox4
             // 
+            resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Controls.Add(this.TMP_PublicTimePicker);
             this.groupBox4.Controls.Add(this.label15);
             this.groupBox4.Controls.Add(this.TMP_AddDateButton);
             this.groupBox4.Controls.Add(this.TMP_PublicDateListBox);
             this.groupBox4.Controls.Add(this.TMP_RemoveDateButton);
-            this.groupBox4.Location = new System.Drawing.Point(6, 145);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(460, 118);
-            this.groupBox4.TabIndex = 54;
             this.groupBox4.TabStop = false;
             // 
             // TMP_PublicTimePicker
             // 
-            this.TMP_PublicTimePicker.CustomFormat = "yyyy-MM-dd";
+            resources.ApplyResources(this.TMP_PublicTimePicker, "TMP_PublicTimePicker");
             this.TMP_PublicTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.TMP_PublicTimePicker.Location = new System.Drawing.Point(145, 19);
             this.TMP_PublicTimePicker.Name = "TMP_PublicTimePicker";
-            this.TMP_PublicTimePicker.Size = new System.Drawing.Size(231, 22);
-            this.TMP_PublicTimePicker.TabIndex = 35;
             // 
             // label15
             // 
-            this.label15.Location = new System.Drawing.Point(6, 23);
+            resources.ApplyResources(this.label15, "label15");
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(140, 18);
-            this.label15.TabIndex = 34;
-            this.label15.Text = "Ημερομηνία δημοσίευσης";
             // 
             // TMP_AddDateButton
             // 
-            this.TMP_AddDateButton.Location = new System.Drawing.Point(388, 17);
+            resources.ApplyResources(this.TMP_AddDateButton, "TMP_AddDateButton");
             this.TMP_AddDateButton.Name = "TMP_AddDateButton";
-            this.TMP_AddDateButton.Size = new System.Drawing.Size(67, 24);
-            this.TMP_AddDateButton.TabIndex = 41;
-            this.TMP_AddDateButton.Text = "Προσθήκη";
             this.TMP_AddDateButton.Click += new System.EventHandler(this.TMP_AddDateButton_Click);
             // 
             // TMP_PublicDateListBox
             // 
-            this.TMP_PublicDateListBox.ItemHeight = 16;
-            this.TMP_PublicDateListBox.Location = new System.Drawing.Point(50, 45);
+            resources.ApplyResources(this.TMP_PublicDateListBox, "TMP_PublicDateListBox");
             this.TMP_PublicDateListBox.Name = "TMP_PublicDateListBox";
-            this.TMP_PublicDateListBox.Size = new System.Drawing.Size(326, 52);
-            this.TMP_PublicDateListBox.TabIndex = 42;
             // 
             // TMP_RemoveDateButton
             // 
-            this.TMP_RemoveDateButton.Location = new System.Drawing.Point(388, 58);
+            resources.ApplyResources(this.TMP_RemoveDateButton, "TMP_RemoveDateButton");
             this.TMP_RemoveDateButton.Name = "TMP_RemoveDateButton";
-            this.TMP_RemoveDateButton.Size = new System.Drawing.Size(67, 24);
-            this.TMP_RemoveDateButton.TabIndex = 43;
-            this.TMP_RemoveDateButton.Text = "Διαγραφή";
             this.TMP_RemoveDateButton.Click += new System.EventHandler(this.TMP_RemoveDateButton_Click);
             // 
             // QualityValidityTab
             // 
+            resources.ApplyResources(this.QualityValidityTab, "QualityValidityTab");
             this.QualityValidityTab.Controls.Add(this.LineageGroupBox);
             this.QualityValidityTab.Controls.Add(this.QLT_GroupBox);
-            this.QualityValidityTab.Location = new System.Drawing.Point(4, 46);
             this.QualityValidityTab.Name = "QualityValidityTab";
-            this.QualityValidityTab.Size = new System.Drawing.Size(581, 475);
-            this.QualityValidityTab.TabIndex = 6;
-            this.QualityValidityTab.Text = "Ποιότητα και Εγκυρότητα";
             this.QualityValidityTab.UseVisualStyleBackColor = true;
             // 
             // LineageGroupBox
             // 
+            resources.ApplyResources(this.LineageGroupBox, "LineageGroupBox");
             this.LineageGroupBox.Controls.Add(this.LIN_FreeTextBox);
-            this.LineageGroupBox.Location = new System.Drawing.Point(63, 259);
             this.LineageGroupBox.Name = "LineageGroupBox";
-            this.LineageGroupBox.Size = new System.Drawing.Size(467, 140);
-            this.LineageGroupBox.TabIndex = 27;
             this.LineageGroupBox.TabStop = false;
-            this.LineageGroupBox.Text = "Καταγωγή";
             // 
             // LIN_FreeTextBox
             // 
             this.LIN_FreeTextBox.AcceptsReturn = true;
-            this.LIN_FreeTextBox.Location = new System.Drawing.Point(6, 12);
-            this.LIN_FreeTextBox.Multiline = true;
+            resources.ApplyResources(this.LIN_FreeTextBox, "LIN_FreeTextBox");
             this.LIN_FreeTextBox.Name = "LIN_FreeTextBox";
-            this.LIN_FreeTextBox.Size = new System.Drawing.Size(455, 116);
-            this.LIN_FreeTextBox.TabIndex = 20;
             // 
             // QLT_GroupBox
             // 
+            resources.ApplyResources(this.QLT_GroupBox, "QLT_GroupBox");
             this.QLT_GroupBox.Controls.Add(this.Spatial_GroupBox);
-            this.QLT_GroupBox.Location = new System.Drawing.Point(63, 13);
             this.QLT_GroupBox.Name = "QLT_GroupBox";
-            this.QLT_GroupBox.Size = new System.Drawing.Size(467, 240);
-            this.QLT_GroupBox.TabIndex = 26;
             this.QLT_GroupBox.TabStop = false;
-            this.QLT_GroupBox.Text = "Ποιότητα";
             // 
             // Spatial_GroupBox
             // 
+            resources.ApplyResources(this.Spatial_GroupBox, "Spatial_GroupBox");
             this.Spatial_GroupBox.Controls.Add(this.QLT_UnitsComboBox);
             this.Spatial_GroupBox.Controls.Add(this.label29);
             this.Spatial_GroupBox.Controls.Add(this.QLT_AddDistanceButton);
@@ -1624,122 +1304,85 @@ namespace Inspire.Metadata
             this.Spatial_GroupBox.Controls.Add(this.QLT_RemoveButton);
             this.Spatial_GroupBox.Controls.Add(this.QLT_AddScaleButton);
             this.Spatial_GroupBox.Controls.Add(this.QLT_ListBox);
-            this.Spatial_GroupBox.Location = new System.Drawing.Point(8, 16);
             this.Spatial_GroupBox.Name = "Spatial_GroupBox";
-            this.Spatial_GroupBox.Size = new System.Drawing.Size(453, 216);
-            this.Spatial_GroupBox.TabIndex = 26;
             this.Spatial_GroupBox.TabStop = false;
-            this.Spatial_GroupBox.Text = "Χωρική ανάλυση";
             // 
             // QLT_UnitsComboBox
             // 
+            resources.ApplyResources(this.QLT_UnitsComboBox, "QLT_UnitsComboBox");
             this.QLT_UnitsComboBox.Items.AddRange(new object[] {
-            "Meter",
-            "Centimeter",
-            "Millimeter",
-            "Kilometer",
-            "Yard",
-            "Foot",
-            "Mile"});
-            this.QLT_UnitsComboBox.Location = new System.Drawing.Point(48, 115);
+            resources.GetString("QLT_UnitsComboBox.Items"),
+            resources.GetString("QLT_UnitsComboBox.Items1"),
+            resources.GetString("QLT_UnitsComboBox.Items2"),
+            resources.GetString("QLT_UnitsComboBox.Items3"),
+            resources.GetString("QLT_UnitsComboBox.Items4"),
+            resources.GetString("QLT_UnitsComboBox.Items5"),
+            resources.GetString("QLT_UnitsComboBox.Items6")});
             this.QLT_UnitsComboBox.Name = "QLT_UnitsComboBox";
-            this.QLT_UnitsComboBox.Size = new System.Drawing.Size(326, 24);
-            this.QLT_UnitsComboBox.TabIndex = 40;
-            this.QLT_UnitsComboBox.Text = "Παρακαλώ επιλέξτε";
             // 
             // label29
             // 
-            this.label29.Location = new System.Drawing.Point(23, 35);
+            resources.ApplyResources(this.label29, "label29");
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(18, 16);
-            this.label29.TabIndex = 39;
-            this.label29.Text = "1/";
             // 
             // QLT_AddDistanceButton
             // 
-            this.QLT_AddDistanceButton.Location = new System.Drawing.Point(380, 69);
+            resources.ApplyResources(this.QLT_AddDistanceButton, "QLT_AddDistanceButton");
             this.QLT_AddDistanceButton.Name = "QLT_AddDistanceButton";
-            this.QLT_AddDistanceButton.Size = new System.Drawing.Size(67, 24);
-            this.QLT_AddDistanceButton.TabIndex = 38;
-            this.QLT_AddDistanceButton.Text = "Προσθήκη";
             this.QLT_AddDistanceButton.Click += new System.EventHandler(this.QLT_AddDistanceButton_Click);
             // 
             // label20
             // 
-            this.label20.Location = new System.Drawing.Point(8, 96);
+            resources.ApplyResources(this.label20, "label20");
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(104, 16);
-            this.label20.TabIndex = 36;
-            this.label20.Text = "Μονάδα μέτρησης";
             // 
             // QLT_DistanceTextBox
             // 
-            this.QLT_DistanceTextBox.Location = new System.Drawing.Point(48, 72);
+            resources.ApplyResources(this.QLT_DistanceTextBox, "QLT_DistanceTextBox");
             this.QLT_DistanceTextBox.Name = "QLT_DistanceTextBox";
-            this.QLT_DistanceTextBox.Size = new System.Drawing.Size(326, 22);
-            this.QLT_DistanceTextBox.TabIndex = 35;
             // 
             // label19
             // 
-            this.label19.Location = new System.Drawing.Point(8, 56);
+            resources.ApplyResources(this.label19, "label19");
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(104, 16);
-            this.label19.TabIndex = 34;
-            this.label19.Text = "Απόσταση";
             // 
             // QLT_ScaleTextBox
             // 
-            this.QLT_ScaleTextBox.Location = new System.Drawing.Point(48, 32);
+            resources.ApplyResources(this.QLT_ScaleTextBox, "QLT_ScaleTextBox");
             this.QLT_ScaleTextBox.Name = "QLT_ScaleTextBox";
-            this.QLT_ScaleTextBox.Size = new System.Drawing.Size(326, 22);
-            this.QLT_ScaleTextBox.TabIndex = 33;
             // 
             // label18
             // 
-            this.label18.Location = new System.Drawing.Point(8, 16);
+            resources.ApplyResources(this.label18, "label18");
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(104, 16);
-            this.label18.TabIndex = 32;
-            this.label18.Text = "Ισοδύναμη κλίμακα";
             // 
             // QLT_RemoveButton
             // 
-            this.QLT_RemoveButton.Location = new System.Drawing.Point(380, 167);
+            resources.ApplyResources(this.QLT_RemoveButton, "QLT_RemoveButton");
             this.QLT_RemoveButton.Name = "QLT_RemoveButton";
-            this.QLT_RemoveButton.Size = new System.Drawing.Size(67, 24);
-            this.QLT_RemoveButton.TabIndex = 31;
-            this.QLT_RemoveButton.Text = "Διαγραφή";
             this.QLT_RemoveButton.Click += new System.EventHandler(this.QLT_RemoveButton_Click);
             // 
             // QLT_AddScaleButton
             // 
-            this.QLT_AddScaleButton.Location = new System.Drawing.Point(380, 29);
+            resources.ApplyResources(this.QLT_AddScaleButton, "QLT_AddScaleButton");
             this.QLT_AddScaleButton.Name = "QLT_AddScaleButton";
-            this.QLT_AddScaleButton.Size = new System.Drawing.Size(67, 24);
-            this.QLT_AddScaleButton.TabIndex = 30;
-            this.QLT_AddScaleButton.Text = "Προσθήκη";
             this.QLT_AddScaleButton.Click += new System.EventHandler(this.QLT_AddScaleButton_Click);
             // 
             // QLT_ListBox
             // 
-            this.QLT_ListBox.ItemHeight = 16;
-            this.QLT_ListBox.Location = new System.Drawing.Point(48, 152);
+            resources.ApplyResources(this.QLT_ListBox, "QLT_ListBox");
             this.QLT_ListBox.Name = "QLT_ListBox";
-            this.QLT_ListBox.Size = new System.Drawing.Size(326, 52);
-            this.QLT_ListBox.TabIndex = 29;
             // 
             // ConformityTab
             // 
+            resources.ApplyResources(this.ConformityTab, "ConformityTab");
             this.ConformityTab.Controls.Add(this.CFRM_GroupBox);
-            this.ConformityTab.Location = new System.Drawing.Point(4, 46);
             this.ConformityTab.Name = "ConformityTab";
-            this.ConformityTab.Size = new System.Drawing.Size(581, 475);
-            this.ConformityTab.TabIndex = 7;
-            this.ConformityTab.Text = "Συμμόρφωση";
             this.ConformityTab.UseVisualStyleBackColor = true;
             // 
             // CFRM_GroupBox
             // 
+            resources.ApplyResources(this.CFRM_GroupBox, "CFRM_GroupBox");
             this.CFRM_GroupBox.Controls.Add(this.CFRM_DegreeComboBox);
             this.CFRM_GroupBox.Controls.Add(this.CFRM_DateTimePicker);
             this.CFRM_GroupBox.Controls.Add(this.CFRM_DateTypeComboBox);
@@ -1750,115 +1393,80 @@ namespace Inspire.Metadata
             this.CFRM_GroupBox.Controls.Add(this.label23);
             this.CFRM_GroupBox.Controls.Add(this.CFRM_RemoveButton);
             this.CFRM_GroupBox.Controls.Add(this.CFRM_ListBox);
-            this.CFRM_GroupBox.Location = new System.Drawing.Point(63, 13);
             this.CFRM_GroupBox.Name = "CFRM_GroupBox";
-            this.CFRM_GroupBox.Size = new System.Drawing.Size(467, 216);
-            this.CFRM_GroupBox.TabIndex = 28;
             this.CFRM_GroupBox.TabStop = false;
-            this.CFRM_GroupBox.Text = "Συμμόρφωση";
             // 
             // CFRM_DegreeComboBox
             // 
+            resources.ApplyResources(this.CFRM_DegreeComboBox, "CFRM_DegreeComboBox");
             this.CFRM_DegreeComboBox.Items.AddRange(new object[] {
-            "Σύμμορφος",
-            "Δεν είναι σύμμορφος",
-            "Δεν αξιολογήθηκε"});
-            this.CFRM_DegreeComboBox.Location = new System.Drawing.Point(48, 112);
+            resources.GetString("CFRM_DegreeComboBox.Items"),
+            resources.GetString("CFRM_DegreeComboBox.Items1"),
+            resources.GetString("CFRM_DegreeComboBox.Items2")});
             this.CFRM_DegreeComboBox.Name = "CFRM_DegreeComboBox";
-            this.CFRM_DegreeComboBox.Size = new System.Drawing.Size(174, 24);
-            this.CFRM_DegreeComboBox.TabIndex = 41;
-            this.CFRM_DegreeComboBox.Text = "Παρακαλώ επιλέξτε";
             // 
             // CFRM_DateTimePicker
             // 
-            this.CFRM_DateTimePicker.CustomFormat = "yyyy-MM-dd";
+            resources.ApplyResources(this.CFRM_DateTimePicker, "CFRM_DateTimePicker");
             this.CFRM_DateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.CFRM_DateTimePicker.Location = new System.Drawing.Point(228, 73);
             this.CFRM_DateTimePicker.Name = "CFRM_DateTimePicker";
-            this.CFRM_DateTimePicker.Size = new System.Drawing.Size(160, 22);
-            this.CFRM_DateTimePicker.TabIndex = 40;
             // 
             // CFRM_DateTypeComboBox
             // 
+            resources.ApplyResources(this.CFRM_DateTypeComboBox, "CFRM_DateTypeComboBox");
             this.CFRM_DateTypeComboBox.Items.AddRange(new object[] {
-            "δημιουργία",
-            "δημοσίευση",
-            "αναθεώρηση"});
-            this.CFRM_DateTypeComboBox.Location = new System.Drawing.Point(48, 72);
+            resources.GetString("CFRM_DateTypeComboBox.Items"),
+            resources.GetString("CFRM_DateTypeComboBox.Items1"),
+            resources.GetString("CFRM_DateTypeComboBox.Items2")});
             this.CFRM_DateTypeComboBox.Name = "CFRM_DateTypeComboBox";
-            this.CFRM_DateTypeComboBox.Size = new System.Drawing.Size(174, 24);
-            this.CFRM_DateTypeComboBox.TabIndex = 39;
-            this.CFRM_DateTypeComboBox.Text = "Παρακαλώ επιλέξτε";
             // 
             // CFRM_AddButton
             // 
-            this.CFRM_AddButton.Location = new System.Drawing.Point(394, 31);
+            resources.ApplyResources(this.CFRM_AddButton, "CFRM_AddButton");
             this.CFRM_AddButton.Name = "CFRM_AddButton";
-            this.CFRM_AddButton.Size = new System.Drawing.Size(67, 24);
-            this.CFRM_AddButton.TabIndex = 38;
-            this.CFRM_AddButton.Text = "Προσθήκη";
             this.CFRM_AddButton.Click += new System.EventHandler(this.CFRM_AddButton_Click);
             // 
             // label21
             // 
-            this.label21.Location = new System.Drawing.Point(8, 96);
+            resources.ApplyResources(this.label21, "label21");
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(130, 16);
-            this.label21.TabIndex = 36;
-            this.label21.Text = "Βαθμός συμμόρφωσης";
             // 
             // label22
             // 
-            this.label22.Location = new System.Drawing.Point(8, 56);
+            resources.ApplyResources(this.label22, "label22");
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(130, 16);
-            this.label22.TabIndex = 34;
-            this.label22.Text = "Ημερομηνία αναφοράς";
             // 
             // CFRM_TitleTextBox
             // 
-            this.CFRM_TitleTextBox.Location = new System.Drawing.Point(48, 34);
+            resources.ApplyResources(this.CFRM_TitleTextBox, "CFRM_TitleTextBox");
             this.CFRM_TitleTextBox.Name = "CFRM_TitleTextBox";
-            this.CFRM_TitleTextBox.Size = new System.Drawing.Size(340, 22);
-            this.CFRM_TitleTextBox.TabIndex = 33;
             // 
             // label23
             // 
-            this.label23.Location = new System.Drawing.Point(8, 16);
+            resources.ApplyResources(this.label23, "label23");
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(104, 16);
-            this.label23.TabIndex = 32;
-            this.label23.Text = "Τίτλος αναφοράς";
             // 
             // CFRM_RemoveButton
             // 
-            this.CFRM_RemoveButton.Location = new System.Drawing.Point(394, 159);
+            resources.ApplyResources(this.CFRM_RemoveButton, "CFRM_RemoveButton");
             this.CFRM_RemoveButton.Name = "CFRM_RemoveButton";
-            this.CFRM_RemoveButton.Size = new System.Drawing.Size(67, 24);
-            this.CFRM_RemoveButton.TabIndex = 31;
-            this.CFRM_RemoveButton.Text = "Διαγραφή";
             this.CFRM_RemoveButton.Click += new System.EventHandler(this.CFRM_RemoveButton_Click);
             // 
             // CFRM_ListBox
             // 
-            this.CFRM_ListBox.ItemHeight = 16;
-            this.CFRM_ListBox.Location = new System.Drawing.Point(48, 144);
+            resources.ApplyResources(this.CFRM_ListBox, "CFRM_ListBox");
             this.CFRM_ListBox.Name = "CFRM_ListBox";
-            this.CFRM_ListBox.Size = new System.Drawing.Size(340, 52);
-            this.CFRM_ListBox.TabIndex = 29;
             // 
             // ConstraintsTab
             // 
+            resources.ApplyResources(this.ConstraintsTab, "ConstraintsTab");
             this.ConstraintsTab.Controls.Add(this.CSTR_GroupBox);
-            this.ConstraintsTab.Location = new System.Drawing.Point(4, 46);
             this.ConstraintsTab.Name = "ConstraintsTab";
-            this.ConstraintsTab.Size = new System.Drawing.Size(581, 475);
-            this.ConstraintsTab.TabIndex = 8;
-            this.ConstraintsTab.Text = "Περιορισμοί";
             this.ConstraintsTab.UseVisualStyleBackColor = true;
             // 
             // CSTR_GroupBox
             // 
+            resources.ApplyResources(this.CSTR_GroupBox, "CSTR_GroupBox");
             this.CSTR_GroupBox.Controls.Add(this.label26);
             this.CSTR_GroupBox.Controls.Add(this.CSTR_RemoveConditionsUseGeneralButton);
             this.CSTR_GroupBox.Controls.Add(this.CSTR_ConditionsUseGeneralListBox);
@@ -1875,191 +1483,130 @@ namespace Inspire.Metadata
             this.CSTR_GroupBox.Controls.Add(this.CSTR_LimitationsPublicComboBox);
             this.CSTR_GroupBox.Controls.Add(this.label25);
             this.CSTR_GroupBox.Controls.Add(this.label24);
-            this.CSTR_GroupBox.Location = new System.Drawing.Point(63, 13);
             this.CSTR_GroupBox.Name = "CSTR_GroupBox";
-            this.CSTR_GroupBox.Size = new System.Drawing.Size(467, 439);
-            this.CSTR_GroupBox.TabIndex = 27;
             this.CSTR_GroupBox.TabStop = false;
-            this.CSTR_GroupBox.Text = "Περιορισμοί σχετικά με την πρόσβαση και την χρήση";
             // 
             // label26
             // 
-            this.label26.Location = new System.Drawing.Point(45, 264);
+            resources.ApplyResources(this.label26, "label26");
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(161, 16);
-            this.label26.TabIndex = 53;
-            this.label26.Text = "ή εισάγετε ελέυθερο κείμενο";
             // 
             // CSTR_RemoveConditionsUseGeneralButton
             // 
-            this.CSTR_RemoveConditionsUseGeneralButton.Location = new System.Drawing.Point(392, 355);
+            resources.ApplyResources(this.CSTR_RemoveConditionsUseGeneralButton, "CSTR_RemoveConditionsUseGeneralButton");
             this.CSTR_RemoveConditionsUseGeneralButton.Name = "CSTR_RemoveConditionsUseGeneralButton";
-            this.CSTR_RemoveConditionsUseGeneralButton.Size = new System.Drawing.Size(67, 24);
-            this.CSTR_RemoveConditionsUseGeneralButton.TabIndex = 52;
-            this.CSTR_RemoveConditionsUseGeneralButton.Text = "Διαγραφή";
             this.CSTR_RemoveConditionsUseGeneralButton.Click += new System.EventHandler(this.CSTR_RemoveConditionsUseGeneralButton_Click);
             // 
             // CSTR_ConditionsUseGeneralListBox
             // 
-            this.CSTR_ConditionsUseGeneralListBox.ItemHeight = 16;
-            this.CSTR_ConditionsUseGeneralListBox.Location = new System.Drawing.Point(46, 342);
+            resources.ApplyResources(this.CSTR_ConditionsUseGeneralListBox, "CSTR_ConditionsUseGeneralListBox");
             this.CSTR_ConditionsUseGeneralListBox.Name = "CSTR_ConditionsUseGeneralListBox";
-            this.CSTR_ConditionsUseGeneralListBox.Size = new System.Drawing.Size(340, 52);
-            this.CSTR_ConditionsUseGeneralListBox.TabIndex = 51;
             // 
             // CSTR_AddConditionsUseGeneralButton2
             // 
-            this.CSTR_AddConditionsUseGeneralButton2.Location = new System.Drawing.Point(392, 297);
+            resources.ApplyResources(this.CSTR_AddConditionsUseGeneralButton2, "CSTR_AddConditionsUseGeneralButton2");
             this.CSTR_AddConditionsUseGeneralButton2.Name = "CSTR_AddConditionsUseGeneralButton2";
-            this.CSTR_AddConditionsUseGeneralButton2.Size = new System.Drawing.Size(67, 24);
-            this.CSTR_AddConditionsUseGeneralButton2.TabIndex = 50;
-            this.CSTR_AddConditionsUseGeneralButton2.Text = "Προσθήκη";
             this.CSTR_AddConditionsUseGeneralButton2.Click += new System.EventHandler(this.CSTR_AddConditionsUseGeneralButton2_Click);
             // 
             // CSTR_ConditionsUseGeneralTextBox
             // 
             this.CSTR_ConditionsUseGeneralTextBox.AcceptsReturn = true;
-            this.CSTR_ConditionsUseGeneralTextBox.Location = new System.Drawing.Point(46, 283);
-            this.CSTR_ConditionsUseGeneralTextBox.Multiline = true;
+            resources.ApplyResources(this.CSTR_ConditionsUseGeneralTextBox, "CSTR_ConditionsUseGeneralTextBox");
             this.CSTR_ConditionsUseGeneralTextBox.Name = "CSTR_ConditionsUseGeneralTextBox";
-            this.CSTR_ConditionsUseGeneralTextBox.Size = new System.Drawing.Size(340, 38);
-            this.CSTR_ConditionsUseGeneralTextBox.TabIndex = 49;
             // 
             // CSTR_AddConditionsUseGeneralButton1
             // 
-            this.CSTR_AddConditionsUseGeneralButton1.Location = new System.Drawing.Point(392, 236);
+            resources.ApplyResources(this.CSTR_AddConditionsUseGeneralButton1, "CSTR_AddConditionsUseGeneralButton1");
             this.CSTR_AddConditionsUseGeneralButton1.Name = "CSTR_AddConditionsUseGeneralButton1";
-            this.CSTR_AddConditionsUseGeneralButton1.Size = new System.Drawing.Size(67, 24);
-            this.CSTR_AddConditionsUseGeneralButton1.TabIndex = 48;
-            this.CSTR_AddConditionsUseGeneralButton1.Text = "Προσθήκη";
             this.CSTR_AddConditionsUseGeneralButton1.Click += new System.EventHandler(this.CSTR_AddConditionsUseGeneralButton1_Click);
             // 
             // CSTR_RemoveLimitationsPublicButton
             // 
-            this.CSTR_RemoveLimitationsPublicButton.Location = new System.Drawing.Point(394, 147);
+            resources.ApplyResources(this.CSTR_RemoveLimitationsPublicButton, "CSTR_RemoveLimitationsPublicButton");
             this.CSTR_RemoveLimitationsPublicButton.Name = "CSTR_RemoveLimitationsPublicButton";
-            this.CSTR_RemoveLimitationsPublicButton.Size = new System.Drawing.Size(67, 24);
-            this.CSTR_RemoveLimitationsPublicButton.TabIndex = 47;
-            this.CSTR_RemoveLimitationsPublicButton.Text = "Διαγραφή";
             this.CSTR_RemoveLimitationsPublicButton.Click += new System.EventHandler(this.CSTR_RemoveLimitationsPublicButton_Click);
             // 
             // CSTR_LimitationsPublicListBox
             // 
-            this.CSTR_LimitationsPublicListBox.ItemHeight = 16;
-            this.CSTR_LimitationsPublicListBox.Location = new System.Drawing.Point(48, 134);
+            resources.ApplyResources(this.CSTR_LimitationsPublicListBox, "CSTR_LimitationsPublicListBox");
             this.CSTR_LimitationsPublicListBox.Name = "CSTR_LimitationsPublicListBox";
-            this.CSTR_LimitationsPublicListBox.Size = new System.Drawing.Size(340, 52);
-            this.CSTR_LimitationsPublicListBox.TabIndex = 46;
             // 
             // CSTR_AddLimitationsPublicButton2
             // 
-            this.CSTR_AddLimitationsPublicButton2.Location = new System.Drawing.Point(394, 89);
+            resources.ApplyResources(this.CSTR_AddLimitationsPublicButton2, "CSTR_AddLimitationsPublicButton2");
             this.CSTR_AddLimitationsPublicButton2.Name = "CSTR_AddLimitationsPublicButton2";
-            this.CSTR_AddLimitationsPublicButton2.Size = new System.Drawing.Size(67, 24);
-            this.CSTR_AddLimitationsPublicButton2.TabIndex = 45;
-            this.CSTR_AddLimitationsPublicButton2.Text = "Προσθήκη";
             this.CSTR_AddLimitationsPublicButton2.Click += new System.EventHandler(this.CSTR_AddLimitationsPublicButton2_Click);
             // 
             // CSTR_LimitationsPublicTextBox
             // 
             this.CSTR_LimitationsPublicTextBox.AcceptsReturn = true;
-            this.CSTR_LimitationsPublicTextBox.Location = new System.Drawing.Point(48, 75);
-            this.CSTR_LimitationsPublicTextBox.Multiline = true;
+            resources.ApplyResources(this.CSTR_LimitationsPublicTextBox, "CSTR_LimitationsPublicTextBox");
             this.CSTR_LimitationsPublicTextBox.Name = "CSTR_LimitationsPublicTextBox";
-            this.CSTR_LimitationsPublicTextBox.Size = new System.Drawing.Size(340, 38);
-            this.CSTR_LimitationsPublicTextBox.TabIndex = 44;
             // 
             // label12
             // 
-            this.label12.Location = new System.Drawing.Point(45, 56);
+            resources.ApplyResources(this.label12, "label12");
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(161, 16);
-            this.label12.TabIndex = 43;
-            this.label12.Text = "ή εισάγετε ελέυθερο κείμενο";
             // 
             // CSTR_AddLimitationsPublicButton1
             // 
-            this.CSTR_AddLimitationsPublicButton1.Location = new System.Drawing.Point(394, 29);
+            resources.ApplyResources(this.CSTR_AddLimitationsPublicButton1, "CSTR_AddLimitationsPublicButton1");
             this.CSTR_AddLimitationsPublicButton1.Name = "CSTR_AddLimitationsPublicButton1";
-            this.CSTR_AddLimitationsPublicButton1.Size = new System.Drawing.Size(67, 24);
-            this.CSTR_AddLimitationsPublicButton1.TabIndex = 42;
-            this.CSTR_AddLimitationsPublicButton1.Text = "Προσθήκη";
             this.CSTR_AddLimitationsPublicButton1.Click += new System.EventHandler(this.CSTR_AddLimitationsPublicButton1_Click);
             // 
             // CSTR_ConditionsUseGeneralComboBox
             // 
+            resources.ApplyResources(this.CSTR_ConditionsUseGeneralComboBox, "CSTR_ConditionsUseGeneralComboBox");
             this.CSTR_ConditionsUseGeneralComboBox.Items.AddRange(new object[] {
-            "δεν ισχύουν όροι",
-            "άγνωστοι όροι"});
-            this.CSTR_ConditionsUseGeneralComboBox.Location = new System.Drawing.Point(46, 239);
+            resources.GetString("CSTR_ConditionsUseGeneralComboBox.Items"),
+            resources.GetString("CSTR_ConditionsUseGeneralComboBox.Items1")});
             this.CSTR_ConditionsUseGeneralComboBox.Name = "CSTR_ConditionsUseGeneralComboBox";
-            this.CSTR_ConditionsUseGeneralComboBox.Size = new System.Drawing.Size(340, 24);
-            this.CSTR_ConditionsUseGeneralComboBox.TabIndex = 41;
-            this.CSTR_ConditionsUseGeneralComboBox.Text = "Παρακαλώ επιλέξτε";
             // 
             // CSTR_LimitationsPublicComboBox
             // 
+            resources.ApplyResources(this.CSTR_LimitationsPublicComboBox, "CSTR_LimitationsPublicComboBox");
             this.CSTR_LimitationsPublicComboBox.Items.AddRange(new object[] {
-            "no limitations",
-            "(a) the confidentiality of the proceedings of public authorities,where such confi" +
-                "dentiality is provided for by law",
-            "(b) international relations, public security or national defence",
-            "(c) the course of justice, the ability of any person to receive a fair trial or t" +
-                "he ability of a public authority to conduct an enquiry of a criminal or discipli" +
-                "nary nature",
             resources.GetString("CSTR_LimitationsPublicComboBox.Items"),
-            "(e) intellectual property rights",
             resources.GetString("CSTR_LimitationsPublicComboBox.Items1"),
             resources.GetString("CSTR_LimitationsPublicComboBox.Items2"),
-            "(h) the protection of the environment to which such information relates, such as " +
-                "the location of rare species"});
-            this.CSTR_LimitationsPublicComboBox.Location = new System.Drawing.Point(48, 32);
+            resources.GetString("CSTR_LimitationsPublicComboBox.Items3"),
+            resources.GetString("CSTR_LimitationsPublicComboBox.Items4"),
+            resources.GetString("CSTR_LimitationsPublicComboBox.Items5"),
+            resources.GetString("CSTR_LimitationsPublicComboBox.Items6"),
+            resources.GetString("CSTR_LimitationsPublicComboBox.Items7"),
+            resources.GetString("CSTR_LimitationsPublicComboBox.Items8")});
             this.CSTR_LimitationsPublicComboBox.Name = "CSTR_LimitationsPublicComboBox";
-            this.CSTR_LimitationsPublicComboBox.Size = new System.Drawing.Size(340, 24);
-            this.CSTR_LimitationsPublicComboBox.TabIndex = 40;
-            this.CSTR_LimitationsPublicComboBox.Text = "Παρακαλώ επιλέξτε";
             // 
             // label25
             // 
-            this.label25.Location = new System.Drawing.Point(6, 220);
+            resources.ApplyResources(this.label25, "label25");
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(200, 16);
-            this.label25.TabIndex = 36;
-            this.label25.Text = "Όροι για την πρόσβαση και τη χρήση";
             // 
             // label24
             // 
-            this.label24.Location = new System.Drawing.Point(8, 16);
+            resources.ApplyResources(this.label24, "label24");
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(265, 16);
-            this.label24.TabIndex = 34;
-            this.label24.Text = "Περιορισμοί σχετικά με την πρόσβαση του κοινού";
             // 
             // OrganizationTab
             // 
+            resources.ApplyResources(this.OrganizationTab, "OrganizationTab");
             this.OrganizationTab.Controls.Add(this.ORG_GroupBox);
-            this.OrganizationTab.Location = new System.Drawing.Point(4, 46);
             this.OrganizationTab.Name = "OrganizationTab";
-            this.OrganizationTab.Size = new System.Drawing.Size(581, 475);
-            this.OrganizationTab.TabIndex = 9;
-            this.OrganizationTab.Text = "Οργανισμοί";
             this.OrganizationTab.UseVisualStyleBackColor = true;
             // 
             // ORG_GroupBox
             // 
+            resources.ApplyResources(this.ORG_GroupBox, "ORG_GroupBox");
             this.ORG_GroupBox.Controls.Add(this.groupBox12);
             this.ORG_GroupBox.Controls.Add(this.ORG_IndividualListBox);
             this.ORG_GroupBox.Controls.Add(this.ORG_RemoveButton);
             this.ORG_GroupBox.Controls.Add(this.ORG_AddButton);
-            this.ORG_GroupBox.Location = new System.Drawing.Point(26, 13);
             this.ORG_GroupBox.Name = "ORG_GroupBox";
-            this.ORG_GroupBox.Size = new System.Drawing.Size(523, 257);
-            this.ORG_GroupBox.TabIndex = 28;
             this.ORG_GroupBox.TabStop = false;
-            this.ORG_GroupBox.Text = "Αρμόδιοι οργανισμοι για τη δημιουργία, τη συντήρηση και τη διανομή";
             // 
             // groupBox12
             // 
+            resources.ApplyResources(this.groupBox12, "groupBox12");
             this.groupBox12.Controls.Add(this.ORG_RemoveEmailButton);
             this.groupBox12.Controls.Add(this.ORG_EmailListBox);
             this.groupBox12.Controls.Add(this.ORG_AddEmailButton);
@@ -2069,128 +1616,90 @@ namespace Inspire.Metadata
             this.groupBox12.Controls.Add(this.label28);
             this.groupBox12.Controls.Add(this.label6);
             this.groupBox12.Controls.Add(this.ORG_RoleComboBox);
-            this.groupBox12.Location = new System.Drawing.Point(5, 16);
             this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(439, 171);
-            this.groupBox12.TabIndex = 39;
             this.groupBox12.TabStop = false;
-            this.groupBox12.Text = "Αρμόδιο μέρος";
             // 
             // ORG_RemoveEmailButton
             // 
-            this.ORG_RemoveEmailButton.Location = new System.Drawing.Point(366, 56);
+            resources.ApplyResources(this.ORG_RemoveEmailButton, "ORG_RemoveEmailButton");
             this.ORG_RemoveEmailButton.Name = "ORG_RemoveEmailButton";
-            this.ORG_RemoveEmailButton.Size = new System.Drawing.Size(67, 24);
-            this.ORG_RemoveEmailButton.TabIndex = 41;
-            this.ORG_RemoveEmailButton.Text = "Διαγραφή";
             this.ORG_RemoveEmailButton.Click += new System.EventHandler(this.ORG_RemoveEmailButton_Click);
             // 
             // ORG_EmailListBox
             // 
-            this.ORG_EmailListBox.ItemHeight = 16;
-            this.ORG_EmailListBox.Location = new System.Drawing.Point(108, 43);
+            resources.ApplyResources(this.ORG_EmailListBox, "ORG_EmailListBox");
             this.ORG_EmailListBox.Name = "ORG_EmailListBox";
-            this.ORG_EmailListBox.Size = new System.Drawing.Size(252, 52);
-            this.ORG_EmailListBox.TabIndex = 40;
             // 
             // ORG_AddEmailButton
             // 
-            this.ORG_AddEmailButton.Location = new System.Drawing.Point(366, 13);
+            resources.ApplyResources(this.ORG_AddEmailButton, "ORG_AddEmailButton");
             this.ORG_AddEmailButton.Name = "ORG_AddEmailButton";
-            this.ORG_AddEmailButton.Size = new System.Drawing.Size(67, 24);
-            this.ORG_AddEmailButton.TabIndex = 39;
-            this.ORG_AddEmailButton.Text = "Προσθήκη";
             this.ORG_AddEmailButton.Click += new System.EventHandler(this.ORG_AddEmailButton_Click);
             // 
             // ORG_EmailTextBox
             // 
-            this.ORG_EmailTextBox.Location = new System.Drawing.Point(108, 16);
+            resources.ApplyResources(this.ORG_EmailTextBox, "ORG_EmailTextBox");
             this.ORG_EmailTextBox.Name = "ORG_EmailTextBox";
-            this.ORG_EmailTextBox.Size = new System.Drawing.Size(252, 22);
-            this.ORG_EmailTextBox.TabIndex = 37;
             // 
             // label27
             // 
-            this.label27.Location = new System.Drawing.Point(6, 19);
+            resources.ApplyResources(this.label27, "label27");
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(96, 28);
-            this.label27.TabIndex = 38;
-            this.label27.Text = "Ηλεκτρονική διεύθυνση";
             // 
             // ORG_NameTextBox
             // 
-            this.ORG_NameTextBox.Location = new System.Drawing.Point(106, 145);
+            resources.ApplyResources(this.ORG_NameTextBox, "ORG_NameTextBox");
             this.ORG_NameTextBox.Name = "ORG_NameTextBox";
-            this.ORG_NameTextBox.Size = new System.Drawing.Size(327, 22);
-            this.ORG_NameTextBox.TabIndex = 31;
             // 
             // label28
             // 
-            this.label28.Location = new System.Drawing.Point(6, 145);
+            resources.ApplyResources(this.label28, "label28");
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(104, 16);
-            this.label28.TabIndex = 30;
-            this.label28.Text = "Όνομα οργανισμού";
             // 
             // label6
             // 
-            this.label6.Location = new System.Drawing.Point(6, 105);
+            resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(96, 40);
-            this.label6.TabIndex = 23;
-            this.label6.Text = "Ρόλος αρμόδιου μέρους";
             // 
             // ORG_RoleComboBox
             // 
+            resources.ApplyResources(this.ORG_RoleComboBox, "ORG_RoleComboBox");
             this.ORG_RoleComboBox.Items.AddRange(new object[] {
-            "Πάροχος πόρου",
-            "Υπόλογος",
-            "Κάτοχος",
-            "Χρήστης",
-            "Διανομέας",
-            "Δημιουργός",
-            "Αρμόδιος για επικοινωνία",
-            "Πρωτεύων διερευνητής",
-            "Επεξεργαστής",
-            "Εκδότης",
-            "Συντάκτης"});
-            this.ORG_RoleComboBox.Location = new System.Drawing.Point(108, 105);
+            resources.GetString("ORG_RoleComboBox.Items"),
+            resources.GetString("ORG_RoleComboBox.Items1"),
+            resources.GetString("ORG_RoleComboBox.Items2"),
+            resources.GetString("ORG_RoleComboBox.Items3"),
+            resources.GetString("ORG_RoleComboBox.Items4"),
+            resources.GetString("ORG_RoleComboBox.Items5"),
+            resources.GetString("ORG_RoleComboBox.Items6"),
+            resources.GetString("ORG_RoleComboBox.Items7"),
+            resources.GetString("ORG_RoleComboBox.Items8"),
+            resources.GetString("ORG_RoleComboBox.Items9"),
+            resources.GetString("ORG_RoleComboBox.Items10")});
             this.ORG_RoleComboBox.Name = "ORG_RoleComboBox";
-            this.ORG_RoleComboBox.Size = new System.Drawing.Size(200, 24);
-            this.ORG_RoleComboBox.TabIndex = 24;
-            this.ORG_RoleComboBox.Text = "Παρακαλώ επιλέξτε";
             // 
             // ORG_IndividualListBox
             // 
-            this.ORG_IndividualListBox.ItemHeight = 16;
-            this.ORG_IndividualListBox.Location = new System.Drawing.Point(5, 193);
+            resources.ApplyResources(this.ORG_IndividualListBox, "ORG_IndividualListBox");
             this.ORG_IndividualListBox.Name = "ORG_IndividualListBox";
-            this.ORG_IndividualListBox.Size = new System.Drawing.Size(438, 52);
-            this.ORG_IndividualListBox.TabIndex = 34;
             // 
             // ORG_RemoveButton
             // 
-            this.ORG_RemoveButton.Location = new System.Drawing.Point(449, 208);
+            resources.ApplyResources(this.ORG_RemoveButton, "ORG_RemoveButton");
             this.ORG_RemoveButton.Name = "ORG_RemoveButton";
-            this.ORG_RemoveButton.Size = new System.Drawing.Size(67, 24);
-            this.ORG_RemoveButton.TabIndex = 29;
-            this.ORG_RemoveButton.Text = "Διαγραφή";
             this.ORG_RemoveButton.Click += new System.EventHandler(this.ORG_RemoveButton_Click);
             // 
             // ORG_AddButton
             // 
-            this.ORG_AddButton.Location = new System.Drawing.Point(450, 72);
+            resources.ApplyResources(this.ORG_AddButton, "ORG_AddButton");
             this.ORG_AddButton.Name = "ORG_AddButton";
-            this.ORG_AddButton.Size = new System.Drawing.Size(67, 24);
-            this.ORG_AddButton.TabIndex = 28;
-            this.ORG_AddButton.Text = "Προσθήκη";
             this.ORG_AddButton.Click += new System.EventHandler(this.ORG_AddButton_Click);
             // 
             // MDControl
             // 
+            resources.ApplyResources(this, "$this");
             this.Controls.Add(this.MD_tabControl);
             this.Name = "MDControl";
-            this.Size = new System.Drawing.Size(589, 525);
             this.MD_tabControl.ResumeLayout(false);
             this.MetadataTab.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
