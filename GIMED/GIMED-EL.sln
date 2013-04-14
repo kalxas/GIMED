@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GIMED-EL", "GIMED-EL.csproj", "{1308BB9C-93C9-4576-ACB5-4971BB92B3A2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GIMED", "GIMED.csproj", "{1308BB9C-93C9-4576-ACB5-4971BB92B3A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
