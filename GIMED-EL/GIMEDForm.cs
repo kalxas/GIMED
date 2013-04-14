@@ -654,11 +654,12 @@ public partial class GIMEDForm : Form
                 this.FillMDControl(this.myMDObject, mdControl1);
                 this.DataFileButton.Enabled = false;
                 this.SaveXMLButton.Enabled = false;
-                MessageBox.Show("Φορτώθηκε αρχείο XML");
+
+                MessageBox.Show(GIMED_EL.Properties.Resources.XMLLoaded);
             }
             else
             {
-                MessageBox.Show("Σφάλμα φόρτωσης αρχείου XML");
+                MessageBox.Show(GIMED_EL.Properties.Resources.XMLNotLoaded);
             }
         }
         return;

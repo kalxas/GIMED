@@ -59,5 +59,23 @@ namespace GIMED_EL.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to XML file loaded.
+        /// </summary>
+        internal static string XMLLoaded {
+            get {
+                return ResourceManager.GetString("XMLLoaded", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to There was an error loading the XML file.
+        /// </summary>
+        internal static string XMLNotLoaded {
+            get {
+                return ResourceManager.GetString("XMLNotLoaded", resourceCulture);
+            }
+        }
     }
 }
