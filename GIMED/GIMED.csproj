@@ -107,6 +107,9 @@
     <Compile Include="MDObject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmEPSG.el-GR.resx">
+      <DependentUpon>frmEPSG.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmEPSG.resx">
       <DependentUpon>frmEPSG.cs</DependentUpon>
     </EmbeddedResource>
