@@ -39,24 +39,24 @@
             // 
             // lbEPSGCodes
             // 
-            this.lbEPSGCodes.FormattingEnabled = true;
             resources.ApplyResources(this.lbEPSGCodes, "lbEPSGCodes");
+            this.lbEPSGCodes.FormattingEnabled = true;
             this.lbEPSGCodes.Name = "lbEPSGCodes";
             this.lbEPSGCodes.Sorted = true;
             this.lbEPSGCodes.Format += new System.Windows.Forms.ListControlConvertEventHandler(this.lbEPSGCodes_Format);
             // 
             // btnSelectEpsg
             // 
-            this.btnSelectEpsg.DialogResult = System.Windows.Forms.DialogResult.OK;
             resources.ApplyResources(this.btnSelectEpsg, "btnSelectEpsg");
+            this.btnSelectEpsg.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnSelectEpsg.Name = "btnSelectEpsg";
             this.btnSelectEpsg.UseVisualStyleBackColor = true;
             this.btnSelectEpsg.Click += new System.EventHandler(this.btnSelectEpsg_Click);
             // 
             // btnCancelEpsg
             // 
-            this.btnCancelEpsg.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             resources.ApplyResources(this.btnCancelEpsg, "btnCancelEpsg");
+            this.btnCancelEpsg.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancelEpsg.Name = "btnCancelEpsg";
             this.btnCancelEpsg.UseVisualStyleBackColor = true;
             this.btnCancelEpsg.Click += new System.EventHandler(this.btnCancelEpsg_Click);
@@ -65,6 +65,7 @@
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 

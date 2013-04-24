@@ -59,5 +59,275 @@ namespace GIMED {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Code already exists.
+        /// </summary>
+        internal static string MsgCodeExists {
+            get {
+                return ResourceManager.GetString("MsgCodeExists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fill in a East Bound Longitude.
+        /// </summary>
+        internal static string MsgFillEBLong {
+            get {
+                return ResourceManager.GetString("MsgFillEBLong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fill in an e-mail address.
+        /// </summary>
+        internal static string MsgFillEmail {
+            get {
+                return ResourceManager.GetString("MsgFillEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fill in an e-mail address.
+        /// </summary>
+        internal static string MsgFillEmailAddress {
+            get {
+                return ResourceManager.GetString("MsgFillEmailAddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fill in a Code.
+        /// </summary>
+        internal static string MsgFillInCode {
+            get {
+                return ResourceManager.GetString("MsgFillInCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fill in a keyword.
+        /// </summary>
+        internal static string MsgFillInKeyword {
+            get {
+                return ResourceManager.GetString("MsgFillInKeyword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fill in a vocabulary name.
+        /// </summary>
+        internal static string MsgFillInVocabulary {
+            get {
+                return ResourceManager.GetString("MsgFillInVocabulary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fill in a North Bound Latitude.
+        /// </summary>
+        internal static string MsgFillNBLat {
+            get {
+                return ResourceManager.GetString("MsgFillNBLat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fill in an Organisation Name.
+        /// </summary>
+        internal static string MsgFillOrgName {
+            get {
+                return ResourceManager.GetString("MsgFillOrgName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fill in a South Bound Latitude.
+        /// </summary>
+        internal static string MsgFillSBLat {
+            get {
+                return ResourceManager.GetString("MsgFillSBLat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fill in an address (URL).
+        /// </summary>
+        internal static string MsgFillUrl {
+            get {
+                return ResourceManager.GetString("MsgFillUrl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fill in a West Bound Longitude.
+        /// </summary>
+        internal static string MsgFillWBLong {
+            get {
+                return ResourceManager.GetString("MsgFillWBLong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The Data Theme already exists.
+        /// </summary>
+        internal static string MsgInspireThemeExists {
+            get {
+                return ResourceManager.GetString("MsgInspireThemeExists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to E-mail address not valid.
+        /// </summary>
+        internal static string MsgInvalidEmail {
+            get {
+                return ResourceManager.GetString("MsgInvalidEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Not a valid URL.
+        /// </summary>
+        internal static string MsgInvalidUrl {
+            get {
+                return ResourceManager.GetString("MsgInvalidUrl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The keyword already exists.
+        /// </summary>
+        internal static string MsgKeywordExists {
+            get {
+                return ResourceManager.GetString("MsgKeywordExists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to E-mail address already exists.
+        /// </summary>
+        internal static string MsgMailExists {
+            get {
+                return ResourceManager.GetString("MsgMailExists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Organization info already exists.
+        /// </summary>
+        internal static string MsgOrgExists {
+            get {
+                return ResourceManager.GetString("MsgOrgExists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Resource Language already exists.
+        /// </summary>
+        internal static string MsgResourceLangExists {
+            get {
+                return ResourceManager.GetString("MsgResourceLangExists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select a contact to remove.
+        /// </summary>
+        internal static string MsgSelContactToRemove {
+            get {
+                return ResourceManager.GetString("MsgSelContactToRemove", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select an Inspire Data Theme.
+        /// </summary>
+        internal static string MsgSelInspireTheme {
+            get {
+                return ResourceManager.GetString("MsgSelInspireTheme", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select an item to remove.
+        /// </summary>
+        internal static string MsgSelItemToRemove {
+            get {
+                return ResourceManager.GetString("MsgSelItemToRemove", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select an e-mail to remove.
+        /// </summary>
+        internal static string MsgSelMailToRemove {
+            get {
+                return ResourceManager.GetString("MsgSelMailToRemove", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select a record to remove.
+        /// </summary>
+        internal static string MsgSelRecToRemove {
+            get {
+                return ResourceManager.GetString("MsgSelRecToRemove", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select a reference date type.
+        /// </summary>
+        internal static string MsgSelRefDateType {
+            get {
+                return ResourceManager.GetString("MsgSelRefDateType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select Resource Language.
+        /// </summary>
+        internal static string MsgSelResourceLang {
+            get {
+                return ResourceManager.GetString("MsgSelResourceLang", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select Topic Category.
+        /// </summary>
+        internal static string MsgSelTopicCategory {
+            get {
+                return ResourceManager.GetString("MsgSelTopicCategory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select a Topic Category to remove.
+        /// </summary>
+        internal static string MsgSelTopicCategoryToRemove {
+            get {
+                return ResourceManager.GetString("MsgSelTopicCategoryToRemove", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This topic category is already selected.
+        /// </summary>
+        internal static string MsgTopicCatSelected {
+            get {
+                return ResourceManager.GetString("MsgTopicCatSelected", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to URL already exists.
+        /// </summary>
+        internal static string MsgUrlExists {
+            get {
+                return ResourceManager.GetString("MsgUrlExists", resourceCulture);
+            }
+        }
     }
 }

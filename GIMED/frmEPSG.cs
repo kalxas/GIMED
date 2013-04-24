@@ -56,5 +56,10 @@ namespace GIMED_EL
             KeyValuePair<int, string> item = (KeyValuePair<int, string>)e.ListItem;
             e.Value = string.Format("{0} ({1})", item.Value, item.Key);
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
