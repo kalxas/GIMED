@@ -8,8 +8,8 @@
     <ProjectGuid>{1308BB9C-93C9-4576-ACB5-4971BB92B3A2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GIMED_EL</RootNamespace>
-    <AssemblyName>GIMED-EL</AssemblyName>
+    <RootNamespace>GIMED</RootNamespace>
+    <AssemblyName>GIMED</AssemblyName>
     <ApplicationIcon>inspire.ico</ApplicationIcon>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileUpgradeFlags>
@@ -18,18 +18,18 @@
     <UpgradeBackupLocation />
     <TargetFrameworkProfile />
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\projects\Development\GIMED_v1.3.0\NewRelease\</PublishUrl>
+    <PublishUrl>C:\projects\Development\GIMED\Release\</PublishUrl>
     <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
     <UpdateInterval>7</UpdateInterval>
     <UpdateIntervalUnits>Days</UpdateIntervalUnits>
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>1</ApplicationRevision>
+    <InstallUrl>\\localhost\projects\Development\GIMED\Release\</InstallUrl>
+    <ApplicationRevision>4</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -68,13 +68,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DotSpatial.Data">
-      <HintPath>..\..\..\..\..\..\..\Program Files\DotSpatial\DotSpatial.Data.dll</HintPath>
+      <HintPath>..\..\Libraries\DotSpatial_1.4\DotSpatial.Data.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Projections">
-      <HintPath>..\..\..\..\..\..\..\Program Files\DotSpatial\DotSpatial.Projections.dll</HintPath>
+      <HintPath>..\..\Libraries\DotSpatial_1.4\DotSpatial.Projections.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Topology">
-      <HintPath>..\..\..\..\..\..\..\Program Files\DotSpatial\DotSpatial.Topology.dll</HintPath>
+      <HintPath>..\..\Libraries\DotSpatial_1.4\DotSpatial.Topology.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -107,9 +107,6 @@
     <Compile Include="MDObject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmEPSG.el-GR.resx">
-      <DependentUpon>frmEPSG.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmEPSG.resx">
       <DependentUpon>frmEPSG.cs</DependentUpon>
     </EmbeddedResource>

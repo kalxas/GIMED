@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GIMED_EL.Properties {
+namespace GIMED.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

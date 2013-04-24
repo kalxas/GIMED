@@ -36,7 +36,7 @@ using DotSpatial.Data;
 using DotSpatial.Projections;
 using System.Threading;
 using System.Globalization;
-using GIMED_EL.Properties;
+using GIMED.Properties;
 
 
 public partial class GIMEDForm : Form
@@ -488,41 +488,44 @@ public partial class GIMEDForm : Form
         openFileDialog1.DefaultExt = "shp";
         openFileDialog1.FileName = string.Empty;
 
-        int inSRID = -1;
-
         DialogResult rslt = this.openFileDialog1.ShowDialog();
         if (rslt == DialogResult.OK)
         {
             Extent ext = new Extent();
             this.DataFile = this.openFileDialog1.FileName;
             this.textBox1.Text = this.DataFile;
+            ProjectionInfo inProj = null;
             if (DataFile.EndsWith(".shp") || DataFile.EndsWith(".tab"))
             {
                 //Declare a new feature set
                 FeatureSet fs = (FeatureSet)FeatureSet.Open(DataFile);
-                ext = fs.Extent;
-                if (fs.Projection == null)
+
+                //Get the projection
+                inProj = fs.Projection;
+
+                //Handle default projection (where no prj file is present) as null
+                if (inProj != null && inProj.ToString().Trim() == "+ellps=WGS84 +no_defs")
                 {
-                    inSRID = -1;
+                    inProj = null;
                 }
+                ext = fs.Extent;
             }
             else
             {
                 //Assume its raster
                 InRamImageData img = (InRamImageData)InRamImageData.Open(DataFile);
                 ext = img.Extent;
-                inSRID = -1;
             }
 
-            PopulateExtent(ext, inSRID);
+            PopulateExtent(ext, inProj);
         }
         return;
     }
 
-    private void PopulateExtent(Extent ext, int inEpsgCode)
+    private void PopulateExtent(Extent ext, ProjectionInfo inProjection)
     {
-        
-        if (inEpsgCode == -1)
+
+        if (inProjection == null)
         {
             Dictionary<int, string> d = ReadEpsgFile();
             GIMED_EL.frmEPSG dlgEpsg = new GIMED_EL.frmEPSG();
@@ -530,13 +533,13 @@ public partial class GIMEDForm : Form
             var result = dlgEpsg.ShowDialog();
             if (result == DialogResult.OK)
             {
-                inEpsgCode = dlgEpsg.selectedSRID;
+                inProjection = ProjectionInfo.FromEpsgCode(dlgEpsg.selectedSRID);
             }
         }
 
-        if (inEpsgCode == -1) return;
+        if (inProjection == null) return;
 
-        Extent latlonExtent = reprojectRectangle(ext, inEpsgCode);
+        Extent latlonExtent = reprojectRectangle(ext, inProjection);
         this.mdControl1.GEO_ExtendListBox.Items.Clear();
         string tmp = latlonExtent.MinX.ToString() + ";" + latlonExtent.MinY.ToString() + ";" + latlonExtent.MaxX.ToString() + ";" + latlonExtent.MaxY.ToString();
         this.mdControl1.GEO_ExtendListBox.Items.Add(tmp);
@@ -548,12 +551,9 @@ public partial class GIMEDForm : Form
         mdControl1.GEO_YmaxTextBox.Text = latlonExtent.MaxY.ToString();
         this.SaveXMLButton.Enabled = false;
         this.LoadXMLButton.Enabled = false;
-
-
-       
     }
 
-    private Extent reprojectRectangle( Extent inExt, int fromSrid)
+    private Extent reprojectRectangle( Extent inExt, ProjectionInfo fromProjection)
     {
         Extent outExt = new Extent();
         List<double> xy = new List<double>();
@@ -568,11 +568,9 @@ public partial class GIMEDForm : Form
         double[] xyA = xy.ToArray();
         double[] zA = z.ToArray();
 
-        ProjectionInfo piFrom = ProjectionInfo.FromEpsgCode(fromSrid);
-
         //Always reproject to WGS84 (EPSG:4326)
         ProjectionInfo piTo = ProjectionInfo.FromEpsgCode(4326);
-        Reproject.ReprojectPoints(xyA, zA, piFrom, piTo, 0, 2);
+        Reproject.ReprojectPoints(xyA, zA, fromProjection, piTo, 0, 2);
         outExt.MinX=xyA[0];
         outExt.MinY = xyA[1];
         outExt.MaxX = xyA[2];
@@ -655,11 +653,11 @@ public partial class GIMEDForm : Form
                 this.DataFileButton.Enabled = false;
                 this.SaveXMLButton.Enabled = false;
 
-                MessageBox.Show(GIMED_EL.Properties.Resources.XMLLoaded);
+                MessageBox.Show(GIMED.Properties.Resources.XMLLoaded);
             }
             else
             {
-                MessageBox.Show(GIMED_EL.Properties.Resources.XMLNotLoaded);
+                MessageBox.Show(GIMED.Properties.Resources.XMLNotLoaded);
             }
         }
         return;
