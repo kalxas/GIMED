@@ -99,12 +99,17 @@ partial class GIMEDForm
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            resources.ApplyResources(this.openFileDialog1, "openFileDialog1");
             // 
             // ValidateButton
             // 
             resources.ApplyResources(this.ValidateButton, "ValidateButton");
             this.ValidateButton.Name = "ValidateButton";
             this.ValidateButton.Click += new System.EventHandler(this.ValidateButton_Click);
+            // 
+            // saveFileDialog1
+            // 
+            resources.ApplyResources(this.saveFileDialog1, "saveFileDialog1");
             // 
             // AboutButton
             // 
@@ -116,14 +121,15 @@ partial class GIMEDForm
             // openFileDialog2
             // 
             this.openFileDialog2.FileName = "openFileDialog2";
+            resources.ApplyResources(this.openFileDialog2, "openFileDialog2");
             // 
             // cboLanguages
             // 
+            resources.ApplyResources(this.cboLanguages, "cboLanguages");
             this.cboLanguages.FormattingEnabled = true;
             this.cboLanguages.Items.AddRange(new object[] {
             resources.GetString("cboLanguages.Items"),
             resources.GetString("cboLanguages.Items1")});
-            resources.ApplyResources(this.cboLanguages, "cboLanguages");
             this.cboLanguages.Name = "cboLanguages";
             this.cboLanguages.SelectedIndexChanged += new System.EventHandler(this.cboLanguages_SelectedIndexChanged);
             // 
