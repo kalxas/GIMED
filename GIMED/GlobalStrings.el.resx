@@ -118,258 +118,258 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="About" xml:space="preserve">
-    <value>About</value>
+    <value>Περί</value>
   </data>
   <data name="MsgCodeExists" xml:space="preserve">
-    <value>Code already exists</value>
+    <value>Το αναγνωριστικό υπάρχει ήδη</value>
   </data>
   <data name="MsgDistanceAlreadyExists" xml:space="preserve">
-    <value>Distance already exists</value>
+    <value>Η απόσταση υπάρχει ήδη στη λίστα</value>
   </data>
   <data name="MsgDistanceCannotBeNegativeZero" xml:space="preserve">
-    <value>Distance cannot be negative or zero</value>
+    <value>Η απόσταση δεν μπορεί να είναι αρνητικός αριθμός ή μηδέν</value>
   </data>
   <data name="MsgDistanceNotValidNumber" xml:space="preserve">
-    <value>Distance is not a valid number</value>
+    <value>Η απόσταση δεν είναι έγκυρος αριθμός</value>
   </data>
   <data name="MsgEBLMustBeFloat" xml:space="preserve">
-    <value>East Bound Longitude must be floating point number</value>
+    <value>Το ανατολικό γεωγραφικό μήκος πρέπει να είναι δεκαδικός αριθμός με τουλάχιστο δυο δεκαδικά ψηφία</value>
   </data>
   <data name="MsgEBLNotValidNum" xml:space="preserve">
-    <value>East Bound Longitude not a valid number</value>
+    <value>Το ανατολικό γεωγραφικό μήκος δεν είναι έγκυρος αριθμός</value>
   </data>
   <data name="MsgFillEBLong" xml:space="preserve">
-    <value>Fill in a East Bound Longitude</value>
+    <value>Συμπληρώστε ανατολικό γεωγραφικό μήκος</value>
   </data>
   <data name="MsgFillEmail" xml:space="preserve">
-    <value>Fill in an e-mail address</value>
+    <value>Επιλέξτε μια διεύθυνση ηλεκτρονικού ταχυδρομίου</value>
   </data>
   <data name="MsgFillEmailAddress" xml:space="preserve">
-    <value>Fill in an e-mail address</value>
+    <value>Συμπληρώστε μια ηλεκτρονική διεύθυνση</value>
   </data>
   <data name="MsgFillInCode" xml:space="preserve">
-    <value>Fill in a Code</value>
+    <value>Συμπληρώστε ένα αναγνωριστικό</value>
   </data>
   <data name="MsgFillInKeyword" xml:space="preserve">
-    <value>Fill in a keyword</value>
+    <value>Συμπληρώστε μια λέξη κλειδί</value>
   </data>
   <data name="MsgFillInVocabulary" xml:space="preserve">
-    <value>Fill in a vocabulary name</value>
+    <value>Συμπληρώστε ένα λεξιλόγιο προέλευσης</value>
   </data>
   <data name="MsgFillNBLat" xml:space="preserve">
-    <value>Fill in a North Bound Latitude</value>
+    <value>Συμπληρώστε βόρειο γεωγραφικό πλάτος</value>
   </data>
   <data name="MsgFillOrgName" xml:space="preserve">
-    <value>Fill in an Organisation Name</value>
+    <value>Συμπληρώστε ένα όνομα οργανισμού</value>
   </data>
   <data name="MsgFillSBLat" xml:space="preserve">
-    <value>Fill in a South Bound Latitude</value>
+    <value>Συμπληρώστε νότιο γεωγραφικό πλάτος</value>
   </data>
   <data name="MsgFillUrl" xml:space="preserve">
-    <value>Fill in an address (URL)</value>
+    <value>Συμπληρώστε μια ηλεκτρονική διεύθυνση (URL)</value>
   </data>
   <data name="MsgFillWBLong" xml:space="preserve">
-    <value>Fill in a West Bound Longitude</value>
+    <value>Συμπληρώστε δυτικό γεωγραφικό μήκος</value>
   </data>
   <data name="MsgFromDateMoreRecentThanDate" xml:space="preserve">
-    <value>From date more recent than To date.</value>
+    <value>Δώστε τις ημερομηνίες Από-Έως με σωστή χρονική σειρά</value>
   </data>
   <data name="MsgInspireThemeExists" xml:space="preserve">
-    <value>The Data Theme already exists</value>
+    <value>Το θέμα δεδομένων υπάρχει στη λίστα</value>
   </data>
   <data name="MsgInvalidEmail" xml:space="preserve">
-    <value>E-mail address not valid</value>
+    <value>Η ηλεκτρονική διεύθυνση δεν είναι έγκυρη</value>
   </data>
   <data name="MsgInvalidUrl" xml:space="preserve">
-    <value>Not a valid URL</value>
+    <value>Η ηλεκτρονική διεύθυνση (URL) δεν είναι έγκυρη</value>
   </data>
   <data name="MsgKeywordExists" xml:space="preserve">
-    <value>The keyword already exists</value>
+    <value>Η λέξη κλειδί υπάρχει στη λίστα</value>
   </data>
   <data name="MsgMailExists" xml:space="preserve">
-    <value>E-mail address already exists</value>
+    <value>Η ηλεκτρονική διεύθυνση υπάρχει ήδη</value>
   </data>
   <data name="MsgNBLMustBeFloat" xml:space="preserve">
-    <value>North Bound Latitude must be floating point number</value>
+    <value>Το βόρειο γεωγραφικό πλάτος πρέπει να είναι δεκαδικός αριθμός με τουλάχιστο δυο δεκαδικά ψηφία</value>
   </data>
   <data name="MsgNBLNotValidNum" xml:space="preserve">
-    <value>North Bound Latitude not a valid number</value>
+    <value>Το βόρειο γεωγραφικό πλάτος δεν είναι έγκυρος αριθμός</value>
   </data>
   <data name="MsgNoPointOfContact" xml:space="preserve">
-    <value>Point of Contact metadata not found</value>
+    <value>Δεν βρέθηκε αρμόδιος για επικοινωνία</value>
   </data>
   <data name="MsgOrgExists" xml:space="preserve">
-    <value>Organization info already exists</value>
+    <value>Οι πληροφορίες του οργανισμού υπάρχουν ήδη στη λίστα</value>
   </data>
   <data name="MsgResourceLangExists" xml:space="preserve">
-    <value>Resource Language already exists</value>
+    <value>Η γλώσσα πόρου υπάρχει στη λίστα</value>
   </data>
   <data name="MsgSBLLargerThanNBL" xml:space="preserve">
-    <value>South Bound Latitude is larger than North Bound Latitude.</value>
+    <value>Το νότιο γεωγραφικό πλάτος είναι μεγαλύτερο από το βόρειο</value>
   </data>
   <data name="MsgSBLMustBeFloat" xml:space="preserve">
-    <value>South Bound Latitude must be floating point number</value>
+    <value>Το νότιο γεωγραφικό πλάτος πρέπει να είναι δεκαδικός αριθμός με τουλάχιστο δυο δεκαδικά ψηφία</value>
   </data>
   <data name="MsgSBLNotValidNum" xml:space="preserve">
-    <value>South Bound Latitude not a valid number</value>
+    <value>Το νότιο γεωγραφικό πλάτος δεν είναι έγκυρος αριθμός</value>
   </data>
   <data name="MsgScaleAlreadyExists" xml:space="preserve">
-    <value>Scale already exists</value>
+    <value>Η κλίμακα υπάρχει ήδη στη λίστα</value>
   </data>
   <data name="MsgScaleCannotBeNegativeZero" xml:space="preserve">
-    <value>Scale cannot be negative or zero</value>
+    <value>Η κλίμακα δεν μπορεί να είναι αρνητικός αριθμός ή μηδέν</value>
   </data>
   <data name="MsgScaleNotValidInteger" xml:space="preserve">
-    <value>Scale is not a valid integer</value>
+    <value>Η κλίμακα πρέπει να είναι ακέραιος αριθμός</value>
   </data>
   <data name="MsgSelContactToRemove" xml:space="preserve">
-    <value>Select a contact to remove</value>
+    <value>Επιλέξτε έναν αρμόδιο επικοινωνίας για διαγραφή</value>
   </data>
   <data name="MsgSelectExtendToRemove" xml:space="preserve">
-    <value>Select an extend to remove</value>
+    <value>Επιλέξτε ένα γεωγραφικό περίγραμμα για διαγραφή</value>
   </data>
   <data name="MsgSelectPublicationDateToRemove" xml:space="preserve">
-    <value>Select a publication date to remove</value>
+    <value>Επιλέξτε ημερομηνία δημοσίευσης για διαγραφή</value>
   </data>
   <data name="MsgSelectRecordToRemove" xml:space="preserve">
-    <value>Select a quality record to remove</value>
+    <value>Επιλέξτε χωρική ανάλυση για διαγραφή</value>
   </data>
   <data name="MsgSelectTemporalExtendToRemove" xml:space="preserve">
-    <value>Select a temporal extend to remove</value>
+    <value>Επιλέξτε μια χρονική έκταση για διαγραφή</value>
   </data>
   <data name="MsgSelectValidDistance" xml:space="preserve">
-    <value>Select valid distance</value>
+    <value>Επιλέξτε απόσταση</value>
   </data>
   <data name="MsgSelectValidScale" xml:space="preserve">
-    <value>Select valid scale</value>
+    <value>Επιλέξτε κλίμακα</value>
   </data>
   <data name="MsgSelectValidUnits" xml:space="preserve">
-    <value>Select valid units</value>
+    <value>Επιλέξτε μονάδα μέτρησης</value>
   </data>
   <data name="MsgSelInspireTheme" xml:space="preserve">
-    <value>Select an Inspire Data Theme</value>
+    <value>Επιλέξτε ένα θέμα δεδομένων Inspire</value>
   </data>
   <data name="MsgSelItemToRemove" xml:space="preserve">
-    <value>Select an item to remove</value>
+    <value>Επιλέξτε ένα μοναδικό χαρακτηριστικό για διαγραφή</value>
   </data>
   <data name="MsgSelMailToRemove" xml:space="preserve">
-    <value>Select an e-mail to remove</value>
+    <value>Επιλέξτε μια διεύθυνση για να διαγραφεί</value>
   </data>
   <data name="MsgSelRecToRemove" xml:space="preserve">
-    <value>Select a record to remove</value>
+    <value>Επιλέξτε μια λέξη κλειδί για διαγραφή</value>
   </data>
   <data name="MsgSelRefDateType" xml:space="preserve">
-    <value>Select a reference date type</value>
+    <value>Επιλέξτε μια ημερομηνία αναφοράς</value>
   </data>
   <data name="MsgSelResourceLang" xml:space="preserve">
-    <value>Select Resource Language</value>
+    <value>Επιλέξτε γλώσσα πόρου</value>
   </data>
   <data name="MsgSelResourceLangToRemove" xml:space="preserve">
-    <value>Select a Resource Language to remove</value>
+    <value>Επιλέξτε γλώσσα πόρου για διαγραφή</value>
   </data>
   <data name="MsgSelTopicCategory" xml:space="preserve">
-    <value>Select Topic Category</value>
+    <value>Επιλέξτε θεματική κατηγορία</value>
   </data>
   <data name="MsgSelTopicCategoryToRemove" xml:space="preserve">
-    <value>Select a Topic Category to remove</value>
+    <value>Επιλέξτε θεματική κατηγορία για διαγραφή</value>
   </data>
   <data name="MsgTopicCatSelected" xml:space="preserve">
-    <value>This topic category is already selected</value>
-  </data>
-  <data name="MsgWarningPublDateExists" xml:space="preserve">
-    <value>Warning! This publication date already exists.</value>
-  </data>
-  <data name="MsgWBLLargerThanEBL" xml:space="preserve">
-    <value>West Bound Longitude is larger than East Bound Longitude.</value>
-  </data>
-  <data name="MsgWBLMustBeFloat" xml:space="preserve">
-    <value>West Bound Longitude must be floating point number</value>
-  </data>
-  <data name="MsgWBLNotValidNum" xml:space="preserve">
-    <value>West Bound Longitude not a valid number</value>
-  </data>
-  <data name="MsgSelectATitle" xml:space="preserve">
-    <value>Select a title</value>
-  </data>
-  <data name="MsgSelectConformanceDegree" xml:space="preserve">
-    <value>Select a conformance degree</value>
-  </data>
-  <data name="MsgSelectConfRecordToRemove" xml:space="preserve">
-    <value>Select a conformance record to remove</value>
-  </data>
-  <data name="MsgSelectDateType" xml:space="preserve">
-    <value>Select a date type</value>
-  </data>
-  <data name="MsgSelectLimitConst" xml:space="preserve">
-    <value>Select a limitation constraint</value>
-  </data>
-  <data name="MsgWarningCreationDateAlreadyExists" xml:space="preserve">
-    <value>Warning! A creation date for the same title already exists.</value>
-  </data>
-  <data name="MsgWarningPublDateExistsForTitle" xml:space="preserve">
-    <value>Warning! This publication date already exists for this title</value>
-  </data>
-  <data name="MsgWarningRecordExists" xml:space="preserve">
-    <value>Warning! This record already exists.</value>
-  </data>
-  <data name="MsgFreeTextLimitConst" xml:space="preserve">
-    <value>Type a free text limitation constraint</value>
-  </data>
-  <data name="MsgSelectOrgRecordRemove" xml:space="preserve">
-    <value>Select an organisation record to remove</value>
-  </data>
-  <data name="MsgCondAccessAndUseNotFound" xml:space="preserve">
-    <value>Conditions for access and use-general not found</value>
-  </data>
-  <data name="MsgErrorGeoExtendModule" xml:space="preserve">
-    <value>Error in GeoExtend module. Check if geo_extend binary file has execute permisions.</value>
-  </data>
-  <data name="MsgGeogrExtendNotFound" xml:space="preserve">
-    <value>Geographic Extend not found</value>
-  </data>
-  <data name="MsgKeywordsNotFound" xml:space="preserve">
-    <value>Keywords not found</value>
-  </data>
-  <data name="MsgLimitPublicAccessNotFound" xml:space="preserve">
-    <value>Limitations on public access not found</value>
-  </data>
-  <data name="MsgLineageFreeTextNotFound" xml:space="preserve">
-    <value>Lineage free text not found</value>
-  </data>
-  <data name="MsgMetadataXMLSaved" xml:space="preserve">
-    <value>Metadata XML saved!</value>
-  </data>
-  <data name="MsgMetaLangNotFound" xml:space="preserve">
-    <value>Metadata Language not found</value>
-  </data>
-  <data name="MsgNoValidGeogrExtFound" xml:space="preserve">
-    <value>No valid Geographic Extend found</value>
-  </data>
-  <data name="MsgResourceLangMetaNotFound" xml:space="preserve">
-    <value>Resource Language metadata not found</value>
-  </data>
-  <data name="MsgResourceMetaNotFound" xml:space="preserve">
-    <value>Resource Abstract metadata not found</value>
-  </data>
-  <data name="MsgResourceTitleMetaNotFound" xml:space="preserve">
-    <value>Resource Title metadata not found</value>
-  </data>
-  <data name="MsgResourceTypeNotSelected" xml:space="preserve">
-    <value>Resource Type not selected</value>
-  </data>
-  <data name="MsgRespPartMetaNotFound" xml:space="preserve">
-    <value>Responsible Party metadata not found</value>
-  </data>
-  <data name="MsgTempRefMustBeCompleted" xml:space="preserve">
-    <value>At least one Temporal Reference must be completed</value>
-  </data>
-  <data name="MsgTopicCategNotFound" xml:space="preserve">
-    <value>Topic Category not found</value>
-  </data>
-  <data name="MsgUniqueResourceIdNotFound" xml:space="preserve">
-    <value>Unique Resource Identifier not found</value>
+    <value>Αυτή η θεματική κατηγορία είναι ήδη επιλεγμένη</value>
   </data>
   <data name="MsgUrlExists" xml:space="preserve">
-    <value>The web address (URL) exists in the list</value>
+    <value>Η ηλεκτρονική διεύθυνση (URL) υπάρχει στη λίστα</value>
+  </data>
+  <data name="MsgWarningPublDateExists" xml:space="preserve">
+    <value>Προσοχή! Η ημερομηνία δημοσίευσης ήδη υπάρχει.</value>
+  </data>
+  <data name="MsgWBLLargerThanEBL" xml:space="preserve">
+    <value>Το δυτικό γεωγραφικό μήκος είναι μεγαλύτερο από το ανατολικό</value>
+  </data>
+  <data name="MsgWBLMustBeFloat" xml:space="preserve">
+    <value>Το δυτικό γεωγραφικό μήκος πρέπει να είναι δεκαδικός αριθμός με τουλάχιστο δυο δεκαδικά ψηφία</value>
+  </data>
+  <data name="MsgWBLNotValidNum" xml:space="preserve">
+    <value>Το δυτικό γεωγραφικό μήκος δεν είναι έγκυρος αριθμός</value>
+  </data>
+  <data name="MsgSelectATitle" xml:space="preserve">
+    <value>Επιλέξτε ένα τίτλο</value>
+  </data>
+  <data name="MsgSelectConformanceDegree" xml:space="preserve">
+    <value>Επιλέξτε ένα βαθμό συμμόρφωσης</value>
+  </data>
+  <data name="MsgSelectConfRecordToRemove" xml:space="preserve">
+    <value>Επιλέξτε μια εγγραφή συμμόρφωσης για διαγραφή</value>
+  </data>
+  <data name="MsgSelectDateType" xml:space="preserve">
+    <value>Επιλέξτε ένα τύπο ημερομηνίας</value>
+  </data>
+  <data name="MsgSelectLimitConst" xml:space="preserve">
+    <value>Επιλέξτε έναν όρο πρόσβασης και χρήσης</value>
+  </data>
+  <data name="MsgWarningCreationDateAlreadyExists" xml:space="preserve">
+    <value>Προσοχή! Υπάρχει ήδη μια ημερομηνία δημιουργίας για αυτόν τον τίτλο.</value>
+  </data>
+  <data name="MsgWarningPublDateExistsForTitle" xml:space="preserve">
+    <value>Προσοχή! Υπάρχει ήδη μια ημερομηνία δημοσίευσης για αυτόν τον τίτλο</value>
+  </data>
+  <data name="MsgWarningRecordExists" xml:space="preserve">
+    <value>Προσοχή! Αυτή η εγγραφή υπάρχει ήδη.</value>
+  </data>
+  <data name="MsgFreeTextLimitConst" xml:space="preserve">
+    <value>Συμπληρώστε με ελεύθερο κείμενο έναν όρο πρόσβασης και χρήσης</value>
+  </data>
+  <data name="MsgSelectOrgRecordRemove" xml:space="preserve">
+    <value>Επιλέξτε μια εγγραφή οργανισμού για διαγραφή</value>
+  </data>
+  <data name="MsgCondAccessAndUseNotFound" xml:space="preserve">
+    <value>Δεν βρέθηκαν όροι για την πρόσβαση και τη χρήση</value>
+  </data>
+  <data name="MsgErrorGeoExtendModule" xml:space="preserve">
+    <value>Σφάλμα στην εκτέλεση του πρόσθετου geoextent. Παρακαλώ ελέγξτε αν το αρχείο έχει δικαίωμα εκτέλεσης στο λειτουργικό σύστημα.</value>
+  </data>
+  <data name="MsgGeogrExtendNotFound" xml:space="preserve">
+    <value>Δεν βρέθηκε γεωγραφικό περίγραμμα συντεταγμένων</value>
+  </data>
+  <data name="MsgKeywordsNotFound" xml:space="preserve">
+    <value>Οι λέξεις κλειδιά δεν βρέθηκαν</value>
+  </data>
+  <data name="MsgLimitPublicAccessNotFound" xml:space="preserve">
+    <value>Δεν βρέθηκαν περιορισμοί σχετικά με την πρόσβαση του κοινού</value>
+  </data>
+  <data name="MsgLineageFreeTextNotFound" xml:space="preserve">
+    <value>Δεν βρέθηκε ελεύθερο κείμενο καταγωγής</value>
+  </data>
+  <data name="MsgMetadataXMLSaved" xml:space="preserve">
+    <value>Το αρχείο xml μεταδεδομένων αποθηκεύτηκε!</value>
+  </data>
+  <data name="MsgMetaLangNotFound" xml:space="preserve">
+    <value>Δεν βρέθηκε γλώσσα μεταδεδομένων</value>
+  </data>
+  <data name="MsgNoValidGeogrExtFound" xml:space="preserve">
+    <value>Δεν βρέθηκε Γεωγραφική Θέση</value>
+  </data>
+  <data name="MsgResourceLangMetaNotFound" xml:space="preserve">
+    <value>Δεν βρέθηκε γλώσσα πόρου</value>
+  </data>
+  <data name="MsgResourceMetaNotFound" xml:space="preserve">
+    <value>Δεν βρέθηκε σύνοψη πόρου</value>
+  </data>
+  <data name="MsgResourceTitleMetaNotFound" xml:space="preserve">
+    <value>Δεν βρέθηκε τίτλος πόρου</value>
+  </data>
+  <data name="MsgResourceTypeNotSelected" xml:space="preserve">
+    <value>Δεν επιλέχθηκε τύπος πόρου</value>
+  </data>
+  <data name="MsgRespPartMetaNotFound" xml:space="preserve">
+    <value>Δεν βρέθηκαν αρμόδιοι οργανισμοι για τη δημιουργία, τη συντήρηση και τη διανομή</value>
+  </data>
+  <data name="MsgTempRefMustBeCompleted" xml:space="preserve">
+    <value>Πρέπει να συμπληρωθεί τουλάχιστο μία χρονική αναφορά</value>
+  </data>
+  <data name="MsgTopicCategNotFound" xml:space="preserve">
+    <value>Δεν βρέθηκε θεματική κατηγορία</value>
+  </data>
+  <data name="MsgUniqueResourceIdNotFound" xml:space="preserve">
+    <value>Δεν βρέθηκε μοναδικό χαρακτηριστικό πόρου</value>
   </data>
 </root>

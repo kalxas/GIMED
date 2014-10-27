@@ -37,6 +37,7 @@ using DotSpatial.Projections;
 using System.Threading;
 using System.Globalization;
 using GIMED.Properties;
+using GIMED;
 
 
 public partial class GIMEDForm : Form
@@ -75,77 +76,80 @@ public partial class GIMEDForm : Form
     {
         if (md.MD_ContactListBox.Items.Count == 0)
         {
-            MessageBox.Show("Δεν βρέθηκε αρμόδιος για επικοινωνία");
+            
+            MessageBox.Show(GlobalStrings.MsgNoPointOfContact);
+            md.MD_tabControl.SelectedTab = md.MetadataTab;
+            md.MD_ContactListBox.Focus();
             return false;
         }
         if (md.MD_LanguageComboBox.SelectedIndex == -1)
         {
-            MessageBox.Show("Δεν βρέθηκε γλώσσα μεταδεδομένων");
+            MessageBox.Show(GlobalStrings.MsgMetaLangNotFound);
             return false;
         }
         if (md.ID_ResourseTitleTextBox.Text == "")
         {
-            MessageBox.Show("Δεν βρέθηκε τίτλος πόρου");
+            MessageBox.Show(GlobalStrings.MsgResourceTitleMetaNotFound);
             return false;
         }
         if (md.ID_ResourceAbstractTextBox.Text == "")
         {
-            MessageBox.Show("Δεν βρέθηκε σύνοψη πόρου");
+            MessageBox.Show(GlobalStrings.MsgResourceMetaNotFound);
             return false;
         }
         if (md.ID_ResourceTypeComboBox.SelectedIndex == -1)
         {
-            MessageBox.Show("Δεν επιλέχθηκε τύπος πόρου");
+            MessageBox.Show(GlobalStrings.MsgResourceTypeNotSelected);
             return false;
         }
         if (md.ID_ResourceLanguageListBox.Items.Count == 0)
         {
-            MessageBox.Show("Δεν βρέθηκε γλώσσα πόρου");
+            MessageBox.Show(GlobalStrings.MsgResourceLangMetaNotFound);
             return false;
         }
         if (md.ID_UIDListBox.Items.Count == 0)
         {
-            MessageBox.Show("Δεν βρέθηκε μοναδικό χαρακτηριστικό πόρου");
+            MessageBox.Show(GlobalStrings.MsgUniqueResourceIdNotFound);
             return false;
         }
         if (md.CL_TopicCategoryListBox.Items.Count == 0)
         {
-            MessageBox.Show("Δεν βρέθηκε θεματική κατηγορία");
+            MessageBox.Show(GlobalStrings.MsgTopicCategNotFound);
             return false;
         }
         if (md.KW_KeywordListBox.Items.Count == 0)
         {
-            MessageBox.Show("Δεν βρέθηκε λέξη κλειδί");
+            MessageBox.Show(GlobalStrings.MsgKeywordsNotFound);
             return false;
         }
         if (md.GEO_ExtendListBox.Items.Count == 0)
         {
-            MessageBox.Show("Δεν βρέθηκε γεωγραφικό περίγραμμα συντεταγμένων");
+            MessageBox.Show(GlobalStrings.MsgGeogrExtendNotFound);
             return false;
         }
         if (md.TMP_TemporalExtendListBox.Items.Count == 0 && md.TMP_PublicDateListBox.Items.Count == 0 && md.TMP_RevisionDateListBox.Items.Count == 0 && md.TMP_CreationDateListBox.Items.Count == 0)
         {
-            MessageBox.Show("Πρέπει να συμπληρωθεί τουλάχιστο μία χρονική αναφορά");
+            MessageBox.Show(GlobalStrings.MsgTempRefMustBeCompleted);
             return false;
         }
         if (md.LIN_FreeTextBox.Text == "")
         {
-            MessageBox.Show("Δεν βρέθηκε ελεύθερο κείμενο καταγωγής");
+            MessageBox.Show(GlobalStrings.MsgLineageFreeTextNotFound);
             return false;
         }
         if (md.CSTR_ConditionsUseGeneralListBox.Items.Count == 0)
         {
-            MessageBox.Show("Δεν βρέθηκαν όροι για την πρόσβαση και τη χρήση");
+            MessageBox.Show(GlobalStrings.MsgCondAccessAndUseNotFound);
             return false;
         }
         if (md.CSTR_LimitationsPublicListBox.Items.Count == 0)
         {
-            MessageBox.Show("Δεν βρέθηκαν περιορισμοί σχετικά με την πρόσβαση του κοινού");
+            MessageBox.Show(GlobalStrings.MsgLimitPublicAccessNotFound);
             return false;
         }
         if (md.ORG_IndividualListBox.Items.Count == 0)
         {
-            MessageBox.Show("Δεν βρέθηκαν αρμόδιοι οργανισμοι για τη δημιουργία, τη συντήρηση και τη διανομή");
+            MessageBox.Show(GlobalStrings.MsgRespPartMetaNotFound);
             return false;
         }
         
@@ -475,7 +479,7 @@ public partial class GIMEDForm : Form
         if (rslt == DialogResult.OK)
         {
             this.myMDObject.WriteToXML(this.saveFileDialog1.FileName);
-            MessageBox.Show("Το αρχείο xml μεταδεδομένων αποθηκεύτηκε!");
+            MessageBox.Show(GlobalStrings.MsgMetadataXMLSaved);
             this.SaveXMLButton.Enabled = false;
         }
         return;
@@ -622,19 +626,19 @@ public partial class GIMEDForm : Form
             }
             else
             {
-                MessageBox.Show("Δεν βρέθηκε Γεωγραφική Θέση");
+                MessageBox.Show(GlobalStrings.MsgNoValidGeogrExtFound);
             }
         }
         catch
         {
-            MessageBox.Show("Σφάλμα στην εκτέλεση του πρόσθετου geoextent. Παρακαλώ ελέγξτε αν το αρχείο έχει δικαίωμα εκτέλεσης στο λειτουργικό σύστημα.");
+            MessageBox.Show(GlobalStrings.MsgErrorGeoExtendModule);
         }
 
     }
     
     private void AboutButton_Click(object sender, EventArgs e)
     {
-        MessageBox.Show("Ανάπτυξη εφαρμογής: ’γγελος Τζώτσος\nΤο GIMED είναι Ελεύθερο Λογισμικό υπό την άδεια GPL3\nΕπικοινωνία: tzotsos@gmail.com");
+        MessageBox.Show("Developers:\tAngelos Tzotsos-tzotsos@gmail.com\n\t\tPano Voudouris-pvoudouris@gmail.com\n\t\tStavros Kampanakis-stauroskampan@gmail.com\n\nGIMED is Open Source software under the GPL3 license.\n\nΑνάπτυξη:\t’γγελος Τζώτσος-tzotsos@gmail.com\n\t\tΠάνος Βουδούρης-pvoudouris@gmail.com\n\t\tΣταύρος Καμπανάκης-stauroskampan@gmail.com\n\nΤο GIMED είναι Ελεύθερο Λογισμικό υπό την άδεια GPL3.", GlobalStrings.About);
     }
 
     private void LoadXMLButton_Click(object sender, EventArgs e)

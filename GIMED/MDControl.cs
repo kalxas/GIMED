@@ -33,6 +33,7 @@ using System.Windows.Forms;
 using System.Text.RegularExpressions;
 using System.Globalization;
 using System.Threading;
+using GIMED;
 
 
 namespace Inspire.Metadata
@@ -504,6 +505,7 @@ namespace Inspire.Metadata
             // MD_ContactListBox
             // 
             resources.ApplyResources(this.MD_ContactListBox, "MD_ContactListBox");
+            this.MD_ContactListBox.BackColor = System.Drawing.Color.PaleTurquoise;
             this.MD_ContactListBox.FormattingEnabled = true;
             this.MD_ContactListBox.Name = "MD_ContactListBox";
             // 
@@ -582,6 +584,7 @@ namespace Inspire.Metadata
             // MD_LanguageComboBox
             // 
             resources.ApplyResources(this.MD_LanguageComboBox, "MD_LanguageComboBox");
+            this.MD_LanguageComboBox.BackColor = System.Drawing.Color.PaleTurquoise;
             this.MD_LanguageComboBox.Items.AddRange(new object[] {
             resources.GetString("MD_LanguageComboBox.Items"),
             resources.GetString("MD_LanguageComboBox.Items1"),
@@ -1778,19 +1781,19 @@ namespace Inspire.Metadata
 		{
 			if(this.MD_emailTextBox.Text == "")
 			{
-				MessageBox.Show("Συμπληρώστε μια ηλεκτρονική διεύθυνση");
+                MessageBox.Show(GlobalStrings.MsgFillEmailAddress);
 				return;
 			}
             if (!this.validateEmail(this.MD_emailTextBox.Text))
             {
-                MessageBox.Show("Η ηλεκτρονική διεύθυνση δεν είναι έγκυρη");
+                MessageBox.Show(GlobalStrings.MsgInvalidEmail);
                 return;
             }
             foreach (object o in this.MD_EmailListBox.Items)
             {
                 if (this.MD_emailTextBox.Text == (string)o)
                 {
-                    MessageBox.Show("Η ηλεκτρονική διεύθυνση υπάρχει ήδη");
+                    MessageBox.Show(GlobalStrings.MsgMailExists);
                     return;
                 }
             }
@@ -1803,7 +1806,7 @@ namespace Inspire.Metadata
 		{
 			if(this.MD_EmailListBox.SelectedIndex == -1)
 			{
-				MessageBox.Show("Επιλέξτε μια διεύθυνση για να διαγραφεί");
+                MessageBox.Show(GlobalStrings.MsgSelMailToRemove);
 				return;				
 			}
 			
@@ -1815,12 +1818,12 @@ namespace Inspire.Metadata
         {
             if (this.MD_OrganizationNameTextBox.Text == "")
             {
-                MessageBox.Show("Συμπληρώστε ένα όνομα οργανισμού");
+                MessageBox.Show(GlobalStrings.MsgFillOrgName);
                 return;
             }
             if (this.MD_EmailListBox.Items.Count == 0)
             {
-                MessageBox.Show("Παρακαλώ εισάγετε μια ηλεκτρονική διεύθυνση");
+                MessageBox.Show(GlobalStrings.MsgFillEmailAddress);
                 return;
             }
             string tmp = this.MD_OrganizationNameTextBox.Text;
@@ -1832,7 +1835,7 @@ namespace Inspire.Metadata
             {
                 if (tmp == (string)t)
                 {
-                    MessageBox.Show("Οι πληροφορίες του οργανισμού υπάρχουν ήδη στη λίστα");
+                    MessageBox.Show(GlobalStrings.MsgOrgExists);
                     return;
                 }
             }
@@ -1846,7 +1849,7 @@ namespace Inspire.Metadata
         {
             if (this.MD_ContactListBox.SelectedIndex == -1)
             {
-                MessageBox.Show("Επιλέξτε έναν αρμόδιο επικοινωνίας για διαγραφή");
+                MessageBox.Show(GlobalStrings.MsgSelContactToRemove);
                 return;
             }
 
@@ -1861,24 +1864,24 @@ namespace Inspire.Metadata
         {
             if (this.ID_ResourceLocatorTextBox.Text == "")
             {
-                MessageBox.Show("Συμπληρώστε μια ηλεκτρονική διεύθυνση (URL)");
+                MessageBox.Show(GlobalStrings.MsgFillUrl);
                 return;
             }
             if (this.ID_ResourceLocatorTextBox.Text.Length < 8)
             {
-                MessageBox.Show("Η ηλεκτρονική διεύθυνση δεν είναι έγκυρη");
+                MessageBox.Show(GlobalStrings.MsgInvalidUrl);
                 return;
             }
             if (this.ID_ResourceLocatorTextBox.Text.Substring(0, 7) != "http://" && this.ID_ResourceLocatorTextBox.Text.Substring(0, 8) != "https://")
             {
-                MessageBox.Show("Η ηλεκτρονική διεύθυνση δεν είναι έγκυρη");
+                MessageBox.Show(GlobalStrings.MsgInvalidUrl);
                 return;
             }
             foreach (object o in this.ID_ResourceLocatorListBox.Items)
             {
                 if (this.ID_ResourceLocatorTextBox.Text == (string)o)
                 {
-                    MessageBox.Show("Η ηλεκτρονική διεύθυνση υπάρχει στη λίστα");
+                    MessageBox.Show(GlobalStrings.MsgUrlExists);
                     return;
                 }
             }
@@ -1890,7 +1893,7 @@ namespace Inspire.Metadata
         {
             if (this.ID_ResourceLocatorListBox.SelectedIndex == -1)
             {
-                MessageBox.Show("Επιλέξτε μια διεύθυνση για διαγραφή");
+                MessageBox.Show(GlobalStrings.MsgSelMailToRemove);
                 return;
             }
 
@@ -1901,7 +1904,7 @@ namespace Inspire.Metadata
         {
             if (this.ID_CodeTextBox.Text == "")
             {
-                MessageBox.Show("Συμπληρώστε ένα αναγνωριστικό");
+                MessageBox.Show(GlobalStrings.MsgFillInCode);
                 return;
             }
             string tmp = ID_CodeTextBox.Text;
@@ -1914,7 +1917,7 @@ namespace Inspire.Metadata
             {
                 if (tmp == (string)o)
                 {
-                    MessageBox.Show("Το αναγνωριστικό υπάρχει ήδη");
+                    MessageBox.Show(GlobalStrings.MsgCodeExists);
                     return;
                 }
             }
@@ -1927,7 +1930,7 @@ namespace Inspire.Metadata
         {
             if (this.ID_UIDListBox.SelectedIndex == -1)
             {
-                MessageBox.Show("Επιλέξτε ένα μοναδικό χαρακτηριστικό για διαγραφή");
+                MessageBox.Show(GlobalStrings.MsgSelItemToRemove);
                 return;
             }
 
@@ -1944,7 +1947,7 @@ namespace Inspire.Metadata
         {
             if (this.ID_ResourceLanguageComboBox.SelectedIndex == -1)
             {
-                MessageBox.Show("Επιλέξτε γλώσσα πόρου");
+                MessageBox.Show(GlobalStrings.MsgSelResourceLang);
                 return;
             }
 
@@ -1953,7 +1956,7 @@ namespace Inspire.Metadata
             {
                 if (tmp == (string)o)
                 {
-                    MessageBox.Show("Η γλώσσα πόρου υπάρχει στη λίστα");
+                    MessageBox.Show(GlobalStrings.MsgResourceLangExists);
                     return;
                 }
             }
@@ -1965,7 +1968,7 @@ namespace Inspire.Metadata
         {
             if (this.ID_ResourceLanguageListBox.SelectedIndex == -1)
             {
-                MessageBox.Show("Επιλέξτε μια γλώσσα πόρου για διαγραφή");
+                MessageBox.Show(GlobalStrings.MsgSelResourceLangToRemove);
                 return;
             }
 
@@ -1981,7 +1984,7 @@ namespace Inspire.Metadata
 		{
 			if(this.CL_TopicCategoryComboBox.SelectedIndex == -1)
 			{
-				MessageBox.Show("Επιλέξτε θεματική κατηγορία");
+                MessageBox.Show(GlobalStrings.MsgSelTopicCategory);
 				return;
 			}
             string tmp = (string) this.CL_TopicCategoryComboBox.SelectedItem;
@@ -1991,7 +1994,7 @@ namespace Inspire.Metadata
                 {
                     if (tmp == (string)obj)
                     {
-                        MessageBox.Show("Αυτή η θεματική κατηγορία είναι ήδη επιλεγμένη");
+                        MessageBox.Show(GlobalStrings.MsgTopicCatSelected);
                         return;
                     }
                 }
@@ -2005,7 +2008,7 @@ namespace Inspire.Metadata
 		{
 			if(this.CL_TopicCategoryListBox.SelectedIndex == -1)
 			{
-				MessageBox.Show("Επιλέξτε θεματική κατηγορία για διαγραφή");
+				MessageBox.Show(GlobalStrings.MsgSelTopicCategoryToRemove);
 				return;				
 			}
 			
@@ -2020,7 +2023,7 @@ namespace Inspire.Metadata
         {
             if (this.KW_InspireComboBox.SelectedIndex == -1)
             {
-                MessageBox.Show("Επιλέξτε ένα θέμα δεδομένων Inspire");
+                MessageBox.Show(GlobalStrings.MsgSelInspireTheme);
                 return;
             }
 
@@ -2029,7 +2032,7 @@ namespace Inspire.Metadata
             {
                 if (tmp == (string)o)
                 {
-                    MessageBox.Show("Το θέμα δεδομένων υπάρχει στη λίστα");
+                    MessageBox.Show(GlobalStrings.MsgInspireThemeExists);
                     return;
                 }
             }
@@ -2045,17 +2048,17 @@ namespace Inspire.Metadata
 		{
 			if(this.KW_KeywordTextBox.Text == "")
 			{
-				MessageBox.Show("Συμπληρώστε μια λέξη κλειδί");
+				MessageBox.Show(GlobalStrings.MsgFillInKeyword);
 				return;
 			}
             if (this.KW_VocabularyTextBox.Text == "")
             {
-                MessageBox.Show("Συμπληρώστε ένα λεξιλόγιο προέλευσης");
+                MessageBox.Show(GlobalStrings.MsgFillInVocabulary);
                 return;
             }
             if (this.KW_DateTypeComboBox.SelectedIndex == -1)
             {
-                MessageBox.Show("Επιλέξτε μια ημερομηνία αναφοράς");
+                MessageBox.Show(GlobalStrings.MsgSelRefDateType);
                 return;
             }
 
@@ -2064,7 +2067,7 @@ namespace Inspire.Metadata
             {
                 if (tmp == (string)o)
                 {
-                    MessageBox.Show("Η λέξη κλειδί υπάρχει στη λίστα");
+                    MessageBox.Show(GlobalStrings.MsgKeywordExists);
                     return;
                 }
             }
@@ -2099,7 +2102,7 @@ namespace Inspire.Metadata
 		{
 			if(this.KW_KeywordListBox.SelectedIndex == -1)
 			{
-				MessageBox.Show("Επιλέξτε μια λέξη κλειδί για διαγραφή");
+				MessageBox.Show(GlobalStrings.MsgSelRecToRemove);
 				return;				
 			}
 			
@@ -2114,22 +2117,22 @@ namespace Inspire.Metadata
         {
             if (this.GEO_XminTextBox.Text == "")
             {
-                MessageBox.Show("Συμπληρώστε δυτικό γεωγραφικό μήκος");
+                MessageBox.Show(GlobalStrings.MsgFillWBLong);
                 return;
             }
             if (this.GEO_XmaxTextBox.Text == "")
             {
-                MessageBox.Show("Συμπληρώστε ανατολικό γεωγραφικό μήκος");
+                MessageBox.Show(GlobalStrings.MsgFillEBLong);
                 return;
             }
             if (this.GEO_YminTextBox.Text == "")
             {
-                MessageBox.Show("Συμπληρώστε νότιο γεωγραφικό πλάτος");
+                MessageBox.Show(GlobalStrings.MsgFillSBLat);
                 return;
             }
             if (this.GEO_YmaxTextBox.Text == "")
             {
-                MessageBox.Show("Συμπληρώστε βόρειο γεωγραφικό πλάτος");
+                MessageBox.Show(GlobalStrings.MsgFillNBLat);
                 return;
             }
 
@@ -2143,76 +2146,76 @@ namespace Inspire.Metadata
             double xmin, xmax, ymin, ymax;
             if (!Double.TryParse(this.GEO_XminTextBox.Text, out xmin))
             {
-                MessageBox.Show("Το δυτικό γεωγραφικό μήκος δεν είναι έγκυρος αριθμός");
+                MessageBox.Show(GlobalStrings.MsgWBLNotValidNum);
                 return;
             }
             if (!Double.TryParse(this.GEO_XmaxTextBox.Text, out xmax))
             {
-                MessageBox.Show("Το ανατολικό γεωγραφικό μήκος δεν είναι έγκυρος αριθμός");
+                MessageBox.Show(GlobalStrings.MsgEBLNotValidNum);
                 return;
             }
             if (!Double.TryParse(this.GEO_YminTextBox.Text, out ymin))
             {
-                MessageBox.Show("Το νότιο γεωγραφικό πλάτος δεν είναι έγκυρος αριθμός");
+                MessageBox.Show(GlobalStrings.MsgSBLNotValidNum);
                 return;
             }
             if (!Double.TryParse(this.GEO_YmaxTextBox.Text, out ymax))
             {
-                MessageBox.Show("Το βόρειο γεωγραφικό πλάτος δεν είναι έγκυρος αριθμός");
+                MessageBox.Show(GlobalStrings.MsgNBLNotValidNum);
                 return;
             }
             
             if (xmin > 180.0 || xmin < -180.0)
             {
-                MessageBox.Show("Το δυτικό γεωγραφικό μήκος δεν είναι έγκυρος αριθμός");
+                MessageBox.Show(GlobalStrings.MsgWBLNotValidNum);
                 return;
             }
             if (xmax > 180.0 || xmax < -180.0)
             {
-                MessageBox.Show("Το ανατολικό γεωγραφικό μήκος δεν είναι έγκυρος αριθμός");
+                MessageBox.Show(GlobalStrings.MsgEBLNotValidNum);
                 return;
             }
             if (ymin > 90.0 || ymin < -90.0)
             {
-                MessageBox.Show("Το νότιο γεωγραφικό πλάτος δεν είναι έγκυρος αριθμός");
+                MessageBox.Show(GlobalStrings.MsgSBLNotValidNum);
                 return;
             }
             if (ymax > 90.0 || ymax < -90.0)
             {
-                MessageBox.Show("Το βόρειο γεωγραφικό πλάτος δεν είναι έγκυρος αριθμός");
+                MessageBox.Show(GlobalStrings.MsgNBLNotValidNum);
                 return;
             }
 
             int xmin1, xmax1, ymin1, ymax1;
             if (Int32.TryParse(this.GEO_XminTextBox.Text, out xmin1))
             {
-                MessageBox.Show("Το δυτικό γεωγραφικό μήκος πρέπει να είναι δεκαδικός αριθμός με τουλάχιστο δυο δεκαδικά ψηφία");
+                MessageBox.Show(GlobalStrings.MsgWBLMustBeFloat);
                 return;
             }
             if (Int32.TryParse(this.GEO_XmaxTextBox.Text, out xmax1))
             {
-                MessageBox.Show("Το ανατολικό γεωγραφικό μήκος πρέπει να είναι δεκαδικός αριθμός με τουλάχιστο δυο δεκαδικά ψηφία");
+                MessageBox.Show(GlobalStrings.MsgWBLMustBeFloat);
                 return;
             }
             if (Int32.TryParse(this.GEO_YminTextBox.Text, out ymin1))
             {
-                MessageBox.Show("Το νότιο γεωγραφικό πλάτος πρέπει να είναι δεκαδικός αριθμός με τουλάχιστο δυο δεκαδικά ψηφία");
+                MessageBox.Show(GlobalStrings.MsgSBLMustBeFloat);
                 return;
             }
             if (Int32.TryParse(this.GEO_YmaxTextBox.Text, out ymax1))
             {
-                MessageBox.Show("Το βόρειο γεωγραφικό πλάτος πρέπει να είναι δεκαδικός αριθμός με τουλάχιστο δυο δεκαδικά ψηφία");
+                MessageBox.Show(GlobalStrings.MsgNBLMustBeFloat);
                 return;
             }
 
             if (xmin > xmax)
             {
-                MessageBox.Show("Το δυτικό γεωγραφικό μήκος είναι μεγαλύτερο από το ανατολικό");
+                MessageBox.Show(GlobalStrings.MsgWBLLargerThanEBL);
                 return;
             }
             if (ymin > ymax)
             {
-                MessageBox.Show("Το νότιο γεωγραφικό πλάτος είναι μεγαλύτερο από το βόρειο");
+                MessageBox.Show(GlobalStrings.MsgSBLLargerThanNBL);
                 return;
             }
 
@@ -2225,25 +2228,25 @@ namespace Inspire.Metadata
             part = this.GEO_XminTextBox.Text.Split(c);
             if (part[1].Length < 2)
             {
-                MessageBox.Show("Το δυτικό γεωγραφικό μήκος πρέπει να είναι δεκαδικός αριθμός με τουλάχιστο δυο δεκαδικά ψηφία");
+                MessageBox.Show(GlobalStrings.MsgWBLMustBeFloat);
                 return;
             }
             part = this.GEO_XmaxTextBox.Text.Split(c);
             if (part[1].Length < 2)
             {
-                MessageBox.Show("Το ανατολικό γεωγραφικό μήκος πρέπει να είναι δεκαδικός αριθμός με τουλάχιστο δυο δεκαδικά ψηφία");
+                MessageBox.Show(GlobalStrings.MsgEBLMustBeFloat);
                 return;
             }
             part = this.GEO_YminTextBox.Text.Split(c);
             if (part[1].Length < 2)
             {
-                MessageBox.Show("Το νότιο γεωγραφικό πλάτος πρέπει να είναι δεκαδικός αριθμός με τουλάχιστο δυο δεκαδικά ψηφία");
+                MessageBox.Show(GlobalStrings.MsgSBLMustBeFloat);
                 return;
             }
             part = this.GEO_YmaxTextBox.Text.Split(c);
             if (part[1].Length < 2)
             {
-                MessageBox.Show("Το βόρειο γεωγραφικό πλάτος πρέπει να είναι δεκαδικός αριθμός με τουλάχιστο δυο δεκαδικά ψηφία");
+                MessageBox.Show(GlobalStrings.MsgNBLMustBeFloat);
                 return;
             }
 
@@ -2260,7 +2263,7 @@ namespace Inspire.Metadata
         {
             if (this.GEO_ExtendListBox.SelectedIndex == -1)
             {
-                MessageBox.Show("Επιλέξτε ένα γεωγραφικό περίγραμμα για διαγραφή");
+                MessageBox.Show(GlobalStrings.MsgSelectExtendToRemove);
                 return;
             }
 
@@ -2276,7 +2279,7 @@ namespace Inspire.Metadata
 		{
 			if(this.TMP_FromDateTimePicker.Value > this.TMP_ToDateTimePicker.Value)
 			{
-				MessageBox.Show("Δώστε τις ημερομηνίες Από-Έως με σωστή χρονική σειρά");
+				MessageBox.Show(GlobalStrings.MsgFromDateMoreRecentThanDate);
 				return;
 			}
 
@@ -2290,7 +2293,7 @@ namespace Inspire.Metadata
 		{
 			if(this.TMP_TemporalExtendListBox.SelectedIndex == -1)
 			{
-				MessageBox.Show("Επιλέξτε μια χρονική έκταση για διαγραφή");
+				MessageBox.Show(GlobalStrings.MsgSelectTemporalExtendToRemove);
 				return;				
 			}
 			
@@ -2312,7 +2315,7 @@ namespace Inspire.Metadata
                     string tmp = (string)date;
                     if (tmp == tmp1)
                     {
-                        MessageBox.Show("Προσοχή! Η ημερομηνία δημοσίευσης ήδη υπάρχει.");
+                        MessageBox.Show(GlobalStrings.MsgWarningPublDateExists);
                         break;
                     }
                 }
@@ -2325,7 +2328,7 @@ namespace Inspire.Metadata
 		{
 			if(this.TMP_PublicDateListBox.SelectedIndex == -1)
 			{
-				MessageBox.Show("Επιλέξτε ημερομηνία δημοσίευσης για διαγραφή");
+				MessageBox.Show(GlobalStrings.MsgSelectPublicationDateToRemove);
 				return;				
 			}
 			
@@ -2365,18 +2368,18 @@ namespace Inspire.Metadata
 		{
 			if(this.QLT_ScaleTextBox.Text == "")
 			{
-				MessageBox.Show("Επιλέξτε κλίμακα");
+				MessageBox.Show(GlobalStrings.MsgSelectValidScale);
 				return;
 			}
             int tmp1;
             if (!Int32.TryParse(this.QLT_ScaleTextBox.Text, out tmp1))
             {
-                MessageBox.Show("Η κλίμακα πρέπει να είναι ακέραιος αριθμός");
+                MessageBox.Show(GlobalStrings.MsgScaleNotValidInteger);
                 return;
             }
             if (tmp1 <= 0)
             {
-                MessageBox.Show("Η κλίμακα δεν μπορεί να είναι αρνητικός αριθμός ή μηδέν");
+                MessageBox.Show(GlobalStrings.MsgScaleCannotBeNegativeZero);
                 return;
             }
             Regex r = new Regex(@"\s");
@@ -2386,7 +2389,7 @@ namespace Inspire.Metadata
             {
                 if (tmp == (string)o)
                 {
-                    MessageBox.Show("Η κλίμακα υπάρχει ήδη στη λίστα");
+                    MessageBox.Show(GlobalStrings.MsgScaleAlreadyExists);
                     return;
                 }
             }
@@ -2399,23 +2402,23 @@ namespace Inspire.Metadata
 		{
 			if(this.QLT_DistanceTextBox.Text == "")
 			{
-				MessageBox.Show("Επιλέξτε απόσταση");
+				MessageBox.Show(GlobalStrings.MsgSelectValidDistance);
 				return;
 			}
 			if(this.QLT_UnitsComboBox.SelectedIndex == -1)
 			{
-				MessageBox.Show("Επιλέξτε μονάδα μέτρησης");
+				MessageBox.Show(GlobalStrings.MsgSelectValidUnits);
 				return;
 			}
             double tmp1;
             if (!Double.TryParse(this.QLT_DistanceTextBox.Text, out tmp1))
             {
-                MessageBox.Show("Η απόσταση δεν είναι έγκυρος αριθμός");
+                MessageBox.Show(GlobalStrings.MsgDistanceNotValidNumber);
                 return;
             }
             if (tmp1 <= 0)
             {
-                MessageBox.Show("Η απόσταση δεν είναι έγκυρος αριθμός");
+                MessageBox.Show(GlobalStrings.MsgDistanceCannotBeNegativeZero);
                 return;
             }
 			Regex r = new Regex(@"\s");
@@ -2426,7 +2429,7 @@ namespace Inspire.Metadata
             {
                 if (tmp == (string)o)
                 {
-                    MessageBox.Show("Η απόσταση υπάρχει ήδη στη λίστα");
+                    MessageBox.Show(GlobalStrings.MsgDistanceAlreadyExists);
                     return;
                 }
             }
@@ -2440,7 +2443,7 @@ namespace Inspire.Metadata
 		{
 			if(this.QLT_ListBox.SelectedIndex == -1)
 			{
-				MessageBox.Show("Επιλέξτε χωρική ανάλυση για διαγραφή");
+				MessageBox.Show(GlobalStrings.MsgSelectRecordToRemove);
 				return;				
 			}
 			
@@ -2456,17 +2459,17 @@ namespace Inspire.Metadata
 		{
 			if(this.CFRM_DegreeComboBox.SelectedIndex == -1)
 			{
-				MessageBox.Show("Επιλέξτε ένα βαθμό συμμόρφωσης");
+				MessageBox.Show(GlobalStrings.MsgSelectConformanceDegree);
 				return;
 			}
 			if(this.CFRM_TitleTextBox.Text == "")
 			{
-                MessageBox.Show("Επιλέξτε ένα τίτλο");
+                MessageBox.Show(GlobalStrings.MsgSelectATitle);
 				return;
 			}
 			if(this.CFRM_DateTypeComboBox.SelectedIndex == -1)
 			{
-                MessageBox.Show("Επιλέξτε ένα τύπο ημερομηνίας");
+                MessageBox.Show(GlobalStrings.MsgSelectDateType);
 				return;
 			}
 
@@ -2488,17 +2491,17 @@ namespace Inspire.Metadata
 
                     if (datetype == cur_datetype && degree == cur_degree && title == cur_title && date == cur_date)
                     {
-                        MessageBox.Show("Προσοχή! Αυτή η εγγραφή υπάρχει ήδη.");
+                        MessageBox.Show(GlobalStrings.MsgWarningRecordExists);
                         break;
                     }
                     if (title == cur_title && datetype == cur_datetype && datetype == "δημιουργία")
                     {
-                        MessageBox.Show("Προσοχή! Υπάρχει ήδη μια ημερομηνία δημιουργίας για αυτόν τον τίτλο.");
+                        MessageBox.Show(GlobalStrings.MsgWarningCreationDateAlreadyExists);
                         break;
                     }
                     if (title == cur_title && datetype == cur_datetype && datetype == "δημοσίευση" && date == cur_date)
                     {
-                        MessageBox.Show("Προσοχή! Υπάρχει ήδη μια ημερομηνία δημοσίευσης για αυτόν τον τίτλο");
+                        MessageBox.Show(GlobalStrings.MsgWarningPublDateExistsForTitle);
                         break;
                     }
                 }
@@ -2515,7 +2518,7 @@ namespace Inspire.Metadata
 		{
 			if(this.CFRM_ListBox.SelectedIndex == -1)
 			{
-				MessageBox.Show("Επιλέξτε μια εγγραφή συμμόρφωσης για διαγραφή");
+				MessageBox.Show(GlobalStrings.MsgSelectConfRecordToRemove);
 				return;				
 			}
 			
@@ -2530,7 +2533,7 @@ namespace Inspire.Metadata
         {
             if (this.CSTR_LimitationsPublicComboBox.SelectedIndex == -1)
             {
-                MessageBox.Show("Επιλέξτε έναν όρο πρόσβασης και χρήσης");
+                MessageBox.Show(GlobalStrings.MsgSelectLimitConst);
                 return;
             }
             this.CSTR_LimitationsPublicListBox.Items.Add(((string)this.CSTR_LimitationsPublicComboBox.SelectedItem));
@@ -2543,7 +2546,7 @@ namespace Inspire.Metadata
         {
             if (this.CSTR_LimitationsPublicTextBox.Text == "")
             {
-                MessageBox.Show("Συμπληρώστε με ελεύθερο κείμενο έναν όρο πρόσβασης και χρήσης");
+                MessageBox.Show(GlobalStrings.MsgFreeTextLimitConst);
                 return;
             }
             this.CSTR_LimitationsPublicListBox.Items.Add(this.CSTR_LimitationsPublicTextBox.Text);
@@ -2555,7 +2558,7 @@ namespace Inspire.Metadata
         {
             if (this.CSTR_LimitationsPublicListBox.SelectedIndex == -1)
             {
-                MessageBox.Show("Επιλέξτε μια εγγραφή για διαγραφή");
+                MessageBox.Show(GlobalStrings.MsgSelectRecordToRemove);
                 return;
             }
 
@@ -2568,7 +2571,7 @@ namespace Inspire.Metadata
         {
             if (this.CSTR_ConditionsUseGeneralComboBox.SelectedIndex == -1)
             {
-                MessageBox.Show("Συμπληρώστε έναν περιορισμό πρόσβασης");
+                MessageBox.Show(GlobalStrings.MsgSelectLimitConst);
                 return;
             }
             this.CSTR_ConditionsUseGeneralListBox.Items.Add(((string)this.CSTR_ConditionsUseGeneralComboBox.SelectedItem));
@@ -2581,7 +2584,7 @@ namespace Inspire.Metadata
         {
             if (this.CSTR_ConditionsUseGeneralTextBox.Text == "")
             {
-                MessageBox.Show("Συμπληρώστε με ελεύθερο κείμενο έναν περιορισμό πρόσβασης");
+                MessageBox.Show(GlobalStrings.MsgFreeTextLimitConst);
                 return;
             }
             this.CSTR_ConditionsUseGeneralListBox.Items.Add(this.CSTR_ConditionsUseGeneralTextBox.Text);
@@ -2593,7 +2596,7 @@ namespace Inspire.Metadata
         {
             if (this.CSTR_ConditionsUseGeneralListBox.SelectedIndex == -1)
             {
-                MessageBox.Show("Επιλέξτε μια εγγραφή για διαγραφή");
+                MessageBox.Show(GlobalStrings.MsgSelRecToRemove);
                 return;
             }
 
@@ -2611,17 +2614,17 @@ namespace Inspire.Metadata
 		{
 			if(this.ORG_NameTextBox.Text == "")
 			{
-				MessageBox.Show("Επιλέξτε ένα όνομα οργανισμού");
+                MessageBox.Show(GlobalStrings.MsgFillOrgName);
 				return;
 			}
 			if(this.ORG_EmailListBox.Items.Count == 0)
 			{
-				MessageBox.Show("Επιλέξτε μια διεύθυνση ηλεκτρονικού ταχυδρομίου");
+				MessageBox.Show(GlobalStrings.MsgFillEmailAddress);
 				return;
 			}
 			if(this.ORG_RoleComboBox.SelectedIndex == -1)
 			{
-				MessageBox.Show("Επιλέξτε ένα ρόλο αρμόδιου μέρους");
+				MessageBox.Show(GlobalStrings.MsgFillOrgName);
 				return;
 			}
 
@@ -2635,7 +2638,7 @@ namespace Inspire.Metadata
             {
                 if (tmp == (string)t)
                 {
-                    MessageBox.Show("Οι πληροφορίες οργανισμού υπάρχουν ήδη");
+                    MessageBox.Show(GlobalStrings.MsgOrgExists);
                     return;
                 }
             }
@@ -2651,7 +2654,7 @@ namespace Inspire.Metadata
 		{
 			if(this.ORG_IndividualListBox.SelectedIndex == -1)
 			{
-				MessageBox.Show("Επιλέξτε μια εγγραφή οργανισμού για διαγραφή");
+				MessageBox.Show(GlobalStrings.MsgSelectOrgRecordRemove);
 				return;				
 			}
 			
@@ -2662,19 +2665,19 @@ namespace Inspire.Metadata
         {
             if (this.ORG_EmailTextBox.Text == "")
             {
-                MessageBox.Show("Συμπληρώστε μια διεύθυνση ηλεκτρονικού ταχυδρομίου");
+                MessageBox.Show(GlobalStrings.MsgFillEmailAddress);
                 return;
             }
             if (!this.validateEmail(this.ORG_EmailTextBox.Text))
             {
-                MessageBox.Show("Η ηλεκτρονική διεύθυνση δεν είναι έγκυρη");
+                MessageBox.Show(GlobalStrings.MsgInvalidEmail);
                 return;
             }
             foreach (object o in this.ORG_EmailListBox.Items)
             {
                 if (this.ORG_EmailTextBox.Text == (string)o)
                 {
-                    MessageBox.Show("Η ηλεκτρονική διεύθυνση υπάρχει ήδη στη λίστα");
+                    MessageBox.Show(GlobalStrings.MsgMailExists);
                     return;
                 }
             }
@@ -2686,7 +2689,7 @@ namespace Inspire.Metadata
         {
             if (this.ORG_EmailListBox.SelectedIndex == -1)
             {
-                MessageBox.Show("Επιλέξτε μια ηλεκτρονική διεύθυνση για διαγραφή");
+                MessageBox.Show(GlobalStrings.MsgSelMailToRemove);
                 return;
             }
 

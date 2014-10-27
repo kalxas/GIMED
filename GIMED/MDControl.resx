@@ -120,18 +120,18 @@
   <data name="&gt;&gt;TMP_CreationDateListBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;CSTR_AddLimitationsPublicButton1.Name" xml:space="preserve">
+    <value>CSTR_AddLimitationsPublicButton1</value>
+  </data>
   <data name="ORG_RoleComboBox.Items3" xml:space="preserve">
     <value>User</value>
-  </data>
-  <data name="TMP_RemoveRevisionDateButton.Text" xml:space="preserve">
-    <value>Remove</value>
   </data>
   <data name="&gt;&gt;CL_AddTopicCategoryButton.Parent" xml:space="preserve">
     <value>CL_GroupBox</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="CL_TopicCategoryComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="GEO_AddExtendButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 24</value>
   </data>
   <data name="label17.Text" xml:space="preserve">
     <value>Keyword List</value>
@@ -148,14 +148,18 @@
   <data name="&gt;&gt;CFRM_DateTypeComboBox.Name" xml:space="preserve">
     <value>CFRM_DateTypeComboBox</value>
   </data>
-  <data name="CSTR_ConditionsUseGeneralComboBox.Items" xml:space="preserve">
-    <value>no conditions apply</value>
-  </data>
   <data name="&gt;&gt;CL_TopicCategoryComboBox.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ID_ResourceLanguageListBox.ItemHeight" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
   <data name="&gt;&gt;label22.Name" xml:space="preserve">
     <value>label22</value>
+  </data>
+  <data name="MD_EmailListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 71</value>
   </data>
   <data name="KeywordGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
@@ -163,9 +167,8 @@
   <data name="&gt;&gt;KW_KeywordListBox.Name" xml:space="preserve">
     <value>KW_KeywordListBox</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="TMP_RevisionDateListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 45</value>
+  <data name="&gt;&gt;MD_emailTextBox.Name" xml:space="preserve">
+    <value>MD_emailTextBox</value>
   </data>
   <data name="&gt;&gt;MD_DateTimePicker.Type" xml:space="preserve">
     <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -176,8 +179,14 @@
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 13</value>
   </data>
-  <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 16</value>
+  <data name="label26.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 264</value>
+  </data>
+  <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 220</value>
+  </data>
+  <data name="label27.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 19</value>
   </data>
   <data name="TMP_PublicDateListBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>50, 45</value>
@@ -212,20 +221,32 @@
   <data name="&gt;&gt;label28.Name" xml:space="preserve">
     <value>label28</value>
   </data>
+  <data name="ORG_EmailListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;CSTR_ConditionsUseGeneralListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="ID_UIDListBox.ItemHeight" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
   <data name="&gt;&gt;MD_emailTextBox.Parent" xml:space="preserve">
     <value>groupBox6</value>
   </data>
+  <data name="CSTR_GroupBox.Text" xml:space="preserve">
+    <value>Constraints</value>
+  </data>
+  <data name="&gt;&gt;groupBox11.Name" xml:space="preserve">
+    <value>groupBox11</value>
+  </data>
   <data name="label60.Text" xml:space="preserve">
     <value>West Bound Longitude</value>
   </data>
-  <data name="TMP_AddCreationDateButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>387, 12</value>
-  </data>
   <data name="&gt;&gt;ID_ResourceTypeComboBox.Name" xml:space="preserve">
     <value>ID_ResourceTypeComboBox</value>
+  </data>
+  <data name="KW_InspireComboBox.Items23" xml:space="preserve">
+    <value>Oceanographic geographical features</value>
   </data>
   <data name="&gt;&gt;label29.Name" xml:space="preserve">
     <value>label29</value>
@@ -236,6 +257,9 @@
   <data name="&gt;&gt;TMP_AddExtendButton.Name" xml:space="preserve">
     <value>TMP_AddExtendButton</value>
   </data>
+  <data name="&gt;&gt;GUIDButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;TMP_RemoveCreationDateButton.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
@@ -245,17 +269,11 @@
   <data name="&gt;&gt;KW_DateTypeComboBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="GEO_RemoveExtendButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>382, 183</value>
-  </data>
   <data name="&gt;&gt;CSTR_GroupBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="ORG_RoleComboBox.Items9" xml:space="preserve">
     <value>Publisher</value>
-  </data>
-  <data name="&gt;&gt;ID_ResourceLanguageAddButton.Name" xml:space="preserve">
-    <value>ID_ResourceLanguageAddButton</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>E-mail</value>
@@ -284,6 +302,9 @@
   <data name="&gt;&gt;CSTR_GroupBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="MD_ContactListRemoveButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>483, 224</value>
+  </data>
   <data name="&gt;&gt;label20.Parent" xml:space="preserve">
     <value>Spatial_GroupBox</value>
   </data>
@@ -299,11 +320,11 @@
   <data name="TMP_RevisionDateTimePicker.TabIndex" type="System.Int32, mscorlib">
     <value>45</value>
   </data>
-  <data name="&gt;&gt;CFRM_DateTypeComboBox.Parent" xml:space="preserve">
-    <value>CFRM_GroupBox</value>
+  <data name="&gt;&gt;CSTR_RemoveConditionsUseGeneralButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label30.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;QLT_DistanceTextBox.Name" xml:space="preserve">
+    <value>QLT_DistanceTextBox</value>
   </data>
   <data name="groupBox11.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 16</value>
@@ -314,6 +335,9 @@
   <data name="TMP_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>471, 447</value>
   </data>
+  <data name="&gt;&gt;ConformityTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;CFRM_ListBox.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
@@ -323,20 +347,20 @@
   <data name="&gt;&gt;label21.Parent" xml:space="preserve">
     <value>CFRM_GroupBox</value>
   </data>
+  <data name="KW_InspireComboBox.Items33" xml:space="preserve">
+    <value>Utility and governmental services</value>
+  </data>
   <data name="MD_OrganizationNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>326, 22</value>
   </data>
   <data name="CSTR_RemoveConditionsUseGeneralButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>392, 355</value>
   </data>
-  <data name="ORG_EmailListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>252, 52</value>
-  </data>
-  <data name="&gt;&gt;label31.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="MD_EmailListBox.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
+  </data>
+  <data name="&gt;&gt;TMP_PublicDateListBox.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="KW_InspireComboBox.Items27" xml:space="preserve">
     <value>Protected sites</value>
@@ -365,8 +389,14 @@
   <data name="&gt;&gt;label58.Name" xml:space="preserve">
     <value>label58</value>
   </data>
-  <data name="&gt;&gt;groupBox6.Parent" xml:space="preserve">
-    <value>groupBox3</value>
+  <data name="&gt;&gt;CL_AddTopicCategoryButton.Name" xml:space="preserve">
+    <value>CL_AddTopicCategoryButton</value>
+  </data>
+  <data name="&gt;&gt;QLT_DistanceTextBox.Parent" xml:space="preserve">
+    <value>Spatial_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;CSTR_LimitationsPublicTextBox.Name" xml:space="preserve">
     <value>CSTR_LimitationsPublicTextBox</value>
@@ -377,8 +407,8 @@
   <data name="ORG_IndividualListBox.ItemHeight" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
-  <data name="&gt;&gt;LIN_FreeTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="groupBox12.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
   </data>
   <data name="groupBox9.Location" type="System.Drawing.Point, System.Drawing">
     <value>63, 376</value>
@@ -386,8 +416,11 @@
   <data name="label61.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="groupBox12.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
+  <data name="&gt;&gt;ClassificationTab.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ID_NamespaceTextBox.Name" xml:space="preserve">
+    <value>ID_NamespaceTextBox</value>
   </data>
   <data name="&gt;&gt;ID_NamespaceTextBox.Parent" xml:space="preserve">
     <value>groupBox8</value>
@@ -398,11 +431,11 @@
   <data name="&gt;&gt;label59.Name" xml:space="preserve">
     <value>label59</value>
   </data>
-  <data name="ID_CodeTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
+  <data name="KW_DateTypeComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 105</value>
   </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>Resource abstract</value>
+  <data name="&gt;&gt;GEO_YminTextBox.Name" xml:space="preserve">
+    <value>GEO_YminTextBox</value>
   </data>
   <data name="QLT_UnitsComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>326, 24</value>
@@ -416,8 +449,17 @@
   <data name="CSTR_ConditionsUseGeneralComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>46, 239</value>
   </data>
+  <data name="ORG_NameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>327, 22</value>
+  </data>
   <data name="&gt;&gt;ORG_RemoveButton.Name" xml:space="preserve">
     <value>ORG_RemoveButton</value>
+  </data>
+  <data name="CSTR_RemoveConditionsUseGeneralButton.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="QLT_ScaleTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>326, 22</value>
   </data>
   <data name="&gt;&gt;TMP_RemoveDateButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -427,6 +469,15 @@
   </data>
   <data name="KW_DateTypeComboBox.Text" xml:space="preserve">
     <value>Please Select</value>
+  </data>
+  <data name="CSTR_AddConditionsUseGeneralButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 24</value>
+  </data>
+  <data name="&gt;&gt;MD_ContactListAddButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="CL_TopicCategoryListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>53, 46</value>
   </data>
   <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 16</value>
@@ -458,6 +509,9 @@
   <data name="&gt;&gt;TMP_FromDateTimePicker.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="&gt;&gt;label28.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
   <data name="&gt;&gt;label3.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -482,14 +536,14 @@
   <data name="KW_DateTimePicker.Location" type="System.Drawing.Point, System.Drawing">
     <value>213, 105</value>
   </data>
-  <data name="TMP_RevisionDateListBox.ItemHeight" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
   <data name="CFRM_GroupBox.Text" xml:space="preserve">
     <value>Conformity</value>
   </data>
-  <data name="&gt;&gt;QLT_RemoveButton.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;ORG_IndividualListBox.Name" xml:space="preserve">
+    <value>ORG_IndividualListBox</value>
   </data>
   <data name="MD_LanguageComboBox.Items19" xml:space="preserve">
     <value>Slovak</value>
@@ -503,20 +557,29 @@
   <data name="label61.TabIndex" type="System.Int32, mscorlib">
     <value>43</value>
   </data>
+  <data name="CL_AddTopicCategoryButton.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>119, 16</value>
   </data>
   <data name="&gt;&gt;TMP_TemporalExtendListBox.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="KW_DateTimePicker.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 22</value>
+  <data name="&gt;&gt;ID_UIDListBox.Name" xml:space="preserve">
+    <value>ID_UIDListBox</value>
   </data>
   <data name="Spatial_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>453, 216</value>
   </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>groupBox11</value>
+  </data>
   <data name="ORG_RoleComboBox.Items8" xml:space="preserve">
     <value>Processor</value>
+  </data>
+  <data name="KW_AddInspireButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>388, 32</value>
   </data>
   <data name="&gt;&gt;label23.Parent" xml:space="preserve">
     <value>CFRM_GroupBox</value>
@@ -530,17 +593,11 @@
   <data name="&gt;&gt;CSTR_AddLimitationsPublicButton2.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="ConformityTab.Text" xml:space="preserve">
-    <value>Conformity</value>
-  </data>
   <data name="CFRM_DateTypeComboBox.Text" xml:space="preserve">
     <value>Please Select</value>
   </data>
   <data name="ID_ResourceAbstractTextBox.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="ConstraintsTab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 46</value>
   </data>
   <data name="label7.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -549,11 +606,11 @@
   <data name="MD_tabControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
+  <data name="KW_DateTypeComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
   <data name="&gt;&gt;label58.ZOrder" xml:space="preserve">
     <value>9</value>
-  </data>
-  <data name="&gt;&gt;KW_VocabularyTextBox.Parent" xml:space="preserve">
-    <value>groupBox2</value>
   </data>
   <data name="TemporalTab.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -564,11 +621,14 @@
   <data name="&gt;&gt;OrganizationTab.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;label28.Parent" xml:space="preserve">
     <value>groupBox12</value>
   </data>
-  <data name="ConformityTab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 46</value>
+  <data name="MD_ContactListRemoveButton.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
   </data>
   <data name="ID_ResourceLanguageListBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>326, 36</value>
@@ -587,6 +647,9 @@
   </data>
   <data name="&gt;&gt;label59.ZOrder" xml:space="preserve">
     <value>7</value>
+  </data>
+  <data name="&gt;&gt;QLT_UnitsComboBox.Name" xml:space="preserve">
+    <value>QLT_UnitsComboBox</value>
   </data>
   <data name="&gt;&gt;groupBox10.Name" xml:space="preserve">
     <value>groupBox10</value>
@@ -609,23 +672,26 @@
   <data name="TMP_CreationDateListBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>49, 40</value>
   </data>
-  <data name="MD_LanguageComboBox.Items" xml:space="preserve">
-    <value>Bulgarian</value>
-  </data>
   <data name="&gt;&gt;ID_ResourceLanguageAddButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;CSTR_LimitationsPublicComboBox.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <data name="&gt;&gt;KW_InspireComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Resource abstract</value>
+  </data>
+  <data name="&gt;&gt;groupBox7.Name" xml:space="preserve">
+    <value>groupBox7</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="&gt;&gt;CFRM_ListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="CFRM_AddButton.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
@@ -657,8 +723,8 @@
   <data name="TMP_AddRevisionDateButton.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
-  <data name="&gt;&gt;TMP_GroupBox.Parent" xml:space="preserve">
-    <value>TemporalTab</value>
+  <data name="label13.Text" xml:space="preserve">
+    <value>From</value>
   </data>
   <data name="label66.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 48</value>
@@ -675,20 +741,17 @@
   <data name="LIN_FreeTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>455, 116</value>
   </data>
-  <data name="QLT_ScaleTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>326, 22</value>
-  </data>
   <data name="CL_TopicCategoryComboBox.Items15" xml:space="preserve">
     <value>Society</value>
+  </data>
+  <data name="&gt;&gt;SPT_GroupBox.Name" xml:space="preserve">
+    <value>SPT_GroupBox</value>
   </data>
   <data name="CSTR_AddLimitationsPublicButton1.Location" type="System.Drawing.Point, System.Drawing">
     <value>394, 29</value>
   </data>
-  <data name="MD_ContactListRemoveButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>483, 224</value>
-  </data>
-  <data name="&gt;&gt;ID_UIDListBox.Name" xml:space="preserve">
-    <value>ID_UIDListBox</value>
+  <data name="&gt;&gt;groupBox8.Parent" xml:space="preserve">
+    <value>IdentificationTab</value>
   </data>
   <data name="KW_KeywordListBox.ItemHeight" type="System.Int32, mscorlib">
     <value>16</value>
@@ -702,6 +765,12 @@
   <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
     <value>15</value>
   </data>
+  <data name="TMP_ToDateTimePicker.CustomFormat" xml:space="preserve">
+    <value>yyyy-MM-dd</value>
+  </data>
+  <data name="label59.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 109</value>
+  </data>
   <data name="ID_ResourseTitleTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
@@ -711,23 +780,20 @@
   <data name="QLT_ScaleTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
   </data>
-  <data name="TMP_FromDateTimePicker.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 22</value>
-  </data>
   <data name="ID_NamespaceTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
   </data>
   <data name="groupBox8.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
   </data>
-  <data name="&gt;&gt;TMP_RemoveExtendButton.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="SPT_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>467, 229</value>
   </data>
   <data name="ID_ResourceLanguageRemoveButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>385, 59</value>
+  </data>
+  <data name="&gt;&gt;QLT_UnitsComboBox.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;KW_DateTypeComboBox.Name" xml:space="preserve">
     <value>KW_DateTypeComboBox</value>
@@ -738,14 +804,17 @@
   <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
     <value>14</value>
   </data>
+  <data name="&gt;&gt;CFRM_DateTimePicker.Parent" xml:space="preserve">
+    <value>CFRM_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;label17.Name" xml:space="preserve">
+    <value>label17</value>
+  </data>
   <data name="MD_LanguageComboBox.Text" xml:space="preserve">
     <value>Please Select</value>
   </data>
   <data name="MD_LanguageComboBox.Items18" xml:space="preserve">
     <value>Romanian</value>
-  </data>
-  <data name="MD_EmailListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 71</value>
   </data>
   <data name="&gt;&gt;CL_TopicCategoryComboBox.Name" xml:space="preserve">
     <value>CL_TopicCategoryComboBox</value>
@@ -756,32 +825,17 @@
   <data name="&gt;&gt;CFRM_DateTimePicker.Type" xml:space="preserve">
     <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="GEO_YmaxTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 22</value>
+  <data name="&gt;&gt;label27.Name" xml:space="preserve">
+    <value>label27</value>
   </data>
-  <data name="&gt;&gt;label23.Name" xml:space="preserve">
-    <value>label23</value>
-  </data>
-  <data name="ORG_RoleComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>108, 105</value>
+  <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="MD_ContactListRemoveButton.Text" xml:space="preserve">
     <value>Remove</value>
   </data>
-  <data name="&gt;&gt;ID_ResourceLanguageListBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ORG_EmailListBox.TabIndex" type="System.Int32, mscorlib">
-    <value>40</value>
-  </data>
   <data name="ORG_GroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
-  </data>
-  <data name="&gt;&gt;CFRM_TitleTextBox.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 65</value>
   </data>
   <data name="&gt;&gt;ID_UIDRemoveButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -789,17 +843,20 @@
   <data name="CSTR_LimitationsPublicComboBox.Items" xml:space="preserve">
     <value>no limitations</value>
   </data>
-  <data name="&gt;&gt;QLT_AddDistanceButton.Parent" xml:space="preserve">
-    <value>Spatial_GroupBox</value>
-  </data>
   <data name="&gt;&gt;KeywordTab.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="&gt;&gt;GEO_YmaxTextBox.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
+  <data name="&gt;&gt;ID_ResourceLanguageListBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;MD_GroupBox.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="&gt;&gt;CFRM_ListBox.Parent" xml:space="preserve">
+    <value>CFRM_GroupBox</value>
   </data>
   <data name="TMP_GroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
@@ -807,8 +864,8 @@
   <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
     <value>groupBox3</value>
   </data>
-  <data name="&gt;&gt;ID_ResourceTypeComboBox.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="ID_ResourceLocatorListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>53, 45</value>
   </data>
   <data name="&gt;&gt;CL_GroupBox.Name" xml:space="preserve">
     <value>CL_GroupBox</value>
@@ -825,11 +882,14 @@
   <data name="KW_InspireComboBox.Items19" xml:space="preserve">
     <value>Land use</value>
   </data>
-  <data name="&gt;&gt;label7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>groupBox6</value>
   </data>
-  <data name="&gt;&gt;groupBox7.Name" xml:space="preserve">
-    <value>groupBox7</value>
+  <data name="&gt;&gt;QLT_AddScaleButton.Parent" xml:space="preserve">
+    <value>Spatial_GroupBox</value>
+  </data>
+  <data name="QLT_DistanceTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
   </data>
   <data name="MD_LanguageComboBox.Items15" xml:space="preserve">
     <value>Maltese</value>
@@ -855,32 +915,20 @@
   <data name="&gt;&gt;TMP_AddRevisionDateButton.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 56</value>
-  </data>
   <data name="MD_tabControl.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
   <data name="&gt;&gt;GEO_XmaxTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;TMP_RevisionDateListBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TMP_AddExtendButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CSTR_LimitationsPublicComboBox.Items8" xml:space="preserve">
+    <value>(h) the protection of the environment to which such information relates, such as the location of rare species</value>
   </data>
   <data name="&gt;&gt;IdentificationTab.Name" xml:space="preserve">
     <value>IdentificationTab</value>
   </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;QLT_DistanceTextBox.ZOrder" xml:space="preserve">
     <value>4</value>
-  </data>
-  <data name="ID_UIDRemoveButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 24</value>
   </data>
   <data name="ORG_RoleComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 24</value>
@@ -900,9 +948,6 @@
   <data name="groupBox9.Size" type="System.Drawing.Size, System.Drawing">
     <value>467, 97</value>
   </data>
-  <data name="&gt;&gt;groupBox9.Parent" xml:space="preserve">
-    <value>IdentificationTab</value>
-  </data>
   <data name="&gt;&gt;ID_NamespaceTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -912,11 +957,17 @@
   <data name="&gt;&gt;groupBox5.Name" xml:space="preserve">
     <value>groupBox5</value>
   </data>
-  <data name="ORG_RemoveEmailButton.TabIndex" type="System.Int32, mscorlib">
-    <value>41</value>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 16</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceLanguageComboBox.Parent" xml:space="preserve">
+    <value>groupBox9</value>
   </data>
   <data name="QLT_AddDistanceButton.Text" xml:space="preserve">
     <value>Add</value>
+  </data>
+  <data name="&gt;&gt;KW_KeywordAddButton.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="MD_LanguageComboBox.Items8" xml:space="preserve">
     <value>German</value>
@@ -924,8 +975,8 @@
   <data name="OrganizationTab.Text" xml:space="preserve">
     <value>Organisation</value>
   </data>
-  <data name="GEO_AddExtendButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 24</value>
+  <data name="&gt;&gt;CSTR_LimitationsPublicTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label26.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -942,8 +993,14 @@
   <data name="&gt;&gt;label65.Name" xml:space="preserve">
     <value>label65</value>
   </data>
-  <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 16</value>
+  <data name="KW_KeywordListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;QLT_AddDistanceButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ID_ResourceLocatorTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
   </data>
   <data name="MD_tabControl.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -954,14 +1011,8 @@
   <data name="&gt;&gt;label27.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;GEO_YminTextBox.Name" xml:space="preserve">
-    <value>GEO_YminTextBox</value>
-  </data>
-  <data name="&gt;&gt;SPT_GroupBox.Name" xml:space="preserve">
-    <value>SPT_GroupBox</value>
+  <data name="KW_InspireComboBox.Text" xml:space="preserve">
+    <value>Please Select</value>
   </data>
   <data name="&gt;&gt;GeographicTab.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -978,8 +1029,8 @@
   <data name="&gt;&gt;SPT_GroupBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;QualityValidityTab.Parent" xml:space="preserve">
-    <value>MD_tabControl</value>
+  <data name="ORG_AddEmailButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 24</value>
   </data>
   <data name="MD_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>554, 104</value>
@@ -987,20 +1038,14 @@
   <data name="ID_ResourceTypeComboBox.Items2" xml:space="preserve">
     <value>Service</value>
   </data>
-  <data name="&gt;&gt;CSTR_LimitationsPublicListBox.Name" xml:space="preserve">
-    <value>CSTR_LimitationsPublicListBox</value>
-  </data>
   <data name="&gt;&gt;GEO_RemoveExtendButton.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="CSTR_ConditionsUseGeneralComboBox.Items1" xml:space="preserve">
-    <value>conditions unknown</value>
-  </data>
-  <data name="&gt;&gt;TMP_CreationDateTimePicker.Parent" xml:space="preserve">
-    <value>groupBox10</value>
-  </data>
   <data name="GEO_YminTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>164, 128</value>
+  </data>
+  <data name="GEO_RemoveExtendButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>382, 183</value>
   </data>
   <data name="ConformityTab.Size" type="System.Drawing.Size, System.Drawing">
     <value>581, 475</value>
@@ -1010,6 +1055,12 @@
   </data>
   <data name="&gt;&gt;label14.Parent" xml:space="preserve">
     <value>groupBox11</value>
+  </data>
+  <data name="CL_TopicCategoryComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;TMP_AddExtendButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;CFRM_DegreeComboBox.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -1023,11 +1074,17 @@
   <data name="groupBox12.Size" type="System.Drawing.Size, System.Drawing">
     <value>439, 171</value>
   </data>
+  <data name="CL_TopicCategoryComboBox.Items12" xml:space="preserve">
+    <value>Location</value>
+  </data>
   <data name="&gt;&gt;KeywordGroupBox.Name" xml:space="preserve">
     <value>KeywordGroupBox</value>
   </data>
-  <data name="&gt;&gt;QualityValidityTab.Name" xml:space="preserve">
-    <value>QualityValidityTab</value>
+  <data name="TMP_AddExtendButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 24</value>
+  </data>
+  <data name="&gt;&gt;CL_TopicCategoryListBox.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>65, 0</value>
@@ -1038,23 +1095,14 @@
   <data name="CFRM_DateTimePicker.Location" type="System.Drawing.Point, System.Drawing">
     <value>228, 73</value>
   </data>
-  <data name="&gt;&gt;QLT_UnitsComboBox.Name" xml:space="preserve">
-    <value>QLT_UnitsComboBox</value>
-  </data>
   <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
     <value>MetadataTab</value>
   </data>
   <data name="&gt;&gt;CSTR_RemoveConditionsUseGeneralButton.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="label9.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
   <data name="&gt;&gt;label15.Parent" xml:space="preserve">
     <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;MD_ContactListAddButton.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="MD_LanguageComboBox.Items17" xml:space="preserve">
     <value>Portuguese</value>
@@ -1068,14 +1116,8 @@
   <data name="MD_AddEmailButton.Text" xml:space="preserve">
     <value>Add</value>
   </data>
-  <data name="ID_ResourceLocatorListBox.ItemHeight" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
   <data name="CSTR_LimitationsPublicListBox.ItemHeight" type="System.Int32, mscorlib">
     <value>16</value>
-  </data>
-  <data name="TMP_PublicDateListBox.TabIndex" type="System.Int32, mscorlib">
-    <value>42</value>
   </data>
   <data name="&gt;&gt;GEO_XminTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1086,12 +1128,6 @@
   <data name="ID_ResourceLanguageComboBox.Items8" xml:space="preserve">
     <value>German</value>
   </data>
-  <data name="&gt;&gt;MetadataTab.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="groupBox12.Text" xml:space="preserve">
-    <value>Responsible Party</value>
-  </data>
   <data name="CFRM_TitleTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>340, 22</value>
   </data>
@@ -1100,12 +1136,6 @@
   </data>
   <data name="&gt;&gt;GEO_RemoveExtendButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label26.Parent" xml:space="preserve">
-    <value>CSTR_GroupBox</value>
-  </data>
-  <data name="TMP_AddDateButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 24</value>
   </data>
   <data name="ID_ResourceLanguageComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>326, 24</value>
@@ -1118,9 +1148,6 @@
   </data>
   <data name="&gt;&gt;label61.Name" xml:space="preserve">
     <value>label61</value>
-  </data>
-  <data name="CSTR_LimitationsPublicTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>340, 38</value>
   </data>
   <data name="label14.Text" xml:space="preserve">
     <value>To</value>
@@ -1143,26 +1170,26 @@
   <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;CL_AddTopicCategoryButton.Name" xml:space="preserve">
-    <value>CL_AddTopicCategoryButton</value>
+  <data name="&gt;&gt;groupBox7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="GUIDButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>366, 45</value>
   </data>
+  <data name="ConstraintsTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>581, 475</value>
+  </data>
   <data name="&gt;&gt;OrganizationTab.Name" xml:space="preserve">
     <value>OrganizationTab</value>
   </data>
-  <data name="ID_ResourceLanguageListBox.ItemHeight" type="System.Int32, mscorlib">
-    <value>16</value>
+  <data name="MD_LanguageComboBox.Items3" xml:space="preserve">
+    <value>Dutch</value>
   </data>
-  <data name="label26.Location" type="System.Drawing.Point, System.Drawing">
-    <value>45, 264</value>
+  <data name="&gt;&gt;TMP_RemoveCreationDateButton.Name" xml:space="preserve">
+    <value>TMP_RemoveCreationDateButton</value>
   </data>
   <data name="&gt;&gt;label66.Name" xml:space="preserve">
     <value>label66</value>
-  </data>
-  <data name="&gt;&gt;ConstraintsTab.Name" xml:space="preserve">
-    <value>ConstraintsTab</value>
   </data>
   <data name="TMP_TemporalExtendListBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>49, 72</value>
@@ -1185,8 +1212,8 @@
   <data name="MD_LanguageComboBox.Items14" xml:space="preserve">
     <value>Lithuanian</value>
   </data>
-  <data name="GeographicTab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>581, 475</value>
+  <data name="&gt;&gt;label31.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="&gt;&gt;ID_ResourceLanguageRemoveButton.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -1197,8 +1224,8 @@
   <data name="ConstraintsTab.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="&gt;&gt;groupBox8.Parent" xml:space="preserve">
-    <value>IdentificationTab</value>
+  <data name="TMP_RevisionDateListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 45</value>
   </data>
   <data name="CFRM_ListBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>340, 52</value>
@@ -1218,6 +1245,9 @@
   <data name="label12.Text" xml:space="preserve">
     <value>Or type free text</value>
   </data>
+  <data name="&gt;&gt;CL_TopicCategoryListBox.Name" xml:space="preserve">
+    <value>CL_TopicCategoryListBox</value>
+  </data>
   <data name="KW_InspireComboBox.Items24" xml:space="preserve">
     <value>Orthoimagery</value>
   </data>
@@ -1233,8 +1263,8 @@
   <data name="&gt;&gt;KW_KeywordRemoveButton.Name" xml:space="preserve">
     <value>KW_KeywordRemoveButton</value>
   </data>
-  <data name="OrganizationTab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 46</value>
+  <data name="&gt;&gt;groupBox7.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>465, 164</value>
@@ -1242,11 +1272,11 @@
   <data name="ID_ResourceLanguageRemoveButton.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
   </data>
-  <data name="ORG_RemoveEmailButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 56</value>
-  </data>
   <data name="CSTR_LimitationsPublicListBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>340, 52</value>
+  </data>
+  <data name="&gt;&gt;QLT_ScaleTextBox.Name" xml:space="preserve">
+    <value>QLT_ScaleTextBox</value>
   </data>
   <data name="&gt;&gt;KW_InspireComboBox.Name" xml:space="preserve">
     <value>KW_InspireComboBox</value>
@@ -1263,8 +1293,8 @@
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;ID_ResourceLanguageComboBox.Name" xml:space="preserve">
-    <value>ID_ResourceLanguageComboBox</value>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 56</value>
@@ -1293,9 +1323,6 @@
   <data name="CFRM_RemoveButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>394, 159</value>
   </data>
-  <data name="label27.TabIndex" type="System.Int32, mscorlib">
-    <value>38</value>
-  </data>
   <data name="label28.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 145</value>
   </data>
@@ -1308,17 +1335,20 @@
   <data name="ORG_RoleComboBox.Items" xml:space="preserve">
     <value>ResourceProvider</value>
   </data>
+  <data name="&gt;&gt;label19.Parent" xml:space="preserve">
+    <value>Spatial_GroupBox</value>
+  </data>
   <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>554, 292</value>
   </data>
   <data name="&gt;&gt;label17.Parent" xml:space="preserve">
     <value>KeywordGroupBox</value>
   </data>
-  <data name="&gt;&gt;LIN_FreeTextBox.Parent" xml:space="preserve">
-    <value>LineageGroupBox</value>
-  </data>
   <data name="&gt;&gt;GEO_XminTextBox.Name" xml:space="preserve">
     <value>GEO_XminTextBox</value>
+  </data>
+  <data name="CFRM_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>467, 216</value>
   </data>
   <data name="ID_ResourceLocatorRemoveButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>385, 55</value>
@@ -1329,14 +1359,20 @@
   <data name="QLT_RemoveButton.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
   </data>
-  <data name="&gt;&gt;LineageGroupBox.Name" xml:space="preserve">
-    <value>LineageGroupBox</value>
+  <data name="TMP_ToDateTimePicker.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="ID_ResourceLocatorRemoveButton.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
   </data>
   <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>460, 118</value>
   </data>
   <data name="&gt;&gt;CL_GroupBox.Parent" xml:space="preserve">
     <value>ClassificationTab</value>
+  </data>
+  <data name="CSTR_RemoveLimitationsPublicButton.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
   </data>
   <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 16</value>
@@ -1353,8 +1389,11 @@
   <data name="&gt;&gt;TMP_RemoveRevisionDateButton.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="ID_ResourceLanguageComboBox.Items7" xml:space="preserve">
-    <value>French</value>
+  <data name="CFRM_DegreeComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 24</value>
+  </data>
+  <data name="CSTR_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>63, 13</value>
   </data>
   <data name="&gt;&gt;TMP_RemoveDateButton.Parent" xml:space="preserve">
     <value>groupBox4</value>
@@ -1365,8 +1404,8 @@
   <data name="KW_InspireComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
   </data>
-  <data name="CL_RemoveTopicCategoryButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 24</value>
+  <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>460, 81</value>
   </data>
   <data name="&gt;&gt;ORG_AddEmailButton.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -1383,11 +1422,8 @@
   <data name="MD_LanguageComboBox.Items16" xml:space="preserve">
     <value>Polish</value>
   </data>
-  <data name="CSTR_ConditionsUseGeneralComboBox.Text" xml:space="preserve">
-    <value>Please Select</value>
-  </data>
-  <data name="SPT_GroupBox.Text" xml:space="preserve">
-    <value>Geographic</value>
+  <data name="&gt;&gt;MD_ContactListAddButton.Name" xml:space="preserve">
+    <value>MD_ContactListAddButton</value>
   </data>
   <data name="&gt;&gt;TMP_FromDateTimePicker.Parent" xml:space="preserve">
     <value>groupBox11</value>
@@ -1422,17 +1458,20 @@
   <data name="&gt;&gt;GEO_ExtendListBox.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>Units of measure</value>
+  </data>
   <data name="QLT_DistanceTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>48, 72</value>
-  </data>
-  <data name="CL_TopicCategoryComboBox.Text" xml:space="preserve">
-    <value>Please Select</value>
   </data>
   <data name="&gt;&gt;label12.Parent" xml:space="preserve">
     <value>CSTR_GroupBox</value>
   </data>
-  <data name="&gt;&gt;MD_ContactListAddButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;QLT_RemoveButton.Name" xml:space="preserve">
+    <value>QLT_RemoveButton</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
   <data name="groupBox7.Size" type="System.Drawing.Size, System.Drawing">
     <value>467, 92</value>
@@ -1455,26 +1494,23 @@
   <data name="&gt;&gt;label4.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;TMP_ToDateTimePicker.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="KW_KeywordRemoveButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>388, 235</value>
   </data>
   <data name="&gt;&gt;ORG_AddEmailButton.Name" xml:space="preserve">
     <value>ORG_AddEmailButton</value>
   </data>
-  <data name="MD_LanguageComboBox.Items13" xml:space="preserve">
-    <value>Latvian</value>
+  <data name="groupBox8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>63, 260</value>
   </data>
   <data name="&gt;&gt;ORG_EmailListBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;LIN_FreeTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;CSTR_LimitationsPublicListBox.Parent" xml:space="preserve">
     <value>CSTR_GroupBox</value>
-  </data>
-  <data name="&gt;&gt;QLT_ScaleTextBox.Name" xml:space="preserve">
-    <value>QLT_ScaleTextBox</value>
   </data>
   <data name="MD_ContactListBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>19, 210</value>
@@ -1482,20 +1518,23 @@
   <data name="MD_LanguageComboBox.Items6" xml:space="preserve">
     <value>Finnish</value>
   </data>
-  <data name="&gt;&gt;QLT_RemoveButton.Parent" xml:space="preserve">
-    <value>Spatial_GroupBox</value>
+  <data name="CFRM_DegreeComboBox.Items" xml:space="preserve">
+    <value>Conformant</value>
   </data>
   <data name="&gt;&gt;label18.Parent" xml:space="preserve">
     <value>Spatial_GroupBox</value>
   </data>
-  <data name="&gt;&gt;QLT_AddDistanceButton.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="TMP_FromDateTimePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>255, 22</value>
   </data>
   <data name="&gt;&gt;CL_GroupBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="&gt;&gt;TMP_RevisionDateListBox.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="CSTR_ConditionsUseGeneralComboBox.Text" xml:space="preserve">
+    <value>Please Select</value>
   </data>
   <data name="&gt;&gt;TMP_PublicDateListBox.Parent" xml:space="preserve">
     <value>groupBox4</value>
@@ -1509,20 +1548,23 @@
   <data name="ORG_RemoveButton.Text" xml:space="preserve">
     <value>Remove</value>
   </data>
+  <data name="CSTR_ConditionsUseGeneralTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
   <data name="&gt;&gt;CSTR_RemoveConditionsUseGeneralButton.Parent" xml:space="preserve">
     <value>CSTR_GroupBox</value>
   </data>
   <data name="ORG_EmailTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>37</value>
   </data>
-  <data name="label60.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopCenter</value>
+  <data name="&gt;&gt;ORG_RoleComboBox.Name" xml:space="preserve">
+    <value>ORG_RoleComboBox</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Resource title</value>
   </data>
-  <data name="ORG_AddEmailButton.Text" xml:space="preserve">
-    <value>Add</value>
+  <data name="label24.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
   </data>
   <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 16</value>
@@ -1542,8 +1584,8 @@
   <data name="&gt;&gt;label14.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="KW_InspireComboBox.Items33" xml:space="preserve">
-    <value>Utility and governmental services</value>
+  <data name="&gt;&gt;CL_RemoveTopicCategoryButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="KW_InspireComboBox.Items13" xml:space="preserve">
     <value>Geographical names</value>
@@ -1560,11 +1602,17 @@
   <data name="MD_LanguageComboBox.Items10" xml:space="preserve">
     <value>Hungarian</value>
   </data>
+  <data name="label15.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
   <data name="CL_TopicCategoryListBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>326, 52</value>
   </data>
   <data name="QLT_ListBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>48, 152</value>
+  </data>
+  <data name="&gt;&gt;OrganizationTab.Parent" xml:space="preserve">
+    <value>MD_tabControl</value>
   </data>
   <data name="label22.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
@@ -1578,26 +1626,14 @@
   <data name="&gt;&gt;CSTR_RemoveLimitationsPublicButton.Parent" xml:space="preserve">
     <value>CSTR_GroupBox</value>
   </data>
-  <data name="TMP_RevisionDateTimePicker.CustomFormat" xml:space="preserve">
-    <value>yyyy-MM-dd</value>
+  <data name="&gt;&gt;CSTR_GroupBox.Parent" xml:space="preserve">
+    <value>ConstraintsTab</value>
   </data>
-  <data name="GEO_AddExtendButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>382, 77</value>
+  <data name="ORG_AddEmailButton.Text" xml:space="preserve">
+    <value>Add</value>
   </data>
-  <data name="OrganizationTab.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="ORG_RoleComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;CSTR_ConditionsUseGeneralComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="TMP_PublicTimePicker.Size" type="System.Drawing.Size, System.Drawing">
-    <value>231, 22</value>
-  </data>
-  <data name="&gt;&gt;ID_UIDListBox.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="label29.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 35</value>
   </data>
   <data name="&gt;&gt;groupBox12.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -1617,6 +1653,15 @@
   <data name="TMP_RemoveCreationDateButton.Text" xml:space="preserve">
     <value>Remove</value>
   </data>
+  <data name="CL_TopicCategoryComboBox.Items" xml:space="preserve">
+    <value>Farming</value>
+  </data>
+  <data name="&gt;&gt;CSTR_LimitationsPublicListBox.Name" xml:space="preserve">
+    <value>CSTR_LimitationsPublicListBox</value>
+  </data>
+  <data name="&gt;&gt;CSTR_AddConditionsUseGeneralButton1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="KW_KeywordRemoveButton.Text" xml:space="preserve">
     <value>Remove</value>
   </data>
@@ -1635,11 +1680,17 @@
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>
   </data>
+  <data name="ID_ResourceLocatorListBox.ItemHeight" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
   <data name="CSTR_ConditionsUseGeneralComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
   </data>
-  <data name="QualityValidityTab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 46</value>
+  <data name="KW_InspireComboBox.Items28" xml:space="preserve">
+    <value>Sea regions</value>
+  </data>
+  <data name="ORG_RemoveButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 24</value>
   </data>
   <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 16</value>
@@ -1647,8 +1698,8 @@
   <data name="ORG_IndividualListBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 193</value>
   </data>
-  <data name="&gt;&gt;CFRM_DateTimePicker.Parent" xml:space="preserve">
-    <value>CFRM_GroupBox</value>
+  <data name="CFRM_DateTimePicker.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
   </data>
   <data name="&gt;&gt;ConstraintsTab.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1662,6 +1713,9 @@
   <data name="ClassificationTab.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 46</value>
   </data>
+  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 16</value>
+  </data>
   <data name="&gt;&gt;KeywordGroupBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
@@ -1671,8 +1725,8 @@
   <data name="&gt;&gt;ID_ResourceTypeComboBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ID_ResourceAbstractTextBox.Name" xml:space="preserve">
-    <value>ID_ResourceAbstractTextBox</value>
+  <data name="label28.Text" xml:space="preserve">
+    <value>Organisation Name</value>
   </data>
   <data name="&gt;&gt;TMP_RemoveDateButton.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -1688,12 +1742,6 @@
   </data>
   <data name="&gt;&gt;label10.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="TMP_ToDateTimePicker.CustomFormat" xml:space="preserve">
-    <value>yyyy-MM-dd</value>
-  </data>
-  <data name="ID_ResourceLanguageComboBox.Items4" xml:space="preserve">
-    <value>English</value>
   </data>
   <data name="TMP_TemporalExtendListBox.ItemHeight" type="System.Int32, mscorlib">
     <value>16</value>
@@ -1724,9 +1772,6 @@
   </data>
   <data name="&gt;&gt;QLT_GroupBox.Parent" xml:space="preserve">
     <value>QualityValidityTab</value>
-  </data>
-  <data name="label19.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
   </data>
   <data name="&gt;&gt;label11.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1794,9 +1839,6 @@
   <data name="TMP_RemoveCreationDateButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>387, 42</value>
   </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>groupBox6</value>
-  </data>
   <data name="&gt;&gt;label17.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -1812,6 +1854,9 @@
   <data name="&gt;&gt;GEO_YminTextBox.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <data name="CSTR_ConditionsUseGeneralComboBox.Items1" xml:space="preserve">
+    <value>conditions unknown</value>
+  </data>
   <data name="MD_LanguageComboBox.Items9" xml:space="preserve">
     <value>Greek</value>
   </data>
@@ -1824,8 +1869,8 @@
   <data name="CSTR_ConditionsUseGeneralListBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>46, 342</value>
   </data>
-  <data name="&gt;&gt;CFRM_DegreeComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label23.Name" xml:space="preserve">
+    <value>label23</value>
   </data>
   <data name="label60.Size" type="System.Drawing.Size, System.Drawing">
     <value>140, 16</value>
@@ -1836,11 +1881,20 @@
   <data name="ID_UIDAddButton.Text" xml:space="preserve">
     <value>Add</value>
   </data>
+  <data name="label59.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;ConstraintsTab.Name" xml:space="preserve">
+    <value>ConstraintsTab</value>
+  </data>
+  <data name="ID_ResourceLocatorAddButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 24</value>
+  </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 16</value>
   </data>
-  <data name="KW_InspireComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>326, 24</value>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
   </data>
   <data name="LineageGroupBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>467, 140</value>
@@ -1848,8 +1902,8 @@
   <data name="&gt;&gt;CFRM_AddButton.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="KW_KeywordListBox.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
+  <data name="groupBox11.Text" xml:space="preserve">
+    <value>Temporal Extent</value>
   </data>
   <data name="&gt;&gt;label8.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1860,8 +1914,8 @@
   <data name="&gt;&gt;TMP_GroupBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>MD_GroupBox</value>
+  <data name="&gt;&gt;label19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;groupBox9.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1878,6 +1932,9 @@
   <data name="&gt;&gt;CL_TopicCategoryComboBox.Parent" xml:space="preserve">
     <value>CL_GroupBox</value>
   </data>
+  <data name="ORG_RoleComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
   <data name="CSTR_LimitationsPublicTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
   </data>
@@ -1887,8 +1944,14 @@
   <data name="ID_ResourceLanguageListBox.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
   </data>
-  <data name="KW_VocabularyTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>326, 22</value>
+  <data name="&gt;&gt;label65.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;label20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 51</value>
   </data>
   <data name="MD_AddEmailButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 24</value>
@@ -1905,11 +1968,14 @@
   <data name="&gt;&gt;ORG_RemoveEmailButton.Name" xml:space="preserve">
     <value>ORG_RemoveEmailButton</value>
   </data>
+  <data name="KW_InspireComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>326, 24</value>
+  </data>
   <data name="&gt;&gt;MD_ContactListRemoveButton.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
-  <data name="CL_TopicCategoryComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>53, 19</value>
+  <data name="&gt;&gt;TMP_RemoveExtendButton.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="&gt;&gt;ID_UIDRemoveButton.Name" xml:space="preserve">
     <value>ID_UIDRemoveButton</value>
@@ -1923,8 +1989,8 @@
   <data name="&gt;&gt;QualityValidityTab.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;label13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ORG_EmailListBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>252, 52</value>
   </data>
   <data name="&gt;&gt;groupBox7.Parent" xml:space="preserve">
     <value>IdentificationTab</value>
@@ -1932,8 +1998,8 @@
   <data name="&gt;&gt;ID_ResourceLanguageRemoveButton.Name" xml:space="preserve">
     <value>ID_ResourceLanguageRemoveButton</value>
   </data>
-  <data name="CSTR_LimitationsPublicListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>48, 134</value>
+  <data name="GEO_RemoveExtendButton.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
   </data>
   <data name="&gt;&gt;ID_ResourceLocatorAddButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1944,29 +2010,20 @@
   <data name="CFRM_DateTimePicker.CustomFormat" xml:space="preserve">
     <value>yyyy-MM-dd</value>
   </data>
-  <data name="ORG_AddButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 24</value>
-  </data>
   <data name="&gt;&gt;TMP_TemporalExtendListBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 202</value>
   </data>
+  <data name="&gt;&gt;TemporalTab.Parent" xml:space="preserve">
+    <value>MD_tabControl</value>
+  </data>
   <data name="TMP_AddRevisionDateButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 24</value>
   </data>
-  <data name="&gt;&gt;label28.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
   <data name="&gt;&gt;CSTR_ConditionsUseGeneralTextBox.Name" xml:space="preserve">
     <value>CSTR_ConditionsUseGeneralTextBox</value>
-  </data>
-  <data name="MD_ContactListBox.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;CSTR_AddConditionsUseGeneralButton1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ORG_IndividualListBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1992,17 +2049,11 @@
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>126, 16</value>
   </data>
-  <data name="ORG_RoleComboBox.Items5" xml:space="preserve">
-    <value>Originator</value>
-  </data>
-  <data name="&gt;&gt;ID_NamespaceTextBox.Name" xml:space="preserve">
-    <value>ID_NamespaceTextBox</value>
-  </data>
   <data name="CL_TopicCategoryComboBox.Items10" xml:space="preserve">
     <value>IntelligenceMilitary</value>
   </data>
-  <data name="&gt;&gt;label29.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="groupBox9.Text" xml:space="preserve">
+    <value>Resource Language</value>
   </data>
   <data name="label65.Text" xml:space="preserve">
     <value>Code</value>
@@ -2013,14 +2064,20 @@
   <data name="&gt;&gt;ORG_AddButton.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="TMP_ToDateTimePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 22</value>
+  </data>
   <data name="&gt;&gt;ID_ResourceLocatorTextBox.Name" xml:space="preserve">
     <value>ID_ResourceLocatorTextBox</value>
   </data>
   <data name="&gt;&gt;MD_LanguageComboBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;ID_ResourceLocatorListBox.Name" xml:space="preserve">
-    <value>ID_ResourceLocatorListBox</value>
+  <data name="CFRM_TitleTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="CFRM_DateTimePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 22</value>
   </data>
   <data name="&gt;&gt;ORG_EmailTextBox.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -2028,11 +2085,14 @@
   <data name="ID_ResourceTypeComboBox.Text" xml:space="preserve">
     <value>Please Select</value>
   </data>
-  <data name="ConstraintsTab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>581, 475</value>
-  </data>
   <data name="CFRM_DateTypeComboBox.Items" xml:space="preserve">
     <value>creation</value>
+  </data>
+  <data name="ORG_RoleComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>108, 105</value>
+  </data>
+  <data name="&gt;&gt;MetadataTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="MD_RemoveEmailButton.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -2043,14 +2103,17 @@
   <data name="&gt;&gt;ORG_AddButton.Name" xml:space="preserve">
     <value>ORG_AddButton</value>
   </data>
-  <data name="&gt;&gt;CFRM_GroupBox.Name" xml:space="preserve">
-    <value>CFRM_GroupBox</value>
+  <data name="&gt;&gt;ORG_NameTextBox.Parent" xml:space="preserve">
+    <value>groupBox12</value>
   </data>
   <data name="KW_InspireComboBox.Items25" xml:space="preserve">
     <value>Population distribution — demography</value>
   </data>
-  <data name="&gt;&gt;CSTR_ConditionsUseGeneralTextBox.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="KW_InspireComboBox.Items15" xml:space="preserve">
+    <value>Habitats and biotopes</value>
+  </data>
+  <data name="&gt;&gt;CL_AddTopicCategoryButton.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="groupBox9.TabIndex" type="System.Int32, mscorlib">
     <value>43</value>
@@ -2073,29 +2136,26 @@
   <data name="IdentificationTab.Text" xml:space="preserve">
     <value>Identification</value>
   </data>
-  <data name="label58.Location" type="System.Drawing.Point, System.Drawing">
-    <value>131, 16</value>
-  </data>
   <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="&gt;&gt;TMP_RemoveRevisionDateButton.Name" xml:space="preserve">
-    <value>TMP_RemoveRevisionDateButton</value>
   </data>
   <data name="&gt;&gt;KeywordTab.Name" xml:space="preserve">
     <value>KeywordTab</value>
   </data>
-  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="TMP_RemoveExtendButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>387, 84</value>
   </data>
   <data name="label18.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
   </data>
-  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label30.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="CSTR_AddLimitationsPublicButton1.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
+  </data>
+  <data name="ConstraintsTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 46</value>
   </data>
   <data name="&gt;&gt;QLT_ScaleTextBox.Parent" xml:space="preserve">
     <value>Spatial_GroupBox</value>
@@ -2103,23 +2163,17 @@
   <data name="MD_LanguageComboBox.Items21" xml:space="preserve">
     <value>Spanish</value>
   </data>
-  <data name="&gt;&gt;ORG_RemoveButton.Parent" xml:space="preserve">
-    <value>ORG_GroupBox</value>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
   </data>
   <data name="&gt;&gt;TMP_RemoveRevisionDateButton.Parent" xml:space="preserve">
     <value>groupBox5</value>
   </data>
-  <data name="&gt;&gt;CSTR_AddConditionsUseGeneralButton2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;CFRM_ListBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;QLT_DistanceTextBox.Name" xml:space="preserve">
-    <value>QLT_DistanceTextBox</value>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 28</value>
   </data>
   <data name="ID_ResourceLanguageRemoveButton.Text" xml:space="preserve">
     <value>Remove</value>
@@ -2145,14 +2199,11 @@
   <data name="CL_GroupBox.Text" xml:space="preserve">
     <value>Topic category</value>
   </data>
-  <data name="TMP_TemporalExtendListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>326, 52</value>
-  </data>
   <data name="MetadataTab.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="GEO_XminTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>84, 81</value>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 65</value>
   </data>
   <data name="&gt;&gt;TMP_RemoveCreationDateButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2163,47 +2214,44 @@
   <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;IdentificationTab.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 28</value>
+  <data name="&gt;&gt;CSTR_ConditionsUseGeneralComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;TMP_PublicTimePicker.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;TemporalTab.Parent" xml:space="preserve">
-    <value>MD_tabControl</value>
+  <data name="&gt;&gt;CSTR_GroupBox.Name" xml:space="preserve">
+    <value>CSTR_GroupBox</value>
+  </data>
+  <data name="KW_DateTimePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 22</value>
   </data>
   <data name="KW_DateTypeComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>158, 24</value>
   </data>
-  <data name="&gt;&gt;CFRM_DateTimePicker.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="ID_ResourceLocatorListBox.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
   </data>
-  <data name="&gt;&gt;CL_TopicCategoryListBox.Name" xml:space="preserve">
-    <value>CL_TopicCategoryListBox</value>
+  <data name="&gt;&gt;QLT_AddDistanceButton.Parent" xml:space="preserve">
+    <value>Spatial_GroupBox</value>
   </data>
-  <data name="CL_TopicCategoryComboBox.Items5" xml:space="preserve">
-    <value>Elevation</value>
+  <data name="&gt;&gt;ClassificationTab.Name" xml:space="preserve">
+    <value>ClassificationTab</value>
   </data>
-  <data name="TMP_ToDateTimePicker.Size" type="System.Drawing.Size, System.Drawing">
-    <value>256, 22</value>
+  <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="QLT_RemoveButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 24</value>
   </data>
-  <data name="ID_ResourceLocatorTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
+  <data name="&gt;&gt;ID_UIDListBox.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;TMP_AddDateButton.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;ID_ResourceLanguageComboBox.Parent" xml:space="preserve">
-    <value>groupBox9</value>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 16</value>
   </data>
   <data name="CFRM_ListBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>48, 144</value>
@@ -2211,26 +2259,26 @@
   <data name="CSTR_ConditionsUseGeneralComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>340, 24</value>
   </data>
-  <data name="ORG_NameTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>327, 22</value>
-  </data>
   <data name="&gt;&gt;CFRM_AddButton.Name" xml:space="preserve">
     <value>CFRM_AddButton</value>
   </data>
   <data name="&gt;&gt;TMP_AddDateButton.Parent" xml:space="preserve">
     <value>groupBox4</value>
   </data>
+  <data name="SPT_GroupBox.Text" xml:space="preserve">
+    <value>Geographic</value>
+  </data>
   <data name="&gt;&gt;ID_ResourceLanguageRemoveButton.Parent" xml:space="preserve">
     <value>groupBox9</value>
-  </data>
-  <data name="&gt;&gt;CSTR_LimitationsPublicTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label20.TabIndex" type="System.Int32, mscorlib">
     <value>36</value>
   </data>
   <data name="label29.Text" xml:space="preserve">
     <value>1/</value>
+  </data>
+  <data name="CL_TopicCategoryComboBox.Items14" xml:space="preserve">
+    <value>PlanningCadastre</value>
   </data>
   <data name="KW_KeywordListBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 221</value>
@@ -2241,17 +2289,11 @@
   <data name="TMP_RemoveDateButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 24</value>
   </data>
-  <data name="&gt;&gt;CL_RemoveTopicCategoryButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="TMP_AddCreationDateButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 24</value>
+  <data name="ID_ResourceLanguageComboBox.Items7" xml:space="preserve">
+    <value>French</value>
   </data>
   <data name="&gt;&gt;label30.Parent" xml:space="preserve">
     <value>groupBox5</value>
-  </data>
-  <data name="&gt;&gt;label19.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label14.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
@@ -2259,11 +2301,11 @@
   <data name="ID_UIDRemoveButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>366, 84</value>
   </data>
-  <data name="ORG_RoleComboBox.Items1" xml:space="preserve">
-    <value>Custodian</value>
-  </data>
   <data name="&gt;&gt;groupBox5.Parent" xml:space="preserve">
     <value>TMP_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;CFRM_DegreeComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;CFRM_ListBox.Name" xml:space="preserve">
     <value>CFRM_ListBox</value>
@@ -2277,6 +2319,9 @@
   <data name="&gt;&gt;CL_GroupBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>groupBox12</value>
+  </data>
   <data name="&gt;&gt;ID_ResourceLocatorTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -2286,14 +2331,11 @@
   <data name="&gt;&gt;MD_ContactListBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="CL_TopicCategoryListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>53, 46</value>
-  </data>
   <data name="&gt;&gt;label31.Parent" xml:space="preserve">
     <value>groupBox10</value>
   </data>
-  <data name="&gt;&gt;OrganizationTab.Parent" xml:space="preserve">
-    <value>MD_tabControl</value>
+  <data name="&gt;&gt;KW_AddInspireButton.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="TMP_CreationDateListBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>326, 20</value>
@@ -2306,6 +2348,9 @@
   </data>
   <data name="&gt;&gt;MD_EmailListBox.Name" xml:space="preserve">
     <value>MD_EmailListBox</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceLanguageRemoveButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ConformityTab.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -2322,23 +2367,11 @@
   <data name="KW_DateTypeComboBox.Items" xml:space="preserve">
     <value>creation</value>
   </data>
-  <data name="&gt;&gt;ID_ResourceLocatorAddButton.Parent" xml:space="preserve">
-    <value>groupBox7</value>
-  </data>
-  <data name="&gt;&gt;KW_VocabularyTextBox.Name" xml:space="preserve">
-    <value>KW_VocabularyTextBox</value>
-  </data>
-  <data name="ORG_RemoveEmailButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 24</value>
-  </data>
   <data name="&gt;&gt;GEO_XmaxTextBox.Parent" xml:space="preserve">
     <value>SPT_GroupBox</value>
   </data>
   <data name="ID_ResourceLanguageAddButton.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
-  </data>
-  <data name="&gt;&gt;label59.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="MD_LanguageComboBox.Items7" xml:space="preserve">
     <value>French</value>
@@ -2352,17 +2385,20 @@
   <data name="QLT_UnitsComboBox.Items6" xml:space="preserve">
     <value>Mile</value>
   </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 20</value>
+  </data>
   <data name="&gt;&gt;ORG_RemoveButton.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="ID_ResourceLocatorAddButton.Text" xml:space="preserve">
     <value>Add</value>
   </data>
-  <data name="label10.TabIndex" type="System.Int32, mscorlib">
-    <value>43</value>
-  </data>
   <data name="CL_RemoveTopicCategoryButton.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
+  </data>
+  <data name="TMP_AddDateButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 24</value>
   </data>
   <data name="&gt;&gt;ORG_AddButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2379,8 +2415,8 @@
   <data name="&gt;&gt;CFRM_TitleTextBox.Name" xml:space="preserve">
     <value>CFRM_TitleTextBox</value>
   </data>
-  <data name="label30.TabIndex" type="System.Int32, mscorlib">
-    <value>44</value>
+  <data name="CFRM_RemoveButton.Text" xml:space="preserve">
+    <value>Remove</value>
   </data>
   <data name="KW_InspireComboBox.Items20" xml:space="preserve">
     <value>Meteorological geographical features</value>
@@ -2391,23 +2427,20 @@
   <data name="KW_InspireComboBox.Items10" xml:space="preserve">
     <value>Energy resources</value>
   </data>
-  <data name="&gt;&gt;QLT_RemoveButton.Name" xml:space="preserve">
-    <value>QLT_RemoveButton</value>
+  <data name="label58.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 16</value>
   </data>
   <data name="&gt;&gt;groupBox12.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;TMP_RevisionDateListBox.Name" xml:space="preserve">
-    <value>TMP_RevisionDateListBox</value>
-  </data>
   <data name="MD_LanguageComboBox.Items20" xml:space="preserve">
     <value>Slovenian</value>
   </data>
+  <data name="ID_UIDListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
   <data name="ORG_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>26, 13</value>
-  </data>
-  <data name="label59.Location" type="System.Drawing.Point, System.Drawing">
-    <value>131, 109</value>
   </data>
   <data name="&gt;&gt;ID_ResourceAbstractTextBox.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -2418,11 +2451,8 @@
   <data name="&gt;&gt;QLT_AddScaleButton.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="&gt;&gt;CFRM_AddButton.Parent" xml:space="preserve">
-    <value>CFRM_GroupBox</value>
-  </data>
-  <data name="&gt;&gt;ORG_RoleComboBox.Name" xml:space="preserve">
-    <value>ORG_RoleComboBox</value>
+  <data name="TMP_AddCreationDateButton.Text" xml:space="preserve">
+    <value>Add</value>
   </data>
   <data name="&gt;&gt;QLT_UnitsComboBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2433,17 +2463,20 @@
   <data name="CSTR_RemoveLimitationsPublicButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>394, 147</value>
   </data>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
   <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
     <value>5</value>
+  </data>
+  <data name="ClassificationTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>581, 475</value>
   </data>
   <data name="&gt;&gt;CSTR_LimitationsPublicComboBox.Name" xml:space="preserve">
     <value>CSTR_LimitationsPublicComboBox</value>
   </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 20</value>
-  </data>
-  <data name="TMP_AddRevisionDateButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>388, 17</value>
+  <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 16</value>
   </data>
   <data name="ORG_AddEmailButton.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
@@ -2454,15 +2487,6 @@
   <data name="&gt;&gt;QLT_GroupBox.Name" xml:space="preserve">
     <value>QLT_GroupBox</value>
   </data>
-  <data name="&gt;&gt;QLT_AddScaleButton.Parent" xml:space="preserve">
-    <value>Spatial_GroupBox</value>
-  </data>
-  <data name="ID_ResourceLanguageComboBox.Items21" xml:space="preserve">
-    <value>Spanish</value>
-  </data>
-  <data name="label29.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 35</value>
-  </data>
   <data name="IdentificationTab.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
@@ -2472,11 +2496,8 @@
   <data name="&gt;&gt;Spatial_GroupBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="TemporalTab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 46</value>
+  <data name="&gt;&gt;GUIDButton.Parent" xml:space="preserve">
+    <value>groupBox8</value>
   </data>
   <data name="CL_TopicCategoryComboBox.Items6" xml:space="preserve">
     <value>Environment</value>
@@ -2493,8 +2514,11 @@
   <data name="&gt;&gt;label5.Parent" xml:space="preserve">
     <value>MD_GroupBox</value>
   </data>
-  <data name="&gt;&gt;MD_RemoveEmailButton.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;ORG_RemoveEmailButton.Parent" xml:space="preserve">
+    <value>groupBox12</value>
+  </data>
+  <data name="KW_AddInspireButton.Text" xml:space="preserve">
+    <value>Add</value>
   </data>
   <data name="&gt;&gt;CFRM_RemoveButton.ZOrder" xml:space="preserve">
     <value>8</value>
@@ -2502,8 +2526,8 @@
   <data name="label58.Size" type="System.Drawing.Size, System.Drawing">
     <value>147, 16</value>
   </data>
-  <data name="&gt;&gt;label61.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;TMP_RemoveCreationDateButton.Parent" xml:space="preserve">
+    <value>groupBox10</value>
   </data>
   <data name="&gt;&gt;MD_LanguageComboBox.Name" xml:space="preserve">
     <value>MD_LanguageComboBox</value>
@@ -2511,8 +2535,8 @@
   <data name="ORG_RemoveButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>449, 208</value>
   </data>
-  <data name="QLT_DistanceTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
+  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;MD_AddEmailButton.Parent" xml:space="preserve">
     <value>groupBox6</value>
@@ -2562,23 +2586,8 @@
   <data name="groupBox6.Location" type="System.Drawing.Point, System.Drawing">
     <value>19, 12</value>
   </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TMP_RemoveCreationDateButton.Parent" xml:space="preserve">
-    <value>groupBox10</value>
-  </data>
-  <data name="CSTR_AddLimitationsPublicButton2.TabIndex" type="System.Int32, mscorlib">
-    <value>45</value>
-  </data>
-  <data name="KW_InspireComboBox.Text" xml:space="preserve">
-    <value>Please Select</value>
-  </data>
-  <data name="&gt;&gt;MD_emailTextBox.Name" xml:space="preserve">
-    <value>MD_emailTextBox</value>
-  </data>
-  <data name="CFRM_DateTimePicker.TabIndex" type="System.Int32, mscorlib">
-    <value>40</value>
+  <data name="groupBox12.Text" xml:space="preserve">
+    <value>Responsible Party</value>
   </data>
   <data name="&gt;&gt;KW_InspireComboBox.Parent" xml:space="preserve">
     <value>KeywordGroupBox</value>
@@ -2598,14 +2607,17 @@
   <data name="&gt;&gt;IdentificationTab.Parent" xml:space="preserve">
     <value>MD_tabControl</value>
   </data>
-  <data name="GEO_RemoveExtendButton.TabIndex" type="System.Int32, mscorlib">
-    <value>46</value>
+  <data name="ID_CodeTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;ORG_GroupBox.Name" xml:space="preserve">
+    <value>ORG_GroupBox</value>
   </data>
   <data name="&gt;&gt;ORG_AddButton.Parent" xml:space="preserve">
     <value>ORG_GroupBox</value>
   </data>
-  <data name="MD_ContactListBox.ItemHeight" type="System.Int32, mscorlib">
-    <value>16</value>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
   </data>
   <data name="CFRM_DateTypeComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
@@ -2628,17 +2640,11 @@
   <data name="MD_LanguageComboBox.Items22" xml:space="preserve">
     <value>Swedish</value>
   </data>
-  <data name="&gt;&gt;CSTR_LimitationsPublicListBox.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
   <data name="ID_ResourceLanguageComboBox.Items22" xml:space="preserve">
     <value>Swedish</value>
   </data>
   <data name="ID_ResourceLanguageComboBox.Items1" xml:space="preserve">
     <value>Czech</value>
-  </data>
-  <data name="&gt;&gt;ORG_NameTextBox.Parent" xml:space="preserve">
-    <value>groupBox12</value>
   </data>
   <data name="&gt;&gt;LIN_FreeTextBox.Name" xml:space="preserve">
     <value>LIN_FreeTextBox</value>
@@ -2646,11 +2652,11 @@
   <data name="&gt;&gt;CFRM_GroupBox.Parent" xml:space="preserve">
     <value>ConformityTab</value>
   </data>
-  <data name="GeographicTab.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
   <data name="&gt;&gt;CSTR_LimitationsPublicComboBox.Parent" xml:space="preserve">
     <value>CSTR_GroupBox</value>
+  </data>
+  <data name="TMP_RemoveRevisionDateButton.Text" xml:space="preserve">
+    <value>Remove</value>
   </data>
   <data name="KW_KeywordAddButton.Text" xml:space="preserve">
     <value>Add</value>
@@ -2663,6 +2669,9 @@
   </data>
   <data name="&gt;&gt;MD_RemoveEmailButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceTypeComboBox.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="KW_InspireComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>56, 35</value>
@@ -2679,8 +2688,8 @@
   <data name="CSTR_AddConditionsUseGeneralButton1.Location" type="System.Drawing.Point, System.Drawing">
     <value>392, 236</value>
   </data>
-  <data name="label13.Text" xml:space="preserve">
-    <value>From</value>
+  <data name="&gt;&gt;ID_ResourceLanguageListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="CL_TopicCategoryComboBox.Items4" xml:space="preserve">
     <value>Economy</value>
@@ -2697,20 +2706,17 @@
   <data name="label21.TabIndex" type="System.Int32, mscorlib">
     <value>36</value>
   </data>
-  <data name="&gt;&gt;ID_UIDAddButton.Parent" xml:space="preserve">
-    <value>groupBox8</value>
+  <data name="TMP_PublicTimePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>231, 22</value>
   </data>
   <data name="QLT_UnitsComboBox.Items5" xml:space="preserve">
     <value>Foot</value>
   </data>
-  <data name="&gt;&gt;label65.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
   <data name="&gt;&gt;CFRM_AddButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="ID_ResourceLanguageComboBox.Text" xml:space="preserve">
-    <value>Please Select</value>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;QLT_DistanceTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2724,8 +2730,14 @@
   <data name="ID_ResourceLocatorTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>53, 19</value>
   </data>
+  <data name="&gt;&gt;groupBox11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;ID_ResourceLocatorRemoveButton.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="QLT_AddDistanceButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 24</value>
   </data>
   <data name="SPT_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>63, 13</value>
@@ -2733,11 +2745,20 @@
   <data name="&gt;&gt;KW_VocabularyTextBox.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="TemporalTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 46</value>
+  </data>
+  <data name="&gt;&gt;ORG_RemoveButton.Parent" xml:space="preserve">
+    <value>ORG_GroupBox</value>
+  </data>
   <data name="&gt;&gt;ORG_RoleComboBox.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
   <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 16</value>
+  </data>
+  <data name="&gt;&gt;LIN_FreeTextBox.Parent" xml:space="preserve">
+    <value>LineageGroupBox</value>
   </data>
   <data name="ID_ResourceLanguageAddButton.Text" xml:space="preserve">
     <value>Add</value>
@@ -2748,11 +2769,14 @@
   <data name="&gt;&gt;TMP_TemporalExtendListBox.Parent" xml:space="preserve">
     <value>groupBox11</value>
   </data>
-  <data name="&gt;&gt;QLT_UnitsComboBox.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;KW_VocabularyTextBox.Name" xml:space="preserve">
+    <value>KW_VocabularyTextBox</value>
   </data>
-  <data name="&gt;&gt;MD_AddEmailButton.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="&gt;&gt;QLT_RemoveButton.Parent" xml:space="preserve">
+    <value>Spatial_GroupBox</value>
   </data>
   <data name="&gt;&gt;groupBox9.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -2763,17 +2787,14 @@
   <data name="&gt;&gt;label60.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="CL_TopicCategoryComboBox.Items14" xml:space="preserve">
-    <value>PlanningCadastre</value>
-  </data>
   <data name="TMP_RemoveExtendButton.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
   </data>
   <data name="&gt;&gt;TMP_RevisionDateTimePicker.Parent" xml:space="preserve">
     <value>groupBox5</value>
   </data>
-  <data name="ID_ResourceLanguageComboBox.Items17" xml:space="preserve">
-    <value>Portuguese</value>
+  <data name="MD_LanguageComboBox.Items" xml:space="preserve">
+    <value>Bulgarian</value>
   </data>
   <data name="MD_AddEmailButton.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -2787,20 +2808,8 @@
   <data name="&gt;&gt;ORG_EmailTextBox.Name" xml:space="preserve">
     <value>ORG_EmailTextBox</value>
   </data>
-  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 16</value>
-  </data>
   <data name="ORG_AddButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>450, 72</value>
-  </data>
-  <data name="&gt;&gt;ID_ResourceLanguageRemoveButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="CFRM_DateTypeComboBox.Items2" xml:space="preserve">
-    <value>revision</value>
-  </data>
-  <data name="ClassificationTab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>581, 475</value>
   </data>
   <data name="&gt;&gt;label61.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -2808,11 +2817,17 @@
   <data name="&gt;&gt;MD_tabControl.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="&gt;&gt;Spatial_GroupBox.Parent" xml:space="preserve">
+    <value>QLT_GroupBox</value>
+  </data>
+  <data name="TMP_RemoveRevisionDateButton.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
   <data name="&gt;&gt;ID_ResourceLanguageAddButton.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;ClassificationTab.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="QualityValidityTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 46</value>
   </data>
   <data name="label31.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
@@ -2820,26 +2835,23 @@
   <data name="CL_TopicCategoryComboBox.Items2" xml:space="preserve">
     <value>Boundaries</value>
   </data>
-  <data name="&gt;&gt;TMP_AddRevisionDateButton.Name" xml:space="preserve">
-    <value>TMP_AddRevisionDateButton</value>
-  </data>
   <data name="&gt;&gt;label66.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
   <data name="MD_ContactListAddButton.Text" xml:space="preserve">
     <value>Add</value>
   </data>
-  <data name="CSTR_LimitationsPublicComboBox.Items6" xml:space="preserve">
-    <value>(f) the confidentiality of personal data and/or files relating to a natural person where that person has not consented to the disclosure of the information to the public, where such confidentiality is provided for by national or Community law</value>
-  </data>
   <data name="&gt;&gt;TMP_CreationDateTimePicker.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="CSTR_LimitationsPublicComboBox.Items2" xml:space="preserve">
-    <value>(b) international relations, public security or national defence</value>
+  <data name="&gt;&gt;CFRM_AddButton.Parent" xml:space="preserve">
+    <value>CFRM_GroupBox</value>
   </data>
   <data name="MD_LanguageComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>273, 24</value>
+  </data>
+  <data name="ID_ResourceLanguageComboBox.Items17" xml:space="preserve">
+    <value>Portuguese</value>
   </data>
   <data name="ID_ResourceLocatorAddButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>385, 16</value>
@@ -2850,20 +2862,14 @@
   <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
     <value>130, 22</value>
   </data>
-  <data name="&gt;&gt;TMP_AddCreationDateButton.Name" xml:space="preserve">
-    <value>TMP_AddCreationDateButton</value>
-  </data>
-  <data name="CSTR_GroupBox.Text" xml:space="preserve">
-    <value>Constraints</value>
+  <data name="&gt;&gt;IdentificationTab.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="CL_GroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>Metadata Date</value>
-  </data>
-  <data name="KW_AddInspireButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>388, 32</value>
   </data>
   <data name="&gt;&gt;CSTR_ConditionsUseGeneralTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2880,29 +2886,32 @@
   <data name="&gt;&gt;ClassificationTab.Parent" xml:space="preserve">
     <value>MD_tabControl</value>
   </data>
-  <data name="CFRM_DegreeComboBox.Items1" xml:space="preserve">
-    <value>Not Conformant</value>
-  </data>
   <data name="ID_ResourceLanguageListBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>53, 49</value>
   </data>
   <data name="ID_ResourceLanguageComboBox.Items6" xml:space="preserve">
     <value>Finnish</value>
   </data>
-  <data name="&gt;&gt;groupBox11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="CL_AddTopicCategoryButton.Text" xml:space="preserve">
     <value>Add</value>
   </data>
-  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="CSTR_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>63, 13</value>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourseTitleTextBox.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label59.Parent" xml:space="preserve">
+    <value>SPT_GroupBox</value>
   </data>
   <data name="KW_AddInspireButton.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
+  </data>
+  <data name="&gt;&gt;MD_tabControl.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;CSTR_LimitationsPublicTextBox.Parent" xml:space="preserve">
     <value>CSTR_GroupBox</value>
@@ -2915,9 +2924,6 @@
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>126, 16</value>
-  </data>
-  <data name="ORG_RemoveButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 24</value>
   </data>
   <data name="&gt;&gt;GEO_RemoveExtendButton.Parent" xml:space="preserve">
     <value>SPT_GroupBox</value>
@@ -2940,20 +2946,23 @@
   <data name="CSTR_LimitationsPublicComboBox.Text" xml:space="preserve">
     <value>Please Select</value>
   </data>
+  <data name="label13.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
   <data name="&gt;&gt;QLT_ListBox.Name" xml:space="preserve">
     <value>QLT_ListBox</value>
   </data>
   <data name="label58.Text" xml:space="preserve">
     <value>North Bound Latitude</value>
   </data>
-  <data name="&gt;&gt;ClassificationTab.Name" xml:space="preserve">
-    <value>ClassificationTab</value>
+  <data name="&gt;&gt;CSTR_AddConditionsUseGeneralButton2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="GeographicTab.Text" xml:space="preserve">
     <value>Geographic</value>
   </data>
-  <data name="ID_ResourceAbstractTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 72</value>
+  <data name="&gt;&gt;MD_RemoveEmailButton.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="TMP_RevisionDateListBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>326, 20</value>
@@ -2973,14 +2982,14 @@
   <data name="&gt;&gt;TMP_AddExtendButton.Parent" xml:space="preserve">
     <value>groupBox11</value>
   </data>
-  <data name="&gt;&gt;label31.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="QLT_RemoveButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>380, 167</value>
   </data>
   <data name="&gt;&gt;MD_LanguageComboBox.Parent" xml:space="preserve">
     <value>MD_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;GEO_XmaxTextBox.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="CL_TopicCategoryComboBox.Items8" xml:space="preserve">
     <value>Health</value>
@@ -2988,8 +2997,14 @@
   <data name="&gt;&gt;ID_UIDAddButton.Name" xml:space="preserve">
     <value>ID_UIDAddButton</value>
   </data>
+  <data name="ConformityTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 46</value>
+  </data>
   <data name="&gt;&gt;label9.Parent" xml:space="preserve">
     <value>KeywordGroupBox</value>
+  </data>
+  <data name="TMP_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>63, 13</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 16</value>
@@ -2997,8 +3012,8 @@
   <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;KW_AddInspireButton.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="ID_ResourceLocatorListBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>326, 36</value>
   </data>
   <data name="QLT_UnitsComboBox.Items" xml:space="preserve">
     <value>Meter</value>
@@ -3015,8 +3030,8 @@
   <data name="ORG_EmailTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>252, 22</value>
   </data>
-  <data name="CSTR_RemoveLimitationsPublicButton.TabIndex" type="System.Int32, mscorlib">
-    <value>47</value>
+  <data name="CSTR_LimitationsPublicTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>340, 38</value>
   </data>
   <data name="ORG_IndividualListBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>438, 52</value>
@@ -3033,8 +3048,11 @@
   <data name="ID_ResourceLanguageComboBox.Items16" xml:space="preserve">
     <value>Polish</value>
   </data>
-  <data name="groupBox8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>63, 260</value>
+  <data name="GeographicTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>581, 475</value>
+  </data>
+  <data name="&gt;&gt;CFRM_DateTimePicker.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="GEO_AddExtendButton.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
@@ -3051,23 +3069,14 @@
   <data name="MD_GroupBox.Text" xml:space="preserve">
     <value>Metadata on Metadata</value>
   </data>
-  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
-    <value>groupBox11</value>
-  </data>
   <data name="GEO_ExtendListBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>326, 52</value>
-  </data>
-  <data name="MD_DateTimePicker.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="groupBox9.Text" xml:space="preserve">
-    <value>Resource Language</value>
   </data>
   <data name="CL_TopicCategoryComboBox.Items18" xml:space="preserve">
     <value>UtilitiesCommunication</value>
   </data>
-  <data name="&gt;&gt;TMP_PublicDateListBox.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="CSTR_ConditionsUseGeneralComboBox.Items" xml:space="preserve">
+    <value>no conditions apply</value>
   </data>
   <data name="&gt;&gt;ID_ResourceLanguageListBox.Parent" xml:space="preserve">
     <value>groupBox9</value>
@@ -3075,23 +3084,17 @@
   <data name="groupBox5.TabIndex" type="System.Int32, mscorlib">
     <value>55</value>
   </data>
-  <data name="&gt;&gt;TMP_FromDateTimePicker.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="label65.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 22</value>
   </data>
   <data name="&gt;&gt;CFRM_RemoveButton.Parent" xml:space="preserve">
     <value>CFRM_GroupBox</value>
   </data>
-  <data name="CSTR_ConditionsUseGeneralTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>49</value>
-  </data>
   <data name="CL_TopicCategoryComboBox.Items3" xml:space="preserve">
     <value>ClimatologyMeteorologyAtmosphere</value>
   </data>
-  <data name="CSTR_RemoveConditionsUseGeneralButton.TabIndex" type="System.Int32, mscorlib">
-    <value>52</value>
+  <data name="CFRM_DateTypeComboBox.Items2" xml:space="preserve">
+    <value>revision</value>
   </data>
   <data name="CL_AddTopicCategoryButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>385, 16</value>
@@ -3114,17 +3117,14 @@
   <data name="CFRM_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>63, 13</value>
   </data>
-  <data name="&gt;&gt;label17.Name" xml:space="preserve">
-    <value>label17</value>
-  </data>
   <data name="&gt;&gt;ID_ResourceAbstractTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Spatial_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 16</value>
   </data>
-  <data name="KW_DateTypeComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>44</value>
+  <data name="ORG_RemoveEmailButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 24</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MDControl</value>
@@ -3132,11 +3132,11 @@
   <data name="&gt;&gt;MD_AddEmailButton.Name" xml:space="preserve">
     <value>MD_AddEmailButton</value>
   </data>
+  <data name="QLT_RemoveButton.Text" xml:space="preserve">
+    <value>Remove</value>
+  </data>
   <data name="ID_ResourceLanguageComboBox.Items13" xml:space="preserve">
     <value>Latvian</value>
-  </data>
-  <data name="label15.Text" xml:space="preserve">
-    <value>Date of publication</value>
   </data>
   <data name="GUIDButton.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
@@ -3150,17 +3150,11 @@
   <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
     <value>265, 16</value>
   </data>
-  <data name="&gt;&gt;label19.Parent" xml:space="preserve">
-    <value>Spatial_GroupBox</value>
-  </data>
   <data name="MD_AddEmailButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>381, 36</value>
   </data>
-  <data name="&gt;&gt;TMP_RemoveCreationDateButton.Name" xml:space="preserve">
-    <value>TMP_RemoveCreationDateButton</value>
-  </data>
-  <data name="CL_TopicCategoryComboBox.Items12" xml:space="preserve">
-    <value>Location</value>
+  <data name="&gt;&gt;CFRM_GroupBox.Name" xml:space="preserve">
+    <value>CFRM_GroupBox</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 16</value>
@@ -3171,17 +3165,26 @@
   <data name="CL_RemoveTopicCategoryButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>385, 62</value>
   </data>
+  <data name="&gt;&gt;TMP_FromDateTimePicker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="QualityValidityTab.Size" type="System.Drawing.Size, System.Drawing">
     <value>581, 475</value>
   </data>
   <data name="&gt;&gt;TMP_AddExtendButton.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="label13.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
+  <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 28</value>
   </data>
   <data name="&gt;&gt;CFRM_RemoveButton.Name" xml:space="preserve">
     <value>CFRM_RemoveButton</value>
+  </data>
+  <data name="MD_ContactListBox.ItemHeight" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="QualityValidityTab.Text" xml:space="preserve">
+    <value>Quality&amp;Validity</value>
   </data>
   <data name="&gt;&gt;ID_ResourceLocatorListBox.Parent" xml:space="preserve">
     <value>groupBox7</value>
@@ -3192,23 +3195,26 @@
   <data name="KW_InspireComboBox.Items31" xml:space="preserve">
     <value>Statistical units</value>
   </data>
+  <data name="&gt;&gt;TMP_RevisionDateListBox.Name" xml:space="preserve">
+    <value>TMP_RevisionDateListBox</value>
+  </data>
   <data name="KW_InspireComboBox.Items11" xml:space="preserve">
     <value>Environmental monitoring facilities</value>
   </data>
-  <data name="&gt;&gt;CSTR_ConditionsUseGeneralListBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;TMP_AddCreationDateButton.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="CSTR_AddConditionsUseGeneralButton2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 24</value>
   </data>
   <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
     <value>19, 3</value>
   </data>
   <data name="MD_ContactListAddButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 24</value>
+  </data>
+  <data name="&gt;&gt;MD_AddEmailButton.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="CL_TopicCategoryComboBox.Items13" xml:space="preserve">
     <value>Oceans</value>
@@ -3227,6 +3233,9 @@
   </data>
   <data name="ID_ResourceAbstractTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
+  </data>
+  <data name="TMP_PublicDateListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
   </data>
   <data name="&gt;&gt;CFRM_RemoveButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -3252,8 +3261,11 @@
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>137, 16</value>
   </data>
-  <data name="&gt;&gt;groupBox7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="TMP_TemporalExtendListBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>326, 52</value>
+  </data>
+  <data name="ID_ResourceLanguageComboBox.Items21" xml:space="preserve">
+    <value>Spanish</value>
   </data>
   <data name="ORG_NameTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>106, 145</value>
@@ -3263,9 +3275,6 @@
   </data>
   <data name="groupBox12.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 16</value>
-  </data>
-  <data name="&gt;&gt;label18.Name" xml:space="preserve">
-    <value>label18</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -3285,17 +3294,14 @@
   <data name="MetadataTab.Text" xml:space="preserve">
     <value>Metadata</value>
   </data>
+  <data name="MD_RemoveEmailButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 24</value>
+  </data>
   <data name="&gt;&gt;CFRM_DateTimePicker.Name" xml:space="preserve">
     <value>CFRM_DateTimePicker</value>
   </data>
-  <data name="CL_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>467, 127</value>
-  </data>
   <data name="groupBox11.Size" type="System.Drawing.Size, System.Drawing">
     <value>460, 131</value>
-  </data>
-  <data name="&gt;&gt;label20.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label61.Size" type="System.Drawing.Size, System.Drawing">
     <value>158, 16</value>
@@ -3321,32 +3327,35 @@
   <data name="GEO_YminTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 22</value>
   </data>
-  <data name="&gt;&gt;KW_KeywordTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;KW_InspireComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 16</value>
   </data>
   <data name="CSTR_RemoveLimitationsPublicButton.Text" xml:space="preserve">
     <value>Remove</value>
   </data>
-  <data name="CL_TopicCategoryComboBox.Items" xml:space="preserve">
-    <value>Farming</value>
-  </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 135</value>
   </data>
-  <data name="QLT_UnitsComboBox.Text" xml:space="preserve">
-    <value>Please Select</value>
+  <data name="TMP_AddCreationDateButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>387, 12</value>
   </data>
   <data name="TMP_PublicDateListBox.ItemHeight" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
-  <data name="&gt;&gt;QLT_AddDistanceButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;TMP_AddRevisionDateButton.Name" xml:space="preserve">
+    <value>TMP_AddRevisionDateButton</value>
   </data>
   <data name="&gt;&gt;label15.Name" xml:space="preserve">
     <value>label15</value>
   </data>
   <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
     <value>groupBox4</value>
+  </data>
+  <data name="ID_ResourceLanguageComboBox.Text" xml:space="preserve">
+    <value>Please Select</value>
   </data>
   <data name="ORG_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>523, 257</value>
@@ -3360,14 +3369,8 @@
   <data name="&gt;&gt;TMP_RemoveExtendButton.Name" xml:space="preserve">
     <value>TMP_RemoveExtendButton</value>
   </data>
-  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 145</value>
-  </data>
-  <data name="ORG_AddButton.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="&gt;&gt;LineageGroupBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;KW_VocabularyTextBox.Parent" xml:space="preserve">
+    <value>groupBox2</value>
   </data>
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -3375,26 +3378,11 @@
   <data name="&gt;&gt;KW_KeywordRemoveButton.Parent" xml:space="preserve">
     <value>KeywordGroupBox</value>
   </data>
-  <data name="&gt;&gt;CSTR_AddLimitationsPublicButton1.Name" xml:space="preserve">
-    <value>CSTR_AddLimitationsPublicButton1</value>
-  </data>
-  <data name="TMP_AddCreationDateButton.Text" xml:space="preserve">
-    <value>Add</value>
-  </data>
-  <data name="&gt;&gt;KW_KeywordAddButton.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
   <data name="&gt;&gt;ID_ResourceLocatorTextBox.Parent" xml:space="preserve">
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;CSTR_LimitationsPublicListBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="MD_LanguageComboBox.Items3" xml:space="preserve">
-    <value>Dutch</value>
-  </data>
-  <data name="ID_UIDListBox.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
   </data>
   <data name="&gt;&gt;KW_AddInspireButton.Name" xml:space="preserve">
     <value>KW_AddInspireButton</value>
@@ -3402,35 +3390,26 @@
   <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="CL_AddTopicCategoryButton.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="MD_RemoveEmailButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>381, 85</value>
+  <data name="OrganizationTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 46</value>
   </data>
   <data name="&gt;&gt;groupBox6.Name" xml:space="preserve">
     <value>groupBox6</value>
   </data>
-  <data name="&gt;&gt;CSTR_RemoveLimitationsPublicButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="ID_ResourceLanguageComboBox.Items12" xml:space="preserve">
     <value>Italian</value>
-  </data>
-  <data name="&gt;&gt;label27.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="KW_InspireComboBox.Items23" xml:space="preserve">
-    <value>Oceanographic geographical features</value>
   </data>
   <data name="&gt;&gt;QualityValidityTab.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 51</value>
+  <data name="&gt;&gt;label27.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="TMP_RemoveRevisionDateButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 24</value>
+  </data>
+  <data name="&gt;&gt;ID_ResourceAbstractTextBox.Name" xml:space="preserve">
+    <value>ID_ResourceAbstractTextBox</value>
   </data>
   <data name="TMP_CreationDateTimePicker.TabIndex" type="System.Int32, mscorlib">
     <value>47</value>
@@ -3456,6 +3435,9 @@
   <data name="TMP_RemoveDateButton.TabIndex" type="System.Int32, mscorlib">
     <value>43</value>
   </data>
+  <data name="&gt;&gt;ID_UIDAddButton.Parent" xml:space="preserve">
+    <value>groupBox8</value>
+  </data>
   <data name="GEO_XmaxTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>252, 81</value>
   </data>
@@ -3468,29 +3450,32 @@
   <data name="&gt;&gt;KW_KeywordAddButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="ID_ResourceLocatorRemoveButton.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
+  <data name="&gt;&gt;TMP_AddCreationDateButton.Name" xml:space="preserve">
+    <value>TMP_AddCreationDateButton</value>
   </data>
   <data name="&gt;&gt;LIN_FreeTextBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;label26.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="TMP_RevisionDateListBox.ItemHeight" type="System.Int32, mscorlib">
+    <value>16</value>
   </data>
   <data name="&gt;&gt;QLT_ListBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;CSTR_ConditionsUseGeneralComboBox.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
   <data name="&gt;&gt;QLT_AddScaleButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ORG_AddButton.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
   </data>
   <data name="&gt;&gt;TMP_ToDateTimePicker.Name" xml:space="preserve">
     <value>TMP_ToDateTimePicker</value>
   </data>
   <data name="&gt;&gt;KeywordTab.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MD_tabControl.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="&gt;&gt;label11.Name" xml:space="preserve">
     <value>label11</value>
@@ -3507,20 +3492,17 @@
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
   </data>
-  <data name="QLT_AddDistanceButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 24</value>
+  <data name="CL_TopicCategoryComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>53, 19</value>
   </data>
   <data name="IdentificationTab.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 46</value>
   </data>
-  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>47, 28</value>
-  </data>
   <data name="&gt;&gt;TMP_RevisionDateTimePicker.Name" xml:space="preserve">
     <value>TMP_RevisionDateTimePicker</value>
   </data>
-  <data name="&gt;&gt;ConstraintsTab.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="GEO_ExtendListBox.ItemHeight" type="System.Int32, mscorlib">
+    <value>16</value>
   </data>
   <data name="&gt;&gt;ConstraintsTab.Parent" xml:space="preserve">
     <value>MD_tabControl</value>
@@ -3528,17 +3510,11 @@
   <data name="&gt;&gt;label16.Name" xml:space="preserve">
     <value>label16</value>
   </data>
-  <data name="&gt;&gt;label22.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="CFRM_RemoveButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 24</value>
-  </data>
   <data name="MetadataTab.Size" type="System.Drawing.Size, System.Drawing">
     <value>581, 475</value>
   </data>
-  <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 220</value>
+  <data name="&gt;&gt;QLT_RemoveButton.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="&gt;&gt;ORG_AddEmailButton.Parent" xml:space="preserve">
     <value>groupBox12</value>
@@ -3567,11 +3543,11 @@
   <data name="TMP_RemoveDateButton.Text" xml:space="preserve">
     <value>Remove</value>
   </data>
+  <data name="&gt;&gt;TMP_PublicTimePicker.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
   <data name="&gt;&gt;groupBox10.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="CL_TopicCategoryComboBox.Items7" xml:space="preserve">
-    <value>GeoscientificInformation</value>
   </data>
   <data name="KeywordTab.Size" type="System.Drawing.Size, System.Drawing">
     <value>581, 475</value>
@@ -3584,6 +3560,9 @@
   </data>
   <data name="label60.Location" type="System.Drawing.Point, System.Drawing">
     <value>47, 64</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
   </data>
   <data name="&gt;&gt;CSTR_RemoveLimitationsPublicButton.Name" xml:space="preserve">
     <value>CSTR_RemoveLimitationsPublicButton</value>
@@ -3639,17 +3618,29 @@
   <data name="&gt;&gt;CSTR_LimitationsPublicTextBox.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="groupBox11.Text" xml:space="preserve">
-    <value>Temporal Extent</value>
+  <data name="&gt;&gt;label22.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MD_LanguageComboBox.Items13" xml:space="preserve">
+    <value>Latvian</value>
   </data>
   <data name="ID_ResourceLanguageAddButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>385, 19</value>
   </data>
-  <data name="&gt;&gt;label9.Name" xml:space="preserve">
-    <value>label9</value>
+  <data name="label60.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="label30.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="label19.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 9</value>
+  </data>
+  <data name="&gt;&gt;label31.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="KW_DateTimePicker.TabIndex" type="System.Int32, mscorlib">
     <value>45</value>
@@ -3657,14 +3648,14 @@
   <data name="IdentificationTab.Size" type="System.Drawing.Size, System.Drawing">
     <value>581, 475</value>
   </data>
+  <data name="&gt;&gt;groupBox9.Parent" xml:space="preserve">
+    <value>IdentificationTab</value>
+  </data>
   <data name="&gt;&gt;GEO_YmaxTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label23.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label61.Location" type="System.Drawing.Point, System.Drawing">
-    <value>218, 64</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 123</value>
@@ -3675,38 +3666,35 @@
   <data name="&gt;&gt;label12.Name" xml:space="preserve">
     <value>label12</value>
   </data>
+  <data name="MD_RemoveEmailButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 85</value>
+  </data>
   <data name="&gt;&gt;KW_DateTimePicker.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;MD_ContactListRemoveButton.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>44</value>
+  <data name="ORG_RoleComboBox.Items5" xml:space="preserve">
+    <value>Originator</value>
   </data>
   <data name="CSTR_AddLimitationsPublicButton1.Text" xml:space="preserve">
     <value>Add</value>
   </data>
-  <data name="TMP_RevisionDateListBox.TabIndex" type="System.Int32, mscorlib">
-    <value>48</value>
-  </data>
-  <data name="CSTR_LimitationsPublicComboBox.Items1" xml:space="preserve">
-    <value>(a) the confidentiality of the proceedings of public authorities,where such confidentiality is provided for by law</value>
-  </data>
   <data name="QLT_GroupBox.Text" xml:space="preserve">
     <value>Quality</value>
-  </data>
-  <data name="CSTR_LimitationsPublicComboBox.Items3" xml:space="preserve">
-    <value>(c) the course of justice, the ability of any person to receive a fair trial or the ability of a public authority to conduct an enquiry of a criminal or disciplinary nature</value>
   </data>
   <data name="&gt;&gt;TMP_AddCreationDateButton.Parent" xml:space="preserve">
     <value>groupBox10</value>
   </data>
+  <data name="&gt;&gt;CSTR_ConditionsUseGeneralTextBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="label23.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
+  </data>
+  <data name="GEO_AddExtendButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>382, 77</value>
   </data>
   <data name="&gt;&gt;label28.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -3717,8 +3705,14 @@
   <data name="&gt;&gt;ConformityTab.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="ORG_RemoveEmailButton.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
   <data name="&gt;&gt;label13.Name" xml:space="preserve">
     <value>label13</value>
+  </data>
+  <data name="CL_TopicCategoryComboBox.Text" xml:space="preserve">
+    <value>Please Select</value>
   </data>
   <data name="label26.TabIndex" type="System.Int32, mscorlib">
     <value>53</value>
@@ -3726,11 +3720,11 @@
   <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
     <value>TMP_GroupBox</value>
   </data>
-  <data name="CFRM_TitleTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
+  <data name="TMP_AddCreationDateButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 24</value>
   </data>
-  <data name="label15.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
+  <data name="label15.Text" xml:space="preserve">
+    <value>Date of publication</value>
   </data>
   <data name="KW_DateTimePicker.CustomFormat" xml:space="preserve">
     <value>yyyy-MM-dd</value>
@@ -3741,20 +3735,23 @@
   <data name="&gt;&gt;MD_ContactListBox.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
-  <data name="&gt;&gt;CFRM_ListBox.Parent" xml:space="preserve">
-    <value>CFRM_GroupBox</value>
+  <data name="QLT_UnitsComboBox.Items4" xml:space="preserve">
+    <value>Yard</value>
   </data>
   <data name="ID_ResourceLanguageComboBox.Items5" xml:space="preserve">
     <value>Estonian</value>
   </data>
-  <data name="&gt;&gt;TemporalTab.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;TMP_CreationDateListBox.Name" xml:space="preserve">
+    <value>TMP_CreationDateListBox</value>
+  </data>
+  <data name="CFRM_RemoveButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 24</value>
+  </data>
+  <data name="ConformityTab.Text" xml:space="preserve">
+    <value>Conformity</value>
   </data>
   <data name="GEO_XmaxTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
-  </data>
-  <data name="CFRM_DegreeComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 24</value>
   </data>
   <data name="label24.Text" xml:space="preserve">
     <value>Limitations on public access</value>
@@ -3762,14 +3759,17 @@
   <data name="QLT_AddDistanceButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>380, 69</value>
   </data>
+  <data name="&gt;&gt;KW_KeywordAddButton.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
   <data name="&gt;&gt;MD_EmailListBox.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="&gt;&gt;label19.Name" xml:space="preserve">
     <value>label19</value>
   </data>
-  <data name="QualityValidityTab.Text" xml:space="preserve">
-    <value>Quality&amp;Validity</value>
+  <data name="&gt;&gt;ORG_EmailListBox.Name" xml:space="preserve">
+    <value>ORG_EmailListBox</value>
   </data>
   <data name="CL_AddTopicCategoryButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 24</value>
@@ -3777,32 +3777,20 @@
   <data name="QLT_AddScaleButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>380, 29</value>
   </data>
-  <data name="&gt;&gt;ID_ResourceLocatorAddButton.Name" xml:space="preserve">
-    <value>ID_ResourceLocatorAddButton</value>
-  </data>
-  <data name="&gt;&gt;label59.Parent" xml:space="preserve">
-    <value>SPT_GroupBox</value>
-  </data>
   <data name="CSTR_LimitationsPublicComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>340, 24</value>
   </data>
   <data name="&gt;&gt;MD_GroupBox.Name" xml:space="preserve">
     <value>MD_GroupBox</value>
   </data>
-  <data name="&gt;&gt;ID_ResourseTitleTextBox.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="&gt;&gt;ID_ResourceLanguageComboBox.Name" xml:space="preserve">
+    <value>ID_ResourceLanguageComboBox</value>
   </data>
   <data name="ID_ResourceLanguageComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
   </data>
   <data name="&gt;&gt;GEO_YmaxTextBox.Parent" xml:space="preserve">
     <value>SPT_GroupBox</value>
-  </data>
-  <data name="&gt;&gt;groupBox11.Name" xml:space="preserve">
-    <value>groupBox11</value>
-  </data>
-  <data name="&gt;&gt;Spatial_GroupBox.Name" xml:space="preserve">
-    <value>Spatial_GroupBox</value>
   </data>
   <data name="&gt;&gt;KW_KeywordListBox.Parent" xml:space="preserve">
     <value>KeywordGroupBox</value>
@@ -3812,9 +3800,6 @@
   </data>
   <data name="GEO_XmaxTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 22</value>
-  </data>
-  <data name="ID_ResourceLocatorListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>53, 45</value>
   </data>
   <data name="&gt;&gt;MD_RemoveEmailButton.Parent" xml:space="preserve">
     <value>groupBox6</value>
@@ -3846,14 +3831,8 @@
   <data name="&gt;&gt;GEO_ExtendListBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;MD_ContactListAddButton.Name" xml:space="preserve">
-    <value>MD_ContactListAddButton</value>
-  </data>
-  <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>460, 81</value>
-  </data>
-  <data name="&gt;&gt;CL_TopicCategoryListBox.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="GeographicTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 46</value>
   </data>
   <data name="&gt;&gt;CSTR_AddConditionsUseGeneralButton1.Parent" xml:space="preserve">
     <value>CSTR_GroupBox</value>
@@ -3863,9 +3842,6 @@
   </data>
   <data name="&gt;&gt;ORG_NameTextBox.ZOrder" xml:space="preserve">
     <value>5</value>
-  </data>
-  <data name="&gt;&gt;groupBox7.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <data name="&gt;&gt;MD_RemoveEmailButton.Name" xml:space="preserve">
     <value>MD_RemoveEmailButton</value>
@@ -3882,19 +3858,16 @@
   <data name="CSTR_LimitationsPublicTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>48, 75</value>
   </data>
-  <data name="&gt;&gt;CSTR_ConditionsUseGeneralComboBox.ZOrder" xml:space="preserve">
-    <value>12</value>
+  <data name="&gt;&gt;ConstraintsTab.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="&gt;&gt;MetadataTab.Parent" xml:space="preserve">
     <value>MD_tabControl</value>
   </data>
-  <data name="label27.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 19</value>
+  <data name="label28.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
   </data>
   <data name="&gt;&gt;GUIDButton.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="&gt;&gt;ORG_AddEmailButton.Type" xml:space="preserve">
@@ -3902,6 +3875,9 @@
   </data>
   <data name="GUIDButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>95, 36</value>
+  </data>
+  <data name="&gt;&gt;label59.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ClassificationTab.Text" xml:space="preserve">
     <value>Classification</value>
@@ -3912,26 +3888,26 @@
   <data name="&gt;&gt;ID_ResourceLocatorRemoveButton.Name" xml:space="preserve">
     <value>ID_ResourceLocatorRemoveButton</value>
   </data>
-  <data name="label60.TabIndex" type="System.Int32, mscorlib">
-    <value>41</value>
+  <data name="TMP_RevisionDateTimePicker.CustomFormat" xml:space="preserve">
+    <value>yyyy-MM-dd</value>
+  </data>
+  <data name="ID_ResourceTypeComboBox.Items" xml:space="preserve">
+    <value>Dataset</value>
   </data>
   <data name="label65.Size" type="System.Drawing.Size, System.Drawing">
     <value>98, 16</value>
   </data>
+  <data name="CL_TopicCategoryComboBox.Items7" xml:space="preserve">
+    <value>GeoscientificInformation</value>
+  </data>
   <data name="label12.TabIndex" type="System.Int32, mscorlib">
     <value>43</value>
   </data>
-  <data name="GEO_ExtendListBox.ItemHeight" type="System.Int32, mscorlib">
-    <value>16</value>
+  <data name="ID_UIDRemoveButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 24</value>
   </data>
   <data name="&gt;&gt;KeywordGroupBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 16</value>
-  </data>
-  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="&gt;&gt;CSTR_ConditionsUseGeneralListBox.Name" xml:space="preserve">
     <value>CSTR_ConditionsUseGeneralListBox</value>
@@ -3948,11 +3924,14 @@
   <data name="ORG_RoleComboBox.Items4" xml:space="preserve">
     <value>Distributor</value>
   </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
+  <data name="&gt;&gt;CL_TopicCategoryListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
     <value>Metadata language</value>
+  </data>
+  <data name="&gt;&gt;CSTR_RemoveLimitationsPublicButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label59.Size" type="System.Drawing.Size, System.Drawing">
     <value>145, 16</value>
@@ -3963,14 +3942,8 @@
   <data name="ORG_IndividualListBox.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
   </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="ID_ResourceTypeComboBox.Items" xml:space="preserve">
-    <value>Dataset</value>
-  </data>
-  <data name="CFRM_DegreeComboBox.Items" xml:space="preserve">
-    <value>Conformant</value>
+  <data name="GeographicTab.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
   <data name="&gt;&gt;label2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -3990,11 +3963,11 @@
   <data name="&gt;&gt;CSTR_AddConditionsUseGeneralButton2.Parent" xml:space="preserve">
     <value>CSTR_GroupBox</value>
   </data>
-  <data name="KeywordTab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 46</value>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="CFRM_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>467, 216</value>
+  <data name="GEO_YmaxTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>164, 33</value>
   </data>
   <data name="CSTR_ConditionsUseGeneralListBox.TabIndex" type="System.Int32, mscorlib">
     <value>51</value>
@@ -4002,14 +3975,23 @@
   <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 96</value>
   </data>
+  <data name="&gt;&gt;groupBox6.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
   <data name="MD_ContactListRemoveButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 24</value>
   </data>
   <data name="&gt;&gt;CSTR_AddLimitationsPublicButton2.Name" xml:space="preserve">
     <value>CSTR_AddLimitationsPublicButton2</value>
   </data>
-  <data name="&gt;&gt;KW_DateTypeComboBox.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;KW_KeywordTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LIN_FreeTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="KW_InspireComboBox.Items26" xml:space="preserve">
     <value>Production and industrial facilities</value>
@@ -4023,14 +4005,14 @@
   <data name="ORG_RoleComboBox.Text" xml:space="preserve">
     <value>Please Select</value>
   </data>
+  <data name="GEO_YmaxTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 22</value>
+  </data>
   <data name="&gt;&gt;SPT_GroupBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="ID_ResourceLocatorAddButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 24</value>
-  </data>
-  <data name="CFRM_ListBox.ItemHeight" type="System.Int32, mscorlib">
-    <value>16</value>
+  <data name="ORG_RoleComboBox.Items1" xml:space="preserve">
+    <value>Custodian</value>
   </data>
   <data name="&gt;&gt;CFRM_TitleTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -4041,8 +4023,8 @@
   <data name="TMP_CreationDateListBox.ItemHeight" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
-  <data name="&gt;&gt;CL_AddTopicCategoryButton.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;ID_ResourceAbstractTextBox.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;ID_UIDListBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -4083,8 +4065,8 @@
   <data name="&gt;&gt;CSTR_AddConditionsUseGeneralButton1.Name" xml:space="preserve">
     <value>CSTR_AddConditionsUseGeneralButton1</value>
   </data>
-  <data name="KW_InspireComboBox.Items15" xml:space="preserve">
-    <value>Habitats and biotopes</value>
+  <data name="&gt;&gt;TMP_GroupBox.Parent" xml:space="preserve">
+    <value>TemporalTab</value>
   </data>
   <data name="CSTR_ConditionsUseGeneralTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>340, 38</value>
@@ -4092,11 +4074,11 @@
   <data name="QLT_GroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
   </data>
-  <data name="TMP_ToDateTimePicker.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
   <data name="CFRM_DateTypeComboBox.Items1" xml:space="preserve">
     <value>publication</value>
+  </data>
+  <data name="KW_VocabularyTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>326, 22</value>
   </data>
   <data name="CFRM_RemoveButton.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
@@ -4116,17 +4098,11 @@
   <data name="ID_UIDAddButton.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
   </data>
-  <data name="&gt;&gt;TMP_PublicTimePicker.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;ID_ResourceLanguageListBox.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;QLT_AddDistanceButton.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;label65.Parent" xml:space="preserve">
     <value>groupBox8</value>
-  </data>
-  <data name="CFRM_DateTimePicker.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 22</value>
   </data>
   <data name="GUIDButton.Text" xml:space="preserve">
     <value>Add GUID</value>
@@ -4136,12 +4112,6 @@
   </data>
   <data name="&gt;&gt;KW_KeywordTextBox.ZOrder" xml:space="preserve">
     <value>5</value>
-  </data>
-  <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;CSTR_GroupBox.Parent" xml:space="preserve">
-    <value>ConstraintsTab</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 105</value>
@@ -4164,14 +4134,14 @@
   <data name="QLT_AddScaleButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 24</value>
   </data>
-  <data name="label28.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
+  <data name="&gt;&gt;label18.Name" xml:space="preserve">
+    <value>label18</value>
   </data>
   <data name="&gt;&gt;QLT_ListBox.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <data name="KW_AddInspireButton.Text" xml:space="preserve">
-    <value>Add</value>
+  <data name="ORG_AddButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 24</value>
   </data>
   <data name="CSTR_RemoveLimitationsPublicButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 24</value>
@@ -4188,9 +4158,6 @@
   <data name="&gt;&gt;GEO_AddExtendButton.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="TMP_RemoveRevisionDateButton.TabIndex" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
   <data name="ID_ResourceLocatorRemoveButton.Text" xml:space="preserve">
     <value>Remove</value>
   </data>
@@ -4200,8 +4167,8 @@
   <data name="groupBox6.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
-  <data name="&gt;&gt;ORG_IndividualListBox.Name" xml:space="preserve">
-    <value>ORG_IndividualListBox</value>
+  <data name="&gt;&gt;QLT_GroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;CFRM_GroupBox.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -4215,8 +4182,8 @@
   <data name="&gt;&gt;CSTR_AddConditionsUseGeneralButton2.Name" xml:space="preserve">
     <value>CSTR_AddConditionsUseGeneralButton2</value>
   </data>
-  <data name="MD_EmailListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>326, 52</value>
+  <data name="GEO_XminTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 81</value>
   </data>
   <data name="ORG_RoleComboBox.Items7" xml:space="preserve">
     <value>PrincipalInvestigator</value>
@@ -4224,11 +4191,8 @@
   <data name="&gt;&gt;ORG_GroupBox.Parent" xml:space="preserve">
     <value>OrganizationTab</value>
   </data>
-  <data name="&gt;&gt;groupBox11.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ORG_EmailTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="MD_DateTimePicker.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
   </data>
   <data name="&gt;&gt;MD_OrganizationNameTextBox.Parent" xml:space="preserve">
     <value>groupBox6</value>
@@ -4239,11 +4203,23 @@
   <data name="&gt;&gt;label60.Parent" xml:space="preserve">
     <value>SPT_GroupBox</value>
   </data>
+  <data name="&gt;&gt;LineageGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label26.Parent" xml:space="preserve">
+    <value>CSTR_GroupBox</value>
+  </data>
   <data name="&gt;&gt;QLT_ListBox.Parent" xml:space="preserve">
     <value>Spatial_GroupBox</value>
   </data>
   <data name="GEO_XminTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
+  </data>
+  <data name="&gt;&gt;MD_ContactListAddButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Spatial_GroupBox.Name" xml:space="preserve">
+    <value>Spatial_GroupBox</value>
   </data>
   <data name="&gt;&gt;GUIDButton.Name" xml:space="preserve">
     <value>GUIDButton</value>
@@ -4257,20 +4233,23 @@
   <data name="CSTR_AddLimitationsPublicButton2.Text" xml:space="preserve">
     <value>Add</value>
   </data>
-  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
   <data name="&gt;&gt;ORG_GroupBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="&gt;&gt;ID_UIDAddButton.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="&gt;&gt;ID_UIDAddButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 16</value>
   </data>
   <data name="&gt;&gt;label24.Name" xml:space="preserve">
     <value>label24</value>
+  </data>
+  <data name="CFRM_ListBox.ItemHeight" type="System.Int32, mscorlib">
+    <value>16</value>
   </data>
   <data name="&gt;&gt;label61.Parent" xml:space="preserve">
     <value>SPT_GroupBox</value>
@@ -4284,11 +4263,17 @@
   <data name="&gt;&gt;CL_TopicCategoryListBox.Parent" xml:space="preserve">
     <value>CL_GroupBox</value>
   </data>
+  <data name="&gt;&gt;TMP_CreationDateTimePicker.Parent" xml:space="preserve">
+    <value>groupBox10</value>
+  </data>
   <data name="label29.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
   </data>
   <data name="CL_TopicCategoryComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>326, 24</value>
+  </data>
+  <data name="QLT_UnitsComboBox.Text" xml:space="preserve">
+    <value>Please Select</value>
   </data>
   <data name="MD_EmailListBox.ItemHeight" type="System.Int32, mscorlib">
     <value>16</value>
@@ -4299,11 +4284,14 @@
   <data name="GEO_ExtendListBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>50, 167</value>
   </data>
-  <data name="MD_RemoveEmailButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 24</value>
+  <data name="OrganizationTab.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
   <data name="&gt;&gt;label25.Name" xml:space="preserve">
     <value>label25</value>
+  </data>
+  <data name="CFRM_DegreeComboBox.Items1" xml:space="preserve">
+    <value>Not Conformant</value>
   </data>
   <data name="&gt;&gt;label66.Parent" xml:space="preserve">
     <value>groupBox8</value>
@@ -4317,14 +4305,23 @@
   <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;KW_KeywordAddButton.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>MD_GroupBox</value>
   </data>
-  <data name="label24.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
+  <data name="&gt;&gt;ID_ResourceLanguageAddButton.Name" xml:space="preserve">
+    <value>ID_ResourceLanguageAddButton</value>
   </data>
-  <data name="&gt;&gt;MD_OrganizationNameTextBox.Name" xml:space="preserve">
-    <value>MD_OrganizationNameTextBox</value>
+  <data name="&gt;&gt;CSTR_LimitationsPublicListBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;ORG_EmailTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TemporalTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TMP_AddRevisionDateButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>388, 17</value>
   </data>
   <data name="ID_UIDListBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>53, 67</value>
@@ -4332,23 +4329,23 @@
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>154, 16</value>
   </data>
+  <data name="label27.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
   <data name="&gt;&gt;MD_ContactListBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="CL_TopicCategoryComboBox.Items5" xml:space="preserve">
+    <value>Elevation</value>
   </data>
   <data name="&gt;&gt;groupBox9.Name" xml:space="preserve">
     <value>groupBox9</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CSTR_AddLimitationsPublicButton2.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
   </data>
-  <data name="&gt;&gt;ID_UIDAddButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CSTR_RemoveConditionsUseGeneralButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ORG_RemoveEmailButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 56</value>
   </data>
   <data name="&gt;&gt;TMP_PublicTimePicker.Name" xml:space="preserve">
     <value>TMP_PublicTimePicker</value>
@@ -4359,14 +4356,14 @@
   <data name="groupBox10.Size" type="System.Drawing.Size, System.Drawing">
     <value>460, 75</value>
   </data>
-  <data name="TMP_RemoveExtendButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>387, 84</value>
+  <data name="&gt;&gt;TMP_RemoveRevisionDateButton.Name" xml:space="preserve">
+    <value>TMP_RemoveRevisionDateButton</value>
   </data>
-  <data name="&gt;&gt;QLT_GroupBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CSTR_LimitationsPublicListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 134</value>
   </data>
-  <data name="&gt;&gt;ConformityTab.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label26.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="TMP_CreationDateTimePicker.Location" type="System.Drawing.Point, System.Drawing">
     <value>145, 14</value>
@@ -4374,59 +4371,65 @@
   <data name="&gt;&gt;CFRM_DateTypeComboBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;groupBox11.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;ID_UIDRemoveButton.Parent" xml:space="preserve">
     <value>groupBox8</value>
   </data>
-  <data name="MD_ContactListRemoveButton.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
+  <data name="&gt;&gt;QualityValidityTab.Name" xml:space="preserve">
+    <value>QualityValidityTab</value>
   </data>
-  <data name="QLT_UnitsComboBox.Items4" xml:space="preserve">
-    <value>Yard</value>
+  <data name="MD_EmailListBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>326, 52</value>
   </data>
-  <data name="KW_InspireComboBox.Items28" xml:space="preserve">
-    <value>Sea regions</value>
+  <data name="KeywordTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 46</value>
+  </data>
+  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="TemporalTab.Text" xml:space="preserve">
     <value>Temporal</value>
   </data>
-  <data name="GeographicTab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 46</value>
+  <data name="&gt;&gt;CFRM_DateTypeComboBox.Parent" xml:space="preserve">
+    <value>CFRM_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;CSTR_ConditionsUseGeneralListBox.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;label20.Name" xml:space="preserve">
     <value>label20</value>
   </data>
-  <data name="label28.Text" xml:space="preserve">
-    <value>Organisation Name</value>
-  </data>
-  <data name="&gt;&gt;CL_TopicCategoryListBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="TMP_RemoveExtendButton.Text" xml:space="preserve">
     <value>Remove</value>
   </data>
-  <data name="ORG_AddEmailButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 24</value>
+  <data name="&gt;&gt;ID_ResourceLocatorAddButton.Name" xml:space="preserve">
+    <value>ID_ResourceLocatorAddButton</value>
   </data>
   <data name="&gt;&gt;label65.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="ID_ResourceLocatorListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>326, 36</value>
+  <data name="TMP_RevisionDateListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
   </data>
   <data name="&gt;&gt;groupBox8.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="CL_RemoveTopicCategoryButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 24</value>
+  </data>
   <data name="TMP_GroupBox.Text" xml:space="preserve">
     <value>Temporal</value>
   </data>
-  <data name="TMP_AddExtendButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 24</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;KW_DateTypeComboBox.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="TMP_PublicTimePicker.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
+  </data>
+  <data name="&gt;&gt;label29.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="KeywordTab.Text" xml:space="preserve">
     <value>Keyword</value>
@@ -4437,14 +4440,17 @@
   <data name="label58.TabIndex" type="System.Int32, mscorlib">
     <value>37</value>
   </data>
-  <data name="&gt;&gt;QLT_DistanceTextBox.Parent" xml:space="preserve">
-    <value>Spatial_GroupBox</value>
+  <data name="label61.Location" type="System.Drawing.Point, System.Drawing">
+    <value>218, 64</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;KeywordGroupBox.Parent" xml:space="preserve">
     <value>KeywordTab</value>
   </data>
-  <data name="KW_DateTypeComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 105</value>
+  <data name="&gt;&gt;MD_OrganizationNameTextBox.Name" xml:space="preserve">
+    <value>MD_OrganizationNameTextBox</value>
   </data>
   <data name="MD_LanguageComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>56, 72</value>
@@ -4458,32 +4464,29 @@
   <data name="&gt;&gt;LineageGroupBox.Parent" xml:space="preserve">
     <value>QualityValidityTab</value>
   </data>
-  <data name="&gt;&gt;GEO_XmaxTextBox.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;TMP_RevisionDateListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="CL_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>63, 13</value>
   </data>
-  <data name="&gt;&gt;ORG_EmailListBox.Name" xml:space="preserve">
-    <value>ORG_EmailListBox</value>
+  <data name="&gt;&gt;ID_ResourceLocatorListBox.Name" xml:space="preserve">
+    <value>ID_ResourceLocatorListBox</value>
   </data>
-  <data name="QLT_RemoveButton.Text" xml:space="preserve">
-    <value>Remove</value>
-  </data>
-  <data name="CFRM_RemoveButton.Text" xml:space="preserve">
-    <value>Remove</value>
+  <data name="&gt;&gt;CFRM_TitleTextBox.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="&gt;&gt;KW_KeywordListBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 16</value>
+  <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 56</value>
   </data>
   <data name="ORG_RoleComboBox.Items6" xml:space="preserve">
     <value>PointOfContact</value>
   </data>
-  <data name="CSTR_LimitationsPublicComboBox.Items8" xml:space="preserve">
-    <value>(h) the protection of the environment to which such information relates, such as the location of rare species</value>
+  <data name="&gt;&gt;QualityValidityTab.Parent" xml:space="preserve">
+    <value>MD_tabControl</value>
   </data>
   <data name="TMP_RemoveExtendButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 24</value>
@@ -4494,20 +4497,20 @@
   <data name="CSTR_LimitationsPublicComboBox.Items5" xml:space="preserve">
     <value>(e) intellectual property rights</value>
   </data>
-  <data name="&gt;&gt;ID_ResourceAbstractTextBox.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="CSTR_LimitationsPublicComboBox.Items6" xml:space="preserve">
+    <value>(f) the confidentiality of personal data and/or files relating to a natural person where that person has not consented to the disclosure of the information to the public, where such confidentiality is provided for by national or Community law</value>
   </data>
   <data name="CSTR_LimitationsPublicComboBox.Items7" xml:space="preserve">
     <value>(g) the interests or protection of any person who supplied the information requested on a voluntary basis without being under, or capable of being put under, a legal obligation to do so, unless that person has consented to the release of the information concerned</value>
   </data>
-  <data name="TMP_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>63, 13</value>
+  <data name="CSTR_LimitationsPublicComboBox.Items1" xml:space="preserve">
+    <value>(a) the confidentiality of the proceedings of public authorities,where such confidentiality is provided for by law</value>
   </data>
-  <data name="&gt;&gt;Spatial_GroupBox.Parent" xml:space="preserve">
-    <value>QLT_GroupBox</value>
+  <data name="CSTR_LimitationsPublicComboBox.Items2" xml:space="preserve">
+    <value>(b) international relations, public security or national defence</value>
   </data>
-  <data name="&gt;&gt;TMP_CreationDateListBox.Name" xml:space="preserve">
-    <value>TMP_CreationDateListBox</value>
+  <data name="CSTR_LimitationsPublicComboBox.Items3" xml:space="preserve">
+    <value>(c) the course of justice, the ability of any person to receive a fair trial or the ability of a public authority to conduct an enquiry of a criminal or disciplinary nature</value>
   </data>
   <data name="KW_InspireComboBox.Items" xml:space="preserve">
     <value>Addresses</value>
@@ -4515,17 +4518,8 @@
   <data name="QLT_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>63, 13</value>
   </data>
-  <data name="&gt;&gt;ORG_GroupBox.Name" xml:space="preserve">
-    <value>ORG_GroupBox</value>
-  </data>
-  <data name="&gt;&gt;CSTR_GroupBox.Name" xml:space="preserve">
-    <value>CSTR_GroupBox</value>
-  </data>
-  <data name="&gt;&gt;label27.Name" xml:space="preserve">
-    <value>label27</value>
-  </data>
-  <data name="&gt;&gt;GUIDButton.Parent" xml:space="preserve">
-    <value>groupBox8</value>
+  <data name="&gt;&gt;ID_ResourceLocatorAddButton.Parent" xml:space="preserve">
+    <value>groupBox7</value>
   </data>
   <data name="KW_InspireComboBox.Items18" xml:space="preserve">
     <value>Land cover</value>
@@ -4533,8 +4527,8 @@
   <data name="&gt;&gt;CL_RemoveTopicCategoryButton.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;LineageGroupBox.Name" xml:space="preserve">
+    <value>LineageGroupBox</value>
   </data>
   <data name="&gt;&gt;CSTR_AddConditionsUseGeneralButton1.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -4551,23 +4545,29 @@
   <data name="TMP_RevisionDateTimePicker.Location" type="System.Drawing.Point, System.Drawing">
     <value>145, 19</value>
   </data>
+  <data name="ID_ResourceAbstractTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 72</value>
+  </data>
   <data name="&gt;&gt;KW_DateTimePicker.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="MD_ContactListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
   </data>
   <data name="TMP_AddDateButton.Text" xml:space="preserve">
     <value>Add</value>
   </data>
-  <data name="&gt;&gt;CSTR_ConditionsUseGeneralListBox.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="ID_ResourceLanguageComboBox.Items4" xml:space="preserve">
+    <value>English</value>
   </data>
   <data name="&gt;&gt;GEO_YmaxTextBox.Name" xml:space="preserve">
     <value>GEO_YmaxTextBox</value>
   </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>groupBox12</value>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
   </data>
-  <data name="&gt;&gt;ORG_RemoveEmailButton.Parent" xml:space="preserve">
-    <value>groupBox12</value>
+  <data name="CL_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>467, 127</value>
   </data>
   <data name="&gt;&gt;CFRM_DegreeComboBox.Parent" xml:space="preserve">
     <value>CFRM_GroupBox</value>
@@ -4575,34 +4575,34 @@
   <data name="GEO_XminTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 22</value>
   </data>
-  <data name="GEO_YmaxTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>164, 33</value>
-  </data>
   <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="label59.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
+  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 145</value>
   </data>
-  <data name="LIN_FreeTextBox.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="label60.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
   </data>
   <data name="label59.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="&gt;&gt;GUIDButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label61.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="CSTR_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>467, 439</value>
   </data>
-  <data name="label20.Text" xml:space="preserve">
-    <value>Units of measure</value>
+  <data name="&gt;&gt;TMP_ToDateTimePicker.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>en</value>
+    <value>el-GR</value>
   </metadata>
 </root>

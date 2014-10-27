@@ -84,6 +84,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GlobalStrings.el.Designer.cs">
+      <DependentUpon>GlobalStrings.el.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="frmEPSG.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +112,10 @@
     <Compile Include="MDObject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GlobalStrings.el.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GlobalStrings.el.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmEPSG.el-GR.resx">
       <DependentUpon>frmEPSG.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,6 +137,9 @@
       <LastGenOutput>GlobalStrings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="MDControl.el-GR.resx">
+      <DependentUpon>MDControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDControl.el.resx">
       <DependentUpon>MDControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDControl.en.resx">
