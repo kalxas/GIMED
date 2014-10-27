@@ -117,11 +117,48 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="MetadataTab.Text" xml:space="preserve">
+    <value>Μεταδεδομένα</value>
+  </data>
+  <data name="IdentificationTab.Text" xml:space="preserve">
+    <value>Ταυτοποίηση</value>
+  </data>
+  <data name="ClassificationTab.Text" xml:space="preserve">
+    <value>Κατηγοριοποίηση</value>
+  </data>
+  <data name="KeywordTab.Text" xml:space="preserve">
+    <value>Λέξη κλειδί</value>
+  </data>
+  <data name="GeographicTab.Text" xml:space="preserve">
+    <value>Γεωγραφική θέση</value>
+  </data>
+  <data name="TemporalTab.Text" xml:space="preserve">
+    <value>Χρονική Αναφορά</value>
+  </data>
+  <data name="QualityValidityTab.Text" xml:space="preserve">
+    <value>Ποιότητα και Εγκυρότητα</value>
+  </data>
+  <data name="ConformityTab.Text" xml:space="preserve">
+    <value>Συμμόρφωση</value>
+  </data>
+  <data name="ConstraintsTab.Text" xml:space="preserve">
+    <value>Περιορισμοί</value>
+  </data>
+  <data name="OrganizationTab.Text" xml:space="preserve">
+    <value>Οργανισμοί</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>Αρμόδιος για επικοινωνία</value>
+  </data>
   <data name="MD_ContactListRemoveButton.Text" xml:space="preserve">
     <value>Διαγραφή</value>
   </data>
   <data name="MD_ContactListAddButton.Text" xml:space="preserve">
     <value>Προσθήκη</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="groupBox6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 16</value>
   </data>
   <data name="MD_RemoveEmailButton.Text" xml:space="preserve">
     <value>Διαγραφή</value>
@@ -135,12 +172,8 @@
   <data name="label3.Text" xml:space="preserve">
     <value>Ονομασία Οργανισμού</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="groupBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 17</value>
-  </data>
-  <data name="groupBox3.Text" xml:space="preserve">
-    <value>Αρμόδιος για επικοινωνία</value>
+  <data name="MD_GroupBox.Text" xml:space="preserve">
+    <value>Μεταδεδομένα για τα μεταδεδομένα</value>
   </data>
   <data name="MD_LanguageComboBox.Items" xml:space="preserve">
     <value>Αγγλικά</value>
@@ -166,11 +199,8 @@
   <data name="label4.Text" xml:space="preserve">
     <value>Ημερομηνία μεταδεδομένων</value>
   </data>
-  <data name="MD_GroupBox.Text" xml:space="preserve">
-    <value>Μεταδεδομένα για τα μεταδεδομένα</value>
-  </data>
-  <data name="MetadataTab.Text" xml:space="preserve">
-    <value>Μεταδεδομένα</value>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>560, 164</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Τίτλος πόρου</value>
@@ -193,8 +223,11 @@
   <data name="label7.Text" xml:space="preserve">
     <value>Σύνοψη πόρου</value>
   </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>560, 164</value>
+  <data name="groupBox9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>562, 97</value>
+  </data>
+  <data name="groupBox9.Text" xml:space="preserve">
+    <value>Γλώσσα πόρου</value>
   </data>
   <data name="ID_ResourceLanguageComboBox.Items" xml:space="preserve">
     <value>Αγγλικά</value>
@@ -226,11 +259,11 @@
   <data name="ID_ResourceLanguageRemoveButton.Text" xml:space="preserve">
     <value>Διαγραφή</value>
   </data>
-  <data name="groupBox9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>562, 97</value>
+  <data name="groupBox8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>562, 114</value>
   </data>
-  <data name="groupBox9.Text" xml:space="preserve">
-    <value>Γλώσσα πόρου</value>
+  <data name="groupBox8.Text" xml:space="preserve">
+    <value>Μοναδικό αναγνωριστικό πόρου</value>
   </data>
   <data name="GUIDButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>379, 45</value>
@@ -274,11 +307,11 @@
   <data name="label65.Text" xml:space="preserve">
     <value>Αναγνωριστικό</value>
   </data>
-  <data name="groupBox8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>562, 114</value>
+  <data name="groupBox7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>562, 92</value>
   </data>
-  <data name="groupBox8.Text" xml:space="preserve">
-    <value>Μοναδικό αναγνωριστικό πόρου</value>
+  <data name="groupBox7.Text" xml:space="preserve">
+    <value>Εντοπιστής πόρου</value>
   </data>
   <data name="ID_ResourceLocatorAddButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>363, 17</value>
@@ -295,14 +328,11 @@
   <data name="ID_ResourceLocatorRemoveButton.Text" xml:space="preserve">
     <value>Διαγραφή</value>
   </data>
-  <data name="groupBox7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>562, 92</value>
+  <data name="CL_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>476, 127</value>
   </data>
-  <data name="groupBox7.Text" xml:space="preserve">
-    <value>Εντοπιστής πόρου</value>
-  </data>
-  <data name="IdentificationTab.Text" xml:space="preserve">
-    <value>Ταυτοποίηση</value>
+  <data name="CL_GroupBox.Text" xml:space="preserve">
+    <value>Θεματική κατηγορία</value>
   </data>
   <data name="CL_RemoveTopicCategoryButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 24</value>
@@ -376,17 +406,17 @@
   <data name="CL_TopicCategoryComboBox.Text" xml:space="preserve">
     <value>Παρακαλώ επιλέξτε</value>
   </data>
-  <data name="CL_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>476, 127</value>
+  <data name="KeywordGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>496, 293</value>
   </data>
-  <data name="CL_GroupBox.Text" xml:space="preserve">
-    <value>Θεματική κατηγορία</value>
-  </data>
-  <data name="ClassificationTab.Text" xml:space="preserve">
-    <value>Κατηγοριοποίηση</value>
+  <data name="KeywordGroupBox.Text" xml:space="preserve">
+    <value>Λέξη κλειδί</value>
   </data>
   <data name="label17.Text" xml:space="preserve">
     <value>Λίστα λέξεων κλειδιών</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>475, 134</value>
   </data>
   <data name="KW_DateTypeComboBox.Items" xml:space="preserve">
     <value>δημιουργία</value>
@@ -414,9 +444,6 @@
   </data>
   <data name="KW_KeywordAddButton.Text" xml:space="preserve">
     <value>Προσθήκη</value>
-  </data>
-  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>475, 134</value>
   </data>
   <data name="KW_AddInspireButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 24</value>
@@ -538,14 +565,11 @@
   <data name="KW_KeywordRemoveButton.Text" xml:space="preserve">
     <value>Διαγραφή</value>
   </data>
-  <data name="KeywordGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>496, 293</value>
+  <data name="SPT_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>505, 229</value>
   </data>
-  <data name="KeywordGroupBox.Text" xml:space="preserve">
-    <value>Λέξη κλειδί</value>
-  </data>
-  <data name="KeywordTab.Text" xml:space="preserve">
-    <value>Λέξη κλειδί</value>
+  <data name="SPT_GroupBox.Text" xml:space="preserve">
+    <value>Περίγραμμα γεωγραφικών συντεταγμένων</value>
   </data>
   <data name="GEO_RemoveExtendButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 24</value>
@@ -571,17 +595,26 @@
   <data name="label58.Text" xml:space="preserve">
     <value>Βόρειο γεωγραφικό πλάτος</value>
   </data>
-  <data name="SPT_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>505, 229</value>
+  <data name="TMP_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 447</value>
   </data>
-  <data name="SPT_GroupBox.Text" xml:space="preserve">
-    <value>Περίγραμμα γεωγραφικών συντεταγμένων</value>
+  <data name="TMP_GroupBox.Text" xml:space="preserve">
+    <value>Χρονική αναφορά</value>
   </data>
-  <data name="GeographicTab.Text" xml:space="preserve">
-    <value>Γεωγραφική θέση</value>
+  <data name="groupBox11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>475, 131</value>
+  </data>
+  <data name="groupBox11.Text" xml:space="preserve">
+    <value>Χρονική έκταση</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 16</value>
   </data>
   <data name="label14.Text" xml:space="preserve">
     <value>Έως</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 16</value>
   </data>
   <data name="label13.Text" xml:space="preserve">
     <value>Από</value>
@@ -598,11 +631,8 @@
   <data name="TMP_AddExtendButton.Text" xml:space="preserve">
     <value>Προσθήκη</value>
   </data>
-  <data name="groupBox11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>475, 131</value>
-  </data>
-  <data name="groupBox11.Text" xml:space="preserve">
-    <value>Χρονική έκταση</value>
+  <data name="groupBox10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>475, 75</value>
   </data>
   <data name="TMP_RemoveCreationDateButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 24</value>
@@ -619,8 +649,8 @@
   <data name="label31.Text" xml:space="preserve">
     <value>Ημερομηνία δημιουργίας</value>
   </data>
-  <data name="groupBox10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>475, 75</value>
+  <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>475, 81</value>
   </data>
   <data name="label30.Text" xml:space="preserve">
     <value>Ημερομηνία τελευταίας αναθεώρησης</value>
@@ -637,8 +667,8 @@
   <data name="TMP_RemoveRevisionDateButton.Text" xml:space="preserve">
     <value>Διαγραφή</value>
   </data>
-  <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>475, 81</value>
+  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>475, 118</value>
   </data>
   <data name="label15.Text" xml:space="preserve">
     <value>Ημερομηνία δημοσίευσης</value>
@@ -655,17 +685,11 @@
   <data name="TMP_RemoveDateButton.Text" xml:space="preserve">
     <value>Διαγραφή</value>
   </data>
-  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>475, 118</value>
+  <data name="LineageGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>491, 140</value>
   </data>
-  <data name="TMP_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>500, 447</value>
-  </data>
-  <data name="TMP_GroupBox.Text" xml:space="preserve">
-    <value>Χρονική αναφορά</value>
-  </data>
-  <data name="TemporalTab.Text" xml:space="preserve">
-    <value>Χρονική Αναφορά</value>
+  <data name="LineageGroupBox.Text" xml:space="preserve">
+    <value>Καταγωγή</value>
   </data>
   <data name="LIN_FreeTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 18</value>
@@ -673,11 +697,17 @@
   <data name="LIN_FreeTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>479, 116</value>
   </data>
-  <data name="LineageGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>491, 140</value>
+  <data name="QLT_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>491, 240</value>
   </data>
-  <data name="LineageGroupBox.Text" xml:space="preserve">
-    <value>Καταγωγή</value>
+  <data name="QLT_GroupBox.Text" xml:space="preserve">
+    <value>Ποιότητα</value>
+  </data>
+  <data name="Spatial_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>477, 216</value>
+  </data>
+  <data name="Spatial_GroupBox.Text" xml:space="preserve">
+    <value>Χωρική ανάλυση</value>
   </data>
   <data name="QLT_UnitsComboBox.Text" xml:space="preserve">
     <value>Παρακαλώ επιλέξτε</value>
@@ -709,20 +739,11 @@
   <data name="QLT_AddScaleButton.Text" xml:space="preserve">
     <value>Προσθήκη</value>
   </data>
-  <data name="Spatial_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>477, 216</value>
+  <data name="CFRM_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>488, 216</value>
   </data>
-  <data name="Spatial_GroupBox.Text" xml:space="preserve">
-    <value>Χωρική ανάλυση</value>
-  </data>
-  <data name="QLT_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>491, 240</value>
-  </data>
-  <data name="QLT_GroupBox.Text" xml:space="preserve">
-    <value>Ποιότητα</value>
-  </data>
-  <data name="QualityValidityTab.Text" xml:space="preserve">
-    <value>Ποιότητα και Εγκυρότητα</value>
+  <data name="CFRM_GroupBox.Text" xml:space="preserve">
+    <value>Συμμόρφωση</value>
   </data>
   <data name="CFRM_DegreeComboBox.Items" xml:space="preserve">
     <value>Σύμμορφος</value>
@@ -769,14 +790,11 @@
   <data name="CFRM_RemoveButton.Text" xml:space="preserve">
     <value>Διαγραφή</value>
   </data>
-  <data name="CFRM_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>488, 216</value>
+  <data name="CSTR_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>496, 439</value>
   </data>
-  <data name="CFRM_GroupBox.Text" xml:space="preserve">
-    <value>Συμμόρφωση</value>
-  </data>
-  <data name="ConformityTab.Text" xml:space="preserve">
-    <value>Συμμόρφωση</value>
+  <data name="CSTR_GroupBox.Text" xml:space="preserve">
+    <value>Περιορισμοί σχετικά με την πρόσβαση και την χρήση</value>
   </data>
   <data name="label26.Text" xml:space="preserve">
     <value>ή εισάγετε ελέυθερο κείμενο</value>
@@ -838,14 +856,17 @@
   <data name="label24.Text" xml:space="preserve">
     <value>Περιορισμοί σχετικά με την πρόσβαση του κοινού</value>
   </data>
-  <data name="CSTR_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>496, 439</value>
+  <data name="ORG_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>561, 257</value>
   </data>
-  <data name="CSTR_GroupBox.Text" xml:space="preserve">
-    <value>Περιορισμοί σχετικά με την πρόσβαση και την χρήση</value>
+  <data name="ORG_GroupBox.Text" xml:space="preserve">
+    <value>Αρμόδιοι οργανισμοι για τη δημιουργία, τη συντήρηση και τη διανομή</value>
   </data>
-  <data name="ConstraintsTab.Text" xml:space="preserve">
-    <value>Περιορισμοί</value>
+  <data name="groupBox12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>456, 171</value>
+  </data>
+  <data name="groupBox12.Text" xml:space="preserve">
+    <value>Αρμόδιο μέρος</value>
   </data>
   <data name="ORG_RemoveEmailButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 24</value>
@@ -904,12 +925,6 @@
   <data name="ORG_RoleComboBox.Text" xml:space="preserve">
     <value>Παρακαλώ επιλέξτε</value>
   </data>
-  <data name="groupBox12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>456, 171</value>
-  </data>
-  <data name="groupBox12.Text" xml:space="preserve">
-    <value>Αρμόδιο μέρος</value>
-  </data>
   <data name="ORG_IndividualListBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>456, 52</value>
   </data>
@@ -930,14 +945,5 @@
   </data>
   <data name="ORG_AddButton.Text" xml:space="preserve">
     <value>Προσθήκη</value>
-  </data>
-  <data name="ORG_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>561, 257</value>
-  </data>
-  <data name="ORG_GroupBox.Text" xml:space="preserve">
-    <value>Αρμόδιοι οργανισμοι για τη δημιουργία, τη συντήρηση και τη διανομή</value>
-  </data>
-  <data name="OrganizationTab.Text" xml:space="preserve">
-    <value>Οργανισμοί</value>
   </data>
 </root>

@@ -115,6 +115,9 @@
     <EmbeddedResource Include="GIMEDForm.el.resx">
       <DependentUpon>GIMEDForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GIMEDForm.en.resx">
+      <DependentUpon>GIMEDForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GlobalStrings.el.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>GlobalStrings.el.Designer.cs</LastGenOutput>

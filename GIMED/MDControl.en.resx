@@ -118,42 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="MetadataTab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>733, 475</value>
-  </data>
-  <data name="IdentificationTab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>733, 475</value>
-  </data>
-  <data name="ClassificationTab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>733, 475</value>
-  </data>
-  <data name="KeywordTab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>733, 475</value>
-  </data>
-  <data name="GeographicTab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>733, 475</value>
-  </data>
-  <data name="TemporalTab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>733, 475</value>
-  </data>
-  <data name="QualityValidityTab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>733, 475</value>
-  </data>
-  <data name="ConformityTab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>733, 475</value>
-  </data>
-  <data name="ConstraintsTab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>733, 475</value>
-  </data>
-  <data name="OrganizationTab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>733, 475</value>
-  </data>
-  <data name="MD_tabControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>741, 525</value>
-  </data>
-  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>696, 292</value>
-  </data>
   <data name="MD_ContactListBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>527, 52</value>
   </data>
@@ -169,23 +133,29 @@
   <data name="MD_ContactListAddButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 24</value>
   </data>
-  <data name="groupBox6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>527, 186</value>
-  </data>
   <data name="MD_RemoveEmailButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 24</value>
   </data>
   <data name="MD_AddEmailButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 24</value>
   </data>
+  <data name="groupBox6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 18</value>
+  </data>
+  <data name="groupBox6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>527, 186</value>
+  </data>
+  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>696, 292</value>
+  </data>
   <data name="MD_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>696, 104</value>
   </data>
+  <data name="MetadataTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>733, 475</value>
+  </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>577, 164</value>
-  </data>
-  <data name="groupBox9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>579, 97</value>
   </data>
   <data name="ID_ResourceLanguageAddButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 24</value>
@@ -193,8 +163,8 @@
   <data name="ID_ResourceLanguageRemoveButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 24</value>
   </data>
-  <data name="groupBox8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>579, 114</value>
+  <data name="groupBox9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>579, 97</value>
   </data>
   <data name="GUIDButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 36</value>
@@ -205,8 +175,8 @@
   <data name="ID_UIDRemoveButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 24</value>
   </data>
-  <data name="groupBox7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>579, 92</value>
+  <data name="groupBox8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>579, 114</value>
   </data>
   <data name="ID_ResourceLocatorAddButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 24</value>
@@ -214,8 +184,11 @@
   <data name="ID_ResourceLocatorRemoveButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 24</value>
   </data>
-  <data name="CL_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>505, 127</value>
+  <data name="groupBox7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>579, 92</value>
+  </data>
+  <data name="IdentificationTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>733, 475</value>
   </data>
   <data name="CL_RemoveTopicCategoryButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 24</value>
@@ -223,14 +196,17 @@
   <data name="CL_AddTopicCategoryButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 24</value>
   </data>
-  <data name="KeywordGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>537, 293</value>
+  <data name="CL_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>505, 127</value>
   </data>
-  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>496, 134</value>
+  <data name="ClassificationTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>733, 475</value>
   </data>
   <data name="KW_KeywordAddButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 24</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>496, 134</value>
   </data>
   <data name="KW_AddInspireButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 24</value>
@@ -238,8 +214,11 @@
   <data name="KW_KeywordRemoveButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 24</value>
   </data>
-  <data name="SPT_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>511, 229</value>
+  <data name="KeywordGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>537, 293</value>
+  </data>
+  <data name="KeywordTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>733, 475</value>
   </data>
   <data name="GEO_RemoveExtendButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 24</value>
@@ -247,11 +226,11 @@
   <data name="GEO_AddExtendButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 24</value>
   </data>
-  <data name="TMP_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>536, 447</value>
+  <data name="SPT_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>511, 229</value>
   </data>
-  <data name="groupBox11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>502, 131</value>
+  <data name="GeographicTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>733, 475</value>
   </data>
   <data name="TMP_RemoveExtendButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 24</value>
@@ -259,8 +238,8 @@
   <data name="TMP_AddExtendButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 24</value>
   </data>
-  <data name="groupBox10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>502, 75</value>
+  <data name="groupBox11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>502, 131</value>
   </data>
   <data name="TMP_RemoveCreationDateButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 24</value>
@@ -268,8 +247,8 @@
   <data name="TMP_AddCreationDateButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 24</value>
   </data>
-  <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>502, 81</value>
+  <data name="groupBox10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>502, 75</value>
   </data>
   <data name="TMP_AddRevisionDateButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 24</value>
@@ -277,8 +256,8 @@
   <data name="TMP_RemoveRevisionDateButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 24</value>
   </data>
-  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>502, 118</value>
+  <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>502, 81</value>
   </data>
   <data name="TMP_AddDateButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 24</value>
@@ -286,17 +265,20 @@
   <data name="TMP_RemoveDateButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 24</value>
   </data>
-  <data name="LineageGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>531, 140</value>
+  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>502, 118</value>
+  </data>
+  <data name="TMP_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>536, 447</value>
+  </data>
+  <data name="TemporalTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>733, 475</value>
   </data>
   <data name="LIN_FreeTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>519, 116</value>
   </data>
-  <data name="QLT_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>531, 240</value>
-  </data>
-  <data name="Spatial_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>505, 216</value>
+  <data name="LineageGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>531, 140</value>
   </data>
   <data name="QLT_AddDistanceButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 24</value>
@@ -307,8 +289,14 @@
   <data name="QLT_AddScaleButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 24</value>
   </data>
-  <data name="CFRM_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>518, 216</value>
+  <data name="Spatial_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>505, 216</value>
+  </data>
+  <data name="QLT_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>531, 240</value>
+  </data>
+  <data name="QualityValidityTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>733, 475</value>
   </data>
   <data name="CFRM_AddButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 24</value>
@@ -316,8 +304,11 @@
   <data name="CFRM_RemoveButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 24</value>
   </data>
-  <data name="CSTR_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>556, 439</value>
+  <data name="CFRM_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>518, 216</value>
+  </data>
+  <data name="ConformityTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>733, 475</value>
   </data>
   <data name="CSTR_RemoveConditionsUseGeneralButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 24</value>
@@ -337,17 +328,20 @@
   <data name="CSTR_AddLimitationsPublicButton1.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 24</value>
   </data>
-  <data name="ORG_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>589, 257</value>
+  <data name="CSTR_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>556, 439</value>
   </data>
-  <data name="groupBox12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>478, 171</value>
+  <data name="ConstraintsTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>733, 475</value>
   </data>
   <data name="ORG_RemoveEmailButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 24</value>
   </data>
   <data name="ORG_AddEmailButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 24</value>
+  </data>
+  <data name="groupBox12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>478, 171</value>
   </data>
   <data name="ORG_RemoveButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>488, 195</value>
@@ -360,6 +354,15 @@
   </data>
   <data name="ORG_AddButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 24</value>
+  </data>
+  <data name="ORG_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>589, 257</value>
+  </data>
+  <data name="OrganizationTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>733, 475</value>
+  </data>
+  <data name="MD_tabControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>741, 525</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
     <value>741, 525</value>

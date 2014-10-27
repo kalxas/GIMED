@@ -638,7 +638,7 @@ public partial class GIMEDForm : Form
     
     private void AboutButton_Click(object sender, EventArgs e)
     {
-        MessageBox.Show("Developers:\tAngelos Tzotsos-tzotsos@gmail.com\n\t\tPano Voudouris-pvoudouris@gmail.com\n\t\tStavros Kampanakis-stauroskampan@gmail.com\n\nGIMED is Open Source software under the GPL3 license.\n\nΑνάπτυξη:\t’γγελος Τζώτσος-tzotsos@gmail.com\n\t\tΠάνος Βουδούρης-pvoudouris@gmail.com\n\t\tΣταύρος Καμπανάκης-stauroskampan@gmail.com\n\nΤο GIMED είναι Ελεύθερο Λογισμικό υπό την άδεια GPL3.", GlobalStrings.About);
+        MessageBox.Show("Developers:\tAngelos Tzotsos-tzotsos@gmail.com\n\t\tPano Voudouris-pvoudouris@gmail.com\n\nTranslation:\tStavros Kampanakis-stauroskampan@gmail.com\n\nGIMED is Open Source software under the GPL3 license.\n\nΑνάπτυξη:\t’γγελος Τζώτσος-tzotsos@gmail.com\n\t\tΠάνος Βουδούρης-pvoudouris@gmail.com\n\nΜετάφραση:\tΣταύρος Καμπανάκης-stauroskampan@gmail.com\n\nΤο GIMED είναι Ελεύθερο Λογισμικό υπό την άδεια GPL3.", GlobalStrings.About);
     }
 
     private void LoadXMLButton_Click(object sender, EventArgs e)
