@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="MsgCodeExists" xml:space="preserve">
+    <value>Code already exists</value>
+  </data>
+  <data name="MsgDistanceAlreadyExists" xml:space="preserve">
+    <value>Distance already exists</value>
+  </data>
+  <data name="MsgDistanceCannotBeNegativeZero" xml:space="preserve">
+    <value>Distance cannot be negative or zero</value>
+  </data>
+  <data name="MsgDistanceNotValidNumber" xml:space="preserve">
+    <value>Distance is not a valid number</value>
+  </data>
+  <data name="MsgEBLMustBeFloat" xml:space="preserve">
+    <value>East Bound Longitude must be floating point number</value>
+  </data>
+  <data name="MsgEBLNotValidNum" xml:space="preserve">
+    <value>East Bound Longitude not a valid number</value>
+  </data>
+  <data name="MsgFillEBLong" xml:space="preserve">
+    <value>Fill in a East Bound Longitude</value>
+  </data>
+  <data name="MsgFillEmail" xml:space="preserve">
+    <value>Fill in an e-mail address</value>
+  </data>
+  <data name="MsgFillEmailAddress" xml:space="preserve">
+    <value>Fill in an e-mail address</value>
+  </data>
+  <data name="MsgFillInCode" xml:space="preserve">
+    <value>Fill in a Code</value>
+  </data>
+  <data name="MsgFillInKeyword" xml:space="preserve">
+    <value>Fill in a keyword</value>
+  </data>
+  <data name="MsgFillInVocabulary" xml:space="preserve">
+    <value>Fill in a vocabulary name</value>
+  </data>
+  <data name="MsgFillNBLat" xml:space="preserve">
+    <value>Fill in a North Bound Latitude</value>
+  </data>
+  <data name="MsgFillOrgName" xml:space="preserve">
+    <value>Fill in an Organisation Name</value>
+  </data>
+  <data name="MsgFillSBLat" xml:space="preserve">
+    <value>Fill in a South Bound Latitude</value>
+  </data>
+  <data name="MsgFillUrl" xml:space="preserve">
+    <value>Fill in an address (URL)</value>
+  </data>
+  <data name="MsgFillWBLong" xml:space="preserve">
+    <value>Fill in a West Bound Longitude</value>
+  </data>
+  <data name="MsgFromDateMoreRecentThanDate" xml:space="preserve">
+    <value>From date more recent than To date.</value>
+  </data>
+  <data name="MsgInspireThemeExists" xml:space="preserve">
+    <value>The Data Theme already exists</value>
+  </data>
+  <data name="MsgInvalidEmail" xml:space="preserve">
+    <value>E-mail address not valid</value>
+  </data>
+  <data name="MsgInvalidUrl" xml:space="preserve">
+    <value>Not a valid URL</value>
+  </data>
+  <data name="MsgKeywordExists" xml:space="preserve">
+    <value>The keyword already exists</value>
+  </data>
+  <data name="MsgMailExists" xml:space="preserve">
+    <value>E-mail address already exists</value>
+  </data>
+  <data name="MsgNBLMustBeFloat" xml:space="preserve">
+    <value>North Bound Latitude must be floating point number</value>
+  </data>
+  <data name="MsgNBLNotValidNum" xml:space="preserve">
+    <value>North Bound Latitude not a valid number</value>
+  </data>
+  <data name="MsgNoPointOfContact" xml:space="preserve">
+    <value>Point of Contact metadata not found</value>
+  </data>
+  <data name="MsgOrgExists" xml:space="preserve">
+    <value>Organization info already exists</value>
+  </data>
+  <data name="MsgResourceLangExists" xml:space="preserve">
+    <value>Resource Language already exists</value>
+  </data>
+  <data name="MsgSBLLargerThanNBL" xml:space="preserve">
+    <value>South Bound Latitude is larger than North Bound Latitude.</value>
+  </data>
+  <data name="MsgSBLMustBeFloat" xml:space="preserve">
+    <value>South Bound Latitude must be floating point number</value>
+  </data>
+  <data name="MsgSBLNotValidNum" xml:space="preserve">
+    <value>South Bound Latitude not a valid number</value>
+  </data>
+  <data name="MsgScaleAlreadyExists" xml:space="preserve">
+    <value>Scale already exists</value>
+  </data>
+  <data name="MsgScaleCannotBeNegativeZero" xml:space="preserve">
+    <value>Scale cannot be negative or zero</value>
+  </data>
+  <data name="MsgScaleNotValidInteger" xml:space="preserve">
+    <value>Scale is not a valid integer</value>
+  </data>
+  <data name="MsgSelContactToRemove" xml:space="preserve">
+    <value>Select a contact to remove</value>
+  </data>
+  <data name="MsgSelectExtendToRemove" xml:space="preserve">
+    <value>Select an extend to remove</value>
+  </data>
+  <data name="MsgSelectPublicationDateToRemove" xml:space="preserve">
+    <value>Select a publication date to remove</value>
+  </data>
+  <data name="MsgSelectRecordToRemove" xml:space="preserve">
+    <value>Select a quality record to remove</value>
+  </data>
+  <data name="MsgSelectTemporalExtendToRemove" xml:space="preserve">
+    <value>Select a temporal extend to remove</value>
+  </data>
+  <data name="MsgSelectValidDistance" xml:space="preserve">
+    <value>Select valid distance</value>
+  </data>
+  <data name="MsgSelectValidScale" xml:space="preserve">
+    <value>Select valid scale</value>
+  </data>
+  <data name="MsgSelectValidUnits" xml:space="preserve">
+    <value>Select valid units</value>
+  </data>
+  <data name="MsgSelInspireTheme" xml:space="preserve">
+    <value>Select an Inspire Data Theme</value>
+  </data>
+  <data name="MsgSelItemToRemove" xml:space="preserve">
+    <value>Select an item to remove</value>
+  </data>
+  <data name="MsgSelMailToRemove" xml:space="preserve">
+    <value>Select an e-mail to remove</value>
+  </data>
+  <data name="MsgSelRecToRemove" xml:space="preserve">
+    <value>Select a record to remove</value>
+  </data>
+  <data name="MsgSelRefDateType" xml:space="preserve">
+    <value>Select a reference date type</value>
+  </data>
+  <data name="MsgSelResourceLang" xml:space="preserve">
+    <value>Select Resource Language</value>
+  </data>
+  <data name="MsgSelResourceLangToRemove" xml:space="preserve">
+    <value>Select a Resource Language to remove</value>
+  </data>
+  <data name="MsgSelTopicCategory" xml:space="preserve">
+    <value>Select Topic Category</value>
+  </data>
+  <data name="MsgSelTopicCategoryToRemove" xml:space="preserve">
+    <value>Select a Topic Category to remove</value>
+  </data>
+  <data name="MsgTopicCatSelected" xml:space="preserve">
+    <value>This topic category is already selected</value>
+  </data>
+  <data name="MsgWarningPublDateExists" xml:space="preserve">
+    <value>Warning! This publication date already exists.</value>
+  </data>
+  <data name="MsgWBLLargerThanEBL" xml:space="preserve">
+    <value>West Bound Longitude is larger than East Bound Longitude.</value>
+  </data>
+  <data name="MsgWBLMustBeFloat" xml:space="preserve">
+    <value>West Bound Longitude must be floating point number</value>
+  </data>
+  <data name="MsgWBLNotValidNum" xml:space="preserve">
+    <value>West Bound Longitude not a valid number</value>
+  </data>
+  <data name="MsgSelectATitle" xml:space="preserve">
+    <value>Select a title</value>
+  </data>
+  <data name="MsgSelectConformanceDegree" xml:space="preserve">
+    <value>Select a conformance degree</value>
+  </data>
+  <data name="MsgSelectConfRecordToRemove" xml:space="preserve">
+    <value>Select a conformance record to remove</value>
+  </data>
+  <data name="MsgSelectDateType" xml:space="preserve">
+    <value>Select a date type</value>
+  </data>
+  <data name="MsgSelectLimitConst" xml:space="preserve">
+    <value>Select a limitation constraint</value>
+  </data>
+  <data name="MsgWarningCreationDateAlreadyExists" xml:space="preserve">
+    <value>Warning! A creation date for the same title already exists.</value>
+  </data>
+  <data name="MsgWarningPublDateExistsForTitle" xml:space="preserve">
+    <value>Warning! This publication date already exists for this title</value>
+  </data>
+  <data name="MsgWarningRecordExists" xml:space="preserve">
+    <value>Warning! This record already exists.</value>
+  </data>
+  <data name="MsgFreeTextLimitConst" xml:space="preserve">
+    <value>Type a free text limitation constraint</value>
+  </data>
+  <data name="MsgSelectOrgRecordRemove" xml:space="preserve">
+    <value>Select an organisation record to remove</value>
+  </data>
+  <data name="MsgCondAccessAndUseNotFound" xml:space="preserve">
+    <value>Conditions for access and use-general not found</value>
+  </data>
+  <data name="MsgErrorGeoExtendModule" xml:space="preserve">
+    <value>Error in GeoExtend module. Check if geo_extend binary file has execute permisions.</value>
+  </data>
+  <data name="MsgGeogrExtendNotFound" xml:space="preserve">
+    <value>Geographic Extend not found</value>
+  </data>
+  <data name="MsgKeywordsNotFound" xml:space="preserve">
+    <value>Keywords not found</value>
+  </data>
+  <data name="MsgLimitPublicAccessNotFound" xml:space="preserve">
+    <value>Limitations on public access not found</value>
+  </data>
+  <data name="MsgLineageFreeTextNotFound" xml:space="preserve">
+    <value>Lineage free text not found</value>
+  </data>
+  <data name="MsgMetadataXMLSaved" xml:space="preserve">
+    <value>Metadata XML saved!</value>
+  </data>
+  <data name="MsgMetaLangNotFound" xml:space="preserve">
+    <value>Metadata Language not found</value>
+  </data>
+  <data name="MsgNoValidGeogrExtFound" xml:space="preserve">
+    <value>No valid Geographic Extend found</value>
+  </data>
+  <data name="MsgResourceLangMetaNotFound" xml:space="preserve">
+    <value>Resource Language metadata not found</value>
+  </data>
+  <data name="MsgResourceMetaNotFound" xml:space="preserve">
+    <value>Resource Abstract metadata not found</value>
+  </data>
+  <data name="MsgResourceTitleMetaNotFound" xml:space="preserve">
+    <value>Resource Title metadata not found</value>
+  </data>
+  <data name="MsgResourceTypeNotSelected" xml:space="preserve">
+    <value>Resource Type not selected</value>
+  </data>
+  <data name="MsgRespPartMetaNotFound" xml:space="preserve">
+    <value>Responsible Party metadata not found</value>
+  </data>
+  <data name="MsgTempRefMustBeCompleted" xml:space="preserve">
+    <value>At least one Temporal Reference must be completed</value>
+  </data>
+  <data name="MsgTopicCategNotFound" xml:space="preserve">
+    <value>Topic Category not found</value>
+  </data>
+  <data name="MsgUniqueResourceIdNotFound" xml:space="preserve">
+    <value>Unique Resource Identifier not found</value>
+  </data>
+  <data name="MsgUrlExists" xml:space="preserve">
+    <value>The web address (URL) exists in the list</value>
+  </data>
+</root>

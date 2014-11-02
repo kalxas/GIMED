@@ -2,8 +2,8 @@
    Name:         GIMED
    Version:      1.2.5
    Author:       Angelos Tzotsos <tzotsos@gmail.com>
-   Date:         03/11/10
-   Modified:     03/11/10
+   Date:         19/11/10
+   Modified:     19/11/10
    Description:  Greek INSPIRE Metadata Editor
 
    Copyright (C) November 2010 Angelos Tzotsos <tzotsos@gmail.com>
@@ -32,18 +32,36 @@ using System.IO;
 using System.Windows.Forms;
 using System.Diagnostics;
 using Inspire.Metadata;
+using DotSpatial.Data;
+using DotSpatial.Projections;
+using System.Threading;
+using System.Globalization;
+using GIMED.Properties;
+using GIMED;
 
-public partial class Form1 : Form
+
+public partial class GIMEDForm : Form
 {
-    //EN
+    //GR
     public MDObject myMDObject;
     bool GeoModule = false;
     string DataFile = "";
+
     string geo_extend_file = "geo_extends";
     
-    public Form1(bool geo)
+
+    //Thread.CurrentThread.
+
+    public GIMEDForm(bool geo)
     {
+        //MessageBox.Show(Thread.CurrentThread.CurrentUICulture.DisplayName);
+        //Thread.CurrentThread.CurrentUICulture = new CultureInfo("el-GR");
+        //MessageBox.Show(Thread.CurrentThread.CurrentUICulture.DisplayName);
+        //MessageBox.Show(Thread.CurrentThread.CurrentUICulture.DisplayName);
+        //SelectLang();
+        //MessageBox.Show(Thread.CurrentThread.CurrentUICulture.DisplayName);
         InitializeComponent();
+        
         myMDObject = null;
         GeoModule = geo;
         ToolTip toolTip1 = new ToolTip();
@@ -51,84 +69,87 @@ public partial class Form1 : Form
         toolTip1.InitialDelay = 1000;
         toolTip1.ReshowDelay = 500;
         toolTip1.ShowAlways = true;
-        toolTip1.SetToolTip(this.AboutButton, "About...");
+        toolTip1.SetToolTip(this.AboutButton, "Σχετικά...");
     }
 
     public bool ValidateMDControl(MDControl md)
     {
         if (md.MD_ContactListBox.Items.Count == 0)
         {
-            MessageBox.Show("Point of Contact metadata not found");
+            
+            MessageBox.Show(GlobalStrings.MsgNoPointOfContact);
+            md.MD_tabControl.SelectedTab = md.MetadataTab;
+            md.MD_ContactListBox.Focus();
             return false;
         }
         if (md.MD_LanguageComboBox.SelectedIndex == -1)
         {
-            MessageBox.Show("Metadata Language not found");
+            MessageBox.Show(GlobalStrings.MsgMetaLangNotFound);
             return false;
         }
         if (md.ID_ResourseTitleTextBox.Text == "")
         {
-            MessageBox.Show("Resource Title metadata not found");
+            MessageBox.Show(GlobalStrings.MsgResourceTitleMetaNotFound);
             return false;
         }
         if (md.ID_ResourceAbstractTextBox.Text == "")
         {
-            MessageBox.Show("Resource Abstract metadata not found");
+            MessageBox.Show(GlobalStrings.MsgResourceMetaNotFound);
             return false;
         }
         if (md.ID_ResourceTypeComboBox.SelectedIndex == -1)
         {
-            MessageBox.Show("Resource Type not selected");
+            MessageBox.Show(GlobalStrings.MsgResourceTypeNotSelected);
             return false;
         }
         if (md.ID_ResourceLanguageListBox.Items.Count == 0)
         {
-            MessageBox.Show("Resource Language metadata not found");
+            MessageBox.Show(GlobalStrings.MsgResourceLangMetaNotFound);
             return false;
         }
         if (md.ID_UIDListBox.Items.Count == 0)
         {
-            MessageBox.Show("Unique Resource Identifier not found");
+            MessageBox.Show(GlobalStrings.MsgUniqueResourceIdNotFound);
             return false;
         }
         if (md.CL_TopicCategoryListBox.Items.Count == 0)
         {
-            MessageBox.Show("Topic Category not found");
+            MessageBox.Show(GlobalStrings.MsgTopicCategNotFound);
             return false;
         }
         if (md.KW_KeywordListBox.Items.Count == 0)
         {
-            MessageBox.Show("Keywords not found");
+            MessageBox.Show(GlobalStrings.MsgKeywordsNotFound);
             return false;
         }
         if (md.GEO_ExtendListBox.Items.Count == 0)
         {
-            MessageBox.Show("Geographic Extend not found");
+            MessageBox.Show(GlobalStrings.MsgGeogrExtendNotFound);
             return false;
         }
         if (md.TMP_TemporalExtendListBox.Items.Count == 0 && md.TMP_PublicDateListBox.Items.Count == 0 && md.TMP_RevisionDateListBox.Items.Count == 0 && md.TMP_CreationDateListBox.Items.Count == 0)
         {
-            MessageBox.Show("At least one Temporal Reference must be completed");
+            MessageBox.Show(GlobalStrings.MsgTempRefMustBeCompleted);
             return false;
         }
         if (md.LIN_FreeTextBox.Text == "")
         {
-            MessageBox.Show("Lineage free text not found");
+            MessageBox.Show(GlobalStrings.MsgLineageFreeTextNotFound);
             return false;
         }
         if (md.CSTR_ConditionsUseGeneralListBox.Items.Count == 0)
         {
-            MessageBox.Show("Conditions for access and use-general not found");
+            MessageBox.Show(GlobalStrings.MsgCondAccessAndUseNotFound);
             return false;
         }
         if (md.CSTR_LimitationsPublicListBox.Items.Count == 0)
         {
-            MessageBox.Show("Limitations on public access not found");
+            MessageBox.Show(GlobalStrings.MsgLimitPublicAccessNotFound);
             return false;
         }
         if (md.ORG_IndividualListBox.Items.Count == 0)
         {
-            MessageBox.Show("Responsible Party metadatanot found");
+            MessageBox.Show(GlobalStrings.MsgRespPartMetaNotFound);
             return false;
         }
         
@@ -210,11 +231,11 @@ public partial class Form1 : Form
             {
                 string tmp = (string)t;
                 string[] sub = tmp.Split(' ');
-                if (sub[0] == "Scale:")
+                if (sub[0] == "Κλίμακα:")
                 {
                     obj.QLT_Scale.Add(sub[1]);
                 }
-                else if (sub[0] == "Distance:")
+                else if (sub[0] == "Απόσταση:")
                 {
                     string sum = sub[1] + " " + sub[2];
                     obj.QLT_Distance.Add(sum);
@@ -265,42 +286,42 @@ public partial class Form1 : Form
         md.ID_ResourseTitleTextBox.Text = obj.ID_ResourseTitle;
         md.ID_ResourceAbstractTextBox.Text = obj.ID_ResourceAbstract;
         md.ID_ResourceTypeComboBox.SelectedItem = obj.ID_ResourceType;
-        
+
         md.ID_ResourceLocatorListBox.Items.Clear();
-        if(obj.ID_ResourceLocator.Count > 0)
+        if (obj.ID_ResourceLocator.Count > 0)
         {
-            foreach(object o in obj.ID_ResourceLocator)
+            foreach (object o in obj.ID_ResourceLocator)
             {
                 md.ID_ResourceLocatorListBox.Items.Add((string)o);
             }
         }
         md.ID_UIDListBox.Items.Clear();
-        foreach(object o in obj.ID_UniqueResourceIdentifier)
+        foreach (object o in obj.ID_UniqueResourceIdentifier)
         {
             md.ID_UIDListBox.Items.Add((string)o);
         }
         md.ID_ResourceLanguageListBox.Items.Clear();
-        foreach(object o in obj.ID_ResourceLanguage)
+        foreach (object o in obj.ID_ResourceLanguage)
         {
             md.ID_ResourceLanguageListBox.Items.Add((string)o);
         }
         md.CL_TopicCategoryListBox.Items.Clear();
-        foreach(object o in obj.CL_TopicCategory)
+        foreach (object o in obj.CL_TopicCategory)
         {
             md.CL_TopicCategoryListBox.Items.Add((string)o);
         }
         md.KW_KeywordListBox.Items.Clear();
-        foreach(object o in obj.KW_Keyword)
+        foreach (object o in obj.KW_Keyword)
         {
             md.KW_KeywordListBox.Items.Add((string)o);
         }
         md.GEO_ExtendListBox.Items.Clear();
-        foreach(object o in obj.GEO_GeographicExtend)
+        foreach (object o in obj.GEO_GeographicExtend)
         {
             md.GEO_ExtendListBox.Items.Add((string)o);
         }
         md.TMP_TemporalExtendListBox.Items.Clear();
-        foreach(object o in obj.TMP_TemporalExtend)
+        foreach (object o in obj.TMP_TemporalExtend)
         {
             md.TMP_TemporalExtendListBox.Items.Add((string)o);
         }
@@ -332,14 +353,14 @@ public partial class Form1 : Form
         {
             foreach (object o in obj.QLT_Scale)
             {
-                md.QLT_ListBox.Items.Add("Scale: " + (string)o);
+                md.QLT_ListBox.Items.Add("Κλίμακα: " + (string)o);
             }
         }
         if (obj.QLT_Distance.Count > 0)
         {
             foreach (object o in obj.QLT_Distance)
             {
-                md.QLT_ListBox.Items.Add("Distance: " + (string)o);
+                md.QLT_ListBox.Items.Add("Απόσταση: " + (string)o);
             }
         }
         md.CFRM_ListBox.Items.Clear();
@@ -352,7 +373,6 @@ public partial class Form1 : Form
                 md.CFRM_ListBox.Items.Add(tmp);
             }
         }
-        
         md.CSTR_ConditionsUseGeneralListBox.Items.Clear();
         foreach (object t in obj.CSTR_ConditionsUseGeneral)
         {
@@ -374,7 +394,58 @@ public partial class Form1 : Form
         }
 
     }
-    
+
+    private Dictionary<int, string> ReadEpsgFile()
+    {
+        string filePath = @"epsg";
+        string line;
+        Dictionary<int, string> dictEpsg = new Dictionary<int, string>();
+        if (File.Exists(filePath))
+        {
+            StreamReader file = null;
+            bool isCodeline=false;
+            string tmpKey = string.Empty;
+            string tmpVal = string.Empty;
+            try
+            {
+                file = new StreamReader(filePath);
+                int c=0;
+                while ((line = file.ReadLine()) != null)
+                {
+                    if (c == 2) c = 0;
+                    if (line.StartsWith("#"))
+                    {
+                        isCodeline = true;
+                        tmpVal = line.Split('#')[1].Trim();
+                        c++;
+                    }
+                    else if (line.StartsWith("<"))
+                    {
+                        isCodeline = false;
+                        tmpKey = line.Split('<')[1].Split('>')[0].Trim();
+                        c++;
+                    }
+                    if (c == 2)
+                    {
+                        try
+                        {
+                            dictEpsg.Add(Convert.ToInt32(tmpKey), tmpVal);
+                        }
+                        catch (Exception)
+                        {}
+                        
+                    }
+                }
+            }
+            finally
+            {
+                if (file != null)
+                    file.Close();
+            }
+        }
+        return dictEpsg;
+    }
+
     private void ValidateButton_Click(object sender, EventArgs e)
     {
         if (this.ValidateMDControl(mdControl1))
@@ -394,7 +465,7 @@ public partial class Form1 : Form
             this.mdControl1.newGUIDpressed = false;
         }
         
-        if (this.DataFile != "")
+        if(this.DataFile != "")
         {
             this.saveFileDialog1.FileName = this.DataFile.Substring(0, this.DataFile.Length - 4) + ".xml";
         }
@@ -408,28 +479,107 @@ public partial class Form1 : Form
         if (rslt == DialogResult.OK)
         {
             this.myMDObject.WriteToXML(this.saveFileDialog1.FileName);
-            MessageBox.Show("Metadata XML saved!");
+            MessageBox.Show(GlobalStrings.MsgMetadataXMLSaved);
             this.SaveXMLButton.Enabled = false;
-            this.LoadXMLButton.Enabled = true;
-            this.DataFileButton.Enabled = true;
         }
         return;
     }
 
     private void DataFileButton_Click(object sender, EventArgs e)
     {
-        this.openFileDialog1.Filter = "TIFF Files (*.tif)|*.tif|JPEG2000 Files (*.jp2)|*.jp2|Imagine Files (*.img)|*.img|ER-Mapper Files (*.ers)|*.ers|JPEG Files (*.jpg)|*.jpg|Shape files (*.shp)|*.shp|DTM files (*.dtm)|*.dtm|All files (*.*)|*.*";
+        this.openFileDialog1.Filter = "Shape files (*.shp)|*.shp|Mapinfo TAB files (*.tab)|*.tab|TIFF Files (*.tif)|*.tif|JPEG2000 Files (*.jp2)|*.jp2|Imagine Files (*.img)|*.img|ER-Mapper Files (*.ers)|*.ers|JPEG Files (*.jpg)|*.jpg|DTM files (*.dtm)|*.dtm|All files (*.*)|*.*";
         this.openFileDialog1.FilterIndex = 1;
+        openFileDialog1.DefaultExt = "shp";
+        openFileDialog1.FileName = string.Empty;
+
         DialogResult rslt = this.openFileDialog1.ShowDialog();
         if (rslt == DialogResult.OK)
         {
+            Extent ext = new Extent();
             this.DataFile = this.openFileDialog1.FileName;
             this.textBox1.Text = this.DataFile;
-            this.LoadGeoExtend();
-            this.SaveXMLButton.Enabled = false;
-            this.LoadXMLButton.Enabled = false;
+            ProjectionInfo inProj = null;
+            if (DataFile.EndsWith(".shp") || DataFile.EndsWith(".tab"))
+            {
+                //Declare a new feature set
+                FeatureSet fs = (FeatureSet)FeatureSet.Open(DataFile);
+
+                //Get the projection
+                inProj = fs.Projection;
+
+                //Handle default projection (where no prj file is present) as null
+                if (inProj != null && inProj.ToString().Trim() == "+ellps=WGS84 +no_defs")
+                {
+                    inProj = null;
+                }
+                ext = fs.Extent;
+            }
+            else
+            {
+                //Assume its raster
+                InRamImageData img = (InRamImageData)InRamImageData.Open(DataFile);
+                ext = img.Extent;
+            }
+
+            PopulateExtent(ext, inProj);
         }
         return;
+    }
+
+    private void PopulateExtent(Extent ext, ProjectionInfo inProjection)
+    {
+
+        if (inProjection == null)
+        {
+            Dictionary<int, string> d = ReadEpsgFile();
+            GIMED_EL.frmEPSG dlgEpsg = new GIMED_EL.frmEPSG();
+            dlgEpsg.PopulateListBox(d);
+            var result = dlgEpsg.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                inProjection = ProjectionInfo.FromEpsgCode(dlgEpsg.selectedSRID);
+            }
+        }
+
+        if (inProjection == null) return;
+
+        Extent latlonExtent = reprojectRectangle(ext, inProjection);
+        this.mdControl1.GEO_ExtendListBox.Items.Clear();
+        string tmp = latlonExtent.MinX.ToString() + ";" + latlonExtent.MinY.ToString() + ";" + latlonExtent.MaxX.ToString() + ";" + latlonExtent.MaxY.ToString();
+        this.mdControl1.GEO_ExtendListBox.Items.Add(tmp);
+
+        //Also fill in the GEO * textboxes
+        mdControl1.GEO_XminTextBox.Text = latlonExtent.MinX.ToString();
+        mdControl1.GEO_XmaxTextBox.Text = latlonExtent.MaxX.ToString();
+        mdControl1.GEO_YminTextBox.Text = latlonExtent.MinY.ToString();
+        mdControl1.GEO_YmaxTextBox.Text = latlonExtent.MaxY.ToString();
+        this.SaveXMLButton.Enabled = false;
+        this.LoadXMLButton.Enabled = false;
+    }
+
+    private Extent reprojectRectangle( Extent inExt, ProjectionInfo fromProjection)
+    {
+        Extent outExt = new Extent();
+        List<double> xy = new List<double>();
+        List<double> z = new List<double>();
+
+        xy.Add(inExt.MinX);
+        xy.Add(inExt.MinY);
+        xy.Add(inExt.MaxX);
+        xy.Add(inExt.MaxY);
+        z.Add(0.0);
+        z.Add(0.0);
+        double[] xyA = xy.ToArray();
+        double[] zA = z.ToArray();
+
+        //Always reproject to WGS84 (EPSG:4326)
+        ProjectionInfo piTo = ProjectionInfo.FromEpsgCode(4326);
+        Reproject.ReprojectPoints(xyA, zA, fromProjection, piTo, 0, 2);
+        outExt.MinX=xyA[0];
+        outExt.MinY = xyA[1];
+        outExt.MaxX = xyA[2];
+        outExt.MaxY = xyA[3];
+        return outExt;
     }
 
     private void textBox1_TextChanged(object sender, EventArgs e)
@@ -443,7 +593,7 @@ public partial class Form1 : Form
         {
             Checker chk = new Checker();
             string appPath = Path.GetDirectoryName(Application.ExecutablePath);
-            if (chk.IsWindows()) 
+            if (chk.IsWindows())
             {
                 appPath += Path.DirectorySeparatorChar + this.geo_extend_file + ".exe";
             }
@@ -456,8 +606,9 @@ public partial class Form1 : Form
             string output = "";
             Process prc = new Process();
             prc.StartInfo.FileName = appPath;
-            prc.StartInfo.Arguments = "\"" + DataFile + "\"";
+            //prc.StartInfo.Arguments = "\"" + DataFile + "\"";
             prc.StartInfo.UseShellExecute = false;
+            prc.StartInfo.Arguments = "\"" + DataFile + "\"";
             prc.StartInfo.CreateNoWindow = true;
             prc.StartInfo.RedirectStandardOutput = true;
             prc.Start();
@@ -475,14 +626,19 @@ public partial class Form1 : Form
             }
             else
             {
-                MessageBox.Show("No valid Geographic Extend found");
+                MessageBox.Show(GlobalStrings.MsgNoValidGeogrExtFound);
             }
         }
         catch
         {
-            MessageBox.Show("Error in GeoExtend module. Check if geo_extend binary file has execute permisions.");
+            MessageBox.Show(GlobalStrings.MsgErrorGeoExtendModule);
         }
 
+    }
+    
+    private void AboutButton_Click(object sender, EventArgs e)
+    {
+        MessageBox.Show("Developers:\tAngelos Tzotsos-tzotsos@gmail.com\n\t\tPano Voudouris-pvoudouris@gmail.com\n\nTranslation:\tStavros Kampanakis-stauroskampan@gmail.com\n\nGIMED is Open Source software under the GPL3 license.\n\nΑνάπτυξη:\t’γγελος Τζώτσος-tzotsos@gmail.com\n\t\tΠάνος Βουδούρης-pvoudouris@gmail.com\n\nΜετάφραση:\tΣταύρος Καμπανάκης-stauroskampan@gmail.com\n\nΤο GIMED είναι Ελεύθερο Λογισμικό υπό την άδεια GPL3.", GlobalStrings.About);
     }
 
     private void LoadXMLButton_Click(object sender, EventArgs e)
@@ -500,19 +656,60 @@ public partial class Form1 : Form
                 this.FillMDControl(this.myMDObject, mdControl1);
                 this.DataFileButton.Enabled = false;
                 this.SaveXMLButton.Enabled = false;
-                MessageBox.Show("XML Loaded");
+
+                MessageBox.Show(GIMED.Properties.Resources.XMLLoaded);
             }
             else
             {
-                MessageBox.Show("Error Loading XML");
+                MessageBox.Show(GIMED.Properties.Resources.XMLNotLoaded);
             }
         }
         return;
     }
 
-    private void AboutButton_Click(object sender, EventArgs e)
+    private void SelectLang()
     {
-        MessageBox.Show("Developed by Angelos Tzotsos\nThis program is Free Software under GPL3\nContact: tzotsos@gmail.com");
+        if (Settings.Default["Language"] != null)
+        {
+            Thread.CurrentThread.CurrentUICulture= new CultureInfo(Settings.Default["Language"].ToString());
+           
+        }
     }
-    
+
+
+    private void cboLanguages_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        if (cboLanguages.SelectedIndex != -1)
+        {
+            if (cboLanguages.SelectedItem.ToString() == "Ελληνικά")
+            {
+                //SaveLanguage("el-GR");
+                System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("el-GR");
+            }
+            else
+            {
+                //SaveLanguage("en-US");
+                System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en-US");
+            }
+            //MessageBox.Show("Yo need to restart the application for the changes to take effect");
+        }
+       
+        ComponentResourceManager resources = new ComponentResourceManager(typeof(GIMEDForm));
+        resources.ApplyResources(this, "$this");
+        applyResources(resources, this.Controls);
+
+        ComponentResourceManager resources1 = new ComponentResourceManager(typeof(MDControl));
+        applyResources(resources1, mdControl1.Controls);
+
+    }
+
+    private void applyResources(ComponentResourceManager resources, Control.ControlCollection ctls)
+    {
+        foreach (Control ctl in ctls)
+        {
+            resources.ApplyResources(ctl, ctl.Name);
+            applyResources(resources, ctl.Controls);
+        }
+    }
+
 }

@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("GIMED")]
-[assembly: AssemblyDescription("Greek Inspire Metadata Editor")]
+[assembly: AssemblyDescription("Inspire Metadata Editor")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Tzotsos")]
+[assembly: AssemblyCompany("GetMap")]
 [assembly: AssemblyProduct("GIMED")]
-[assembly: AssemblyCopyright("Copyright © Tzotsos 2010")]
+[assembly: AssemblyCopyright("Copyright © GetMap 2010")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("a34237bd-911c-4724-9990-bf0874dffbb7")]
+[assembly: Guid("bae36e8a-8ef8-4da7-b878-776234a7b37f")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -29,5 +29,5 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("1.3.0.0")]
-[assembly: AssemblyFileVersion("1.3.0.0")]
+[assembly: AssemblyVersion("1.4.0.0")]
+[assembly: AssemblyFileVersion("1.4.0.0")]

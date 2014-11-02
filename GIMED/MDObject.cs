@@ -2,8 +2,8 @@
    Name:         GIMED
    Version:      1.2.5
    Author:       Angelos Tzotsos <tzotsos@gmail.com>
-   Date:         03/11/10
-   Modified:     03/11/10
+   Date:         19/11/10
+   Modified:     19/11/10
    Description:  Greek INSPIRE Metadata Editor
 
    Copyright (C) November 2010 Angelos Tzotsos <tzotsos@gmail.com>
@@ -26,18 +26,23 @@ using System;
 using System.Collections;
 using System.IO;
 using System.Text;
-using System.Xml;
 using System.Xml.XPath;
+using System.Xml;
+
 
 namespace Inspire.Metadata
 {
-    
-    public class MDObject
+	/// <summary>
+	/// Summary description for MDObject.
+	/// </summary>
+	public class MDObject
 	{
-        //EN
+        //GR
 		#region members
 		
         public ArrayList MD_PointOfContact;
+        //public ArrayList MD_email;
+		//public string MD_OrganizationName;
 		public string MD_Language;
 		public string MD_Date;
         public string ID_ResourseTitle;
@@ -64,6 +69,10 @@ namespace Inspire.Metadata
         public ArrayList CSTR_ConditionsUseGeneral;
         public ArrayList ORG_ResponsibleParty;
         public string FileIdentifier;
+        //public ArrayList ORG_Name;
+		//public ArrayList ORG_IndividualName;
+		//public ArrayList ORG_Role;
+		//public ArrayList ORG_Email;
 
         #endregion
 
@@ -278,9 +287,9 @@ namespace Inspire.Metadata
                 tmp = "			<gmd:descriptiveKeywords><gmd:MD_Keywords>";
                 foreach (object kw in cur_kw)
                 {
-                    tmp += "<gmd:keyword><gco:CharacterString>" + (string)kw + "</gco:CharacterString></gmd:keyword>";
+                    tmp += "<gmd:keyword><gco:CharacterString>" + this.ToCodeList2((string)kw) + "</gco:CharacterString></gmd:keyword>";
                 }
-                tmp += "<gmd:thesaurusName><gmd:CI_Citation><gmd:title><gco:CharacterString>" + cur_voc + "</gco:CharacterString></gmd:title><gmd:date><gmd:CI_Date><gmd:date><gco:Date>" + cur_date + "</gco:Date></gmd:date><gmd:dateType><gmd:CI_DateTypeCode codeList=\"http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode\" codeListValue=\"" + cur_type + "\">" + cur_type + "</gmd:CI_DateTypeCode></gmd:dateType></gmd:CI_Date></gmd:date></gmd:CI_Citation></gmd:thesaurusName>";
+                tmp += "<gmd:thesaurusName><gmd:CI_Citation><gmd:title><gco:CharacterString>" + cur_voc + "</gco:CharacterString></gmd:title><gmd:date><gmd:CI_Date><gmd:date><gco:Date>" + cur_date + "</gco:Date></gmd:date><gmd:dateType><gmd:CI_DateTypeCode codeList=\"http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode\" codeListValue=\"" + this.ToCodeList2(cur_type) + "\">" + this.ToCodeList2(cur_type) + "</gmd:CI_DateTypeCode></gmd:dateType></gmd:CI_Date></gmd:date></gmd:CI_Citation></gmd:thesaurusName>";
                 tmp += "</gmd:MD_Keywords></gmd:descriptiveKeywords>";
                 o.WriteLine(tmp);
                 //Write at XML end
@@ -290,7 +299,6 @@ namespace Inspire.Metadata
             #endregion
 
             #region CSTR_ConditionsUseGeneral
-
             foreach (object r in this.CSTR_ConditionsUseGeneral)
             {
                 tmp = "			<gmd:resourceConstraints><gmd:MD_Constraints><gmd:useLimitation><gco:CharacterString>" + (string)r + "</gco:CharacterString></gmd:useLimitation></gmd:MD_Constraints></gmd:resourceConstraints>";
@@ -413,16 +421,16 @@ namespace Inspire.Metadata
             {
                 for (int i = 0; i < this.CFRM_Title.Count; i++)
                 {
-                    tmp = "<gmd:report><gmd:DQ_DomainConsistency xsi:type=\"gmd:DQ_DomainConsistency_Type\"><gmd:measureIdentification><gmd:RS_Identifier><gmd:code><gco:CharacterString>Conformity_001</gco:CharacterString></gmd:code><gmd:codeSpace><gco:CharacterString>INSPIRE</gco:CharacterString></gmd:codeSpace></gmd:RS_Identifier></gmd:measureIdentification><gmd:result><gmd:DQ_ConformanceResult xsi:type=\"gmd:DQ_ConformanceResult_Type\"><gmd:specification><gmd:CI_Citation><gmd:title><gco:CharacterString>" + ((string)this.CFRM_Title[i]) + "</gco:CharacterString></gmd:title><gmd:date><gmd:CI_Date><gmd:date><gco:Date>" + ((string)this.CFRM_Date[i]) + "</gco:Date></gmd:date><gmd:dateType><gmd:CI_DateTypeCode codeList=\"http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode\" codeListValue=\"" + ((string)this.CFRM_DateType[i]) + "\">" + ((string)this.CFRM_DateType[i]) + "</gmd:CI_DateTypeCode></gmd:dateType></gmd:CI_Date></gmd:date></gmd:CI_Citation></gmd:specification><gmd:explanation><gco:CharacterString>See the referenced specification</gco:CharacterString></gmd:explanation>";
-                    if (((string)this.CFRM_Degree[i]) == "Not Evaluated")
+                    tmp = "<gmd:report><gmd:DQ_DomainConsistency xsi:type=\"gmd:DQ_DomainConsistency_Type\"><gmd:measureIdentification><gmd:RS_Identifier><gmd:code><gco:CharacterString>Conformity_001</gco:CharacterString></gmd:code><gmd:codeSpace><gco:CharacterString>INSPIRE</gco:CharacterString></gmd:codeSpace></gmd:RS_Identifier></gmd:measureIdentification><gmd:result><gmd:DQ_ConformanceResult xsi:type=\"gmd:DQ_ConformanceResult_Type\"><gmd:specification><gmd:CI_Citation><gmd:title><gco:CharacterString>" + ((string)this.CFRM_Title[i]) + "</gco:CharacterString></gmd:title><gmd:date><gmd:CI_Date><gmd:date><gco:Date>" + ((string)this.CFRM_Date[i]) + "</gco:Date></gmd:date><gmd:dateType><gmd:CI_DateTypeCode codeList=\"http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode\" codeListValue=\"" + this.ToCodeList2((string)this.CFRM_DateType[i]) + "\">" + this.ToCodeList2((string)this.CFRM_DateType[i]) + "</gmd:CI_DateTypeCode></gmd:dateType></gmd:CI_Date></gmd:date></gmd:CI_Citation></gmd:specification><gmd:explanation><gco:CharacterString>See the referenced specification</gco:CharacterString></gmd:explanation>";
+                    if (this.ToCodeList2((string)this.CFRM_Degree[i]) == "Not Evaluated")
                     {
                         tmp += "<gmd:pass gco:nilReason=\"template\"/>";
                     }
-                    else if (((string)this.CFRM_Degree[i]) == "Not Conformant")
+                    else if (this.ToCodeList2((string)this.CFRM_Degree[i]) == "Not Conformant")
                     {
                         tmp += "<gmd:pass><gco:Boolean>false</gco:Boolean></gmd:pass>";
                     }
-                    else if (((string)this.CFRM_Degree[i]) == "Conformant")
+                    else if (this.ToCodeList2((string)this.CFRM_Degree[i]) == "Conformant")
                     {
                         tmp += "<gmd:pass><gco:Boolean>true</gco:Boolean></gmd:pass>";
                     }
@@ -450,7 +458,8 @@ namespace Inspire.Metadata
 
             return;
         }
-          
+
+        //TODO Check
         public bool LoadFromXML(string XMLFileName)
         {
             try
@@ -710,7 +719,7 @@ namespace Inspire.Metadata
                     while (iterator.MoveNext())
                     {
                         XPathNavigator nav2 = iterator.Current.Clone();
-                        thes_type = nav2.Value.ToString();
+                        thes_type = this.ReverseCodeList(nav2.Value.ToString());
                     }
 
                     expr = nav.Compile("/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords[" + i.ToString() + "]/gmd:MD_Keywords/gmd:keyword/gco:CharacterString");
@@ -719,7 +728,7 @@ namespace Inspire.Metadata
                     while (iterator.MoveNext())
                     {
                         XPathNavigator nav2 = iterator.Current.Clone();
-                        this.KW_Keyword.Add(thes + "|" + thes_type + "|" + thes_date + "|" + nav2.Value.ToString());
+                        this.KW_Keyword.Add(thes + "|" + thes_type + "|" + thes_date + "|" + this.ReverseCodeList(nav2.Value.ToString()));
                     }
                 }
 
@@ -835,7 +844,7 @@ namespace Inspire.Metadata
                     while (iterator.MoveNext())
                     {
                         XPathNavigator nav2 = iterator.Current.Clone();
-                        tmp = "From " + nav2.Value.ToString();
+                        tmp = "Από " + nav2.Value.ToString();
                     }
 
                     expr = nav.Compile("/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:temporalElement/gmd:EX_TemporalExtent/gmd:extent/gml:TimePeriod[" + i.ToString() + "]/gml:endPosition");
@@ -844,7 +853,7 @@ namespace Inspire.Metadata
                     while (iterator.MoveNext())
                     {
                         XPathNavigator nav2 = iterator.Current.Clone();
-                        tmp += " To " + nav2.Value.ToString();
+                        tmp += " Έως " + nav2.Value.ToString();
                     }
                     this.TMP_TemporalExtend.Add(tmp);
                 }
@@ -898,7 +907,7 @@ namespace Inspire.Metadata
                     while (iterator.MoveNext())
                     {
                         XPathNavigator nav2 = iterator.Current.Clone();
-                        this.CFRM_DateType.Add(nav2.Value.ToString());
+                        this.CFRM_DateType.Add(this.ReverseCodeList(nav2.Value.ToString()));
                     }
 
                     string result = "";
@@ -911,9 +920,9 @@ namespace Inspire.Metadata
                         result = nav2.Value.ToString();
                     }
 
-                    if (result == "") this.CFRM_Degree.Add("Not Evaluated");
-                    else if (result == "true") this.CFRM_Degree.Add("Conformant");
-                    else if (result == "false") this.CFRM_Degree.Add("Not Conformant");
+                    if (result == "") this.CFRM_Degree.Add(this.ReverseCodeList("Not Evaluated"));
+                    else if (result == "true") this.CFRM_Degree.Add(this.ReverseCodeList("Conformant"));
+                    else if (result == "false") this.CFRM_Degree.Add(this.ReverseCodeList("Not Conformant"));
                 }
 
                 expr = nav.Compile("/gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:lineage/gmd:LI_Lineage/gmd:statement/gco:CharacterString");
@@ -929,7 +938,7 @@ namespace Inspire.Metadata
             {
                 return false;
             }
-            
+
             return true;
         }
 
@@ -939,227 +948,155 @@ namespace Inspire.Metadata
             
             switch (orig)
             {
-                case "Bulgarian":
-                    dest = "bul";
-                    break;
-
-                case "Czech":
-                    dest = "cze";
-                    break;
-
-                case "Danish":
-                    dest = "dan";
-                    break;
-
-                case "Dutch":
-                    dest = "dut";
-                    break;
-
-                case "English":
+                case "Αγγλικά":
                     dest = "eng";
                     break;
 
-                case "Estonian":
-                    dest = "est";
-                    break;
-
-                case "Finnish":
-                    dest = "fin";
-                    break;
-
-                case "French":
+                case "Γαλλικά":
                     dest = "fre";
                     break;
 
-                case "German":
+                case "Γερμανικά":
                     dest = "ger";
                     break;
 
-                case "Greek":
+                case "Ελληνικά":
                     dest = "gre";
                     break;
 
-                case "Hungarian":
-                    dest = "hun";
-                    break;
-
-                case "Irish":
-                    dest = "gle";
-                    break;
-
-                case "Italian":
+                case "Ιταλικά":
                     dest = "ita";
                     break;
 
-                case "Latvian":
-                    dest = "lav";
-                    break;
-
-                case "Lithuanian":
-                    dest = "lit";
-                    break;
-
-                case "Maltese":
-                    dest = "mlt";
-                    break;
-
-                case "Polish":
-                    dest = "pol";
-                    break;
-
-                case "Portuguese":
-                    dest = "por";
-                    break;
-
-                case "Romanian":
-                    dest = "rum";
-                    break;
-
-                case "Slovak":
-                    dest = "slo";
-                    break;
-
-                case "Slovenian":
-                    dest = "slv";
-                    break;
-
-                case "Spanish":
-                    dest = "spa";
-                    break;
-
-                case "Swedish":
-                    dest = "swe";
-                    break;
-
-                case "Dataset":
+                case "Σύνολο χωρικών δεδομένων":
                     dest = "dataset";
                     break;
 
-                case "Series":
+                case "Σειρά συνόλων χωρικών δεδομένων":
                     dest = "series";
                     break;
 
-                case "Service":
+                case "Υπηρεσίες χωρικών δεδομένων":
                     dest = "service";
                     break;
 
-                case "ResourceProvider":
+                case "Πάροχος πόρου":
                     dest = "resourceProvider";
                     break;
 
-                case "Custodian":
+                case "Υπόλογος":
                     dest = "custodian";
                     break;
 
-                case "Owner":
+                case "Κάτοχος":
                     dest = "owner";
                     break;
 
-                case "User":
+                case "Χρήστης":
                     dest = "user";
                     break;
 
-                case "Distributor":
+                case "Διανομέας":
                     dest = "distributor";
                     break;
 
-                case "Originator":
+                case "Δημιουργός":
                     dest = "originator";
                     break;
 
-                case "PointOfContact":
+                case "Αρμόδιος για επικοινωνία":
                     dest = "pointOfContact";
                     break;
 
-                case "PrincipalInvestigator":
+                case "Πρωτεύων διερευνητής":
                     dest = "principalInvestigator";
                     break;
 
-                case "Processor":
+                case "Επεξεργαστής":
                     dest = "processor";
                     break;
 
-                case "Publisher":
+                case "Εκδότης":
                     dest = "publisher";
                     break;
 
-                case "Author":
+                case "Συντάκτης":
                     dest = "author";
                     break;
 
-                case "Farming":
+                case "Γεωργία":
                     dest = "farming";
                     break;
 
-                case "Biota":
+                case "Βιόκοσμος":
                     dest = "biota";
                     break;
 
-                case "Boundaries":
+                case "Όρια":
                     dest = "boundaries";
                     break;
 
-                case "ClimatologyMeteorologyAtmosphere":
+                case "Κλιματολογία/Μετεωρολογία/Ατμόσφαιρα":
                     dest = "climatologyMeteorologyAtmosphere";
                     break;
 
-                case "Economy":
+                case "Οικονομία":
                     dest = "economy";
                     break;
 
-                case "Elevation":
+                case "Υψομετρία":
                     dest = "elevation";
                     break;
 
-                case "Environment":
+                case "Περιβάλλον":
                     dest = "environment";
                     break;
 
-                case "GeoscientificInformation":
+                case "Γεωεπιστημονικές πληροφορίες":
                     dest = "geoscientificInformation";
                     break;
 
-                case "Health":
+                case "Υγεία":
                     dest = "health";
                     break;
 
-                case "ImageryBaseMapsEarthCover":
+                case "Ορθοεικόνες/Βασικοίχάρτες/Κάλυψη γης":
                     dest = "imageryBaseMapsEarthCover";
                     break;
 
-                case "IntelligenceMilitary":
+                case "Στρατιωτικές πληροφορίες":
                     dest = "intelligenceMilitary";
                     break;
 
-                case "InlandWaters":
+                case "Εσωτερικά ύδατα":
                     dest = "inlandWaters";
                     break;
 
-                case "Location":
+                case "Γεωγραφική θέση":
                     dest = "location";
                     break;
 
-                case "Oceans":
+                case "Θάλασσες":
                     dest = "oceans";
                     break;
 
-                case "PlanningCadastre":
+                case "Χωροταξία/κτηματολόγιο":
                     dest = "planningCadastre";
                     break;
 
-                case "Society":
+                case "Κοινωνία":
                     dest = "society";
                     break;
 
-                case "Structure":
+                case "Κατασκευές":
                     dest = "structure";
                     break;
 
-                case "Transportation":
+                case "Μεταφορές":
                     dest = "transportation";
                     break;
 
-                case "UtilitiesCommunication":
+                case "Επιχειρήσεις κοινής ωφελείας/Επικοινωνία":
                     dest = "utilitiesCommunication";
                     break;
 
@@ -1168,9 +1105,182 @@ namespace Inspire.Metadata
                     break;
 
             }
+            return dest;
+        }
+
+        public string ToCodeList2(string orig)
+        {
+            string dest = "";
+            
+            switch (orig)
+            {
+                case "Ανθρώπινη υγεία και ασφάλεια":
+                    dest = "Human health and safety";
+                    break;
+
+                case "Ατμοσφαιρικές συνθήκες":
+                    dest = "Atmospheric conditions";
+                    break;
+
+                case "Βιογεωγραφικές περιοχές":
+                    dest = "Bio-geographical regions";
+                    break;
+
+                case "Γεωλογία":
+                    dest = "Geology";
+                    break;
+
+                case "Γεωργικές εγκαταστάσεις και εγκαταστάσεις υδατοκαλλιέργειας":
+                    dest = "Agricultural and aquaculture facilities";
+                    break;
+
+                case "Γεωτεμάχια κτηματολογίου":
+                    dest = "Cadastral parcels";
+                    break;
+
+                case "Διευθύνσεις":
+                    dest = "Addresses";
+                    break;
+
+                case "Δίκτυα μεταφορών":
+                    dest = "Transport networks";
+                    break;
+
+                case "Διοικητικές ενότητες":
+                    dest = "Administrative units";
+                    break;
+
+                case "Εγκαταστάσεις παραγωγής και βιομηχανικές εγκαταστάσεις":
+                    dest = "Production and industrial facilities";
+                    break;
+
+                case "Εγκαταστάσεις παρακολούθησης του περιβάλλοντος":
+                    dest = "Environmental monitoring facilities";
+                    break;
+
+                case "Έδαφος":
+                    dest = "Soil";
+                    break;
+
+                case "Ενδιαιτήματα και βιότοποι":
+                    dest = "Habitats and biotopes";
+                    break;
+
+                case "Ενεργειακοί πόροι":
+                    dest = "Energy resources";
+                    break;
+
+                case "Επιχειρήσεις κοινής ωφελείας και κρατικές υπηρεσίες":
+                    dest = "Utility and governmental services";
+                    break;
+
+                case "Ζώνες διαχείρισης/περιορισμού/ρύθμισης εκτάσεων και μονάδες αναφοράς":
+                    dest = "Area management/restriction/regulation zones and reporting units";
+                    break;
+
+                case "Ζώνες φυσικών κινδύνων":
+                    dest = "Natural risk zones";
+                    break;
+
+                case "Θαλάσσιες περιοχές":
+                    dest = "Sea regions";
+                    break;
+
+                case "Κάλυψη γης":
+                    dest = "Land cover";
+                    break;
+
+                case "Κατανομή ειδών":
+                    dest = "Species distribution";
+                    break;
+
+                case "Κατανομή πληθυσμού  δημογραφία":
+                    dest = "Population distribution  demography";
+                    break;
+
+                case "Κτίρια":
+                    dest = "Buildings";
+                    break;
+
+                case "Μετεωρολογικά γεωγραφικά χαρακτηριστικά":
+                    dest = "Meteorological geographical features";
+                    break;
+
+                case "Ορθοφωτογραφία":
+                    dest = "Orthoimagery";
+                    break;
+
+                case "Ορυκτοί πόροι":
+                    dest = "Mineral resources";
+                    break;
+
+                case "Προστατευόμενες τοποθεσίες":
+                    dest = "Protected sites";
+                    break;
+
+                case "Στατιστικές μονάδες":
+                    dest = "Statistical units";
+                    break;
+
+                case "Συστήματα γεωγραφικού καννάβου":
+                    dest = "Geographical grid systems";
+                    break;
+
+                case "Συστήματα συντεταγμένων":
+                    dest = "Coordinate reference systems";
+                    break;
+
+                case "Τοπωνύμια":
+                    dest = "Geographical names";
+                    break;
+
+                case "Υδρογραφία":
+                    dest = "Hydrography";
+                    break;
+
+                case "Υψομετρία":
+                    dest = "Elevation";
+                    break;
+
+                case "Χρήσεις γης":
+                    dest = "Land use";
+                    break;
+
+                case "Ωκεανογραφικά γεωγραφικά χαρακτηριστικά":
+                    dest = "Oceanographic geographical features";
+                    break;
+
+                case "δημιουργία":
+                    dest = "creation";
+                    break;
+
+                case "δημοσίευση":
+                    dest = "publication";
+                    break;
+                
+                case "αναθεώρηση":
+                    dest = "revision";
+                    break;
+
+                case "Σύμμορφος":
+                    dest = "Conformant";
+                    break;
+
+                case "Δεν είναι σύμμορφος":
+                    dest = "Not Conformant";
+                    break;
+
+                case "Δεν αξιολογήθηκε":
+                    dest = "Not Evaluated";
+                    break;
+                
+                default:
+                    dest = orig;
+                    break;
+
+            }
 
             return dest;
- 
         }
 
         public string ReverseCodeList(string orig)
@@ -1179,237 +1289,325 @@ namespace Inspire.Metadata
 
             switch (orig)
             {
-                case "bul":
-                    dest = "Bulgarian";
-                    break;
-
-                case "cze":
-                    dest = "Czech";
-                    break;
-
-                case "dan":
-                    dest = "Danish";
-                    break;
-
-                case "dut":
-                    dest = "Dutch";
-                    break;
-
                 case "eng":
-                    dest = "English";
-                    break;
-
-                case "est":
-                    dest = "Estonian";
-                    break;
-
-                case "fin":
-                    dest = "Finnish";
+                    dest = "Αγγλικά";
                     break;
 
                 case "fre":
-                    dest = "French";
+                    dest = "Γαλλικά";
                     break;
 
                 case "ger":
-                    dest = "German";
+                    dest = "Γερμανικά";
                     break;
 
                 case "gre":
-                    dest = "Greek";
-                    break;
-
-                case "hun":
-                    dest = "Hungarian";
-                    break;
-
-                case "gle":
-                    dest = "Irish";
+                    dest = "Ελληνικά";
                     break;
 
                 case "ita":
-                    dest = "Italian";
-                    break;
-
-                case "lav":
-                    dest = "Latvian";
-                    break;
-
-                case "lit":
-                    dest = "Lithuanian";
-                    break;
-
-                case "mlt":
-                    dest = "Maltese";
-                    break;
-
-                case "pol":
-                    dest = "Polish";
-                    break;
-
-                case "por":
-                    dest = "Portuguese";
-                    break;
-
-                case "rum":
-                    dest = "Romanian";
-                    break;
-
-                case "slo":
-                    dest = "Slovak";
-                    break;
-
-                case "slv":
-                    dest = "Slovenian";
-                    break;
-
-                case "spa":
-                    dest = "Spanish";
-                    break;
-
-                case "swe":
-                    dest = "Swedish";
+                    dest = "Ιταλικά";
                     break;
 
                 case "dataset":
-                    dest = "Dataset";
+                    dest = "Σύνολο χωρικών δεδομένων";
                     break;
 
                 case "series":
-                    dest = "Series";
+                    dest = "Σειρά συνόλων χωρικών δεδομένων";
                     break;
 
                 case "service":
-                    dest = "Service";
+                    dest = "Υπηρεσίες χωρικών δεδομένων";
                     break;
 
                 case "resourceProvider":
-                    dest = "ResourceProvider";
+                    dest = "Πάροχος πόρου";
                     break;
 
                 case "custodian":
-                    dest = "Custodian";
+                    dest = "Υπόλογος";
                     break;
 
                 case "owner":
-                    dest = "Owner";
+                    dest = "Κάτοχος";
                     break;
 
                 case "user":
-                    dest = "User";
+                    dest = "Χρήστης";
                     break;
 
                 case "distributor":
-                    dest = "Distributor";
+                    dest = "Διανομέας";
                     break;
 
                 case "originator":
-                    dest = "Originator";
+                    dest = "Δημιουργός";
                     break;
 
                 case "pointOfContact":
-                    dest = "PointOfContact";
+                    dest = "Αρμόδιος για επικοινωνία";
                     break;
 
                 case "principalInvestigator":
-                    dest = "PrincipalInvestigator";
+                    dest = "Πρωτεύων διερευνητής";
                     break;
 
                 case "processor":
-                    dest = "Processor";
+                    dest = "Επεξεργαστής";
                     break;
 
                 case "publisher":
-                    dest = "Publisher";
+                    dest = "Εκδότης";
                     break;
 
                 case "author":
-                    dest = "Author";
+                    dest = "Συντάκτης";
                     break;
 
                 case "farming":
-                    dest = "Farming";
+                    dest = "Γεωργία";
                     break;
 
                 case "biota":
-                    dest = "Biota";
+                    dest = "Βιόκοσμος";
                     break;
 
                 case "boundaries":
-                    dest = "Boundaries";
+                    dest = "Όρια";
                     break;
 
                 case "climatologyMeteorologyAtmosphere":
-                    dest = "ClimatologyMeteorologyAtmosphere";
+                    dest = "Κλιματολογία/Μετεωρολογία/Ατμόσφαιρα";
                     break;
 
                 case "economy":
-                    dest = "Economy";
+                    dest = "Οικονομία";
                     break;
 
                 case "elevation":
-                    dest = "Elevation";
+                    dest = "Υψομετρία";
                     break;
 
                 case "environment":
-                    dest = "Environment";
+                    dest = "Περιβάλλον";
                     break;
 
                 case "geoscientificInformation":
-                    dest = "GeoscientificInformation";
+                    dest = "Γεωεπιστημονικές πληροφορίες";
                     break;
 
                 case "health":
-                    dest = "Health";
+                    dest = "Υγεία";
                     break;
 
                 case "imageryBaseMapsEarthCover":
-                    dest = "ImageryBaseMapsEarthCover";
+                    dest = "Ορθοεικόνες/Βασικοίχάρτες/Κάλυψη γης";
                     break;
 
                 case "intelligenceMilitary":
-                    dest = "IntelligenceMilitary";
+                    dest = "Στρατιωτικές πληροφορίες";
                     break;
 
                 case "inlandWaters":
-                    dest = "InlandWaters";
+                    dest = "Εσωτερικά ύδατα";
                     break;
 
                 case "location":
-                    dest = "Location";
+                    dest = "Γεωγραφική θέση";
                     break;
 
                 case "oceans":
-                    dest = "Oceans";
+                    dest = "Θάλασσες";
                     break;
 
                 case "planningCadastre":
-                    dest = "PlanningCadastre";
+                    dest = "Χωροταξία/κτηματολόγιο";
                     break;
 
                 case "society":
-                    dest = "Society";
+                    dest = "Κοινωνία";
                     break;
 
                 case "structure":
-                    dest = "Structure";
+                    dest = "Κατασκευές";
                     break;
 
                 case "transportation":
-                    dest = "Transportation";
+                    dest = "Μεταφορές";
                     break;
 
                 case "utilitiesCommunication":
-                    dest = "UtilitiesCommunication";
+                    dest = "Επιχειρήσεις κοινής ωφελείας/Επικοινωνία";
+                    break;
+
+                case "Human health and safety":
+                    dest = "Ανθρώπινη υγεία και ασφάλεια";
+                    break;
+
+                case "Atmospheric conditions":
+                    dest = "Ατμοσφαιρικές συνθήκες";
+                    break;
+
+                case "Bio-geographical regions":
+                    dest = "Βιογεωγραφικές περιοχές";
+                    break;
+
+                case "Geology":
+                    dest = "Γεωλογία";
+                    break;
+
+                case "Agricultural and aquaculture facilities":
+                    dest = "Γεωργικές εγκαταστάσεις και εγκαταστάσεις υδατοκαλλιέργειας";
+                    break;
+
+                case "Cadastral parcels":
+                    dest = "Γεωτεμάχια κτηματολογίου";
+                    break;
+
+                case "Addresses":
+                    dest = "Διευθύνσεις";
+                    break;
+
+                case "Transport networks":
+                    dest = "Δίκτυα μεταφορών";
+                    break;
+
+                case "Administrative units":
+                    dest = "Διοικητικές ενότητες";
+                    break;
+
+                case "Production and industrial facilities":
+                    dest = "Εγκαταστάσεις παραγωγής και βιομηχανικές εγκαταστάσεις";
+                    break;
+
+                case "Environmental monitoring facilities":
+                    dest = "Εγκαταστάσεις παρακολούθησης του περιβάλλοντος";
+                    break;
+
+                case "Soil":
+                    dest = "Έδαφος";
+                    break;
+
+                case "Habitats and biotopes":
+                    dest = "Ενδιαιτήματα και βιότοποι";
+                    break;
+
+                case "Energy resources":
+                    dest = "Ενεργειακοί πόροι";
+                    break;
+
+                case "Utility and governmental services":
+                    dest = "Επιχειρήσεις κοινής ωφελείας και κρατικές υπηρεσίες";
+                    break;
+
+                case "Area management/restriction/regulation zones and reporting units":
+                    dest = "Ζώνες διαχείρισης/περιορισμού/ρύθμισης εκτάσεων και μονάδες αναφοράς";
+                    break;
+
+                case "Natural risk zones":
+                    dest = "Ζώνες φυσικών κινδύνων";
+                    break;
+
+                case "Sea regions":
+                    dest = "Θαλάσσιες περιοχές";
+                    break;
+
+                case "Land cover":
+                    dest = "Κάλυψη γης";
+                    break;
+
+                case "Species distribution":
+                    dest = "Κατανομή ειδών";
+                    break;
+
+                case "Population distribution  demography":
+                    dest = "Κατανομή πληθυσμού  δημογραφία";
+                    break;
+
+                case "Buildings":
+                    dest = "Κτίρια";
+                    break;
+
+                case "Meteorological geographical features":
+                    dest = "Μετεωρολογικά γεωγραφικά χαρακτηριστικά";
+                    break;
+
+                case "Orthoimagery":
+                    dest = "Ορθοφωτογραφία";
+                    break;
+
+                case "Mineral resources":
+                    dest = "Ορυκτοί πόροι";
+                    break;
+
+                case "Protected sites":
+                    dest = "Προστατευόμενες τοποθεσίες";
+                    break;
+
+                case "Statistical units":
+                    dest = "Στατιστικές μονάδες";
+                    break;
+
+                case "Geographical grid systems":
+                    dest = "Συστήματα γεωγραφικού καννάβου";
+                    break;
+
+                case "Coordinate reference systems":
+                    dest = "Συστήματα συντεταγμένων";
+                    break;
+
+                case "Geographical names":
+                    dest = "Τοπωνύμια";
+                    break;
+
+                case "Hydrography":
+                    dest = "Υδρογραφία";
+                    break;
+
+                case "Elevation":
+                     dest = "Υψομετρία";
+                     break;
+
+                case "Land use":
+                    dest = "Χρήσεις γης";
+                    break;
+
+                case "Oceanographic geographical features":
+                    dest = "Ωκεανογραφικά γεωγραφικά χαρακτηριστικά";
+                    break;
+
+                case "creation":
+                    dest = "δημιουργία";
+                    break;
+
+                case "publication":
+                    dest = "δημοσίευση";
+                    break;
+
+                case "revision":
+                    dest = "αναθεώρηση";
+                    break;
+
+                case "Conformant":
+                    dest = "Σύμμορφος";
+                    break;
+
+                case "Not Conformant":
+                    dest = "Δεν είναι σύμμορφος";
+                    break;
+
+                case "Not Evaluated":
+                    dest = "Δεν αξιολογήθηκε";
                     break;
 
                 default:
-                    dest = "";
+                    dest = orig;
                     break;
-            }
 
-            return dest;
+            }
             
+            return dest;
         }
     }
 }

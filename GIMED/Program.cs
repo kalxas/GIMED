@@ -2,8 +2,8 @@
    Name:         GIMED
    Version:      1.2.5
    Author:       Angelos Tzotsos <tzotsos@gmail.com>
-   Date:         03/11/10
-   Modified:     03/11/10
+   Date:         19/11/10
+   Modified:     19/11/10
    Description:  Greek INSPIRE Metadata Editor 
 
    Copyright (C) November 2010 Angelos Tzotsos <tzotsos@gmail.com>
@@ -40,29 +40,31 @@ static class Program
         Application.SetCompatibleTextRenderingDefault(false);
         Checker chk = new Checker();
         bool tmp = chk.CheckModules();
-        Application.Run(new Form1(tmp));
+        Application.Run(new GIMEDForm(tmp));
     }
+
     
 }
-
 
 public class Checker
 {
     public bool CheckModules()
     {
-        
+
         string tmp = "";
         bool tmp2 = true;
         string appPath = Path.GetDirectoryName(Application.ExecutablePath);
-        if (!CheckGDAL())
-        {
-            tmp += "GDAL is not installed.\n";
-        }
+        //PV: Don't use GDAL libs
+        //if (!CheckGDAL())
+        //{
+        //    tmp += "Η βιβλιοθήκη GDAL δεν είναι εγκατεστημένη.\n";
+        //}
 
-        if (!File.Exists(String.Format(appPath + "{0}geo_extends.exe", Path.DirectorySeparatorChar)) && !File.Exists(String.Format(appPath + "{0}geo_extends", Path.DirectorySeparatorChar)))
-        {
-            tmp += "Geographic Extends module is missing.";
-        }
+        //PV: Don't use geo_extends
+        //if (!File.Exists(String.Format(appPath + "{0}geo_extends.exe", Path.DirectorySeparatorChar)) && !File.Exists(String.Format(appPath + "{0}geo_extends", Path.DirectorySeparatorChar)))
+        //{
+        //    tmp += "Το πρόσθετο Γεωγραφικής Θέσης δεν είναι εγκατεστημένο.";
+        //}
 
         if (tmp != "")
         {
@@ -91,7 +93,7 @@ public class Checker
 
     public bool CheckGDAL()
     {
-        
+
 
         try
         {
@@ -121,5 +123,3 @@ public class Checker
         }
     }
 }
-
-

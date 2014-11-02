@@ -1,18 +1,34 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GIMED", "GIMED.csproj", "{F3FACCF8-467D-4F7A-BF5C-08974B53758B}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GIMED", "GIMED.csproj", "{1308BB9C-93C9-4576-ACB5-4971BB92B3A2}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupVS_GIMED", "..\SetupVS_GIMED\SetupVS_GIMED.vdproj", "{F32A4D34-747A-4588-B682-2BB79AD38D33}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Any CPU = CD_ROM|Any CPU
 		Debug|Any CPU = Debug|Any CPU
+		DVD-5|Any CPU = DVD-5|Any CPU
 		Release|Any CPU = Release|Any CPU
+		SingleImage|Any CPU = SingleImage|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F3FACCF8-467D-4F7A-BF5C-08974B53758B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F3FACCF8-467D-4F7A-BF5C-08974B53758B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F3FACCF8-467D-4F7A-BF5C-08974B53758B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F3FACCF8-467D-4F7A-BF5C-08974B53758B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1308BB9C-93C9-4576-ACB5-4971BB92B3A2}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{1308BB9C-93C9-4576-ACB5-4971BB92B3A2}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{1308BB9C-93C9-4576-ACB5-4971BB92B3A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1308BB9C-93C9-4576-ACB5-4971BB92B3A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1308BB9C-93C9-4576-ACB5-4971BB92B3A2}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{1308BB9C-93C9-4576-ACB5-4971BB92B3A2}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{1308BB9C-93C9-4576-ACB5-4971BB92B3A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1308BB9C-93C9-4576-ACB5-4971BB92B3A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1308BB9C-93C9-4576-ACB5-4971BB92B3A2}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{1308BB9C-93C9-4576-ACB5-4971BB92B3A2}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{F32A4D34-747A-4588-B682-2BB79AD38D33}.CD_ROM|Any CPU.ActiveCfg = Release
+		{F32A4D34-747A-4588-B682-2BB79AD38D33}.Debug|Any CPU.ActiveCfg = Debug
+		{F32A4D34-747A-4588-B682-2BB79AD38D33}.DVD-5|Any CPU.ActiveCfg = Debug
+		{F32A4D34-747A-4588-B682-2BB79AD38D33}.Release|Any CPU.ActiveCfg = Release
+		{F32A4D34-747A-4588-B682-2BB79AD38D33}.SingleImage|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
